@@ -4,7 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Typography | Bootstrap Based Admin Template - Material Design</title>
+        <link rel="icon" href="../web/images/fev.png" type="image/x-icon">
+        <title>Training And Certifications</title>
 
         <!-- Favicon-->
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -183,12 +184,31 @@
                         }
                         break;
                     case 'software-robot-delivery-process':
-                        include 'guide/installation-guide.php';
+                        switch ($subnode) {
+                            case 'intro':
+                                include $page."/$node.php";
+                                break;
+                            case '':
+                                include $page."/$node.php";
+                                break;
+                            default:
+                                include $page."/$node/$subnode.php";
+                                break;
+                        }
                         break;
                     case 'software-robot-project-workflow':
-                        include 'guide/installation-guide.php';
+                        switch ($subnode) {
+                            case 'intro':
+                                include $page."/$node.php";
+                                break;
+                            case '':
+                                include $page."/$node.php";
+                                break;
+                            default:
+                                include $page."/$node/$subnode.php";
+                                break;
+                        }
                         break;
-
                     default:
                         
                         header('Location: ../views/');
