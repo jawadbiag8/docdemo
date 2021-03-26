@@ -122,7 +122,7 @@
                         </div>
 
                         <div class="col-md-3 ab-bottom-grid img">
-                            <a href=""> 
+                            <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=intro"> 
                                 <div class="box">
                                     <i class='fas tile-icon  fa-robot'></i>
                                     <h4>Automation Libraries</h4>
@@ -147,7 +147,7 @@
                             </a>
                         </div>
                         <div class="col-md-3 ab-bottom-grid img">
-                            <a href="">    
+                            <a href="community.php">    
                                 <div class="box">
                                     <i class='far tile-icon  fa-comments'></i>
                                     <h4>Community</h4>

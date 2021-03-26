@@ -96,7 +96,7 @@
                 if (isset($_GET['page'])) {
                     $page = $_GET['page'];
                 } else {
-                    header('Location: ../views/');
+                    $page='';
                 }
                 if (isset($_GET['node'])) {
                     $node = $_GET['node'];
@@ -113,17 +113,10 @@
                 }
                 switch ($page) {
                     case 'guide':
-                        require 'guide/sidebar.php';
+                        require 'community/sidebar.php';
                         break;
-                    case 'Trainings-Certifications':
-                        require 'Trainings-Certifications/sidebar.php';
-                        break;
-                    case 'libraries':
-                        require 'libraries/sidebar.php';
-                        break;
-
                     default:
-                        header('Location: ../views/');
+                        require 'community/sidebar.php';
                 }
                 ?>
                 <!-- #Menu -->
@@ -156,7 +149,7 @@
 
         <?php
         switch ($page) {
-            case 'guide':
+            case 'community':
                 switch ($node) {
                     case 'quickstart-guide':
                         include 'guide/index.php';
@@ -166,67 +159,14 @@
                         break;
 
                     default:
-                        include 'guide/index.php';
+                        include 'community/index.php';
                         break;
                 }
                 break;
-            case 'Trainings-Certifications':
-                switch ($node) {
-                    case 'beginners-course':
-                        switch ($subnode) {
-                            case 'intro':
-                                include $page . "/$node.php";
-                                break;
-                            case '':
-                                include $page . "/$node.php";
-                                break;
-                            default:
-                                include $page . "/$node/$subnode.php";
-                                break;
-                        }
-                        break;
-                    case 'software-robot-delivery-process':
-                        include 'guide/installation-guide.php';
-                        break;
-                    case 'software-robot-project-workflow':
-                        include 'guide/installation-guide.php';
-                        break;
 
-                    default:
-
-                        header('Location: ../views/');
-                }
-                break;
-            case 'libraries':
-                switch ($node) {
-                    case 'Autosphere-framework':
-                        switch ($subnode) {
-                            case 'intro':
-                                include $page . "/$node.php";
-                                break;
-                            case '':
-                                include $page . "/$node.php";
-                                break;
-                            default:
-                                include $page . "/$node/$subnode.php";
-                                break;
-                        }
-                        break;
-                    case 'software-robot-delivery-process':
-                        include 'guide/installation-guide.php';
-                        break;
-                    case 'software-robot-project-workflow':
-                        include 'guide/installation-guide.php';
-                        break;
-
-                    default:
-
-                        header('Location: ../views/');
-                }
-                break;
             default:
-
-                header('Location: ../views/');
+                include 'community/index.php';
+                break;
         }
         ?>
 
@@ -247,17 +187,6 @@
 
         <!-- Custom Js -->
         <script src="../js/admin.js"></script>
-        <script>
-            var fixmeTop = $('.jaFBcT').offset().top+130;
-            $(window).scroll(function () {
-                var currentScroll = $(window).scrollTop();
-                if (currentScroll >= fixmeTop) {
-                    $('.jaFBcT').addClass('scrolldiv');
-                } else {
-                    $('.jaFBcT').removeClass("scrolldiv");
-                }
-            });
-        </script>
 
         <!-- Demo Js -->
         <!--<script src="../js/demo.js"></script>-->
