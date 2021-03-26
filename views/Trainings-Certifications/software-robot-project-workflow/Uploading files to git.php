@@ -22,7 +22,6 @@
           <div class="body">
 
 
-
             <h2>Uploading files to Git Through Autosphere Studio</h2>
             <aside class="sc-hHftDr ewYhue">
               <div class="m-b-15"><span class="hAIwHX m-r-10">beginner</span><small>Time to complete ~1 hour</small>
@@ -32,7 +31,7 @@
             <p>Open Autosphere studio and navigate to WeeklyDataUpdate directory.</p>
             <p><img src="../views/docs/Git/8.PNG" alt=""></p>
             <h4 id="creating-a-safe-environment-for-innovation-and-testing-out-features">Creating .ipynb File</h4>
-            <p>Create a new <code>.ipynb File</code>, set its name to <code>Task.ipynb</code> and copy the code you develop during the <a href="../../views/docs.php?page=courses/beginners-course">Beginners&#x27; course.</a></p>
+            <p>Create a new <code>.ipynb File</code>, set its name to <code>Task.ipynb</code> and copy the code you develop during the <a href="../beginners-course.html">Beginners&#x27; course.</a></p>
             <div class="sc-idOhPF kGntgQ">
               <div class="sc-dIUggk XavQL"></div>
               <div>
@@ -114,15 +113,13 @@ Insert the sales data for the week and export it as a PDF
             <p><img src="../views/docs/Git/checking-new-task-file.gif" alt=""></p>
             <p><code>Task.ipynb</code> has successfully been pushed to <code>WeeklyDataUpdate</code> repository.</p>
 
-
           </div>
         </div>
       </div>
     </div>
     <!-- #END# Headings -->
     <aside class="cdpwWb">
-      <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-      <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter </a></div>    
+    <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter </a></div>
     </aside>
   </div>
 </section>

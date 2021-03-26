@@ -18,6 +18,7 @@
         <link href="//fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Arimo:400,400i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- //web-fonts -->
     </head>
@@ -61,7 +62,7 @@
                     <div class="item active">
                         <div class="container">
                             <div class="carousel-caption">
-                                <h3>Autosphere portal</h3>
+                                <h3>Autosphere Portal</h3>
                                 <div class="wrap">
                                     <div class="search">
                                         <input type="text" class="searchTerm" placeholder="What are you looking for?">

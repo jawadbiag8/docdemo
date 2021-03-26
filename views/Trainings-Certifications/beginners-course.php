@@ -25,7 +25,7 @@
                             <div class="m-b-15"><span class="hAIwHX m-r-10">beginner</span><small>Time to complete ~2 hours</small>
                             </div>
                         </aside>
-                        <p>Welcome to the Autosphere Developer Beginners&#x27; course!</p>
+                        <p>Welcome to the Autosphere Developer Beginners&#x27; course</p>
                         <p>In this course, we will get you started on your way to becoming a <strong>Autosphere
                                 Developer</strong>, and show you how to automate processes using Autosphere tools.</p>
 

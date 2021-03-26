@@ -59,10 +59,7 @@
                             <li>A Process Definition Document is a standard way to describe processes.</li>
                             <li>You can use our templates to create your next Process Definition Document.</li>
                         </ul>
-                        <aside class="sc-kfzAmx cdpwWb">
-                            <div><a class="pagination" href="docs.php?page=courses/beginners-course">Previous chapter</a></div>
-                            <div><a class="pagination" href="docs.php?page=courses/beginners-course/your-first-robot">Next chapter</a></div>
-                        </aside>
+                     
                     </div>
                 </div>
             </div>
