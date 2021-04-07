@@ -14,8 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
-                                    <li><a href="javascript:void(0);">Previous</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=creating-pdf">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=filling-in-the-sales-form-using-excel-data">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -28,7 +28,7 @@
                             </div>
                         </aside>
                         <p>All the sales data has been entered. Nice! After entering all the sales data, Maria typically takes a screenshot of the sales summary:</p>
-                        <p><img src="../views/docs/9645d1e8f787bfd822d644dc72bd662c/sales-summary-in-page.png" alt="Sales summary in the intranet page" /></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Beginner-Course/sales-summary-in-page.png" alt="Sales summary in the intranet page" /></p>
                         <p><strong>Our robot can handle this case too!</strong></p>
                         <p>Let&#x27;s add a new step to our task. We&#x27;ll call it <code>Collect The Results</code>:</p>
                         <div class="sc-idOhPF kGntgQ">
@@ -86,10 +86,7 @@ Collect The Results
                                 <code>sales-summary</code> CSS class.
                             </p>
                         </blockquote>
-                        <h3 id="saving-the-file-to-the-output-directory"><button type="button"><svg height="16" width="16">
-                                    <path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-                                    </path>
-                                </svg></button>Saving the file to the <code>output</code> directory</h3>
+                        <h3 id="saving-the-file-to-the-output-directory">Saving the file to the <code>output</code> directory</h3>
                         <p>As a second argument, we will pass to the <code>Screenshot</code> keyword the path to use for the screenshot image file. We want the file to be called <code>sales_summary.png</code> and added to a new directory called <code>output</code>.</p>
 
                         <p>Our path for the file will be this: <code>${CURDIR}${/}output${/}sales_summary.png</code>.</p>
@@ -173,7 +170,7 @@ Insert the sales data for the week and export it as a PDF
                         </div>
                         <p>We run the robot. At the end of the run, a screenshot of the sales summary appears in the Notebook:
                         </p>
-                        <p><img src="../views/docs/283b35d72ed1129cfeb60834487883f2/sales-summary.png" alt="Sales summary" /></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Beginner-Course/sales-summary.png" alt="Sales summary" /></p>
                         <p><strong>Done!</strong></p>
                         <h4 id="what-we-learned">What we learned</h4>
                         <ul>
@@ -194,8 +191,8 @@ Insert the sales data for the week and export it as a PDF
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=creating-pdf">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=filling-in-the-sales-form-using-excel-data"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

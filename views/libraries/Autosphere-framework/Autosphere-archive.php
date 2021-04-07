@@ -78,14 +78,14 @@
                                         <div class="sc-jJEJSO laquCT">
                                             <div class="sc-hiSbYr XqbgT">
                                                 <div class="sc-gWHgXt bHAbbC keyword-content">
-                                                    
+
                                                     <div>
                                                         <div class="keyword" id="add-to-archive">
                                                             <h2><a href="#add-to-archive">Add To Archive</a></h2>
 
                                                             <div>
                                                                 <p class="shortdoc">Add file(s) to the archive</p>
-                                                                <h3>Arguments</h3>
+                                                                <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
                                                                         <th>Argument</th>
@@ -123,9 +123,9 @@
                                                                             <td class="field-body">name of the file, or list of files, to add</td>
                                                                         </tr>
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param archive_name:</th>
-                                                                        
-                                                                            
+                                                                            <th class="field-name">param archive_name:</th>
+
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                         <tr class="field">
@@ -135,7 +135,7 @@
                                                                     </tbody>
                                                                 </table>
                                                                 <p>This keyword adds file or list of files into existing archive. Files can be added to archive structure with relative path using argument <cite>folder</cite>.</p>
-                                                                <h3>Examples</h3>
+                                                                <h4>Examples</h4>
                                                                 <pre><code class="line-numbers language-robot">*** Tasks ***
 Add To Archive   file.ext    C:/folder/subfolder/file.rar
 
@@ -153,7 +153,7 @@ Add To Archive   @{List}   C:/folder/subfolder/file.rar
 
                                                             <div>
                                                                 <p class="shortdoc">Create a tar/tar.gz archive of a folder</p>
-                                                                <h3>Arguments</h3>
+                                                                <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
                                                                         <th>Argument</th>
@@ -203,14 +203,14 @@ Add To Archive   @{List}   C:/folder/subfolder/file.rar
                                                                             <td class="field-body">name of the folder to archive</td>
                                                                         </tr>
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param archive_name:</th>
-                                                                            
+                                                                            <th class="field-name">param archive_name:</th>
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param recursive:</th>
+                                                                            <th class="field-name">param recursive:</th>
 
-                                                                            
+
                                                                             <td class="field-body">should sub directories be included, defaults is False</td>
                                                                         </tr>
                                                                         <tr class="field">
@@ -228,7 +228,7 @@ Add To Archive   @{List}   C:/folder/subfolder/file.rar
                                                                 </p>
                                                                 <p>To include only certain files, like TXT files, the argument <cite>include</cite> can be used. Similarly to exclude certain file, like dotfiles, the argument <cite>exclude</cite> can be used.
                                                                 </p>
-                                                                <h3>Examples</h3>
+                                                                <h4>Examples</h4>
                                                                 <pre><code class="line-numbers language-robot">*** Tasks ***
 Archive Folder With Tar   C:/folder/subfolder    Name.tar 
 
@@ -247,7 +247,7 @@ Archive Folder With Tar   C:/folder/subfolder    Name.tar    recursive=True
 
                                                             <div>
                                                                 <p class="shortdoc">Create a zip archive of a folder</p>
-                                                                <h3>Arguments</h3>
+                                                                <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
                                                                         <th>Argument</th>
@@ -303,15 +303,15 @@ Archive Folder With Tar   C:/folder/subfolder    Name.tar    recursive=True
                                                                             <td class="field-body">name of the folder to archive</td>
                                                                         </tr>
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param archive_name:</th>
-                                                                        
-                                                                            
+                                                                            <th class="field-name">param archive_name:</th>
+
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param recursive:</th>
-                                                                        
-                                                                            
+                                                                            <th class="field-name">param recursive:</th>
+
+
                                                                             <td class="field-body">should sub directories be included, defaults is False</td>
                                                                         </tr>
                                                                         <tr class="field">
@@ -324,10 +324,10 @@ Archive Folder With Tar   C:/folder/subfolder    Name.tar    recursive=True
                                                                             </td>
                                                                         </tr>
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param compression:</th>
+                                                                            <th class="field-name">param compression:</th>
                                                                         </tr>
                                                                         <tr class="field">
-                                                                            
+
                                                                             <td class="field-body">type of package compression method, defaults to &quot;stored&quot;
                                                                             </td>
                                                                         </tr>
@@ -343,7 +343,7 @@ Archive Folder With Tar   C:/folder/subfolder    Name.tar    recursive=True
                                                                     <li>bzip2</li>
                                                                     <li>lzma</li>
                                                                 </ul>
-                                                                <h3>Examples</h3>
+                                                                <h4>Examples</h4>
                                                                 <pre><code class="line-numbers language-robot">*** Tasks ***
 Archive Folder With Zip    D:/folder/subfolder    Name.zip
 
@@ -364,7 +364,7 @@ Archive Folder With Zip    D:/folder/subfolder    Name.zip    compression=deflat
 
                                                             <div>
                                                                 <p class="shortdoc">Extract files from archive into local directory</p>
-                                                                <h3>Arguments</h3>
+                                                                <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
                                                                         <th>Argument</th>
@@ -398,9 +398,9 @@ Archive Folder With Zip    D:/folder/subfolder    Name.zip    compression=deflat
                                                                     <col class="field-body" />
                                                                     <tbody valign="top">
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param archive_name:</th>
-                                                                        
-                                                                            
+                                                                            <th class="field-name">param archive_name:</th>
+
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                         <tr class="field">
@@ -417,7 +417,7 @@ Archive Folder With Zip    D:/folder/subfolder    Name.zip    compression=deflat
                                                                 </table>
                                                                 <p>This keyword supports extracting files from zip, tar and tar.gz archives.</p>
                                                                 <p>By default file is extracted into current working directory, but <cite>path</cite> argument can be set to define extraction path.</p>
-                                                                <h3>Examples</h3>
+                                                                <h4>Examples</h4>
                                                                 <pre><code class="line-numbers language-robot">*** Tasks ***
 Extract Archive    C:/folder/subfolder/filename.ext    C:/folder/subfolder
 </code></pre>
@@ -429,7 +429,7 @@ Extract Archive    C:/folder/subfolder/filename.ext    C:/folder/subfolder
 
                                                             <div>
                                                                 <p class="shortdoc">Extract a file from archive into local directory</p>
-                                                                <h3>Arguments</h3>
+                                                                <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
                                                                         <th>Argument</th>
@@ -467,9 +467,9 @@ Extract Archive    C:/folder/subfolder/filename.ext    C:/folder/subfolder
                                                                             <td class="field-body">name of the file to extract</td>
                                                                         </tr>
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param archive_name:</th>
-                                                                       
-                                                                            
+                                                                            <th class="field-name">param archive_name:</th>
+
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                         <tr class="field">
@@ -481,7 +481,7 @@ Extract Archive    C:/folder/subfolder/filename.ext    C:/folder/subfolder
                                                                 </table>
                                                                 <p>This keyword supports extracting a file from zip, tar and tar.gz archives.</p>
                                                                 <p>By default file is extracted into current working directory, but <cite>path</cite> argument can be set to define extraction path.</p>
-                                                                <h3>Examples</h3>
+                                                                <h4>Examples</h4>
                                                                 <pre><code class="line-numbers language-robot">*** Tasks ***
 Extract File From Archive   file.ext   C:/folder/subfolder/filename.ext   C:/folder/subfolder
 </code></pre>
@@ -493,7 +493,7 @@ Extract File From Archive   file.ext   C:/folder/subfolder/filename.ext   C:/fol
 
                                                             <div>
                                                                 <p class="shortdoc">Get information about the archive</p>
-                                                                <h3>Arguments</h3>
+                                                                <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
                                                                         <th>Argument</th>
@@ -515,9 +515,9 @@ Extract File From Archive   file.ext   C:/folder/subfolder/filename.ext   C:/fol
                                                                     <col class="field-body" />
                                                                     <tbody valign="top">
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param archive_name:</th>
-                                                                      
-                                                                            
+                                                                            <th class="field-name">param archive_name:</th>
+
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                     </tbody>
@@ -530,7 +530,7 @@ Extract File From Archive   file.ext   C:/folder/subfolder/filename.ext   C:/fol
                                                                     <li>mtime</li>
                                                                     <li>last modification time in format <cite>%d.%m.%Y %H:%M:%S</cite></li>
                                                                 </ul>
-                                                                <h3>Examples</h3>
+                                                                <h4>Examples</h4>
                                                                 <pre><code class="line-numbers language-robot">*** Tasks ***
 ${a} = Get Archive Info C:/folder/subfolder/filename.ext
 log to console   ${a}
@@ -544,7 +544,7 @@ log to console   ${a}
 
                                                             <div>
                                                                 <p class="shortdoc">List files in an archive</p>
-                                                                <h3>Arguments</h3>
+                                                                <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
                                                                         <th>Argument</th>
@@ -566,9 +566,9 @@ log to console   ${a}
                                                                     <col class="field-body" />
                                                                     <tbody valign="top">
                                                                         <tr class="field">
-                                                                            <th class="field-name" >param archive_name:</th>
-                                                                        
-                                                                            
+                                                                            <th class="field-name">param archive_name:</th>
+
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                     </tbody>
@@ -580,7 +580,7 @@ log to console   ${a}
                                                                     <li>mtime</li>
                                                                     <li>last modification time in format <cite>%d.%m.%Y %H:%M:%S</cite></li>
                                                                 </ul>
-                                                                <h3>Examples</h3>
+                                                                <h4>Examples</h4>
                                                                 <pre><code class="line-numbers language-robot">*** Tasks ***
 &#64;{files}   List Archive    myfiles.zip
 FOR  ${file}  IN   ${files}
@@ -603,17 +603,17 @@ END
                                             <form>
                                                 <h5>Keywords</h5>
                                                 <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
+                                                        <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
                                             <div>
-                                                <br><a id="link-add-to-archive" href="#add-to-archive" class="">Add To Archive</a>
-                                                <br><a id="link-archive-folder-with-tar" href="#archive-folder-with-tar" class="">Archive Folder With Tar</a>
-                                                <br><a id="link-archive-folder-with-zip" href="#archive-folder-with-zip" class="">Archive Folder With Zip</a>
-                                                <br><a id="link-extract-archive" href="#extract-archive" class="">Extract Archive</a>
-                                                <br><a id="link-extract-file-from-archive" href="#extract-file-from-archive" class="">Extract File From Archive</a>
-                                                <br><a id="link-get-archive-info" href="#get-archive-info" class="">Get Archive Info</a>
-                                                <br><a id="link-list-archive" href="#list-archive" class="">List Archive</a>
+                                                <a id="link-add-to-archive" href="#add-to-archive" class="">Add To Archive</a>
+                                                <a id="link-archive-folder-with-tar" href="#archive-folder-with-tar" class="">Archive Folder With Tar</a>
+                                                <a id="link-archive-folder-with-zip" href="#archive-folder-with-zip" class="">Archive Folder With Zip</a>
+                                                <a id="link-extract-archive" href="#extract-archive" class="">Extract Archive</a>
+                                                <a id="link-extract-file-from-archive" href="#extract-file-from-archive" class="">Extract File From Archive</a>
+                                                <a id="link-get-archive-info" href="#get-archive-info" class="">Get Archive Info</a>
+                                                <a id="link-list-archive" href="#list-archive" class="">List Archive</a>
                                             </div>
                                         </aside>
                                     </div>

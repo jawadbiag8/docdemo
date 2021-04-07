@@ -14,8 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
-                                    <li><a href="javascript:void(0);">Previous</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=logging-in">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=your-first-robot">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -91,7 +91,7 @@ Open The Internet Website
 </code></code></pre>
                             </div>
                         </div>
-                        <p><img src="../views/docs/2be2d54c2457724a3ee6ab0aea3f89c6/Autosphere-lab-adding-keyword-cell.gif" alt="Adding a new cell before the Tasks cell" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-adding-keyword-cell.gif" alt="Adding a new cell before the Tasks cell" /></p>
                         <blockquote>
                             <p>Note: the order is important here. <code>*** Keywords ***</code> cells need to be positioned before the cells that refer to them, in our case, the <code>*** Tasks ***</code> cell.</p>
                         </blockquote>
@@ -115,10 +115,7 @@ Library           Autosphere.Browser
                             <p><code>Autosphere.Browser</code> is part of the Autosphere Framework set of libraries, created and maintained by Autosphere.
                             </p>
                         </blockquote>
-                        <h3 id="using-keywords-from-a-library"><button type="button"><svg height="16" width="16">
-                                    <path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
-                                    </path>
-                                </svg></button>Using keywords from a library</h3>
+                        <h3 id="using-keywords-from-a-library">Using keywords from a library</h3>
                         <p>To open a browser and navigate to the intranet, we can now use the
                             <code>Open Available Browser</code> keyword provided by the <code>Autosphere.Browser</code> library, and give it the address of the intranet as an argument.
                         </p>
@@ -197,8 +194,8 @@ Insert the sales data for the week and export it as a PDF
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=logging-in">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=your-first-robot"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

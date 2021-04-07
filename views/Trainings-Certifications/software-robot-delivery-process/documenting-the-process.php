@@ -14,7 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-delivery-process&subnode=implementing-and-testing-the-robot">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-delivery-process&subnode=business-feasibility-assessment">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -66,13 +67,13 @@
                             <li>Image Based Automation.</li>
                         </ul>
                         <p>Besides the factors above the below table categorizes the complexity of use cases by default. </p>
-                        <p><img src="../views/Icons/PDD 1.PNG" alt=""></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/System analyst Course/PDD 1.PNG" alt=""></p>
                         <h4 id="document-metadata">Understanding Exceptions</h4>
                         <p>Business Analyst must consider exceptions that can appear in business process. This involves an effort to cover all possible scenarios when things might not go as expected. </p>
                         <p>
                         <h4>Types of Exceptions</h4>
                         </p>
-                        <p><img src="../views/Icons/PDD 2.PNG" alt=""></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/System analyst Course/PDD 2.PNG" alt=""></p>
                         <h4 id="current-process-analysis">Mapping To Be Process </h4>
                         <p>Business Analyst must map process that would show what process would look like after RPA implementation. </p>
                         <p>To-be process should clarify on every step where RPA robot will be involved for an activity. </p>
@@ -98,7 +99,8 @@
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-delivery-process&subnode=implementing-and-testing-the-robot">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-delivery-process&subnode=business-feasibility-assessment"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

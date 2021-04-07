@@ -14,8 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
-                                    <li><a href="javascript:void(0);">Previous</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=filling-in-the-sales-form">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=getting-to-the-intranet">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -51,7 +51,7 @@ Log In
 </code></code></pre>
                             </div>
                         </div>
-                        <p><img src="../views/docs/82b0019153c4d126dacc717ab51ecf56/Autosphere-lab-adding-new-cell.gif" alt="Adding new keyword cell" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-adding-new-cell.gif" alt="Adding new keyword cell" /></p>
                         <p>Ok! Now we have to tell our robot to find the correct fields on the page and fill them.</p>
                         <blockquote>
                             <p>Note: Defining each keyword in a separate Notebook cell makes it possible to execute them individually. This is useful in more complex projects, where you might want to run and edit a single keyword instead of running the full
@@ -107,7 +107,7 @@ Log In
                             </div>
                         </div>
                         <p>Now run the robot, and it will fill the username field:</p>
-                        <p><img src="../views/docs/75dbfe22ae8de8d8009bd620735f650c/Autosphere-lab-filling-username.gif" alt="Autosphere Lab - Filling the username field" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-filling-username.gif" alt="Autosphere Lab - Filling the username field" /></p>
                         <p>Great! Now we can do the same thing for the password: the only difference is that we should use the more specific <code>Input Password</code> keyword. This keyword accepts the same arguments, with the difference that it will not output
                             the value of our secret password in the log.</p>
 
@@ -122,7 +122,7 @@ Log In
 </code></code></pre>
                             </div>
                         </div>
-                        <p><img src="../views/docs/57e72535f07aa8e6460cf4a4c4dc47e9/Autosphere-lab-filling-username-and-password.gif" alt="Robocorp Lab - Filling the username and password fields" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-filling-username-and-password.gif" alt="Autosphere - Filling the username and password fields" /></p>
 
                         <p>As the last step, the robot needs to submit the form, which we can do by adding the
                             <code>Submit Form</code> keyword:
@@ -164,7 +164,7 @@ Insert the sales data for the week and export it as a PDF
                             </div>
                         </div>
                         <p>Run the robot one more time, and you should see it opening the browser, navigating to the internet, and happily logging in.</p>
-                        <p><img src="../views/docs/54e6e511f5903046a09701c52936de25/Autosphere-lab-logging-in.gif" alt="Robocorp Lab - Logging in" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-logging-in.gif" alt="Autosphere - Logging in" /></p>
                         <h4 id="what-we-learned">What we learned</h4>
                         <ul>
                             <li>You can use the <code>Input Text</code> keyword from the <code>Autosphere.Browser</code> library to fill text input fields.</li>
@@ -181,8 +181,8 @@ Insert the sales data for the week and export it as a PDF
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=filling-in-the-sales-form">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=getting-to-the-intranet"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

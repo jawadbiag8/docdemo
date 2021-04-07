@@ -14,8 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
-                                    <li><a href="javascript:void(0);">Previous</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=collecting-the-results">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=downloading-the-excel-file">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -90,7 +90,7 @@ Fill The Form Using The Data From The Excel File
                             </div>
                         </div>
                         <p>Let&#x27;s have a look at the Excel file again. Here&#x27;s how it looks like:</p>
-                        <p><img src="../views/docs/75205a59cbf34063f6e104597f8e6903/beginner-course-excel.png" alt="Excel file" />
+                        <p><img src="../images/Training-Certifications/Beginner-Course/beginner-course-excel.png" alt="Excel file" />
                         </p>
                         <p>We have the first row with the headers for the table (<code>First Name</code>,
                             <code>Last Name</code>, <code>Sales</code> and <code>Sales Target</code>), and then the data rows for each of the sales representative. Our robot needs to read this data in a format that it understands. We can do it with the <code>Read Worksheet As Table</code> keyword. We will put the data into a <em>variable</em> that we will call <code>${sales_reps}</code>. Think of a variable as a container for stuff. Such as sales representatives! Also, because our Excel contains headers on the first
@@ -167,7 +167,7 @@ Insert the sales data for the week and export it as a PDF
                             <code>&gt;&gt;</code> button.
                         </p>
                         <p><strong>No visible difference from before</strong>, but if we look in the log, we can see that the robot now has the data that was in the Excel file:</p>
-                        <p><img src="../views/docs/990191718bc4bb8be5d51d60f085bb7c/beginner-course-excel-log.png" alt="Excel data in the robot log" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/beginner-course-excel-log.png" alt="Excel data in the Autosphere log" /></p>
                         <p><strong>Excellent!</strong> Let&#x27;s move on!</p>
                         <h4 id="filling-the-form-for-each-of-the-rows-in-the-excel-file">Filling the form for each of the rows in the Excel file</h4>
                         <p>Now that we have loaded the Excel data, we need to set up things so that the robot will fill the form once for each of the rows in the table.</p>
@@ -300,7 +300,7 @@ Insert the sales data for the week and export it as a PDF
                         </div>
                         <p>We run the robot again.</p>
 
-                        <p><img src="../views/docs/3fa0c81c850eea6793665ecfd78fb588/beginner-course-log-error.png" alt="Robocorp Lab Log with Error" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/beginner-course-log-error.png" alt="Autosphere Log with Error" /></p>
                         <p>The log is telling us that the <code>Select From List By Value</code> keyword in the
                             <code>Fill And Submit The Form For One Person</code> keyword was expecting a <em>string</em> (
                             <code>str</code>, basically a sequence of characters, such as &quot;dinosaur&quot;) value, and instead, it got a number (<code>int</code>, for &quot;integer&quot;). How can we fix it?
@@ -382,7 +382,7 @@ Insert the sales data for the week and export it as a PDF
                             </div>
                         </div>
                         <p>Our robot now knows how to open the file, get the data out, loop over it, and fill the form for us! Let&#x27;s run it and see it do its magic:</p>
-                        <p><img src="../views/docs/f905d0b82d680893fee5a9075d6d1d79/robot-filling-the-form.gif" alt="Robot filling the forms with Excel Data" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/robot-filling-the-form.gif" alt="Autosphere filling the forms with Excel Data" /></p>
                         <h4 id="what-we-learned">What we learned</h4>
                         <ul>
                             <li>You can use the <code>Autosphere.Excel.Files</code> library to work with Excel files, no Excel required!
@@ -404,8 +404,8 @@ Insert the sales data for the week and export it as a PDF
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=collecting-the-results">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=downloading-the-excel-file"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

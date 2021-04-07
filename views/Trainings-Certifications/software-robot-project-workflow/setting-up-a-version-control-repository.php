@@ -14,7 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=Git-using-Autosphere-studio">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=prerequisites">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -29,14 +30,14 @@
                         <h4 id="distributed-version-control">Create a Blank Project</h4>
                         <ol>
                         <li>  <p>Create a New Project by pressing New Project Button.</p>
-                        <p><img src="../views/docs/Git/3.PNG" alt=""></p></li>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/3.PNG" alt=""></p></li>
                         <li><p>Then go to <strong>Create a Blank Project</strong> button.</p>
-                        <p><img src="../views/docs/Git/4.PNG" alt=""></p></li>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/4.PNG" alt=""></p></li>
                         <li> <p>Set name of the project to <strong>WeeklyDataUpdate</strong>.</p>
-                        <p><img src="../views/docs/Git/5.PNG" alt=""></p></li>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/5.PNG" alt=""></p></li>
                         <li><p>Now Press the Create Project Button.</p></li>
                         <li><p>Now your project has been created.</p>
-                        <p><img src="../views/docs/Git/Creating-account-on-gitlab.gif" alt=""></p></li>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/Creating-account-on-gitlab.gif" alt=""></p></li>
                         </ol>
                         
                     </div>
@@ -45,8 +46,8 @@
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter </a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=Git-using-Autosphere-studio">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=prerequisites"><i class="material-icons">navigate_before</i> Previous chapter </a></div>
         </aside>
     </div>
 </section>

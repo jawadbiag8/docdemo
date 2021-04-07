@@ -14,8 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
-                                    <li><a href="javascript:void(0);">Previous</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=downloading-the-excel-file">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=logging-in">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -29,7 +29,7 @@
 
                         <p>Our robot logged in to the internet website!</p>
                         <p>The page now shows a form on the left where User can fill the sales data for one sales representative, and it looks like this:</p>
-                        <p><img src="../views/docs/f658ec1a815719ba80d06b407d44c9a6/sales-form.png" alt="Sales form" /></p>
+                        <p><img class ="img-responsive" src="../images/Training-Certifications/Beginner-Course/sales-form.png" alt="Sales form" /></p>
                         <p>The next logical step in our task then, using plain English, will be
                             <code>Fill And Submit The Form</code>.
                         </p>
@@ -54,7 +54,7 @@ Fill And Submit The Form
 </code></code></pre>
                             </div>
                         </div>
-                        <p><img src="../views/docs/ffdde09e319b05bb49b1f9d1b7b2fe52/adding-new-cell.gif" alt="Creating the new keyword cell" /></p>
+                        <p><img class ="img-responsive" src="../images/Training-Certifications/Beginner-Course/adding-new-cell.gif" alt="Creating the new keyword cell" /></p>
 
 
 
@@ -147,7 +147,7 @@ Insert the sales data for the week and export it as a PDF
                             </div>
                         </div>
                         <p>We try running our robot again:</p>
-                        <p><img src="../views/docs/65b25354d71bf24dddab0c477751fbb0/successful-filling-form.gif" alt="Successful filling form" /></p>
+                        <p><img class ="img-responsive" src="../images/Training-Certifications/Beginner-Course/successful-filling-form.gif" alt="Successful filling form" /></p>
 
                         <p>We now have the basic outline of our form filling keyword done!</p>
                         <p>Next, we need to figure out how to read real data and how to enter the data for multiple people in sequence (looping).</p>
@@ -168,8 +168,8 @@ Insert the sales data for the week and export it as a PDF
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=downloading-the-excel-file">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=logging-in"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

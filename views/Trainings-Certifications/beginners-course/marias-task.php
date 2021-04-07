@@ -14,8 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
-                                    <li><a href="javascript:void(0);">Previous</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=your-first-robot">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=intro">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -30,14 +30,14 @@
                                 process</strong>, you need to <strong>understand and document</strong> it first.</p>
                         <p>Each week, user gets the sales data from the Autosphere online sales application. It was set up long ago and does not have fancy integrations with other systems. User is grateful that the system can export the weekly sales data in
                             an Excel file:</p>
-                        <p><a href="../views/docs/75205a59cbf34063f6e104597f8e6903/beginner-course-excel.xlsx" ><img src="../views/docs/75205a59cbf34063f6e104597f8e6903/beginner-course-excel.png" alt="The Excel file in all its glory" /></a></p>
+                        <p><a href="../images/Training-Certifications/Beginner-Course/beginner-course-excel.xlsx" ><img class="img-responsive" src="../images/Training-Certifications/Beginner-Course/beginner-course-excel.PNG" alt=""></a></p>
                         <p>After downloading the file, she goes to the intranet at <a href="http://training.autosphere.ai/#/" target="_blank" rel="noopener noreferrer">http://training.autosphere.ai/#/</a>.</p>
 
                         <p>User logs in and starts adding the data for the week for each sales representative, adding their first and last names, the value of sales they managed for the week, and their weekly target:</p>
-                        <p><img src="../views/docs/812fe5f47c25b3095560a776a7d88209/entering-sales-data-to-robotsparebin-intranet.png" alt="Entering sales data to RobotSpareBin intranet" /></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Beginner-Course/entering-sales-data-to-Autosphere-intranet.PNG" alt=""></p>
                         <p>After <strong>hours of copypasting</strong> the intranet page is ready and looks something like this:
                         </p>
-                        <p><img src="../views/docs/797f984abd58e3674facf8c96f4da212/all-sales-data-entered.png" alt="All sales data finally entered!" /></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Beginner-Course/all-sales-data-entered.PNG" alt=""></p>
                         <p>User decided to take a screenshot of the page and add that to the weekly newsletter that he sent to everyone. He found a way of making a PDF file out of it, but again it&#x27;s a lot of copypasting and fiddling with different software.</p>
                         <p><strong> You propose then to add this part to the robot as well!</strong></p>
                         <h4 id="documenting-the-process">Documenting the process</h4>
@@ -48,9 +48,7 @@
                             <p>You can learn <a href="../views/docs/implementing-rpa-robots/process-definition-document">how to
                                     write great
                                     Process Definition Documents</a> in our dedicated article. Because this is a beginner&#x27;s course, however, we have done it for you.</p>-->
-                        <a href="../views/docs/1a285f1fbc10516a6574230aac2da970/PDD_RobotSpareBin_Industries_Inc.pdf"
-                           target="_blank">Download
-                            the Process Definition Document</a> and read it carefully. It will be your guide in developing the actual robot.
+                        <a href="">Download the Process Definition Document</a> and read it carefully. It will be your guide in developing the actual robot.
                         <p>Now you have all the information you need. <strong>Let&#x27;s start building the robot!</strong>
                         </p>
                         <h4 id="what-we-learned">What we learned</h4>
@@ -66,7 +64,8 @@
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=your-first-robot">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=intro"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

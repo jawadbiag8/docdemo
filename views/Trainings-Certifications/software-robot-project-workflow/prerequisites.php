@@ -14,7 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=setting-up-a-version-control-repository">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=intro">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -32,19 +33,19 @@
                             developed by GitLab Inc. The software was created by Ukrainian developers Dmitriy Zaporozhets and Valery Sizov.</p>
                         <h4 id="beginners-course">Creating Account</h4>
                         <p>To create account navigate to <a href="https://gitlab.com/">Gitlab.com</a>. And then press the Register now Button. And complete the credentials and press Register Button.</p>
-                        <p><img src="../views/docs/Git/1.PNG" alt=""></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/1.PNG" alt=""></p>
                         <p>Now You are successfully registered on Gitlab.</p>
                         <h4 id="version-control-software-git">Signing in on Gitlab</h4>
                         <p>Sign in using your credentials.</p>
-                        <p><img src="../views/docs/Git/2.PNG" alt=""></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/2.PNG" alt=""></p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter </a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=setting-up-a-version-control-repository">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=intro"><i class="material-icons">navigate_before</i> Previous chapter </a></div>
         </aside>
     </div>
 </section>

@@ -14,8 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
-                                    <li><a href="javascript:void(0);">Previous</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=logging-out-and-closing-the-browser">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=collecting-the-results">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -205,7 +205,7 @@ Insert the sales data for the week and export it as a PDF
                             </div>
                         </div>
                         <p>Let&#x27;s run the robot one final time:</p>
-                        <p><img src="../views/docs/e58e05bb7c4054343c1df36ad2f0a936/opening-PDF-file.png" alt="Opening the PDF file" /></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Beginner-Course/opening-PDF-file.png" alt="Opening the PDF file" /></p>
                         <p>We can see a new <code>sales_results.pdf</code> file appear in the <code>output</code> directory, containing the sales data!</p>
                         <h4 id="what-we-learned">What we learned</h4>
                         <ul>
@@ -221,8 +221,8 @@ Insert the sales data for the week and export it as a PDF
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=logging-out-and-closing-the-browser">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=collecting-the-results"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

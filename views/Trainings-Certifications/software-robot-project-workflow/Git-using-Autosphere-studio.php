@@ -14,7 +14,8 @@
                   <i class="material-icons">more_vert</i>
                 </a>
                 <ul class="dropdown-menu pull-right">
-                  <li><a href="javascript:void(0);">Next</a></li>
+                  <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=Uploading files to git">Next</a></li>
+                  <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=setting-up-a-version-control-repository">Previous</a></li>
                 </ul>
               </li>
             </ul>
@@ -30,7 +31,7 @@
             </aside>
             <h4 id="creating-a-safe-environment-for-innovation-and-testing-out-features">Opening Autosphere Studio</h4>
             <p>Open Autosphere studio and navigate to WeeklyDataUpdate directory.</p>
-            <p><img src="../views/docs/Git/8.PNG" alt=""></p>
+            <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/8.PNG" alt=""></p>
             <h4 id="creating-a-safe-environment-for-innovation-and-testing-out-features">Creating .ipynb File</h4>
             <p>Create a new <code>.ipynb File</code>, set its name to <code>Task.ipynb</code> and copy the code you develop during the <a href="../../views/docs.php?page=courses/beginners-course">Beginners&#x27; course.</a></p>
             <div class="sc-idOhPF kGntgQ">
@@ -106,12 +107,12 @@ Insert the sales data for the week and export it as a PDF
             <h4 id="creating-a-safe-environment-for-innovation-and-testing-out-features">Commiting and Pushing File to Git</h4>
             <h4 id="creating-a-safe-environment-for-innovation-and-testing-out-features">Opening Git</h4>
             <p>Open Git from the sidebar in Autosphere Studio</p>
-            <p><img src="../views/docs/Git/opening-git-from-sidebar.gif" alt=""></p>
+            <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/opening-git-from-sidebar.gif" alt=""></p>
             <h4 id="creating-a-safe-environment-for-innovation-and-testing-out-features">Commiting and Pushing <code>Task.ipynb</code> to Git</h4>
             <p>Commit the <code>Task.ipynb</code> and then push it to Git repository.</p>
-            <p><img src="../views/docs/Git/pushing-to-repository.gif" alt=""></p>
+            <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/pushing-to-repository.gif" alt=""></p>
             <p>Now the <code>Task.ipynb</code> has been pushed to <code>WeeklyDataUpdate</code> repository. Lets check the repository for the changes.</p>
-            <p><img src="../views/docs/Git/checking-new-task-file.gif" alt=""></p>
+            <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/checking-new-task-file.gif" alt=""></p>
             <p><code>Task.ipynb</code> has successfully been pushed to <code>WeeklyDataUpdate</code> repository.</p>
 
 
@@ -121,8 +122,8 @@ Insert the sales data for the week and export it as a PDF
     </div>
     <!-- #END# Headings -->
     <aside class="cdpwWb">
-      <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-      <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter </a></div>    
+      <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=Uploading files to git">Next chapter <i class="material-icons">navigate_next</i></a></div>
+      <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=setting-up-a-version-control-repository"><i class="material-icons">navigate_before</i> Previous chapter </a></div>    
     </aside>
   </div>
 </section>

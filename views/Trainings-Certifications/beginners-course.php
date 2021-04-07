@@ -14,7 +14,7 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=marias-task">Next</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -37,7 +37,7 @@
                         <p>Completing the course should take around <strong>two to three hours</strong>. You do not have to go through it all in one go, you can do it in steps and come back anytime.</p>
                         <p>Take a look at this Training Portal. Which you are gonna use to develop your skills in Autosphere.</p>
                         <div id="Training_Icon">
-                            <p><img class="img-responsive" src="../images/Training.PNG" alt=""></p>
+                            <p><img class="img-responsive" src="../images/Training-Certifications/Beginner-Course/Training.PNG" alt=""></p>
                         </div>
                         <!--<p>Take a look at this video to get an idea of how our tools like and the type of tasks we will take on in this course:</p>-->
                         <p class="m-r-30">
@@ -51,7 +51,7 @@
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
         </aside>
     </div>
 </section>

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="icon" href="../web/images/fev.png" type="image/x-icon">
-        <title>Training And Certifications</title>
+        <title>Autosphere Portal</title>
 
         <!-- Favicon-->
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -221,6 +221,19 @@
                 switch ($node) {
                     case 'Autosphere-framework':
                         switch ($subnode) {
+                            case 'intro':
+                                include $page . "/$node.php";
+                                break;
+                            case '':
+                                include $page . "/$node.php";
+                                break;
+                            default:
+                                include $page . "/$node/$subnode.php";
+                                break;
+                        }
+                        break;
+                    case 'built-in':
+                        switch ($subnode){
                             case 'intro':
                                 include $page . "/$node.php";
                                 break;

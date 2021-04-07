@@ -14,8 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
-                                    <li><a href="javascript:void(0);">Previous</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=filling-in-the-sales-form-using-excel-data">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=filling-in-the-sales-form">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -77,10 +77,7 @@ Library           Autosphere.HTTP
                         </p>
                         <p>So our keyword becomes:</p>
                         <div class="sc-idOhPF kGntgQ">
-                            <div class="sc-dIUggk XavQL"><button type="button"><svg height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 5h2a3 3 0 003-3 2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2 3 3 0 003 3zM6 2a2 2 0 114 0 1 1 0 01-1 1H7a1 1 0 01-1-1z">
-                                        </path>
-                                    </svg></button></div>
+                            <div class="sc-dIUggk XavQL"></div>
                             <div>
                                 <pre><code class="line-numbers language-robot"><code class="language-robot">*** Keywords ***
 Download The Excel file
@@ -132,7 +129,7 @@ Insert the sales data for the week and export it as a PDF
                         <p>Great! Our robot has downloaded the remote file, and put it alongside our
                             <code>Tasks.ipynb</code> script:
                         </p>
-                        <p><img src="../views/docs/7c7abb6c17818e0b30531969fce1e5df/excel-file-in-file-viewer.png" alt="Excel file in file viewer" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/excel-file-in-file-viewer.png" alt="Excel file in file viewer" /></p>
                         <h4 id="what-we-learned">What we learned</h4>
                         <ul>
                             <li>You can use the <code>Autosphere.HTTP</code> library, part of the <code>Autosphere</code> package, to interact with remote webservers.</li>
@@ -146,8 +143,8 @@ Insert the sales data for the week and export it as a PDF
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=filling-in-the-sales-form-using-excel-data">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=filling-in-the-sales-form"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

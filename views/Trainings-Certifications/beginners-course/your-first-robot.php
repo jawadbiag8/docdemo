@@ -14,8 +14,8 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
-                                    <li><a href="javascript:void(0);">Previous</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=getting-to-the-intranet">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=marias-task">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -28,12 +28,12 @@
                         </aside>
                         <h4 id="view-the-structure">View the structure</h4>
                         <p>Once you have the <code>Training.Autosphere-starter</code> robot open, you will see files on the left of the Autosphere Studio screen.</p>
-                        <p><img src="../views/docs/fffa610e10672d418f9af43d834a108b/Autosphere-lab-file-navigator.png" alt="Autosphere Lab - File navigator" /></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-file-navigator.PNG" alt=""></p>
                         <p>Select the Autosphere file under Notebook category. An untitled.ipynb file will open. You can rename it by right-clicking the untitled.ipynb to Tasks.ipynb in directory.</p>
                         <h4 id="open-the-robot-file">Open the robot file</h4>
-                        <p><img src="../views/docs/bf4f64d7afb9ff980df588f908d3242e/Autosphere-Navigator.PNG" alt=""></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-Navigator.PNG" alt=""></p>
                         <p>Double-click the <code>Tasks.ipynb</code> file to open it in Notebook mode:</p>
-                        <p><img src="../views/docs/bf4f64d7afb9ff980df588f908d3242e/Autosphere-lab-robot-file-in-notebook-mode.png" alt="Autosphere Lab - Robot file in Notebook mode" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-robot-file-in-notebook-mode.png" alt="Autosphere Lab - Robot file in Notebook mode" /></p>
                         <h4 id="notebook-mode">Notebook mode?</h4>
                         <p><code>.robot</code> files are text files. Opening them in Autosphere Lab in Notebook mode adds the possibility of running your robot directly from the user interface, and enables more advanced ways of working on your robot code.</p>
                         <p>The Notebook interface is based on the idea of <strong>cells</strong>: cells can be executed individually, rearranged, duplicated, etc.</p>
@@ -41,7 +41,7 @@
                         <p>You can edit the contents of a cell by clicking on it.</p>
                         <p>You can add a new cell using the <code>+</code> button on the toolbar, and you can remove (cut) a cell using the <code>Scissors</code> button:</p>
                         <p>You can undo the removing or adding of a cell by pressing the <code>Z</code> key.</p>
-                        <p><img src="../views/docs/ae7efec5cd7f88850a4dadf1c51c1c48/Autosphere-lab-adding-removing-cells.gif" alt="Autosphere Lab - adding removing cells" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-adding-removing-cells.gif" alt="Autosphere Lab - adding removing cells" /></p>
 
                         <h4 id="run-the-robot">Run the robot</h4>
                         <p>Great! The robot is ready for action. Press the <code>&gt;&gt;</code> icon in the toolbar. A modal with the question &quot;Restart Kernel?&quot; appears. Click on <code>Restart</code>. The robot completes the task of saying &quot;Hello
@@ -50,15 +50,15 @@
                         <h4 id="view-the-task-log">View the task log</h4>
                         <p>Your robot writes a <em>log</em> of everything it did during the execution of the task. When developing your robot, viewing the log lets you see what your robot did in detail.</p>
                         <p>After the task is completed, a <code>Log</code> button appears at the bottom of the Notebook. Click on it to open the log file.</p>
-                        <p><img src="../views/docs/e015bff76ffe0756885735dc7aa21811/Autosphere-lab-log-button.png" alt="Autosphere Lab - Log button" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-log-button.png" alt="Autosphere Lab - Log button" /></p>
                         <p>A log window opens. </p>
-                        <p><img src="../views/docs/b0a87867265e0dd562809491337f27e6/Log.png" alt=""></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Log.png" alt=""></p>
                         <p>At the bottom of the window you see &quot;TASK Say Hello to the World&quot;. Hover over it and click the <code>⌄</code> icon (<code>Expand all</code>) on the right to expand it:
                         </p>
-                        <p><img src="../views/docs/b0a87867265e0dd562809491337f27e6/Autosphere-lab-log-task-accordion-closed.png" alt="Autosphere Lab - Log - Task accordion, closed" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-log-task-accordion-closed.png" alt="Autosphere Lab - Log - Task accordion, closed" /></p>
                         <p>On the last line in the log, you see &quot;Hello World!&quot;. Hurray! The robot successfully greeted the world!:
                         </p>
-                        <p><img src="../views/docs/f7c9421518bede325a1e686ff7b3703f/Autosphere-lab-log-task-accordion-open.png" alt="Autosphere Lab - Log - Task accordion open" /></p>
+                        <p><img src="../images/Training-Certifications/Beginner-Course/Autosphere-lab-log-task-accordion-open.png" alt="Autosphere Lab - Log - Task accordion open" /></p>
 
 
                         <h4 id="the-anatomy-of-a-robot">The anatomy of a robot </h4>
@@ -103,8 +103,8 @@ Say hello to the world
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
-            <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=getting-to-the-intranet">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=marias-task"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
         </aside>
     </div>
 </section>

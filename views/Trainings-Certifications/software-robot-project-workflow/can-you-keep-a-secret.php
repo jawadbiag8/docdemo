@@ -30,15 +30,15 @@
                         </aside>
                         <h4 id="why-so-serious">Gitbash Console</h4>
                         <p>Open Gitbash Console in Autosphere Workspace By right click in the folder.</p>
-                        <p><img src="../views/docs/Git/opening-git-in-the-directory.gif" alt=""></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/opening-git-in-the-directory.gif" alt=""></p>
                         <p>This is the Gitbash Console:</p>
-                        <p><img src="../views/docs/Git/6.PNG" alt=""></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/6.PNG" alt=""></p>
                         <h4 id="whats-the-issue">Creating Repository in Autosphere Workspace and uploading file in Gitlab</h4>
-                        <p><img src="../views/docs/Git/7.PNG" alt=""></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/7.PNG" alt=""></p>
                         <p>Execute the Commands in Gitbash Console given in the newly created project on the Gitlab.</p>
-                        <p><img src="../views/docs/Git/Executing-commands.gif" alt=""></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/Executing-commands.gif" alt=""></p>
                         <p>README file has been created in empty project <strong>WeeklyDataUpdate</strong> project.</p>
-                        <p><img src="../views/docs/Git/ReadME.PNG" alt=""></p>
+                        <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/ReadME.PNG" alt=""></p>
 
 
                     </div>

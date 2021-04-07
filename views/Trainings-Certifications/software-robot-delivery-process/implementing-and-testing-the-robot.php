@@ -14,7 +14,7 @@
                                     <i class="material-icons">more_vert</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Next</a></li>
+                                    <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-delivery-process&subnode=documenting-the-process">Previous</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -37,7 +37,7 @@
             </div>
             <!-- #END# Headings -->
             <aside class="cdpwWb">
-                <div class="float-right m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-delivery-process&subnode=documenting-the-process"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
             </aside>
         </div>
 </section>

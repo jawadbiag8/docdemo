@@ -14,7 +14,7 @@
                   <i class="material-icons">more_vert</i>
                 </a>
                 <ul class="dropdown-menu pull-right">
-                  <li><a href="javascript:void(0);">Next</a></li>
+                  <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=Git-using-Autosphere-studio">Previous</a></li>
                 </ul>
               </li>
             </ul>
@@ -105,12 +105,12 @@ Insert the sales data for the week and export it as a PDF
             <h4 id="creating-a-safe-environment-for-innovation-and-testing-out-features">Commiting and Pushing File to Git</h4>
             <h4 id="creating-a-safe-environment-for-innovation-and-testing-out-features">Opening Git</h4>
             <p>Open Git from the sidebar in Autosphere Studio</p>
-            <p><img src="../views/docs/Git/opening-git-from-sidebar.gif" alt=""></p>
+            <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/opening-git-from-sidebar.gif" alt=""></p>
             <h4 id="creating-a-safe-environment-for-innovation-and-testing-out-features">Commiting and Pushing <code>Task.ipynb</code> to Git</h4>
             <p>Commit the <code>Task.ipynb</code> and then push it to Git repository.</p>
-            <p><img src="../views/docs/Git/pushing-to-repository.gif" alt=""></p>
+            <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/pushing-to-repository.gif" alt=""></p>
             <p>Now the <code>Task.ipynb</code> has been pushed to <code>WeeklyDataUpdate</code> repository. Lets check the repository for the changes.</p>
-            <p><img src="../views/docs/Git/checking-new-task-file.gif" alt=""></p>
+            <p><img class="img-responsive" src="../images/Training-Certifications/Setting up SCM/checking-new-task-file.gif" alt=""></p>
             <p><code>Task.ipynb</code> has successfully been pushed to <code>WeeklyDataUpdate</code> repository.</p>
 
           </div>
@@ -119,7 +119,7 @@ Insert the sales data for the week and export it as a PDF
     </div>
     <!-- #END# Headings -->
     <aside class="cdpwWb">
-    <div class="m-b-50"><a class="next-btn" href="docs.php?page=courses/beginners-course/marias-task"><i class="material-icons">navigate_before</i> Previous chapter </a></div>
+    <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=Git-using-Autosphere-studio"><i class="material-icons">navigate_before</i> Previous chapter </a></div>
     </aside>
   </div>
 </section>
