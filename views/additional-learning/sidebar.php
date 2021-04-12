@@ -86,5 +86,44 @@
                 </li>       
             </ul>
         </li>
+        <li class="<?php
+                    if ($node == "development-howtos") {
+                        echo 'active';
+                    }
+                    ?>">
+            <a href="javascript:void(0);" class="menu-toggle">
+                <i class="material-icons">business_center</i>   
+                <span>Development Howtos</span>
+            </a>
+            <ul class="ml-menu">
+                <li class="<?php
+                            if ($subnode == "intro" || $subnode == '') {
+                                echo 'active';
+                            }
+                            ?>">
+                    <a href="documantation.php?page=additional-learning&node=development-howtos&subnode=intro">
+                        <span>Hello World</span>
+                    </a>
+                </li>
+                <li class="<?php
+                            if ($subnode == "web-scraper-robot") {
+                                echo 'active';
+                            }
+                            ?>">
+                    <a href="documantation.php?page=additional-learning&node=development-howtos&subnode=web-scraper-robot">
+                        <span>Browser and Web Automation</span>
+                    </a>
+                </li> 
+                <li class="<?php
+                            if ($subnode == "Excel-creating") {
+                                echo 'active';
+                            }
+                            ?>">
+                    <a href="documantation.php?page=additional-learning&node=development-howtos&subnode=Excel-creating">
+                        <span>Excel Automation</span>
+                    </a>
+                </li>   
+            </ul>
+        </li>
     </ul>
 </div>

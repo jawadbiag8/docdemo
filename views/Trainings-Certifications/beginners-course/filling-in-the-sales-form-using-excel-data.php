@@ -98,7 +98,7 @@ Fill The Form Using The Data From The Excel File
                             <code>Close Workbook</code> keyword to close it.
                         </p>
                         <blockquote>
-                            <p>Friendly reminder: you can see the full list of keywords that the library provides on <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/Autosphere-framework/Autosphere-excel-files">its documentation
+                            <p>Friendly reminder: you can see the full list of keywords that the library provides on <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-excel-files">its documentation
                                     page</a>.</p>
                         </blockquote>
                         <p>At this point, our keyword looks like this:</p>

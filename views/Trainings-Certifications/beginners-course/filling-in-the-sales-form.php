@@ -35,7 +35,7 @@
                         </p>
                         <p>Modify the <code>*** Tasks ***</code> cell like this:</p>
                         <div class="sc-idOhPF kGntgQ">
-                            <div class="sc-dIUggk XavQL">s</div>
+                            
                             <div>
                                 <pre><code class="line-numbers language-robot"><code class="language-robot">*** Tasks ***
 Insert the sales data for the week and export it as a PDF

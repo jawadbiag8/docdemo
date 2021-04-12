@@ -93,7 +93,7 @@ Collect The Results
                         <p>But what are those variables?</p>
                         <ul>
                             <li>
-                                <p><code>${CURDIR}</code> is a special <a href="<?php echo $baseusrl; ?>views/docs.php?page=Autosphere/Autosphere-variables">built-in
+                                <p><code>${CURDIR}</code> is a special <a href="documantation.php?page=additional-learning&node=Additional-learning&subnode=Autosphere-variables">built-in
                                         Autosphere variable</a> that represents the <em>current directory</em>, or the directory where our <code>tasks.robot</code> file is.</p>
                             </li>
                             <li>
@@ -177,9 +177,9 @@ Insert the sales data for the week and export it as a PDF
                             <li>The <code>Screenshot</code> keyword of the <code>Autosphere.Browser</code> library takes screenshots of elements.</li>
                             <li>Knowing how to use locators gets you a long way when automating web-based applications.</li>
                             <li>There are many types of locators. Choose the simplest one for your use case!</li>
-                            <li>The <code>${CURDIR}</code> <a href="<?php echo $baseusrl; ?>views/docs.php?page=Autosphere/Autosphere-variables">built
+                            <li>The <code>${CURDIR}</code> <a href="documantation.php?page=additional-learning&node=Additional-learning&subnode=Autosphere-variables">built
                                     in variable</a> represents the current directory where our task file resides.</li>
-                            <li>The <code>${/}</code> <a href="<?php echo $baseusrl; ?>views/docs.php?page=Autosphere/Autosphere-variables">built
+                            <li>The <code>${/}</code> <a href="documantation.php?page=additional-learning&node=Additional-learning&subnode=Autosphere-variables">built
                                     in variable</a> represents the path separator for the current operating system.</li>
                             <li>The <code>output</code> folder is where we should put all files that our robot generates.
                             </li>

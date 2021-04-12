@@ -68,7 +68,7 @@ Log In
                             <em>locators</em>. Think of a locator as the street address for an element, such as the username field on the Autosphere Training Portal login page.
                         </p>
                         <blockquote>
-                            <p>If you want, you can go deeper and learn more about how to find interface elements in web applications and the concept of locators <a href="<?php echo $baseusrl; ?>views/docs.php?page=development-howtos/browser/web-scraper-robot">in
+                            <p>If you want, you can go deeper and learn more about how to find interface elements in web applications and the concept of locators <a href="documantation.php?page=additional-learning&node=development-howtos&subnode=web-scraper-robot">in
                                     this dedicated article</a>.</p>
                         </blockquote>
                         <p>This is what the username field HTML markup looks like:</p>

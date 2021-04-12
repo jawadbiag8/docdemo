@@ -193,8 +193,8 @@
                                 <li><a href="#">Benefits</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                            <p class="copyright">Company Name © 2018</p>
+                        <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                            <p class="copyright">Mercurial Minds © 2018</p>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
             <script src="../web/js/jquery-2.2.3.min.js"></script>
             <script src="../web/js/scroll_menu.js"></script>
             <script src="../web/js/jquery.chocolat.js "></script>
-            <link rel="stylesheet " href="../web/css/chocolat.css " type="text/css " media="screen ">
+         <link rel="stylesheet " href="../web/css/chocolat.css " type="text/css " media="screen "> 
             <script src="../web/js/move-top.js"></script>
             <script>
                 jQuery(document).ready(function ($) {

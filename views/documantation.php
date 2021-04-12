@@ -288,6 +288,19 @@
                             break;
                     }
                     break;
+                    case 'development-howtos':
+                        switch ($subnode) {
+                            case 'intro':
+                                include $page . "/$node.php";
+                                break;
+                            case '':
+                                include $page . "/$node.php";
+                                break;
+                            default:
+                                include $page . "/$node/$subnode.php";
+                                break;
+                        }
+                        break;
                 default:
                     header('Location: ../views/');
             }
