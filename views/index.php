@@ -104,7 +104,7 @@
                                     <i class='fas tile-icon  fa-certificate'></i>
                                     <h4>Trainings & Certifications</h4>
                                     <p>
-                                        Quickstart teaches you the basics of our products
+                                     You will learn how to automate processes using Autosphere tools
                                     </p>
                                 </div>
                             </a> 
@@ -116,7 +116,7 @@
                                     <i class='fas tile-icon  fa-graduation-cap'></i>
                                     <h4>Additional Learning</h4>
                                     <p>
-                                        Quickstart teaches you the basics of our products
+                                        You wil learn the additional concepts of Autosphere
                                     </p>
                                 </div>
                             </a>
@@ -142,7 +142,7 @@
                                     <i class='fas tile-icon  fa-book'></i>
                                     <h4>Product Manual</h4>
                                     <p>
-                                        Quickstart teaches you the basics of our products
+                                    Product Manual will give the overview of Autosphere's security
                                     </p>
                                 </div>
                             </a>
