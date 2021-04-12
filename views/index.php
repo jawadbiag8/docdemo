@@ -111,10 +111,10 @@
                         </div>
 
                         <div class="col-md-3 ab-bottom-grid img">
-                            <a href="">
+                            <a href="documantation.php?page=additional-learning&node=Additional-learning&subnode=intro">
                                 <div class="box">
                                     <i class='fas tile-icon  fa-graduation-cap'></i>
-                                    <h4>Additional Learning:</h4>
+                                    <h4>Additional Learning</h4>
                                     <p>
                                         Quickstart teaches you the basics of our products
                                     </p>
@@ -128,7 +128,7 @@
                                     <i class='fas tile-icon  fa-robot'></i>
                                     <h4>Automation Libraries</h4>
                                     <p>
-                                        Quickstart teaches you the basics of our products
+                                    Libraries to support Autosphere workflows
                                     </p>
                                 </div>
                             </a>
@@ -137,7 +137,7 @@
                     <div class="row">
                         <div class="col-md-3 ab-bottom-grid img"></div>
                         <div class="col-md-3 ab-bottom-grid img">
-                            <a href=""> 
+                            <a href="documantation.php?page=product-manual&node=Autosphere&subnode=intro"> 
                                 <div class="box">
                                     <i class='fas tile-icon  fa-book'></i>
                                     <h4>Product Manual</h4>

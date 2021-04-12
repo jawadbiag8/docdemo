@@ -19,9 +19,9 @@
                         <h4>Autosphere</h4>
                         <p class="m-b-15">Software robots are built with Autosphere, which has an easy to read syntax that you will quickly grasp. You can learn more about Autosphere from these articles:</p>
                         <ul class="m-b-20">
-                            <li><a href="" class="theme-link">Basic concepts</a></li>
-                            <li><a href="" class="theme-link">Basic syntax</a></li>
-                            <li><a href="" class="theme-link">What are keywords?</a></li>
+                            <li><a href="documantation.php?page=additional-learning&node=Additional-learning&subnode=intro" class="theme-link">Basic concepts</a></li>
+                            <li><a href="documantation.php?page=additional-learning&node=Additional-learning&subnode=Autosphere-syntax" class="theme-link">Basic syntax</a></li>
+                            <li><a href="documantation.php?page=additional-learning&node=Additional-learning&subnode=Autosphere-keywords" class="theme-link">What are keywords?</a></li>
                         </ul>
                         <h4>From developer to developers</h4>
                         <p class="m-b-30">To help you develop faster, we maintain and develop a organized selection of libraries, that support the most common Autosphere use cases. Our open ecosystem is also extendable with any external Python library.</p>
