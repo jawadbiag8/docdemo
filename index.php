@@ -1,7 +1,7 @@
 <?php
 include("config/database.php");
 $successful = "false";
-session_start();
+//session_start();
 $error = "";
 if (isset($_POST['login'])) {
     $error = "none";
@@ -39,7 +39,7 @@ if (isset($_POST['login'])) {
                         exit(0);
                     }
                     if ($row['type'] == "user") {
-                        header("Location: views/docs.php");
+                        header("Location: views/");
                         exit(0);
                     }
                 }

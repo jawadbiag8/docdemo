@@ -1,10 +1,16 @@
+<?php
+include("../config/database.php");
+if (isset($_GET)) {
+//    echo '<script>window.history.pushState(NULL, "Your New Title", "/new-url");</script>';
+}
+?>
 ﻿<!DOCTYPE html>
 <html>
 
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Typography | Bootstrap Based Admin Template - Material Design</title>
+        <title>Community</title>
 
         <!-- Favicon-->
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
@@ -27,6 +33,30 @@
 
         <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
         <link href="../css/themes/all-themes.css" rel="stylesheet" />
+
+
+
+        <!-- Colorpicker Css -->
+        <link href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+
+        <!-- Dropzone Css -->
+        <link href="../plugins/dropzone/dropzone.css" rel="stylesheet">
+
+        <!-- Multi Select Css -->
+        <link href="../plugins/multi-select/css/multi-select.css" rel="stylesheet">
+
+        <!-- Bootstrap Spinner Css -->
+        <link href="../plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+        <!-- Bootstrap Tagsinput Css -->
+        <link href="../plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+        <!-- Bootstrap Select Css -->
+        <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+        <!-- noUISlider Css -->
+        <link href="../plugins/nouislider/nouislider.min.css" rel="stylesheet" />
+
     </head>
 
     <body class="theme-red">
@@ -96,7 +126,7 @@
                 if (isset($_GET['page'])) {
                     $page = $_GET['page'];
                 } else {
-                    $page='';
+                    $page = '';
                 }
                 if (isset($_GET['node'])) {
                     $node = $_GET['node'];
@@ -119,6 +149,8 @@
                         require 'community/sidebar.php';
                 }
                 ?>
+                <br>
+                <br>
                 <!-- #Menu -->
                 <!-- Footer -->
                 <div class="legal">
@@ -146,30 +178,46 @@
             </aside>
             <!-- #END# Right Sidebar -->
         </section>
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="card">
+                            <div class="body">
+                                <div class="row clearfix">
+                                    <div class="col-lg-3">
+                                        <select id="categories" class="form-control">
+                                            <option value="0">All Categories</option>
+                                            <?php
+                                            $sql = "SELECT * FROM categories";
+                                            $result = mysqli_query($conn, $sql);
+                                            while ($res = mysqli_fetch_array($result)) {
+                                                ?>
+                                                <option value="<?php echo $res['id']; ?>" data-subtext="<?php echo $res['cat_details']; ?>"><?php echo $res['cat_name']; ?></option>
+                                            <?php } ?>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <select id="subcategories" name="subcategory" class="form-control">
+                                            <option value="0">All Subcategories</option>
 
-        <?php
-        switch ($page) {
-            case 'community':
-                switch ($node) {
-                    case 'quickstart-guide':
-                        include 'guide/index.php';
-                        break;
-                    case 'installation-guide':
-                        include 'guide/installation-guide.php';
-                        break;
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-3">
+                                        <a href="../views/addpost.php" class="btn addcomment">Add Post</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="contentpage">
 
-                    default:
-                        include 'community/index.php';
-                        break;
-                }
-                break;
 
-            default:
-                include 'community/index.php';
-                break;
-        }
-        ?>
-
+        </section>
         <!-- Jquery Core Js -->
         <script src="../plugins/jquery/jquery.min.js"></script>
 
@@ -177,7 +225,7 @@
         <script src="../plugins/bootstrap/js/bootstrap.js"></script>
 
         <!-- Select Plugin Js -->
-        <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+        <!--<script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>-->
 
         <!-- Slimscroll Plugin Js -->
         <!--<script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>-->
@@ -190,6 +238,211 @@
 
         <!-- Demo Js -->
         <!--<script src="../js/demo.js"></script>-->
+
+
+        <script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+
+        <!-- Dropzone Plugin Js -->
+        <script src="../plugins/dropzone/dropzone.js"></script>
+
+        <!-- Input Mask Plugin Js -->
+        <script src="../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+
+        <!-- Multi Select Plugin Js -->
+        <script src="../plugins/multi-select/js/jquery.multi-select.js"></script>
+
+        <!-- Jquery Spinner Plugin Js -->
+        <script src="../plugins/jquery-spinner/js/jquery.spinner.js"></script>
+
+        <!-- Bootstrap Tags Input Plugin Js -->
+        <script src="../plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+        <!-- noUISlider Plugin Js -->
+        <!--<script src="../plugins/nouislider/nouislider.js"></script>-->
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <!-- Custom Js -->
+        <!--<script src="../js/pages/forms/advanced-form-elements.js"></script>-->
+        <script>
+            function ucfirst(str, force) {
+                str = force ? str.toLowerCase() : str;
+                return str.replace(/(\b)([a-zA-Z])/,
+                        function (firstLetter) {
+                            return   firstLetter.toUpperCase();
+                        });
+            }
+            function matchCustom(params, data) {
+//                debugger;
+                // If there are no search terms, return all of the data
+                if ($.trim(params.term) === '') {
+                    return data;
+                }
+
+                // Do not display the item if there is no 'text' property
+                if (typeof data.text === 'undefined') {
+                    return null;
+                }
+
+                // `params.term` should be the term that is used for searching
+                // `data.text` is the text that is displayed for the data object
+                if (data.text == 'Select Category') {
+                } else {
+                    if (data.text.indexOf(ucfirst(params.term, true)) > -1) {
+                        var modifiedData = $.extend({}, data, true);
+                        modifiedData.text += ' (matched)';
+
+                        // You can return modified objects from here
+                        // This includes matching the `children` how you want in nested data sets
+                        return modifiedData;
+                    }
+                }
+
+                // Return `null` if the term should not be displayed
+                return null;
+            }
+
+            $(document).ready(function () {
+                pageload();
+                updatelist();
+                $("#categories").select2({
+                    matcher: matchCustom
+                });
+                $("#subcategories").select2({
+                    matcher: matchCustom
+                });
+                $("#categories").change(function () {
+                    var categories = $(this).val();
+                    name = $("#categories option:selected").text();
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '../backend-script/community.php',
+                        data: {'categories': categories},
+                        success: function (result) {
+                            $("#subcategories").empty();
+
+                            if (result == '') {
+                                $("#headerlable").html("All");
+                                updatelist();
+                                pageload();
+                                var res = "<option value=0>All Subcategories</option>";
+
+                            } else {
+                                var obj = JSON.parse(result);
+
+                                var res = "<option value=0>All " + name + "</option>";
+
+                                $("#headerlable").html(name);
+                                for (i = 0; i < obj['row'].length; i++) {
+                                    res += "<option value='" + obj["row"][i][0] + "'>" + obj["row"][i][1] + "</option>";
+                                }
+                                updatelist(categories);
+                                pageload();
+                            }
+
+                            $("#subcategories").append(res);
+
+                        }
+                    });
+                });
+                $("#subcategories").change(function () {
+
+                    pageload();
+
+                });
+
+            });
+            function pageload(cat = $("#categories").val(), subcat = $("#subcategories").val()) {
+                $.ajax({
+                    type: 'POST',
+                    url: '../views/community/topics.php',
+                    data: {'cat': cat, "subcat": subcat},
+
+                    success: function (result) {
+//                            debugger;
+                        $("#contentpage").empty();
+                        $("#contentpage").html(result);
+                    }
+                });
+            }
+            function addPost() {
+                $.ajax({
+                    type: 'POST',
+                    url: '../views/community/addpost.php',
+                    data: {'action': "add"},
+
+                    success: function (result) {
+//                    
+                    }
+                });
+            }
+            function postload(postid) {
+                $.ajax({
+                    type: 'POST',
+                    url: '../views/community/post.php',
+                    data: {'postid': postid},
+
+                    success: function (result) {
+//                            debugger;
+                        $("#contentpage").empty();
+                        $("#contentpage").html(result);
+                    }
+                });
+            }
+            function addcomment(postid) {
+                var comment = $("#commentdata").val();
+                if (comment == '') {
+                    $("#formdiv").addClass("focused error");
+                } else {
+                    $("#formdiv").removeClass("focused error");
+                    $.ajax({
+                        type: 'POST',
+                        url: '../backend-script/community.php',
+                        data: {'postid': postid, 'comment': comment, 'flag': "add_comment"},
+
+                        success: function (result) {
+//                            debugger;
+                            postload(postid);
+                        }
+                    });
+                }
+            }
+            function likepost(postid, type) {
+                $.ajax({
+                    type: 'POST',
+                    url: '../backend-script/community.php',
+                    data: {'postid': postid, 'type': type, 'flag': "likepost"},
+
+                    success: function (result) {
+//                            debugger;
+                        if (type == 'post') {
+                            postload(postid);
+                        } else {
+                            postload($("#post_id").val());
+                        }
+                    }
+                });
+            }
+            function updatelist(catid = '') {
+//                debugger;
+//                alert(catid);
+                $.ajax({
+                    type: 'POST',
+                    url: '../backend-script/community.php',
+                    data: {'catid': catid, 'flag': "update_list"},
+
+                    success: function (result) {
+//                            debugger;
+                        $(".ul_list").empty();
+                        $(".ul_list").append(result);
+
+                    }
+                });
+            }
+        </script>
+
+        <!-- Demo Js -->
+
     </body>
 
 </html>
