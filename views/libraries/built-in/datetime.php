@@ -46,8 +46,8 @@
                                         <div>
                                             <p>A test library for handling date and time values.</p>
                                             <p><code>DateTime</code> is a Autosphere standard library that supports creating and converting date and
-                                                time values (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/datetime/keywords#get-current-date" class="name">Get Current Date</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/datetime/keywords#convert-time" class="name">Convert Time</a>), as well as doing simple calculations with them
-                                                (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/datetime/keywords#subtract-time-from-date" class="name">Subtract Time From Date</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/datetime/keywords#add-time-to-time" class="name">Add Time To Time</a>). It supports dates and times in
+                                                time values (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=datetime#get-current-date" id="link-get-current-date" class="name">Get Current Date</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=datetime#convert-time" id="link-convert-time" class="name">Convert Time</a>), as well as doing simple calculations with them
+                                                (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=datetime#subtract-time-from-date" id="link-subtract-time-from-date" class="name">Subtract Time From Date</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=datetime#add-time-to-time" id="link-add-time-to-time" class="name">Add Time To Time</a>). It supports dates and times in
                                                 various formats, and can also be used by other libraries programmatically.</p>
                                             <h4 id="Table of contents">Table of contents</h4>
                                             <ul>

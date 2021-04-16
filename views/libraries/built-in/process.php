@@ -48,10 +48,10 @@
                                             <p>This library utilizes Python's <a href="http://docs.python.org/library/subprocess.html">subprocess</a> module and its <a href="http://docs.python.org/library/subprocess.html#popen-constructor">Popen</a> class.</p>
                                             <p>The library has following main usages:</p>
                                             <ul>
-                                                <li>Running processes in system and waiting for their completion using <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a> keyword.</li>
-                                                <li>Starting processes on background using <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start Process</a>.</li>
-                                                <li>Waiting started process to complete using <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#wait-for-process" class="name">Wait For
-                                                        Process</a> or stopping them with <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a> or <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-all-processes" class="name">Terminate All Processes</a>.</li>
+                                                <li>Running processes in system and waiting for their completion using <a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a> keyword.</li>
+                                                <li>Starting processes on background using <a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start Process</a>.</li>
+                                                <li>Waiting started process to complete using <a href="documantation.php?page=libraries&node=built-in&subnode=process#wait-for-process" class="name">Wait For
+                                                        Process</a> or stopping them with <a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a> or <a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-all-processes" class="name">Terminate All Processes</a>.</li>
                                             </ul>
                                             <h4 id="Table of contents">Table of contents</h4>
                                             <ul>
@@ -65,7 +65,7 @@
                                                 <li><a href="#Keywords" class="name">Keywords</a></li>
                                             </ul>
                                             <h4 id="Specifying command and arguments">Specifying command and arguments</h4>
-                                            <p>Both <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a> and <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start
+                                            <p>Both <a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a> and <a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start
                                                     Process</a> accept the command to execute and all arguments passed to the command as separate arguments. This makes usage convenient and also allows these keywords to automatically escape possible spaces and other special characters in
                                                 commands and arguments. Notice that if a command accepts options that themselves accept values, these options and their values must be given as separate arguments.</p>
                                             <p>When <a href="#Running%20processes%20in%20shell" class="name">running processes in shell</a>, it is also possible to give the whole command to execute as a single string. The command can then contain multiple commands to be run together. When
@@ -74,7 +74,7 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>${tools}${/}prog.py</td>
                                                         <td>argument</td>
                                                         <td>second arg with spaces</td>
@@ -82,7 +82,7 @@
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>java</td>
                                                         <td>-jar</td>
                                                         <td>${jars}${/}example.jar</td>
@@ -90,7 +90,7 @@
                                                         <td>value</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>prog.py "one arg" &amp;&amp; tool.sh</td>
                                                         <td>shell=yes</td>
                                                         <td>cwd=${tools}</td>
@@ -101,7 +101,7 @@
                                             </table>
                                             <p>Possible non-string arguments are converted to strings automatically.</p>
                                             <h4 id="Process configuration">Process configuration</h4>
-                                            <p><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a> and <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start
+                                            <p><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a> and <a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start
                                                     Process</a> keywords can be configured using optional <code>**configuration</code> keyword arguments. Configuration arguments must be given after other arguments passed to these keywords and must use syntax like <code>name=value</code>.
                                                 Available configuration arguments are listed below and discussed further in sections afterwards.</p>
                                             <table border="1">
@@ -144,8 +144,8 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p>Note that because <code>**configuration</code> is passed using <code>name=value</code> syntax, possible equal signs in other arguments passed to <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a> and <a href="#Start%20Process" class="name">Start Process</a> must be escaped with a backslash like
-                                                <code>name\=value</code>. See <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a> for an example.
+                                            <p>Note that because <code>**configuration</code> is passed using <code>name=value</code> syntax, possible equal signs in other arguments passed to <a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a> and <a href="#Start%20Process" class="name">Start Process</a> must be escaped with a backslash like
+                                                <code>name\=value</code>. See <a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a> for an example.
                                             </p>
                                             <h4 id="Running processes in shell">Running processes in shell</h4>
                                             <p>The <code>shell</code> argument specifies whether to run the process in a shell or not. By default shell is not used, which means that shell specific commands, like <code>copy</code> and <code>dir</code> on Windows, are not available. You can,
@@ -164,7 +164,7 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>prog.exe</td>
                                                         <td>cwd=${ROOT}/directory</td>
                                                         <td>stdout=stdout.txt</td>
@@ -180,19 +180,19 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>program</td>
                                                         <td>env=${environ}</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>program</td>
                                                         <td>env:http_proxy=10.144.1.10:8080</td>
                                                         <td>env:PATH=%{PATH}${:}${PROGDIR}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>program</td>
                                                         <td>env=${environ}</td>
                                                         <td>env:EXTRA=value</td>
@@ -222,7 +222,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>${result} =</td>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>program</td>
                                                         <td>stdout=${TEMPDIR}/stdout.txt</td>
                                                         <td>stderr=${TEMPDIR}/stderr.txt</td>
@@ -236,7 +236,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td>${result} =</td>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>program</td>
                                                         <td>stderr=STDOUT</td>
                                                         <td></td>
@@ -250,7 +250,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td>${result} =</td>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>program</td>
                                                         <td>stdout=DEVNULL</td>
                                                         <td>stderr=DEVNULL</td>
@@ -268,13 +268,13 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start Process</a></td>
                                                         <td>program</td>
                                                         <td>output_encoding=UTF-8</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>program</td>
                                                         <td>stdout=${path}</td>
                                                         <td>output_encoding=SYSTEM</td>
@@ -288,14 +288,14 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start Process</a></td>
                                                         <td>program</td>
                                                         <td>alias=example</td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>python</td>
                                                         <td>-c</td>
                                                         <td>print 'hello'</td>
@@ -304,12 +304,12 @@
                                                 </tbody>
                                             </table>
                                             <h4 id="Active process">Active process</h4>
-                                            <p>The test library keeps record which of the started processes is currently active. By default it is latest process started with <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start Process</a>, but <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#switch-process" class="name">Switch Process</a> can be used to select a different one. Using <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a> does not affect the active process.</p>
-                                            <p>The keywords that operate on started processes will use the active process by default, but it is possible to explicitly select a different process using the <code>handle</code> argument. The handle can be the identifier returned by <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start Process</a> or an <code>alias</code> explicitly given to <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start Process</a> or <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a>.</p>
+                                            <p>The test library keeps record which of the started processes is currently active. By default it is latest process started with <a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start Process</a>, but <a href="documantation.php?page=libraries&node=built-in&subnode=process#switch-process" class="name">Switch Process</a> can be used to select a different one. Using <a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a> does not affect the active process.</p>
+                                            <p>The keywords that operate on started processes will use the active process by default, but it is possible to explicitly select a different process using the <code>handle</code> argument. The handle can be the identifier returned by <a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start Process</a> or an <code>alias</code> explicitly given to <a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start Process</a> or <a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a>.</p>
                                             <h4 id="Result object">Result object</h4>
-                                            <p><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#wait-for-process" class="name">Wait For
-                                                    Process</a> and <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a> keywords return a result object that contains information about the process execution as its attributes. The same result object, or some of its attributes,
-                                                can also be get using <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#get-process-result" class="name">Get
+                                            <p><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=process#wait-for-process" class="name">Wait For
+                                                    Process</a> and <a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a> keywords return a result object that contains information about the process execution as its attributes. The same result object, or some of its attributes,
+                                                can also be get using <a href="documantation.php?page=libraries&node=built-in&subnode=process#get-process-result" class="name">Get
                                                     Process Result</a> keyword. Attributes available in the object are documented in the table below.</p>
                                             <table border="1">
                                                 <tbody>
@@ -344,7 +344,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>${result} =</td>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a></td>
                                                         <td>program</td>
                                                     </tr>
                                                     <tr>
@@ -387,22 +387,22 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a></td>
                                                         <td>kill=True</td>
                                                         <td># Strings are generally true.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a></td>
                                                         <td>kill=yes</td>
                                                         <td># Same as the above.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a></td>
                                                         <td>kill=${TRUE}</td>
                                                         <td># Python <code>True</code> is true.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a></td>
                                                         <td>kill=${42}</td>
                                                         <td># Numbers other than 0 are true.</td>
                                                     </tr>
@@ -412,22 +412,22 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a></td>
                                                         <td>kill=False</td>
                                                         <td># String <code>false</code> is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a></td>
                                                         <td>kill=no</td>
                                                         <td># Also string <code>no</code> is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a></td>
                                                         <td>kill=${EMPTY}</td>
                                                         <td># Empty string is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a></td>
                                                         <td>kill=${FALSE}</td>
                                                         <td># Python <code>False</code> is false.</td>
                                                     </tr>
@@ -436,16 +436,16 @@
                                             <h4 id="Example">Example</h4>
                                             <pre><b>***</b> Settings <b>***</b>
     Library           Process
-    Suite Teardown    <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-all-processes" class="name">Terminate All Processes</a>    kill=True
+    Suite Teardown    <a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-all-processes" class="name">Terminate All Processes</a>    kill=True
     
     <b>***</b> Test Cases <b>***</b>
     Example
-        <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start Process</a>    program    arg1    arg2    alias=First
-        ${handle} =    <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#start-process" class="name">Start Process</a>    command.sh arg | command2.sh    shell=True    cwd=/path
-        ${result} =    <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#run-process" class="name">Run Process</a>    ${CURDIR}/script.py
+        <a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start Process</a>    program    arg1    arg2    alias=First
+        ${handle} =    <a href="documantation.php?page=libraries&node=built-in&subnode=process#start-process" class="name">Start Process</a>    command.sh arg | command2.sh    shell=True    cwd=/path
+        ${result} =    <a href="documantation.php?page=libraries&node=built-in&subnode=process#run-process" class="name">Run Process</a>    ${CURDIR}/script.py
         <span class="name">Should Not Contain</span>    ${result.stdout}    FAIL
-        <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#terminate-process" class="name">Terminate Process</a>    ${handle}
-        ${result} =    <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/process/keywords#wait-for-process" class="name">Wait For Process</a>    First
+        <a href="documantation.php?page=libraries&node=built-in&subnode=process#terminate-process" class="name">Terminate Process</a>    ${handle}
+        ${result} =    <a href="documantation.php?page=libraries&node=built-in&subnode=process#wait-for-process" class="name">Wait For Process</a>    First
         <span class="name">Should Be Equal As Integers</span>    ${result.rc}    0
     </pre>
                                         </div>

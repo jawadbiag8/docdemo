@@ -48,10 +48,10 @@
                                             <p><code>OperatingSystem</code> is Autosphere's standard library that enables various operating
                                                 system related tasks to be performed in the system where Autosphere is running. It can,
                                                 among other things, execute commands (e.g. <a href="#Run" class="name">Run</a>), create and
-                                                remove files and directories (e.g. <a href="#create-file" id="link-create-file"  class="">Create File</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#remove-directory" class="name">Remove Directory</a>), check whether files or
-                                                directories exists or contain something (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#file-should-exist" class="name">File
-                                                    Should Exist</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#directory-should-be-empty" class="name">Directory Should
-                                                    Be Empty</a>) and manipulate environment variables (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#set-environment-variable" class="name">Set Environment Variable</a>).</p>
+                                                remove files and directories (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#create-file" id="link-create-file"  class="">Create File</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a>), check whether files or
+                                                directories exists or contain something (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#file-should-exist" id="link-file-should-exist" class="name">File
+                                                    Should Exist</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#directory-should-be-empty" id="link-directory-should-be-empty" class="name">Directory Should
+                                                    Be Empty</a>) and manipulate environment variables (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#set-environment-variable" id="link-set-environment-variable" class="name">Set Environment Variable</a>).</p>
                                             <h4 id="Table of contents">Table of contents</h4>
                                             <ul>
                                                 <li><a href="#Path%20separators" class="name">Path separators</a></li>
@@ -122,25 +122,25 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#remove-directory" class="name">Remove Directory</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a></td>
                                                         <td>${path}</td>
                                                         <td>recursive=True</td>
                                                         <td># Strings are generally true.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#remove-directory" class="name">Remove Directory</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a></td>
                                                         <td>${path}</td>
                                                         <td>recursive=yes</td>
                                                         <td># Same as the above.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#remove-directory" class="name">Remove Directory</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a></td>
                                                         <td>${path}</td>
                                                         <td>recursive=${TRUE}</td>
                                                         <td># Python <code>True</code> is true.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#remove-directory" class="name">Remove Directory</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a></td>
                                                         <td>${path}</td>
                                                         <td>recursive=${42}</td>
                                                         <td># Numbers other than 0 are true.</td>
@@ -151,25 +151,25 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#remove-directory" class="name">Remove Directory</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a></td>
                                                         <td>${path}</td>
                                                         <td>recursive=False</td>
                                                         <td># String <code>false</code> is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#remove-directory" class="name">Remove Directory</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a></td>
                                                         <td>${path}</td>
                                                         <td>recursive=no</td>
                                                         <td># Also string <code>no</code> is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#remove-directory" class="name">Remove Directory</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a></td>
                                                         <td>${path}</td>
                                                         <td>recursive=${EMPTY}</td>
                                                         <td># Empty string is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/operatingsystem/keywords#remove-directory" class="name">Remove Directory</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" class="name">Remove Directory</a></td>
                                                         <td>${path}</td>
                                                         <td>recursive=${FALSE}</td>
                                                         <td># Python <code>False</code> is false.</td>
