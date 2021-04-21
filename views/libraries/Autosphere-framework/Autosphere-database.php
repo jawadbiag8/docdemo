@@ -650,12 +650,23 @@ Set Auto Commit   False     # auto commit is turned off
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-call-stored-procedure" href="#call-stored-procedure" class="">Call Stored
-                                                    Procedure</a><a id="link-connect-to-database" href="#connect-to-database" class="">Connect To Database</a><a id="link-description" href="#description" class="">Description</a><a id="link-disconnect-from-database" href="#disconnect-from-database" class="">Disconnect From Database</a><a id="link-execute-sql-script" href="#execute-sql-script" class="">Execute Sql Script</a><a id="link-get-number-of-rows" href="#get-number-of-rows" class="">Get Number Of Rows</a><a id="link-get-rows" href="#get-rows" class="">Get Rows</a><a id="link-query" href="#query" class="">Query</a><a id="link-set-auto-commit" href="#set-auto-commit" class="">Set Auto Commit</a></div>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-call-stored-procedure" href="#call-stored-procedure" class="">Call Stored Procedure</a></li>
+                                                    <li><a id="link-connect-to-database" href="#connect-to-database" class="">Connect To Database</a></li>
+                                                    <li><a id="link-description" href="#description" class="">Description</a></li>
+                                                    <li><a id="link-disconnect-from-database" href="#disconnect-from-database" class="">Disconnect From Database</a></li>
+                                                    <li><a id="link-execute-sql-script" href="#execute-sql-script" class="">Execute Sql Script</a></li>
+                                                    <li><a id="link-get-number-of-rows" href="#get-number-of-rows" class="">Get Number Of Rows</a></li>
+                                                    <li><a id="link-get-rows" href="#get-rows" class="">Get Rows</a></li>
+                                                    <li><a id="link-query" href="#query" class="">Query</a></li>
+                                                    <li><a id="link-set-auto-commit" href="#set-auto-commit" class="">Set Auto Commit</a></li>
+                                                </ul>
+                                            </div>
                                         </aside>
                                     </div>
                                 </div>

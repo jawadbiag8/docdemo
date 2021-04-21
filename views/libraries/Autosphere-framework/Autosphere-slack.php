@@ -148,11 +148,15 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-slack-message-using-webhook" href="#slack-message-using-webhook" class="">Slack Message Using Webhook</a></div>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-slack-message-using-webhook" href="#slack-message-using-webhook" class="">Slack Message Using Webhook</a></li>
+                                                </ul>
+                                            </div>
                                         </aside>
                                     </div>
                                 </div>

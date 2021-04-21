@@ -513,13 +513,27 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-close-document" href="#close-document" class="">Close Document</a><a id="link-create-new-document" href="#create-new-document" class="">Create New
-                                                    Document</a><a id="link-export-to-pdf" href="#export-to-pdf" class="">Export To Pdf</a><a id="link-get-all-texts" href="#get-all-texts" class="">Get All Texts</a><a id="link-open-application" href="#open-application" class="">Open Application</a><a id="link-open-file" href="#open-file" class="">Open File</a><a id="link-quit-application" href="#quit-application" class="">Quit Application</a><a id="link-replace-text" href="#replace-text" class="">Replace Text</a><a id="link-save-document" href="#save-document" class="">Save Document</a><a id="link-save-document-as" href="#save-document-as" class="">Save Document As</a>
-                                                <a id="link-set-footer" href="#set-footer" class="">Set Footer</a><a id="link-set-header" href="#set-header" class="">Set Header</a><a id="link-write-text" href="#write-text" class="">Write Text</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-close-document" href="#close-document" class="">Close Document</a></li>
+                                                    <li><a id="link-create-new-document" href="#create-new-document" class="">Create New Document</a></li>
+                                                    <li><a id="link-export-to-pdf" href="#export-to-pdf" class="">Export To Pdf</a></li>
+                                                    <li><a id="link-get-all-texts" href="#get-all-texts" class="">Get All Texts</a></li>
+                                                    <li><a id="link-open-application" href="#open-application" class="">Open Application</a></li>
+                                                    <li><a id="link-open-file" href="#open-file" class="">Open File</a></li>
+                                                    <li><a id="link-quit-application" href="#quit-application" class="">Quit Application</a></li>
+                                                    <li><a id="link-replace-text" href="#replace-text" class="">Replace Text</a></li>
+                                                    <li><a id="link-save-document" href="#save-document" class="">Save Document</a></li>
+                                                    <li><a id="link-save-document-as" href="#save-document-as" class="">Save Document As</a></li>
+                                                    <li><a id="link-set-footer" href="#set-footer" class="">Set Footer</a></li>
+                                                    <li><a id="link-set-header" href="#set-header" class="">Set Header</a></li>
+                                                    <li><a id="link-write-text" href="#write-text" class="">Write Text</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

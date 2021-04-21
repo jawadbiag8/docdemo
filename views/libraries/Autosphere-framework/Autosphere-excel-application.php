@@ -685,18 +685,28 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-add-new-sheet" href="#add-new-sheet" class="">Add New Sheet</a><a id="link-add-new-workbook" href="#add-new-workbook" class="">Add New Workbook</a><a id="link-close-document" href="#close-document" class="">Close Document</a><a id="link-find-first-available-row" href="#find-first-available-row" class="">Find First
-                                                    Available Row</a><a id="link-open-application" href="#open-application" class="">Open
-                                                    Application</a><a id="link-open-workbook" href="#open-workbook" class="">Open
-                                                    Workbook</a><a id="link-quit-application" href="#quit-application" class="">Quit
-                                                    Application</a><a id="link-read-from-cells" href="#read-from-cells" class="">Read From
-                                                    Cells</a><a id="link-run-macro" href="#run-macro" class="">Run Macro</a><a id="link-save-excel" href="#save-excel" class="">Save Excel</a><a id="link-save-excel-as" href="#save-excel-as" class="">Save Excel As</a>
-                                                <a id="link-set-active-worksheet" href="#set-active-worksheet" class="">Set Active Worksheet</a><a id="link-write-to-cells" href="#write-to-cells" class="">Write To Cells</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-add-new-sheet" href="#add-new-sheet" class="">Add New Sheet</a></li>
+                                                    <li><a id="link-add-new-workbook" href="#add-new-workbook" class="">Add New Workbook</a></li>
+                                                    <li><a id="link-close-document" href="#close-document" class="">Close Document</a></li>
+                                                    <li><a id="link-find-first-available-row" href="#find-first-available-row" class="">Find First Available Row</a></li>
+                                                    <li><a id="link-open-application" href="#open-application" class="">Open Application</a></li>
+                                                    <li><a id="link-open-workbook" href="#open-workbook" class="">Open Workbook</a></li>
+                                                    <li><a id="link-quit-application" href="#quit-application" class="">Quit Application</a></li>
+                                                    <li><a id="link-read-from-cells" href="#read-from-cells" class="">Read From Cells</a></li>
+                                                    <li><a id="link-run-macro" href="#run-macro" class="">Run Macro</a></li>
+                                                    <li><a id="link-save-excel" href="#save-excel" class="">Save Excel</a></li>
+                                                    <li><a id="link-save-excel-as" href="#save-excel-as" class="">Save Excel As</a></li>
+                                                    <li><a id="link-set-active-worksheet" href="#set-active-worksheet" class="">Set Active Worksheet</a></li>
+                                                    <li><a id="link-write-to-cells" href="#write-to-cells" class="">Write To Cells</a></li>
+                                                </ul>
                                             </div>
+
                                         </aside>
                                     </div>
                                 </div>

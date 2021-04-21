@@ -893,14 +893,27 @@ Create Form    ${CURDIR}/${/}myform.json
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-add-checkbox" href="#add-checkbox" class="">Add Checkbox</a><a id="link-add-dropdown" href="#add-dropdown" class="">Add Dropdown</a><a id="link-add-file-input" href="#add-file-input" class="">Add File Input</a><a id="link-add-hidden-input" href="#add-hidden-input" class="">Add Hidden Input</a><a id="link-add-radio-buttons" href="#add-radio-buttons" class="">Add Radio Buttons</a>
-                                                <a id="link-add-submit" href="#add-submit" class="">Add Submit</a><a id="link-add-text" href="#add-text" class="">Add Text</a><a id="link-add-text-input" href="#add-text-input" class="">Add Text Input</a>
-                                                <a id="link-add-textarea" href="#add-textarea" class="">Add Textarea</a><a id="link-add-title" href="#add-title" class="">Add Title</a><a id="link-create-form" href="#create-form" class="">Create Form</a><a id="link-request-response" href="#request-response" class="">Request Response</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-add-checkbox" href="#add-checkbox" class="">Add Checkbox</a></li>
+                                                    <li><a id="link-add-dropdown" href="#add-dropdown" class="">Add Dropdown</a></li>
+                                                    <li><a id="link-add-file-input" href="#add-file-input" class="">Add File Input</a></li>
+                                                    <li><a id="link-add-hidden-input" href="#add-hidden-input" class="">Add Hidden Input</a></li>
+                                                    <li><a id="link-add-radio-buttons" href="#add-radio-buttons" class="">Add Radio Buttons</a></li>
+                                                    <li><a id="link-add-submit" href="#add-submit" class="">Add Submit</a></li>
+                                                    <li><a id="link-add-text" href="#add-text" class="">Add Text</a></li>
+                                                    <li><a id="link-add-text-input" href="#add-text-input" class="">Add Text Input</a></li>
+                                                    <li><a id="link-add-textarea" href="#add-textarea" class="">Add Textarea</a></li>
+                                                    <li><a id="link-add-title" href="#add-title" class="">Add Title</a></li>
+                                                    <li><a id="link-create-form" href="#create-form" class="">Create Form</a></li>
+                                                    <li><a id="link-request-response" href="#request-response" class="">Request Response</a></li>
+                                                </ul>
                                             </div>
+
                                         </aside>
                                     </div>
                                 </div>

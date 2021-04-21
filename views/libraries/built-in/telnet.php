@@ -1282,18 +1282,34 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-close-all-connections" href="#close-all-connections" class="">Close All
-                                                    Connections</a><a id="link-close-connection" href="#close-connection" class="">Close
-                                                    Connection</a><a id="link-execute-command" href="#execute-command" class="">Execute
-                                                    Command</a><a id="link-login" href="#login" class="">Login</a><a id="link-open-connection" href="#open-connection" class="">Open Connection</a><a id="link-read" href="#read" class="">Read</a>
-                                                <a id="link-read-until" href="#read-until" class="">Read Until</a><a id="link-read-until-prompt" href="#read-until-prompt" class="">Read Until Prompt</a><a id="link-read-until-regexp" href="#read-until-regexp" class="">Read Until Regexp</a><a id="link-set-default-log-level" href="#set-default-log-level" class="">Set Default Log
-                                                    Level</a><a id="link-set-encoding" href="#set-encoding" class="">Set Encoding</a><a id="link-set-newline" href="#set-newline" class="">Set Newline</a><a id="link-set-prompt" href="#set-prompt" class="">Set Prompt</a>
-                                                <a id="link-set-telnetlib-log-level" href="#set-telnetlib-log-level" class="">Set Telnetlib Log Level</a><a id="link-set-timeout" href="#set-timeout" class="">Set Timeout</a><a id="link-switch-connection" href="#switch-connection" class="">Switch Connection</a><a id="link-write" href="#write" class="">Write</a><a id="link-write-bare" href="#write-bare" class="">Write Bare</a><a id="link-write-control-character" href="#write-control-character" class="">Write Control Character</a>
-                                                <a id="link-write-until-expected-output" href="#write-until-expected-output" class="">Write Until Expected Output</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-close-all-connections" href="#close-all-connections" class="">Close All Connections</a></li>
+                                                    <li><a id="link-close-connection" href="#close-connection" class="">Close Connection</a></li>
+                                                    <li><a id="link-execute-command" href="#execute-command" class="">Execute Command</a></li>
+                                                    <li><a id="link-login" href="#login" class="">Login</a></li>
+                                                    <li><a id="link-open-connection" href="#open-connection" class="">Open Connection</a></li>
+                                                    <li><a id="link-read" href="#read" class="">Read</a></li>
+                                                    <li><a id="link-read-until" href="#read-until" class="">Read Until</a></li>
+                                                    <li><a id="link-read-until-prompt" href="#read-until-prompt" class="">Read Until Prompt</a></li>
+                                                    <li><a id="link-read-until-regexp" href="#read-until-regexp" class="">Read Until Regexp</a></li>
+                                                    <li><a id="link-set-default-log-level" href="#set-default-log-level" class="">Set Default Log Level</a></li>
+                                                    <li><a id="link-set-encoding" href="#set-encoding" class="">Set Encoding</a></li>
+                                                    <li><a id="link-set-newline" href="#set-newline" class="">Set Newline</a></li>
+                                                    <li><a id="link-set-prompt" href="#set-prompt" class="">Set Prompt</a></li>
+                                                    <li><a id="link-set-telnetlib-log-level" href="#set-telnetlib-log-level" class="">Set Telnetlib Log Level</a></li>
+                                                    <li><a id="link-set-timeout" href="#set-timeout" class="">Set Timeout</a></li>
+                                                    <li><a id="link-switch-connection" href="#switch-connection" class="">Switch Connection</a></li>
+                                                    <li><a id="link-write" href="#write" class="">Write</a></li>
+                                                    <li><a id="link-write-bare" href="#write-bare" class="">Write Bare</a></li>
+                                                    <li><a id="link-write-control-character" href="#write-control-character" class="">Write Control Character</a></li>
+                                                    <li><a id="link-write-until-expected-output" href="#write-until-expected-output" class="">Write Until Expected Output</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

@@ -1682,48 +1682,50 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
                                             <div>
-                                                <a id="link-click-element" href="#click-element" class="">Click Element</a>
-                                                <a id="link-click-toolbar-button" href="#click-toolbar-button" class="">Click Toolbar Button</a>
-                                                <a id="link-connect-to-existing-connection" href="#connect-to-existing-connection" class="">Connect To Existing Connection</a>
-                                                <a id="link-connect-to-session" href="#connect-to-session" class="">Connect To Session</a>
-                                                <a id="link-disable-screenshots-on-error" href="#disable-screenshots-on-error" class="">Disable Screenshots On Error</a>
-                                                <a id="link-doubleclick-element" href="#doubleclick-element" class="">Doubleclick Element</a>
-                                                <a id="link-element-should-be-present" href="#element-should-be-present" class="">Element Should Be Present</a>
-                                                <a id="link-element-value-should-be" href="#element-value-should-be" class="">Element Value Should Be</a>
-                                                <a id="link-element-value-should-contain" href="#element-value-should-contain" class="">Element Value Should Contain</a>
-                                                <a id="link-enable-screenshots-on-error" href="#enable-screenshots-on-error" class="">Enable Screenshots On Error</a>
-                                                <a id="link-get-cell-value" href="#get-cell-value" class="">Get Cell Value</a>
-                                                <a id="link-get-element-location" href="#get-element-location" class="">Get Element Location</a>
-                                                <a id="link-get-element-type" href="#get-element-type" class="">Get Element Type</a>
-                                                <a id="link-Get Row Count" href="#Get Row Count" class="">Get Row Count</a>
-                                                <a id="link-get-scroll-position" href="#get-scroll-position" class="">Get Scroll Position</a>
-                                                <a id="link-get-value" href="#get-value" class="">Get Value</a>
-                                                <a id="link-get-window-title" href="#get-window-title" class="">Get Window Title</a>
-                                                <a id="link-input-password" href="#input-password" class="">Input Password</a>
-                                                <a id="link-input-text" href="#input-text" class="">Input Text</a>
-                                                <a id="link-maximize-window" href="#maximize-window" class="">Maximize Window</a>
-                                                <a id="link-open-connection" href="#open-connection" class="">Open Connection</a>
-                                                <a id="link-Run Transaction" href="#Run Transaction" class="">Run Transaction</a>
-                                                <a id="link-scroll" href="#scroll" class="">Scroll</a>
-                                                <a id="link-select-checkbox" href="#select-checkbox" class="">Select Checkbox</a>
-                                                <a id="link-select-context-menu-item" href="#select-context-menu-item" class="">Select Context Menu Item</a>
-                                                <a id="link-select-from-list-by-label" href="#select-from-list-by-label" class="">Select From List By Label</a>
-                                                <a id="link-select-node" href="#select-node" class="">Select Node</a>
-                                                <a id="link-select-node-link" href="#select-node-link" class="">Select Node Link</a>
-                                                <a id="link-select-radio-button" href="#select-radio-button" class="">Select Radio Button</a>
-                                                <a id="link-select-table-column" href="#select-table-column" class="">Select Table Column</a>
-                                                <a id="link-select-table-row" href="#select-table-row" class="">Select Table Row</a>
-                                                <a id="link-send-vkey" href="#send-vkey" class="">Send Vkey</a>
-                                                <a id="link-set-cell-value" href="#set-cell-value" class="">Set Cell Value</a>
-                                                <a id="link-set-explicit-wait" href="#set-explicit-wait" class="">Set Explicit Wait</a>
-                                                <a id="link-set-focus" href="#set-focus" class="">Set Focus</a>
-                                                <a id="link-take-screenshot" href="#take-screenshot" class="">Take Screenshot</a>
-                                                <a id="link-unselect-checkbox" href="#unselect-checkbox" class="">Unselect Checkbox</a>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-click-element" href="#click-element" class="">Click Element</a></li>
+                                                    <li><a id="link-click-toolbar-button" href="#click-toolbar-button" class="">Click Toolbar Button</a></li>
+                                                    <li><a id="link-connect-to-existing-connection" href="#connect-to-existing-connection" class="">Connect To Existing Connection</a></li>
+                                                    <li><a id="link-connect-to-session" href="#connect-to-session" class="">Connect To Session</a></li>
+                                                    <li><a id="link-disable-screenshots-on-error" href="#disable-screenshots-on-error" class="">Disable Screenshots On Error</a></li>
+                                                    <li><a id="link-doubleclick-element" href="#doubleclick-element" class="">Doubleclick Element</a></li>
+                                                    <li><a id="link-element-should-be-present" href="#element-should-be-present" class="">Element Should Be Present</a></li>
+                                                    <li><a id="link-element-value-should-be" href="#element-value-should-be" class="">Element Value Should Be</a></li>
+                                                    <li><a id="link-element-value-should-contain" href="#element-value-should-contain" class="">Element Value Should Contain</a></li>
+                                                    <li><a id="link-enable-screenshots-on-error" href="#enable-screenshots-on-error" class="">Enable Screenshots On Error</a></li>
+                                                    <li><a id="link-get-cell-value" href="#get-cell-value" class="">Get Cell Value</a></li>
+                                                    <li><a id="link-get-element-location" href="#get-element-location" class="">Get Element Location</a></li>
+                                                    <li><a id="link-get-element-type" href="#get-element-type" class="">Get Element Type</a></li>
+                                                    <li><a id="link-Get Row Count" href="#Get Row Count" class="">Get Row Count</a></li>
+                                                    <li><a id="link-get-scroll-position" href="#get-scroll-position" class="">Get Scroll Position</a></li>
+                                                    <li><a id="link-get-value" href="#get-value" class="">Get Value</a></li>
+                                                    <li><a id="link-get-window-title" href="#get-window-title" class="">Get Window Title</a></li>
+                                                    <li><a id="link-input-password" href="#input-password" class="">Input Password</a></li>
+                                                    <li><a id="link-input-text" href="#input-text" class="">Input Text</a></li>
+                                                    <li><a id="link-maximize-window" href="#maximize-window" class="">Maximize Window</a></li>
+                                                    <li><a id="link-open-connection" href="#open-connection" class="">Open Connection</a></li>
+                                                    <li><a id="link-Run Transaction" href="#Run Transaction" class="">Run Transaction</a></li>
+                                                    <li><a id="link-scroll" href="#scroll" class="">Scroll</a></li>
+                                                    <li><a id="link-select-checkbox" href="#select-checkbox" class="">Select Checkbox</a></li>
+                                                    <li><a id="link-select-context-menu-item" href="#select-context-menu-item" class="">Select Context Menu Item</a></li>
+                                                    <li><a id="link-select-from-list-by-label" href="#select-from-list-by-label" class="">Select From List By Label</a></li>
+                                                    <li><a id="link-select-node" href="#select-node" class="">Select Node</a></li>
+                                                    <li><a id="link-select-node-link" href="#select-node-link" class="">Select Node Link</a></li>
+                                                    <li><a id="link-select-radio-button" href="#select-radio-button" class="">Select Radio Button</a></li>
+                                                    <li><a id="link-select-table-column" href="#select-table-column" class="">Select Table Column</a></li>
+                                                    <li><a id="link-select-table-row" href="#select-table-row" class="">Select Table Row</a></li>
+                                                    <li><a id="link-send-vkey" href="#send-vkey" class="">Send Vkey</a></li>
+                                                    <li><a id="link-set-cell-value" href="#set-cell-value" class="">Set Cell Value</a></li>
+                                                    <li><a id="link-set-explicit-wait" href="#set-explicit-wait" class="">Set Explicit Wait</a></li>
+                                                    <li><a id="link-set-focus" href="#set-focus" class="">Set Focus</a></li>
+                                                    <li><a id="link-take-screenshot" href="#take-screenshot" class="">Take Screenshot</a></li>
+                                                    <li><a id="link-unselect-checkbox" href="#unselect-checkbox" class="">Unselect Checkbox</a></li>
+                                                </ul>
                                             </div>
                                         </aside>
                                     </div>

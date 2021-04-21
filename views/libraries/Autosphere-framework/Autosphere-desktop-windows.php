@@ -2963,30 +2963,68 @@ Type Keys   My text
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-boot-time-in-seconds-from-epoch" href="#boot-time-in-seconds-from-epoch" class="">Boot Time In Seconds From Epoch</a><a id="link-calculate-rectangle-center" href="#calculate-rectangle-center" class="">Calculate Rectangle Center</a><a id="link-click-type" href="#click-type" class="">Click Type</a><a id="link-close-all-applications" href="#close-all-applications" class="">Close All
-                                                    Applications</a><a id="link-connect-by-handle" href="#connect-by-handle" class="">Connect
-                                                    By Handle</a><a id="link-connect-by-pid" href="#connect-by-pid" class="">Connect By
-                                                    Pid</a><a id="link-drag-and-drop" href="#drag-and-drop" class="">Drag And Drop</a><a id="link-find-element" href="#find-element" class="">Find Element</a><a id="link-get-app" href="#get-app" class="">Get App</a>
-                                                <a id="link-get-boot-time" href="#get-boot-time" class="">Get Boot Time</a><a id="link-get-dialog-rectangle" href="#get-dialog-rectangle" class="">Get Dialog Rectangle</a><a id="link-get-element" href="#get-element" class="">Get Element</a><a id="link-get-element-center" href="#get-element-center" class="">Get Element Center</a><a id="link-get-element-rectangle" href="#get-element-rectangle" class="">Get Element
-                                                    Rectangle</a><a id="link-get-element-rich-text" href="#get-element-rich-text" class="">Get Element Rich Text</a><a id="link-get-machine-name" href="#get-machine-name" class="">Get Machine Name</a><a id="link-get-memory-stats" href="#get-memory-stats" class="">Get Memory Stats</a><a id="link-get-open-applications" href="#get-open-applications" class="">Get Open Applications</a><a id="link-get-spaced-string" href="#get-spaced-string" class="">Get Spaced String</a><a id="link-get-text" href="#get-text" class="">Get Text</a><a id="link-get-username" href="#get-username" class="">Get Username</a><a id="link-get-window-elements" href="#get-window-elements" class="">Get Window Elements</a><a id="link-get-window-list" href="#get-window-list" class="">Get Window List</a><a id="link-is-element-enabled" href="#is-element-enabled" class="">Is Element Enabled</a><a id="link-is-element-matching" href="#is-element-matching" class="">Is Element
-                                                    Matching</a><a id="link-is-element-visible" href="#is-element-visible" class="">Is
-                                                    Element Visible</a><a id="link-kill-process" href="#kill-process" class="">Kill
-                                                    Process</a><a id="link-kill-process-by-pid" href="#kill-process-by-pid" class="">Kill
-                                                    Process By Pid</a><a id="link-lock-screen" href="#lock-screen" class="">Lock Screen</a><a id="link-log-in" href="#log-in" class="">Log In</a><a id="link-menu-select" href="#menu-select" class="">Menu Select</a>
-                                                <a id="link-minimize-dialog" href="#minimize-dialog" class="">Minimize Dialog</a><a id="link-mouse-click" href="#mouse-click" class="">Mouse Click</a><a id="link-mouse-click-coords" href="#mouse-click-coords" class="">Mouse Click Coords</a><a id="link-mouse-click-image" href="#mouse-click-image" class="">Mouse Click Image</a><a id="link-open-application" href="#open-application" class="">Open Application</a>
-                                                <a id="link-open-dialog" href="#open-dialog" class="">Open Dialog</a><a id="link-open-executable" href="#open-executable" class="">Open Executable</a><a id="link-open-file" href="#open-file" class="">Open File</a><a id="link-open-from-search" href="#open-from-search" class="">Open From Search</a><a id="link-open-using-run-dialog" href="#open-using-run-dialog" class="">Open Using Run Dialog</a>
-                                                <a id="link-process-exists" href="#process-exists" class="">Process Exists</a>
-                                                <a id="link-put-system-to-sleep" href="#put-system-to-sleep" class="">Put System To Sleep
-                                                </a><a id="link-quit-application" href="#quit-application" class="">Quit
-                                                    Application</a><a id="link-restore-dialog" href="#restore-dialog" class="">Restore
-                                                    Dialog</a><a id="link-screenshot" href="#screenshot" class="">Screenshot</a><a id="link-send-keys" href="#send-keys" class="">Send Keys</a><a id="link-send-keys-to-input" href="#send-keys-to-input" class="">Send Keys To Input</a><a id="link-set-windows-backend" href="#set-windows-backend" class="">Set Windows
-                                                    Backend</a><a id="link-switch-to-application" href="#switch-to-application" class="">Switch To Application</a><a id="link-type-into" href="#type-into" class="">Type
-                                                    Into</a><a id="link-type-keys" href="#type-keys" class="">Type Keys</a><a id="link-wait-for-element" href="#wait-for-element" class="">Wait For Element</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-boot-time-in-seconds-from-epoch" href="#boot-time-in-seconds-from-epoch" class="">Boot Time In Seconds From Epoch</a></li>
+                                                    <li><a id="link-calculate-rectangle-center" href="#calculate-rectangle-center" class="">Calculate Rectangle Center</a></li>
+                                                    <li><a id="link-click-type" href="#click-type" class="">Click Type</a></li>
+                                                    <li><a id="link-close-all-applications" href="#close-all-applications" class="">Close All Applications</a></li>
+                                                    <li><a id="link-connect-by-handle" href="#connect-by-handle" class="">Connect By Handle</a></li>
+                                                    <li><a id="link-connect-by-pid" href="#connect-by-pid" class="">Connect By Pid</a></li>
+                                                    <li><a id="link-drag-and-drop" href="#drag-and-drop" class="">Drag And Drop</a></li>
+                                                    <li><a id="link-find-element" href="#find-element" class="">Find Element</a></li>
+                                                    <li><a id="link-get-app" href="#get-app" class="">Get App</a></li>
+                                                    <li><a id="link-get-boot-time" href="#get-boot-time" class="">Get Boot Time</a></li>
+                                                    <li><a id="link-get-dialog-rectangle" href="#get-dialog-rectangle" class="">Get Dialog Rectangle</a></li>
+                                                    <li><a id="link-get-element" href="#get-element" class="">Get Element</a></li>
+                                                    <li><a id="link-get-element-center" href="#get-element-center" class="">Get Element Center</a></li>
+                                                    <li><a id="link-get-element-rectangle" href="#get-element-rectangle" class="">Get Element Rectangle</a></li>
+                                                    <li><a id="link-get-element-rich-text" href="#get-element-rich-text" class="">Get Element Rich Text</a></li>
+                                                    <li><a id="link-get-machine-name" href="#get-machine-name" class="">Get Machine Name</a></li>
+                                                    <li><a id="link-get-memory-stats" href="#get-memory-stats" class="">Get Memory Stats</a></li>
+                                                    <li><a id="link-get-open-applications" href="#get-open-applications" class="">Get Open Applications</a></li>
+                                                    <li><a id="link-get-spaced-string" href="#get-spaced-string" class="">Get Spaced String</a></li>
+                                                    <li><a id="link-get-text" href="#get-text" class="">Get Text</a></li>
+                                                    <li><a id="link-get-username" href="#get-username" class="">Get Username</a></li>
+                                                    <li><a id="link-get-window-elements" href="#get-window-elements" class="">Get Window Elements</a></li>
+                                                    <li><a id="link-get-window-list" href="#get-window-list" class="">Get Window List</a></li>
+                                                    <li><a id="link-is-element-enabled" href="#is-element-enabled" class="">Is Element Enabled</a></li>
+                                                    <li><a id="link-is-element-matching" href="#is-element-matching" class="">Is Element Matching</a></li>
+                                                    <li><a id="link-is-element-visible" href="#is-element-visible" class="">Is Element Visible</a></li>
+                                                    <li><a id="link-kill-process" href="#kill-process" class="">Kill Process</a></li>
+                                                    <li><a id="link-kill-process-by-pid" href="#kill-process-by-pid" class="">Kill Process By Pid</a></li>
+                                                    <li><a id="link-lock-screen" href="#lock-screen" class="">Lock Screen</a></li>
+                                                    <li><a id="link-log-in" href="#log-in" class="">Log In</a></li>
+                                                    <li><a id="link-menu-select" href="#menu-select" class="">Menu Select</a></li>
+                                                    <li><a id="link-minimize-dialog" href="#minimize-dialog" class="">Minimize Dialog</a></li>
+                                                    <li><a id="link-mouse-click" href="#mouse-click" class="">Mouse Click</a></li>
+                                                    <li><a id="link-mouse-click-coords" href="#mouse-click-coords" class="">Mouse Click Coords</a></li>
+                                                    <li><a id="link-mouse-click-image" href="#mouse-click-image" class="">Mouse Click Image</a></li>
+                                                    <li><a id="link-open-application" href="#open-application" class="">Open Application</a></li>
+                                                    <li><a id="link-open-dialog" href="#open-dialog" class="">Open Dialog</a></li>
+                                                    <li><a id="link-open-executable" href="#open-executable" class="">Open Executable</a></li>
+                                                    <li><a id="link-open-file" href="#open-file" class="">Open File</a></li>
+                                                    <li><a id="link-open-from-search" href="#open-from-search" class="">Open From Search</a></li>
+                                                    <li><a id="link-open-using-run-dialog" href="#open-using-run-dialog" class="">Open Using Run Dialog</a></li>
+                                                    <li><a id="link-process-exists" href="#process-exists" class="">Process Exists</a></li>
+                                                    <li><a id="link-put-system-to-sleep" href="#put-system-to-sleep" class="">Put System To Sleep </a></li>
+                                                    <li><a id="link-quit-application" href="#quit-application" class="">Quit Application</a></li>
+                                                    <li><a id="link-restore-dialog" href="#restore-dialog" class="">Restore Dialog</a></li>
+                                                    <li><a id="link-screenshot" href="#screenshot" class="">Screenshot</a></li>
+                                                    <li><a id="link-send-keys" href="#send-keys" class="">Send Keys</a></li>
+                                                    <li><a id="link-send-keys-to-input" href="#send-keys-to-input" class="">Send Keys To Input</a></li>
+                                                    <li><a id="link-set-windows-backend" href="#set-windows-backend" class="">Set Windows Backend</a></li>
+                                                    <li><a id="link-switch-to-application" href="#switch-to-application" class="">Switch To Application</a></li>
+                                                    <li><a id="link-type-into" href="#type-into" class="">Type Into</a></li>
+                                                    <li><a id="link-type-keys" href="#type-keys" class="">Type Keys</a></li>
+                                                    <li><a id="link-wait-for-element" href="#wait-for-element" class="">Wait For Element</a></li>
+                                                </ul>
                                             </div>
+
                                         </aside>
                                     </div>
                                 </div>

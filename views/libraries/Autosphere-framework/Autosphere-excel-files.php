@@ -846,22 +846,32 @@ ${</span><span class="nv">EXCEL_FILE</span><span class="p">}   </span><span clas
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-append-rows-to-worksheet" href="#append-rows-to-worksheet" class="">Append
-                                                    Rows To Worksheet</a><a id="link-close-workbook" href="#close-workbook" class="">Close
-                                                    Workbook</a><a id="link-create-workbook" href="#create-workbook" class="">Create
-                                                    Workbook</a><a id="link-create-worksheet" href="#create-worksheet" class="">Create
-                                                    Worksheet</a><a id="link-find-empty-row" href="#find-empty-row" class="">Find Empty
-                                                    Row</a><a id="link-get-active-worksheet" href="#get-active-worksheet" class="">Get Active
-                                                    Worksheet</a><a id="link-insert-image-to-worksheet" href="#insert-image-to-worksheet" class="">Insert Image To Worksheet</a><a id="link-list-worksheets" href="#list-worksheets" class="">List Worksheets</a>
-                                                <a id="link-open-workbook" href="#open-workbook" class="">Open Workbook</a><a id="link-read-worksheet" href="#read-worksheet" class="">Read Worksheet</a><a id="link-read-worksheet-as-table" href="#read-worksheet-as-table" class="">Read Worksheet As Table</a>
-                                                <a id="link-remove-worksheet" href="#remove-worksheet" class="">Remove Worksheet</a><a id="link-rename-worksheet" href="#rename-worksheet" class="">Rename Worksheet</a><a id="link-save-workbook" href="#save-workbook" class="">Save Workbook</a><a id="link-set-active-worksheet" href="#set-active-worksheet" class="">Set Active
-                                                    Worksheet</a><a id="link-set-worksheet-value" href="#set-worksheet-value" class="">Set
-                                                    Worksheet Value</a><a id="link-worksheet-exists" href="#worksheet-exists" class="">Worksheet Exists</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-append-rows-to-worksheet" href="#append-rows-to-worksheet" class="">Append Rows To Worksheet</a></li>
+                                                    <li><a id="link-close-workbook" href="#close-workbook" class="">Close Workbook</a></li>
+                                                    <li><a id="link-create-workbook" href="#create-workbook" class="">Create Workbook</a></li>
+                                                    <li><a id="link-create-worksheet" href="#create-worksheet" class="">Create Worksheet</a></li>
+                                                    <li><a id="link-find-empty-row" href="#find-empty-row" class="">Find Empty Row</a></li>
+                                                    <li><a id="link-get-active-worksheet" href="#get-active-worksheet" class="">Get Active Worksheet</a></li>
+                                                    <li><a id="link-insert-image-to-worksheet" href="#insert-image-to-worksheet" class="">Insert Image To Worksheet</a></li>
+                                                    <li><a id="link-list-worksheets" href="#list-worksheets" class="">List Worksheets</a></li>
+                                                    <li><a id="link-open-workbook" href="#open-workbook" class="">Open Workbook</a></li>
+                                                    <li><a id="link-read-worksheet" href="#read-worksheet" class="">Read Worksheet</a></li>
+                                                    <li><a id="link-read-worksheet-as-table" href="#read-worksheet-as-table" class="">Read Worksheet As Table</a></li>
+                                                    <li><a id="link-remove-worksheet" href="#remove-worksheet" class="">Remove Worksheet</a></li>
+                                                    <li><a id="link-rename-worksheet" href="#rename-worksheet" class="">Rename Worksheet</a></li>
+                                                    <li><a id="link-save-workbook" href="#save-workbook" class="">Save Workbook</a></li>
+                                                    <li><a id="link-set-active-worksheet" href="#set-active-worksheet" class="">Set Active Worksheet</a></li>
+                                                    <li><a id="link-set-worksheet-value" href="#set-worksheet-value" class="">Set Worksheet Value</a></li>
+                                                    <li><a id="link-worksheet-exists" href="#worksheet-exists" class="">Worksheet Exists</a></li>
+                                                </ul>
                                             </div>
+
                                         </aside>
                                     </div>
                                 </div>

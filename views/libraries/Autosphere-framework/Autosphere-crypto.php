@@ -590,14 +590,22 @@ rGx1edA07yz7uD08ChiPSunn8vaauRxw0pAbsal9zjM=</span>
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" id="myInput" onkeyup="myFunction()" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div class="ps ps--active-y"><a id="link-decrypt-file" href="#decrypt-file" class="">Decrypt File</a><a id="link-decrypt-string" href="#decrypt-string" class="">Decrypt String</a><a id="link-encrypt-file" href="#encrypt-file" class="">Encrypt File</a><a id="link-encrypt-string" href="#encrypt-string" class="">Encrypt String</a><a id="link-generate-key" href="#generate-key" class="">Generate Key</a><a id="link-hash-file" href="#hash-file" class="">Hash
-                                                    File</a><a id="link-hash-string" href="#hash-string" class="">Hash String</a><a id="link-use-encryption-key" href="#use-encryption-key" class="">Use Encryption
-                                                    Key</a><a id="link-use-encryption-key-from-vault" href="#use-encryption-key-from-vault" class="">Use
-                                                    Encryption Key From Vault</a>
+                                            <div class="ps ps--active-y">
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-decrypt-file" href="#decrypt-file" class="">Decrypt File</a></li>
+                                                    <li><a id="link-decrypt-string" href="#decrypt-string" class="">Decrypt String</a></li>
+                                                    <li><a id="link-encrypt-file" href="#encrypt-file" class="">Encrypt File</a></li>
+                                                    <li><a id="link-encrypt-string" href="#encrypt-string" class="">Encrypt String</a></li>
+                                                    <li><a id="link-generate-key" href="#generate-key" class="">Generate Key</a></li>
+                                                    <li><a id="link-hash-file" href="#hash-file" class="">Hash File</a></li>
+                                                    <li><a id="link-hash-string" href="#hash-string" class="">Hash String</a></li>
+                                                    <li><a id="link-use-encryption-key" href="#use-encryption-key" class="">Use Encryption Key</a></li>
+                                                    <li><a id="link-use-encryption-key-from-vault" href="#use-encryption-key-from-vault" class="">Use Encryption Key From Vault</a></li>
+                                                </ul>
                                             </div>
                                         </aside>
                                     </div>

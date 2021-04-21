@@ -1287,20 +1287,36 @@ ${</span><span class="nv">ACCOUNT_NOKIA</span><span class="p">}    </span><span 
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-add-product-into-opportunity" href="#add-product-into-opportunity" class="">Add Product Into Opportunity</a><a id="link-auth-with-token" href="#auth-with-token" class="">Auth With Token</a>
-                                                <a id="link-create-new-opportunity" href="#create-new-opportunity" class="">Create New Opportunity</a><a id="link-create-salesforce-object" href="#create-salesforce-object" class="">Create
-                                                    Salesforce Object</a><a id="link-delete-salesforce-object" href="#delete-salesforce-object" class="">Delete Salesforce Object</a><a id="link-describe-salesforce-object" href="#describe-salesforce-object" class="">Describe
-                                                    Salesforce Object</a><a id="link-execute-dataloader-insert" href="#execute-dataloader-insert" class="">Execute Dataloader Insert</a><a id="link-get-dataloader-error-table" href="#get-dataloader-error-table" class="">Get
-                                                    Dataloader Error Table</a><a id="link-get-dataloader-success-table" href="#get-dataloader-success-table" class="">Get Dataloader Success Table</a><a id="link-get-opportunity-id" href="#get-opportunity-id" class="">Get Opportunity Id</a>
-                                                <a id="link-get-pricebook-entries" href="#get-pricebook-entries" class="">Get Pricebook Entries
-                                                </a><a id="link-get-pricebook-id" href="#get-pricebook-id" class="">Get Pricebook
-                                                    Id</a><a id="link-get-products-in-pricelist" href="#get-products-in-pricelist" class="">Get Products In Pricelist</a><a id="link-get-salesforce-object-by-id" href="#get-salesforce-object-by-id" class="">Get Salesforce Object By Id</a>
-                                                <a id="link-get-salesforce-object-metadata" href="#get-salesforce-object-metadata" class="">Get Salesforce Object Metadata</a><a id="link-read-dictionary-from-file" href="#read-dictionary-from-file" class="">Read Dictionary From File</a><a id="link-salesforce-query" href="#salesforce-query" class="">Salesforce Query</a><a id="link-salesforce-query-result-as-table" href="#salesforce-query-result-as-table" class="">Salesforce Query Result As Table</a><a id="link-set-account" href="#set-account" class="">Set Account</a><a id="link-set-pricebook" href="#set-pricebook" class="">Set
-                                                    Pricebook</a><a id="link-update-salesforce-object" href="#update-salesforce-object" class="">Update Salesforce Object</a><a id="link-upsert-salesforce-object" href="#upsert-salesforce-object" class="">Upsert Salesforce Object</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-add-product-into-opportunity" href="#add-product-into-opportunity" class="">Add Product Into Opportunity</a></li>
+                                                    <li><a id="link-auth-with-token" href="#auth-with-token" class="">Auth With Token</a></li>
+                                                    <li><a id="link-create-new-opportunity" href="#create-new-opportunity" class="">Create New Opportunity</a></li>
+                                                    <li><a id="link-create-salesforce-object" href="#create-salesforce-object" class="">Create Salesforce Object</a></li>
+                                                    <li><a id="link-delete-salesforce-object" href="#delete-salesforce-object" class="">Delete Salesforce Object</a></li>
+                                                    <li><a id="link-describe-salesforce-object" href="#describe-salesforce-object" class="">Describe Salesforce Object</a></li>
+                                                    <li><a id="link-execute-dataloader-insert" href="#execute-dataloader-insert" class="">Execute Dataloader Insert</a></li>
+                                                    <li><a id="link-get-dataloader-error-table" href="#get-dataloader-error-table" class="">Get Dataloader Error Table</a></li>
+                                                    <li><a id="link-get-dataloader-success-table" href="#get-dataloader-success-table" class="">Get Dataloader Success Table</a></li>
+                                                    <li><a id="link-get-opportunity-id" href="#get-opportunity-id" class="">Get Opportunity Id</a></li>
+                                                    <li><a id="link-get-pricebook-entries" href="#get-pricebook-entries" class="">Get Pricebook Entries </a></li>
+                                                    <li><a id="link-get-pricebook-id" href="#get-pricebook-id" class="">Get Pricebook Id</a></li>
+                                                    <li><a id="link-get-products-in-pricelist" href="#get-products-in-pricelist" class="">Get Products In Pricelist</a></li>
+                                                    <li><a id="link-get-salesforce-object-by-id" href="#get-salesforce-object-by-id" class="">Get Salesforce Object By Id</a></li>
+                                                    <li><a id="link-get-salesforce-object-metadata" href="#get-salesforce-object-metadata" class="">Get Salesforce Object Metadata</a></li>
+                                                    <li><a id="link-read-dictionary-from-file" href="#read-dictionary-from-file" class="">Read Dictionary From File</a></li>
+                                                    <li><a id="link-salesforce-query" href="#salesforce-query" class="">Salesforce Query</a></li>
+                                                    <li><a id="link-salesforce-query-result-as-table" href="#salesforce-query-result-as-table" class="">Salesforce Query Result As Table</a></li>
+                                                    <li><a id="link-set-account" href="#set-account" class="">Set Account</a></li>
+                                                    <li><a id="link-set-pricebook" href="#set-pricebook" class="">Set Pricebook</a></li>
+                                                    <li><a id="link-update-salesforce-object" href="#update-salesforce-object" class="">Update Salesforce Object</a></li>
+                                                    <li><a id="link-upsert-salesforce-object" href="#upsert-salesforce-object" class="">Upsert Salesforce Object</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

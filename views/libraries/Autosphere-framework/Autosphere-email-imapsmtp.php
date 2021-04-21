@@ -1440,14 +1440,37 @@ ${unflagged}  ${oftotal}  Unflag Messages   SUBJECT Autosphere
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-authorize" href="#authorize" class="">Authorize</a><a id="link-authorize-imap" href="#authorize-imap" class="">Authorize Imap</a><a id="link-authorize-smtp" href="#authorize-smtp" class="">Authorize Smtp</a><a id="link-create-folder" href="#create-folder" class="">Create Folder</a><a id="link-delete-folder" href="#delete-folder" class="">Delete Folder</a><a id="link-delete-message" href="#delete-message" class="">Delete Message</a><a id="link-delete-messages" href="#delete-messages" class="">Delete Messages</a><a id="link-flag-messages" href="#flag-messages" class="">Flag Messages</a><a id="link-get-folder-list" href="#get-folder-list" class="">Get Folder List</a><a id="link-list-messages" href="#list-messages" class="">List Messages</a><a id="link-mark-as-read" href="#mark-as-read" class="">Mark As Read</a><a id="link-mark-as-unread" href="#mark-as-unread" class="">Mark As Unread</a><a id="link-rename-folder" href="#rename-folder" class="">Rename Folder</a>
-                                                <a id="link-save-attachment" href="#save-attachment" class="">Save Attachment</a><a id="link-save-attachments" href="#save-attachments" class="">Save Attachments</a><a id="link-save-messages" href="#save-messages" class="">Save Messages</a><a id="link-select-folder" href="#select-folder" class="">Select Folder</a><a id="link-send-message" href="#send-message" class="">Send Message</a><a id="link-send-smtp-hello" href="#send-smtp-hello" class="">Send Smtp Hello</a>
-                                                <a id="link-set-credentials" href="#set-credentials" class="">Set Credentials</a><a id="link-unflag-messages" href="#unflag-messages" class="">Unflag Messages</a><a id="link-wait-for-message" href="#wait-for-message" class="">Wait For Message</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-authorize" href="#authorize" class="">Authorize</a></li>
+                                                    <li><a id="link-authorize-imap" href="#authorize-imap" class="">Authorize Imap</a></li>
+                                                    <li><a id="link-authorize-smtp" href="#authorize-smtp" class="">Authorize Smtp</a></li>
+                                                    <li><a id="link-create-folder" href="#create-folder" class="">Create Folder</a></li>
+                                                    <li><a id="link-delete-folder" href="#delete-folder" class="">Delete Folder</a></li>
+                                                    <li><a id="link-delete-message" href="#delete-message" class="">Delete Message</a></li>
+                                                    <li><a id="link-delete-messages" href="#delete-messages" class="">Delete Messages</a></li>
+                                                    <li><a id="link-flag-messages" href="#flag-messages" class="">Flag Messages</a></li>
+                                                    <li><a id="link-get-folder-list" href="#get-folder-list" class="">Get Folder List</a></li>
+                                                    <li><a id="link-list-messages" href="#list-messages" class="">List Messages</a></li>
+                                                    <li><a id="link-mark-as-read" href="#mark-as-read" class="">Mark As Read</a></li>
+                                                    <li><a id="link-mark-as-unread" href="#mark-as-unread" class="">Mark As Unread</a></li>
+                                                    <li><a id="link-rename-folder" href="#rename-folder" class="">Rename Folder</a></li>
+                                                    <li><a id="link-save-attachment" href="#save-attachment" class="">Save Attachment</a></li>
+                                                    <li><a id="link-save-attachments" href="#save-attachments" class="">Save Attachments</a></li>
+                                                    <li><a id="link-save-messages" href="#save-messages" class="">Save Messages</a></li>
+                                                    <li><a id="link-select-folder" href="#select-folder" class="">Select Folder</a></li>
+                                                    <li><a id="link-send-message" href="#send-message" class="">Send Message</a></li>
+                                                    <li><a id="link-send-smtp-hello" href="#send-smtp-hello" class="">Send Smtp Hello</a></li>
+                                                    <li><a id="link-set-credentials" href="#set-credentials" class="">Set Credentials</a></li>
+                                                    <li><a id="link-unflag-messages" href="#unflag-messages" class="">Unflag Messages</a></li>
+                                                    <li><a id="link-wait-for-message" href="#wait-for-message" class="">Wait For Message</a></li>
+                                                </ul>
                                             </div>
+
                                         </aside>
                                     </div>
                                 </div>

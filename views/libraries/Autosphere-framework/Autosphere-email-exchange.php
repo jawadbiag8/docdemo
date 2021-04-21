@@ -9,7 +9,6 @@
                         <h2>
                             <b>Autosphere.Email.Exchange</b>
                         </h2>
-
                     </div>
                     <div class="body">
                         <div class="sc-kLgntA iHaOcn">
@@ -25,32 +24,26 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true">
-                                    <i class="material-icons">home</i> Readme
-                                </a>
+                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true"> <i class="material-icons">home</i> Readme </a>
                             </li>
                             <li role="presentation" class="">
-                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false">
-                                    <i class="material-icons">face</i> Keywords
-                                </a>
+                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false"> <i class="material-icons">face</i> Keywords </a>
                             </li>
-
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="home_with_icon_title">
-
                                 <div class="sc-jJEJSO laquCT">
                                     <div class="sc-hiSbYr XqbgT">
-
                                         <div>
-                                            <p><cite>Exchange</cite> is a library for sending, reading, and deleting emails.
-                                                <cite>Exchange</cite> is interfacing with Exchange Web Services (EWS).
-                                            </p>
-                                            <p>For more information about server settings, see
-                                                <a class="reference external" href="https://support.microsoft.com/en-us/office/server-settings-you-ll-need-from-your-email-provider-c82de912-adcc-4787-8283-45a1161f3cc3">this
-                                                    Microsoft support article</a>.
+                                            <p><cite>Exchange</cite> is a library for sending, reading, and deleting emails. <cite>Exchange</cite> is interfacing with Exchange Web Services (EWS).</p>
+                                            <p>
+                                                For more information about server settings, see
+                                                <a class="reference external" href="https://support.microsoft.com/en-us/office/server-settings-you-ll-need-from-your-email-provider-c82de912-adcc-4787-8283-45a1161f3cc3">
+                                                    this Microsoft support article
+                                                </a>
+                                                .
                                             </p>
                                             <p><strong>Examples</strong></p>
                                             <p><strong>Autosphere</strong></p>
@@ -93,7 +86,6 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
 </pre>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="profile_with_icon_title">
@@ -118,42 +110,41 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                     </tr>
                                                                     <tr>
                                                                         <td>username</td>
-                                                                        <td> str</td>
+                                                                        <td>str</td>
                                                                         <td></td>
                                                                         <td>account username</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>password</td>
-                                                                        <td> str</td>
+                                                                        <td>str</td>
                                                                         <td></td>
                                                                         <td>account password</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>autodiscover</td>
-                                                                        <td> bool </td>
-                                                                        <td> True</td>
+                                                                        <td>bool</td>
+                                                                        <td>True</td>
                                                                         <td>use autodiscover or set it off</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>access_type</td>
-                                                                        <td> str </td>
-                                                                        <td> DELEGATE</td>
+                                                                        <td>str</td>
+                                                                        <td>DELEGATE</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>server</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>required for configuration options</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>primary_smtp_address</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>by default set to username, but can be set to be different than username</td>
                                                                     </tr>
                                                                 </table>
-
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -179,8 +170,7 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <td>&nbsp;</td>
-                                                                            <td class="field-body">default &quot;DELEGATE&quot;, other option &quot;IMPERSONATION&quot;
-                                                                            </td>
+                                                                            <td class="field-body">default &quot;DELEGATE&quot;, other option &quot;IMPERSONATION&quot;</td>
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param server:</th>
@@ -213,18 +203,17 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                     </tr>
                                                                     <tr>
                                                                         <td>folder_name</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>name for the new folder</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>parent_folder</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>name for the parent folder, by default INBOX</td>
                                                                     </tr>
                                                                 </table>
-
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -268,18 +257,17 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                     </tr>
                                                                     <tr>
                                                                         <td>folder_name</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>current folder name</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>parent_folder</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>name for the parent folder, by default INBOX</td>
                                                                     </tr>
                                                                 </table>
-
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -323,24 +311,23 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                     </tr>
                                                                     <tr>
                                                                         <td>folder_name</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>current folder name</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>parent_folder</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>name for the parent folder, by default INBOX</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>delete_sub_folders</td>
-                                                                        <td> bool </td>
-                                                                        <td> False</td>
+                                                                        <td>bool</td>
+                                                                        <td>False</td>
                                                                         <td>delete sub folders or not, by default False</td>
                                                                     </tr>
                                                                 </table>
-
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -391,14 +378,14 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                     </tr>
                                                                     <tr>
                                                                         <td>folder_name</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>count</td>
-                                                                        <td> int </td>
-                                                                        <td> 100</td>
+                                                                        <td>int</td>
+                                                                        <td>100</td>
                                                                         <td>number of messages to list</td>
                                                                     </tr>
                                                                 </table>
@@ -432,30 +419,29 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                     </tr>
                                                                     <tr>
                                                                         <td>criterion</td>
-                                                                        <td> str </td>
-                                                                        <td> </td>
+                                                                        <td>str</td>
+                                                                        <td></td>
                                                                         <td>move messages matching this criterion</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>source</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>source folder</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>target</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>target folder</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>contains</td>
-                                                                        <td> bool </td>
-                                                                        <td> False</td>
+                                                                        <td>bool</td>
+                                                                        <td>False</td>
                                                                         <td>if matching should be done using contains matching and not equals matching, default False is means equals matching</td>
                                                                     </tr>
                                                                 </table>
-
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -478,14 +464,14 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param contains:</th>
-                                                                            <td class="field-body">if matching should be done using <cite>contains</cite> matching and not <cite>equals</cite> matching, default <cite>False</cite> is means
+                                                                            <td class="field-body">
+                                                                                if matching should be done using <cite>contains</cite> matching and not <cite>equals</cite> matching, default <cite>False</cite> is means
                                                                                 <cite>equals</cite> matching
                                                                             </td>
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">return:</th>
-                                                                            <td class="field-body">boolean result of operation, True if 1+ items were moved else False
-                                                                            </td>
+                                                                            <td class="field-body">boolean result of operation, True if 1+ items were moved else False</td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -513,24 +499,23 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                     </tr>
                                                                     <tr>
                                                                         <td>oldname</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>current folder name</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>newname</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>new name for the folder</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>parent_folder</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>name for the parent folder, by default INBOX</td>
                                                                     </tr>
                                                                 </table>
-
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -575,60 +560,59 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                     </tr>
                                                                     <tr>
                                                                         <td>recipients</td>
-                                                                        <td> str</td>
+                                                                        <td>str</td>
                                                                         <td></td>
                                                                         <td>list of email addresses, defaults to []</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>subject</td>
-                                                                        <td> str </td>
-                                                                        <td> </td>
+                                                                        <td>str</td>
+                                                                        <td></td>
                                                                         <td>message subject, defaults to ""</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>body</td>
-                                                                        <td> str </td>
-                                                                        <td> </td>
+                                                                        <td>str</td>
+                                                                        <td></td>
                                                                         <td>message body, defaults to ""</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>attachments</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>list of filepaths to attach, defaults to []</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>html</td>
-                                                                        <td> bool </td>
-                                                                        <td> False</td>
+                                                                        <td>bool</td>
+                                                                        <td>False</td>
                                                                         <td>if message content is in HTML, default False</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>images</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>list of filepaths for inline use, defaults to []</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>cc</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>list of email addresses, defaults to []</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>bcc</td>
-                                                                        <td> str </td>
-                                                                        <td> None</td>
+                                                                        <td>str</td>
+                                                                        <td>None</td>
                                                                         <td>list of email addresses, defaults to []</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>save</td>
-                                                                        <td> bool </td>
-                                                                        <td> False</td>
+                                                                        <td>bool</td>
+                                                                        <td>False</td>
                                                                         <td>is sent message saved to Sent messages folder or not, defaults to False</td>
                                                                     </tr>
                                                                 </table>
-
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -698,30 +682,29 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                     </tr>
                                                                     <tr>
                                                                         <td>criterion</td>
-                                                                        <td> str </td>
-                                                                        <td> </td>
+                                                                        <td>str</td>
+                                                                        <td></td>
                                                                         <td>wait for message matching criterion</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>timeout</td>
-                                                                        <td> float </td>
-                                                                        <td> 5.0</td>
+                                                                        <td>float</td>
+                                                                        <td>5.0</td>
                                                                         <td>total time in seconds to wait for email, defaults to 5.0</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>interval</td>
-                                                                        <td> float </td>
-                                                                        <td> 1.0</td>
+                                                                        <td>float</td>
+                                                                        <td>1.0</td>
                                                                         <td>time in seconds for new check, defaults to 1.0</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>contains</td>
-                                                                        <td> bool </td>
-                                                                        <td> False</td>
+                                                                        <td>bool</td>
+                                                                        <td>False</td>
                                                                         <td>if matching should be done using contains matching and not equals matching, default False is means equals matching</td>
                                                                     </tr>
                                                                 </table>
-
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -744,7 +727,8 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param contains:</th>
-                                                                            <td class="field-body">if matching should be done using <cite>contains</cite> matching and not <cite>equals</cite> matching, default <cite>False</cite> is means
+                                                                            <td class="field-body">
+                                                                                if matching should be done using <cite>contains</cite> matching and not <cite>equals</cite> matching, default <cite>False</cite> is means
                                                                                 <cite>equals</cite> matching
                                                                             </td>
                                                                         </tr>
@@ -756,36 +740,44 @@ ${</span><span class="nv">ATTACHMENTS</span><span class="p">}          </span><s
                                                                 </table>
                                                             </div>
                                                         </div>
-
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu">
+                                                    <input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" />
+                                                    <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
-                                                    </svg></fieldset>
+                                                    </svg>
+                                                </fieldset>
                                             </form>
-                                            <div><a id="link-authorize" href="#authorize" class="">Authorize</a><a id="link-create-folder" href="#create-folder" class="">Create Folder</a><a id="link-delete-folder" href="#delete-folder" class="">Delete Folder</a><a id="link-empty-folder" href="#empty-folder" class="">Empty Folder</a><a id="link-list-messages" href="#list-messages" class="">List Messages</a><a id="link-move-messages" href="#move-messages" class="">Move Messages</a><a id="link-rename-folder" href="#rename-folder" class="">Rename Folder</a><a id="link-send-message" href="#send-message" class="">Send Message</a>
-                                                <a id="link-wait-for-message" href="#wait-for-message" class="">Wait For Message</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-authorize" href="#authorize" class="">Authorize</a></li>
+                                                    <li><a id="link-create-folder" href="#create-folder" class="">Create Folder</a></li>
+                                                    <li><a id="link-delete-folder" href="#delete-folder" class="">Delete Folder</a></li>
+                                                    <li><a id="link-empty-folder" href="#empty-folder" class="">Empty Folder</a></li>
+                                                    <li><a id="link-list-messages" href="#list-messages" class="">List Messages</a></li>
+                                                    <li><a id="link-move-messages" href="#move-messages" class="">Move Messages</a></li>
+                                                    <li><a id="link-rename-folder" href="#rename-folder" class="">Rename Folder</a></li>
+                                                    <li><a id="link-send-message" href="#send-message" class="">Send Message</a></li>
+                                                    <li><a id="link-wait-for-message" href="#wait-for-message" class="">Wait For Message</a></li>
+                                                </ul>
                                             </div>
                                         </aside>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
         <!-- #END# Headings -->
-
     </div>
 </section>

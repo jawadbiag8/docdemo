@@ -2354,34 +2354,57 @@ ${L2} = ['b']
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-append-to-list" href="#append-to-list" class="">Append To List</a><a id="link-combine-lists" href="#combine-lists" class="">Combine Lists</a><a id="link-convert-to-dictionary" href="#convert-to-dictionary" class="">Convert To
-                                                    Dictionary</a><a id="link-convert-to-list" href="#convert-to-list" class="">Convert To
-                                                    List</a><a id="link-copy-dictionary" href="#copy-dictionary" class="">Copy
-                                                    Dictionary</a><a id="link-copy-list" href="#copy-list" class="">Copy List</a><a id="link-count-values-in-list" href="#count-values-in-list" class="">Count Values In
-                                                    List</a><a id="link-dictionaries-should-be-equal" href="#dictionaries-should-be-equal" class="">Dictionaries Should Be Equal</a><a id="link-dictionary-should-contain-item" href="#dictionary-should-contain-item" class="">Dictionary Should Contain Item</a><a id="link-dictionary-should-contain-key" href="#dictionary-should-contain-key" class="">Dictionary Should Contain Key</a><a id="link-dictionary-should-contain-sub-dictionary" href="#dictionary-should-contain-sub-dictionary" class="">Dictionary Should Contain Sub
-                                                    Dictionary</a><a id="link-dictionary-should-contain-value" href="#dictionary-should-contain-value" class="">Dictionary Should Contain Value</a><a id="link-dictionary-should-not-contain-key" href="#dictionary-should-not-contain-key" class="">Dictionary Should Not Contain Key</a><a id="link-dictionary-should-not-contain-value" href="#dictionary-should-not-contain-value" class="">Dictionary Should Not Contain
-                                                    Value</a><a id="link-get-dictionary-items" href="#get-dictionary-items" class="">Get
-                                                    Dictionary Items</a><a id="link-get-dictionary-keys" href="#get-dictionary-keys" class="">Get Dictionary Keys</a><a id="link-get-dictionary-values" href="#get-dictionary-values" class="">Get Dictionary Values</a>
-                                                <a id="link-get-from-dictionary" href="#get-from-dictionary" class="">Get From Dictionary
-                                                </a><a id="link-get-from-list" href="#get-from-list" class="">Get From
-                                                    List</a><a id="link-get-index-from-list" href="#get-index-from-list" class="">Get Index
-                                                    From List</a><a id="link-get-match-count" href="#get-match-count" class="">Get Match
-                                                    Count</a><a id="link-get-matches" href="#get-matches" class="">Get Matches</a><a id="link-get-slice-from-list" href="#get-slice-from-list" class="">Get Slice From
-                                                    List</a><a id="link-insert-into-list" href="#insert-into-list" class="">Insert Into
-                                                    List</a><a id="link-keep-in-dictionary" href="#keep-in-dictionary" class="">Keep In
-                                                    Dictionary</a><a id="link-list-should-contain-sub-list" href="#list-should-contain-sub-list" class="">List Should Contain Sub List</a><a id="link-list-should-contain-value" href="#list-should-contain-value" class="">List
-                                                    Should Contain Value</a><a id="link-list-should-not-contain-duplicates" href="#list-should-not-contain-duplicates" class="">List Should Not Contain
-                                                    Duplicates</a><a id="link-list-should-not-contain-value" href="#list-should-not-contain-value" class="">List Should Not Contain Value</a><a id="link-lists-should-be-equal" href="#lists-should-be-equal" class="">Lists Should Be
-                                                    Equal</a><a id="link-log-dictionary" href="#log-dictionary" class="">Log Dictionary</a><a id="link-log-list" href="#log-list" class="">Log List</a><a id="link-pop-from-dictionary" href="#pop-from-dictionary" class="">Pop From Dictionary</a><a id="link-remove-duplicates" href="#remove-duplicates" class="">Remove Duplicates</a><a id="link-remove-from-dictionary" href="#remove-from-dictionary" class="">Remove From
-                                                    Dictionary</a><a id="link-remove-from-list" href="#remove-from-list" class="">Remove From
-                                                    List</a><a id="link-remove-values-from-list" href="#remove-values-from-list" class="">Remove Values From List</a><a id="link-reverse-list" href="#reverse-list" class="">Reverse List</a><a id="link-set-list-value" href="#set-list-value" class="">Set
-                                                    List Value</a><a id="link-set-to-dictionary" href="#set-to-dictionary" class="">Set To
-                                                    Dictionary</a><a id="link-should-contain-match" href="#should-contain-match" class="">Should Contain Match</a><a id="link-should-not-contain-match" href="#should-not-contain-match" class="">Should Not Contain Match</a>
-                                                <a id="link-sort-list" href="#sort-list" class="">Sort List</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-append-to-list" href="#append-to-list" class="">Append To List</a></li>
+                                                    <li><a id="link-combine-lists" href="#combine-lists" class="">Combine Lists</a></li>
+                                                    <li><a id="link-convert-to-dictionary" href="#convert-to-dictionary" class="">Convert To Dictionary</a></li>
+                                                    <li><a id="link-convert-to-list" href="#convert-to-list" class="">Convert To List</a></li>
+                                                    <li><a id="link-copy-dictionary" href="#copy-dictionary" class="">Copy Dictionary</a></li>
+                                                    <li><a id="link-copy-list" href="#copy-list" class="">Copy List</a></li>
+                                                    <li><a id="link-count-values-in-list" href="#count-values-in-list" class="">Count Values In List</a></li>
+                                                    <li><a id="link-dictionaries-should-be-equal" href="#dictionaries-should-be-equal" class="">Dictionaries Should Be Equal</a></li>
+                                                    <li><a id="link-dictionary-should-contain-item" href="#dictionary-should-contain-item" class="">Dictionary Should Contain Item</a></li>
+                                                    <li><a id="link-dictionary-should-contain-key" href="#dictionary-should-contain-key" class="">Dictionary Should Contain Key</a></li>
+                                                    <li><a id="link-dictionary-should-contain-sub-dictionary" href="#dictionary-should-contain-sub-dictionary" class="">Dictionary Should Contain Sub Dictionary</a></li>
+                                                    <li><a id="link-dictionary-should-contain-value" href="#dictionary-should-contain-value" class="">Dictionary Should Contain Value</a></li>
+                                                    <li><a id="link-dictionary-should-not-contain-key" href="#dictionary-should-not-contain-key" class="">Dictionary Should Not Contain Key</a></li>
+                                                    <li><a id="link-dictionary-should-not-contain-value" href="#dictionary-should-not-contain-value" class="">Dictionary Should Not Contain Value</a></li>
+                                                    <li><a id="link-get-dictionary-items" href="#get-dictionary-items" class="">Get Dictionary Items</a></li>
+                                                    <li><a id="link-get-dictionary-keys" href="#get-dictionary-keys" class="">Get Dictionary Keys</a></li>
+                                                    <li><a id="link-get-dictionary-values" href="#get-dictionary-values" class="">Get Dictionary Values</a></li>
+                                                    <li><a id="link-get-from-dictionary" href="#get-from-dictionary" class="">Get From Dictionary </a></li>
+                                                    <li><a id="link-get-from-list" href="#get-from-list" class="">Get From List</a></li>
+                                                    <li><a id="link-get-index-from-list" href="#get-index-from-list" class="">Get Index From List</a></li>
+                                                    <li><a id="link-get-match-count" href="#get-match-count" class="">Get Match Count</a></li>
+                                                    <li><a id="link-get-matches" href="#get-matches" class="">Get Matches</a></li>
+                                                    <li><a id="link-get-slice-from-list" href="#get-slice-from-list" class="">Get Slice From List</a></li>
+                                                    <li><a id="link-insert-into-list" href="#insert-into-list" class="">Insert Into List</a></li>
+                                                    <li><a id="link-keep-in-dictionary" href="#keep-in-dictionary" class="">Keep In Dictionary</a></li>
+                                                    <li><a id="link-list-should-contain-sub-list" href="#list-should-contain-sub-list" class="">List Should Contain Sub List</a></li>
+                                                    <li><a id="link-list-should-contain-value" href="#list-should-contain-value" class="">List Should Contain Value</a></li>
+                                                    <li><a id="link-list-should-not-contain-duplicates" href="#list-should-not-contain-duplicates" class="">List Should Not Contain Duplicates</a></li>
+                                                    <li><a id="link-list-should-not-contain-value" href="#list-should-not-contain-value" class="">List Should Not Contain Value</a></li>
+                                                    <li><a id="link-lists-should-be-equal" href="#lists-should-be-equal" class="">Lists Should Be Equal</a></li>
+                                                    <li><a id="link-log-dictionary" href="#log-dictionary" class="">Log Dictionary</a></li>
+                                                    <li><a id="link-log-list" href="#log-list" class="">Log List</a></li>
+                                                    <li><a id="link-pop-from-dictionary" href="#pop-from-dictionary" class="">Pop From Dictionary</a></li>
+                                                    <li><a id="link-remove-duplicates" href="#remove-duplicates" class="">Remove Duplicates</a></li>
+                                                    <li><a id="link-remove-from-dictionary" href="#remove-from-dictionary" class="">Remove From Dictionary</a></li>
+                                                    <li><a id="link-remove-from-list" href="#remove-from-list" class="">Remove From List</a></li>
+                                                    <li><a id="link-remove-values-from-list" href="#remove-values-from-list" class="">Remove Values From List</a></li>
+                                                    <li><a id="link-reverse-list" href="#reverse-list" class="">Reverse List</a></li>
+                                                    <li><a id="link-set-list-value" href="#set-list-value" class="">Set List Value</a></li>
+                                                    <li><a id="link-set-to-dictionary" href="#set-to-dictionary" class="">Set To Dictionary</a></li>
+                                                    <li><a id="link-should-contain-match" href="#should-contain-match" class="">Should Contain Match</a></li>
+                                                    <li><a id="link-should-not-contain-match" href="#should-not-contain-match" class="">Should Not Contain Match</a></li>
+                                                    <li><a id="link-sort-list" href="#sort-list" class="">Sort List</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

@@ -799,15 +799,29 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-connect" href="#connect" class="">Connect</a><a id="link-get-accounts" href="#get-accounts" class="">Get Accounts</a><a id="link-get-classifications" href="#get-classifications" class="">Get Classifications</a><a id="link-get-currencies" href="#get-currencies" class="">Get Currencies</a><a id="link-get-currency" href="#get-currency" class="">Get Currency</a><a id="link-get-departments" href="#get-departments" class="">Get Departments</a><a id="link-get-locations" href="#get-locations" class="">Get Locations</a><a id="link-get-vendor-bills" href="#get-vendor-bills" class="">Get Vendor Bills</a><a id="link-get-vendors" href="#get-vendors" class="">Get Vendors</a><a id="link-login" href="#login" class="">Login</a><a id="link-netsuite-get" href="#netsuite-get" class="">Netsuite
-                                                    Get</a><a id="link-netsuite-get-all" href="#netsuite-get-all" class="">Netsuite Get
-                                                    All</a><a id="link-netsuite-search" href="#netsuite-search" class="">Netsuite
-                                                    Search</a><a id="link-netsuite-search-all" href="#netsuite-search-all" class="">Netsuite
-                                                    Search All</a></div>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-connect" href="#connect" class="">Connect</a></li>
+                                                    <li><a id="link-get-accounts" href="#get-accounts" class="">Get Accounts</a></li>
+                                                    <li><a id="link-get-classifications" href="#get-classifications" class="">Get Classifications</a></li>
+                                                    <li><a id="link-get-currencies" href="#get-currencies" class="">Get Currencies</a></li>
+                                                    <li><a id="link-get-currency" href="#get-currency" class="">Get Currency</a></li>
+                                                    <li><a id="link-get-departments" href="#get-departments" class="">Get Departments</a></li>
+                                                    <li><a id="link-get-locations" href="#get-locations" class="">Get Locations</a></li>
+                                                    <li><a id="link-get-vendor-bills" href="#get-vendor-bills" class="">Get Vendor Bills</a></li>
+                                                    <li><a id="link-get-vendors" href="#get-vendors" class="">Get Vendors</a></li>
+                                                    <li><a id="link-login" href="#login" class="">Login</a></li>
+                                                    <li><a id="link-netsuite-get" href="#netsuite-get" class="">Netsuite Get</a></li>
+                                                    <li><a id="link-netsuite-get-all" href="#netsuite-get-all" class="">Netsuite Get All</a></li>
+                                                    <li><a id="link-netsuite-search" href="#netsuite-search" class="">Netsuite Search</a></li>
+                                                    <li><a id="link-netsuite-search-all" href="#netsuite-search-all" class="">Netsuite Search All</a></li>
+                                                </ul>
+
+                                            </div>
                                         </aside>
                                     </div>
                                 </div>

@@ -342,6 +342,8 @@
 
     <!-- Demo Js -->
     <!--<script src="../js/demo.js"></script>-->
+   <!-- keyword search -->
+   <script src="../web/js/keywordsearch.js"></script>
 </body>
 
 </html>

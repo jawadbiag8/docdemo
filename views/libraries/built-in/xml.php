@@ -3067,27 +3067,51 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-add-element" href="#add-element" class="">Add Element</a><a id="link-clear-element" href="#clear-element" class="">Clear Element</a><a id="link-copy-element" href="#copy-element" class="">Copy Element</a><a id="link-element-attribute-should-be" href="#element-attribute-should-be" class="">Element Attribute Should Be</a><a id="link-element-attribute-should-match" href="#element-attribute-should-match" class="">Element Attribute Should Match</a><a id="link-element-should-exist" href="#element-should-exist" class="">Element Should
-                                                    Exist</a><a id="link-element-should-not-exist" href="#element-should-not-exist" class="">Element Should Not Exist</a><a id="link-element-should-not-have-attribute" href="#element-should-not-have-attribute" class="">Element Should Not Have
-                                                    Attribute</a><a id="link-element-text-should-be" href="#element-text-should-be" class="">Element Text Should Be</a><a id="link-element-text-should-match" href="#element-text-should-match" class="">Element Text Should Match</a>
-                                                <a id="link-element-to-string" href="#element-to-string" class="">Element To String</a><a id="link-elements-should-be-equal" href="#elements-should-be-equal" class="">Elements
-                                                    Should Be Equal</a><a id="link-elements-should-match" href="#elements-should-match" class="">Elements Should Match</a><a id="link-evaluate-xpath" href="#evaluate-xpath" class="">Evaluate Xpath</a><a id="link-get-child-elements" href="#get-child-elements" class="">Get Child Elements</a><a id="link-get-element" href="#get-element" class="">Get
-                                                    Element</a><a id="link-get-element-attribute" href="#get-element-attribute" class="">Get
-                                                    Element Attribute</a><a id="link-get-element-attributes" href="#get-element-attributes" class="">Get Element Attributes</a><a id="link-get-element-count" href="#get-element-count" class="">Get Element Count</a>
-                                                <a id="link-get-element-text" href="#get-element-text" class="">Get Element Text</a><a id="link-get-elements" href="#get-elements" class="">Get Elements</a><a id="link-get-elements-texts" href="#get-elements-texts" class="">Get Elements Texts</a><a id="link-log-element" href="#log-element" class="">Log Element</a><a id="link-parse-xml" href="#parse-xml" class="">Parse Xml</a><a id="link-remove-element" href="#remove-element" class="">Remove Element</a>
-                                                <a id="link-remove-element-attribute" href="#remove-element-attribute" class="">Remove Element Attribute</a><a id="link-remove-element-attributes" href="#remove-element-attributes" class="">Remove
-                                                    Element Attributes</a><a id="link-remove-elements" href="#remove-elements" class="">Remove Elements</a><a id="link-remove-elements-attribute" href="#remove-elements-attribute" class="">Remove Elements Attribute</a>
-                                                <a id="link-remove-elements-attributes" href="#remove-elements-attributes" class="">Remove Elements Attributes</a><a id="link-save-xml" href="#save-xml" class="">Save Xml</a><a id="link-set-element-attribute" href="#set-element-attribute" class="">Set Element
-                                                    Attribute</a><a id="link-set-element-tag" href="#set-element-tag" class="">Set Element
-                                                    Tag</a><a id="link-set-element-text" href="#set-element-text" class="">Set Element
-                                                    Text</a><a id="link-set-elements-attribute" href="#set-elements-attribute" class="">Set
-                                                    Elements Attribute</a><a id="link-set-elements-tag" href="#set-elements-tag" class="">Set
-                                                    Elements Tag</a><a id="link-set-elements-text" href="#set-elements-text" class="">Set
-                                                    Elements Text</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-add-element" href="#add-element" class="">Add Element</a></li>
+                                                    <li><a id="link-clear-element" href="#clear-element" class="">Clear Element</a></li>
+                                                    <li><a id="link-copy-element" href="#copy-element" class="">Copy Element</a></li>
+                                                    <li><a id="link-element-attribute-should-be" href="#element-attribute-should-be" class="">Element Attribute Should Be</a></li>
+                                                    <li><a id="link-element-attribute-should-match" href="#element-attribute-should-match" class="">Element Attribute Should Match</a></li>
+                                                    <li><a id="link-element-should-exist" href="#element-should-exist" class="">Element Should Exist</a></li>
+                                                    <li><a id="link-element-should-not-exist" href="#element-should-not-exist" class="">Element Should Not Exist</a></li>
+                                                    <li><a id="link-element-should-not-have-attribute" href="#element-should-not-have-attribute" class="">Element Should Not Have Attribute</a></li>
+                                                    <li><a id="link-element-text-should-be" href="#element-text-should-be" class="">Element Text Should Be</a></li>
+                                                    <li><a id="link-element-text-should-match" href="#element-text-should-match" class="">Element Text Should Match</a></li>
+                                                    <li><a id="link-element-to-string" href="#element-to-string" class="">Element To String</a></li>
+                                                    <li><a id="link-elements-should-be-equal" href="#elements-should-be-equal" class="">Elements Should Be Equal</a></li>
+                                                    <li><a id="link-elements-should-match" href="#elements-should-match" class="">Elements Should Match</a></li>
+                                                    <li><a id="link-evaluate-xpath" href="#evaluate-xpath" class="">Evaluate Xpath</a></li>
+                                                    <li><a id="link-get-child-elements" href="#get-child-elements" class="">Get Child Elements</a></li>
+                                                    <li><a id="link-get-element" href="#get-element" class="">Get Element</a></li>
+                                                    <li><a id="link-get-element-attribute" href="#get-element-attribute" class="">Get Element Attribute</a></li>
+                                                    <li><a id="link-get-element-attributes" href="#get-element-attributes" class="">Get Element Attributes</a></li>
+                                                    <li><a id="link-get-element-count" href="#get-element-count" class="">Get Element Count</a></li>
+                                                    <li><a id="link-get-element-text" href="#get-element-text" class="">Get Element Text</a></li>
+                                                    <li><a id="link-get-elements" href="#get-elements" class="">Get Elements</a></li>
+                                                    <li><a id="link-get-elements-texts" href="#get-elements-texts" class="">Get Elements Texts</a></li>
+                                                    <li><a id="link-log-element" href="#log-element" class="">Log Element</a></li>
+                                                    <li><a id="link-parse-xml" href="#parse-xml" class="">Parse Xml</a></li>
+                                                    <li><a id="link-remove-element" href="#remove-element" class="">Remove Element</a></li>
+                                                    <li><a id="link-remove-element-attribute" href="#remove-element-attribute" class="">Remove Element Attribute</a></li>
+                                                    <li><a id="link-remove-element-attributes" href="#remove-element-attributes" class="">Remove Element Attributes</a></li>
+                                                    <li><a id="link-remove-elements" href="#remove-elements" class="">Remove Elements</a></li>
+                                                    <li><a id="link-remove-elements-attribute" href="#remove-elements-attribute" class="">Remove Elements Attribute</a></li>
+                                                    <li><a id="link-remove-elements-attributes" href="#remove-elements-attributes" class="">Remove Elements Attributes</a></li>
+                                                    <li><a id="link-save-xml" href="#save-xml" class="">Save Xml</a></li>
+                                                    <li><a id="link-set-element-attribute" href="#set-element-attribute" class="">Set Element Attribute</a></li>
+                                                    <li><a id="link-set-element-tag" href="#set-element-tag" class="">Set Element Tag</a></li>
+                                                    <li><a id="link-set-element-text" href="#set-element-text" class="">Set Element Text</a></li>
+                                                    <li><a id="link-set-elements-attribute" href="#set-elements-attribute" class="">Set Elements Attribute</a></li>
+                                                    <li><a id="link-set-elements-tag" href="#set-elements-tag" class="">Set Elements Tag</a></li>
+                                                    <li><a id="link-set-elements-text" href="#set-elements-text" class="">Set Elements Text</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

@@ -602,18 +602,18 @@ END
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
-                                                    </svg></fieldset>
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /></fieldset>
                                             </form>
                                             <div>
-                                                <a id="link-add-to-archive" href="#add-to-archive" class="">Add To Archive</a>
-                                                <a id="link-archive-folder-with-tar" href="#archive-folder-with-tar" class="">Archive Folder With Tar</a>
-                                                <a id="link-archive-folder-with-zip" href="#archive-folder-with-zip" class="">Archive Folder With Zip</a>
-                                                <a id="link-extract-archive" href="#extract-archive" class="">Extract Archive</a>
-                                                <a id="link-extract-file-from-archive" href="#extract-file-from-archive" class="">Extract File From Archive</a>
-                                                <a id="link-get-archive-info" href="#get-archive-info" class="">Get Archive Info</a>
-                                                <a id="link-list-archive" href="#list-archive" class="">List Archive</a>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-add-to-archive" href="#add-to-archive" class="">Add To Archive</a></li>
+                                                    <li><a id="link-archive-folder-with-tar" href="#archive-folder-with-tar" class="">Archive Folder With Tar</a></li>
+                                                    <li><a id="link-archive-folder-with-zip" href="#archive-folder-with-zip" class="">Archive Folder With Zip</a></li>
+                                                    <li><a id="link-extract-archive" href="#extract-archive" class="">Extract Archive</a></li>
+                                                    <li><a id="link-extract-file-from-archive" href="#extract-file-from-archive" class="">Extract File From Archive</a></li>
+                                                    <li><a id="link-get-archive-info" href="#get-archive-info" class="">Get Archive Info</a></li>
+                                                    <li><a id="link-list-archive" href="#list-archive" class="">List Archive</a></li>
+                                                </ul>
                                             </div>
                                         </aside>
                                     </div>

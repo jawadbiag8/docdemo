@@ -202,6 +202,7 @@
             <script src="../web/js/jquery-2.2.3.min.js"></script>
             <script src="../web/js/scroll_menu.js"></script>
             <script src="../web/js/jquery.chocolat.js "></script>
+            <script src="../web/js/keywordsearch.js"></script>
          <link rel="stylesheet " href="../web/css/chocolat.css " type="text/css " media="screen "> 
             <script src="../web/js/move-top.js"></script>
             <script>

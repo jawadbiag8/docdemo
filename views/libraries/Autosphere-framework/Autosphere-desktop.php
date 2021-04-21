@@ -1391,23 +1391,41 @@ Click    image:%{ROBOT_ROOT}/accept.png
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-clear-clipboard" href="#clear-clipboard" class="">Clear Clipboard</a><a id="link-click" href="#click" class="">Click</a><a id="link-click-with-offset" href="#click-with-offset" class="">Click With Offset</a><a id="link-close-all-applications" href="#close-all-applications" class="">Close All
-                                                    Applications</a><a id="link-close-application" href="#close-application" class="">Close
-                                                    Application</a><a id="link-copy-to-clipboard" href="#copy-to-clipboard" class="">Copy To
-                                                    Clipboard</a><a id="link-drag-and-drop" href="#drag-and-drop" class="">Drag And
-                                                    Drop</a><a id="link-find-element" href="#find-element" class="">Find Element</a><a id="link-find-elements" href="#find-elements" class="">Find Elements</a><a id="link-get-clipboard-value" href="#get-clipboard-value" class="">Get Clipboard
-                                                    Value</a><a id="link-get-display-dimensions" href="#get-display-dimensions" class="">Get
-                                                    Display Dimensions</a><a id="link-get-mouse-position" href="#get-mouse-position" class="">Get Mouse Position</a><a id="link-highlight-elements" href="#highlight-elements" class="">Highlight Elements</a><a id="link-move-mouse" href="#move-mouse" class="">Move
-                                                    Mouse</a><a id="link-open-application" href="#open-application" class="">Open
-                                                    Application</a><a id="link-open-file" href="#open-file" class="">Open File</a><a id="link-paste-from-clipboard" href="#paste-from-clipboard" class="">Paste From
-                                                    Clipboard</a><a id="link-press-keys" href="#press-keys" class="">Press Keys</a><a id="link-press-mouse-button" href="#press-mouse-button" class="">Press Mouse Button</a><a id="link-release-mouse-button" href="#release-mouse-button" class="">Release Mouse
-                                                    Button</a><a id="link-set-clipboard-value" href="#set-clipboard-value" class="">Set
-                                                    Clipboard Value</a><a id="link-set-default-confidence" href="#set-default-confidence" class="">Set Default Confidence</a><a id="link-take-screenshot" href="#take-screenshot" class="">Take Screenshot</a><a id="link-type-text" href="#type-text" class="">Type
-                                                    Text</a><a id="link-type-text-into" href="#type-text-into" class="">Type Text Into</a><a id="link-wait-for-element" href="#wait-for-element" class="">Wait For Element</a></div>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-clear-clipboard" href="#clear-clipboard" class="">Clear Clipboard</a></li>
+                                                    <li><a id="link-click" href="#click" class="">Click</a></li>
+                                                    <li><a id="link-click-with-offset" href="#click-with-offset" class="">Click With Offset</a></li>
+                                                    <li><a id="link-close-all-applications" href="#close-all-applications" class="">Close All Applications</a></li>
+                                                    <li><a id="link-close-application" href="#close-application" class="">Close Application</a></li>
+                                                    <li><a id="link-copy-to-clipboard" href="#copy-to-clipboard" class="">Copy To Clipboard</a></li>
+                                                    <li><a id="link-drag-and-drop" href="#drag-and-drop" class="">Drag And Drop</a></li>
+                                                    <li><a id="link-find-element" href="#find-element" class="">Find Element</a></li>
+                                                    <li><a id="link-find-elements" href="#find-elements" class="">Find Elements</a></li>
+                                                    <li><a id="link-get-clipboard-value" href="#get-clipboard-value" class="">Get Clipboard Value</a></li>
+                                                    <li><a id="link-get-display-dimensions" href="#get-display-dimensions" class="">Get Display Dimensions</a></li>
+                                                    <li><a id="link-get-mouse-position" href="#get-mouse-position" class="">Get Mouse Position</a></li>
+                                                    <li><a id="link-highlight-elements" href="#highlight-elements" class="">Highlight Elements</a></li>
+                                                    <li><a id="link-move-mouse" href="#move-mouse" class="">Move Mouse</a></li>
+                                                    <li><a id="link-open-application" href="#open-application" class="">Open Application</a></li>
+                                                    <li><a id="link-open-file" href="#open-file" class="">Open File</a></li>
+                                                    <li><a id="link-paste-from-clipboard" href="#paste-from-clipboard" class="">Paste From Clipboard</a></li>
+                                                    <li><a id="link-press-keys" href="#press-keys" class="">Press Keys</a></li>
+                                                    <li><a id="link-press-mouse-button" href="#press-mouse-button" class="">Press Mouse Button</a></li>
+                                                    <li><a id="link-release-mouse-button" href="#release-mouse-button" class="">Release Mouse Button</a></li>
+                                                    <li><a id="link-set-clipboard-value" href="#set-clipboard-value" class="">Set Clipboard Value</a></li>
+                                                    <li><a id="link-set-default-confidence" href="#set-default-confidence" class="">Set Default Confidence</a></li>
+                                                    <li><a id="link-take-screenshot" href="#take-screenshot" class="">Take Screenshot</a></li>
+                                                    <li><a id="link-type-text" href="#type-text" class="">Type Text</a></li>
+                                                    <li><a id="link-type-text-into" href="#type-text-into" class="">Type Text Into</a></li>
+                                                    <li><a id="link-wait-for-element" href="#wait-for-element" class="">Wait For Element</a></li>
+                                                </ul>
+                                            </div>
+
                                         </aside>
                                     </div>
                                 </div>

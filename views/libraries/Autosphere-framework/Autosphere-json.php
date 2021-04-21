@@ -766,13 +766,23 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()"  type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div class="ps ps--active-y"><a id="link-add-to-json" href="#add-to-json" class="">Add to JSON</a><a id="link-convert-json-to-string" href="#convert-json-to-string" class="">Convert JSON to
-                                                    String</a><a id="link-convert-string-to-json" href="#convert-string-to-json" class="">Convert String to
-                                                    JSON</a><a id="link-delete-from-json" href="#delete-from-json" class="">Delete from JSON</a><a id="link-get-value-from-json" href="#get-value-from-json" class="">Get value from JSON</a><a id="link-get-values-from-json" href="#get-values-from-json" class="">Get values from JSON</a><a id="link-load-json-from-file" href="#load-json-from-file" class="">Load JSON from file</a><a id="link-save-json-to-file" href="#save-json-to-file" class="">Save JSON to file</a><a id="link-update-value-to-json" href="#update-value-to-json" class="">Update value to JSON</a>
+                                            <div class="ps ps--active-y">
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-add-to-json" href="#add-to-json" class="">Add to JSON</a></li>
+                                                    <li><a id="link-convert-json-to-string" href="#convert-json-to-string" class="">Convert JSON to String</a></li>
+                                                    <li><a id="link-convert-string-to-json" href="#convert-string-to-json" class="">Convert String to JSON</a></li>
+                                                    <li><a id="link-delete-from-json" href="#delete-from-json" class="">Delete from JSON</a></li>
+                                                    <li><a id="link-get-value-from-json" href="#get-value-from-json" class="">Get value from JSON</a></li>
+                                                    <li><a id="link-get-values-from-json" href="#get-values-from-json" class="">Get values from JSON</a></li>
+                                                    <li><a id="link-load-json-from-file" href="#load-json-from-file" class="">Load JSON from file</a></li>
+                                                    <li><a id="link-save-json-to-file" href="#save-json-to-file" class="">Save JSON to file</a></li>
+                                                    <li><a id="link-update-value-to-json" href="#update-value-to-json" class="">Update value to JSON</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

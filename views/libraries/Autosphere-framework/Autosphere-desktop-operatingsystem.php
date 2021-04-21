@@ -437,14 +437,24 @@ Put System To Sleep
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-boot-time-in-seconds-from-epoch" href="#boot-time-in-seconds-from-epoch" class="">Boot Time In Seconds From Epoch</a><a id="link-get-boot-time" href="#get-boot-time" class="">Get Boot Time</a>
-                                                <a id="link-get-machine-name" href="#get-machine-name" class="">Get Machine Name</a><a id="link-get-memory-stats" href="#get-memory-stats" class="">Get Memory Stats</a><a id="link-get-username" href="#get-username" class="">Get Username</a><a id="link-kill-process" href="#kill-process" class="">Kill Process</a><a id="link-kill-process-by-pid" href="#kill-process-by-pid" class="">Kill Process By Pid</a>
-                                                <a id="link-process-exists" href="#process-exists" class="">Process Exists</a><a id="link-put-system-to-sleep" href="#put-system-to-sleep" class="">Put System To Sleep</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-boot-time-in-seconds-from-epoch" href="#boot-time-in-seconds-from-epoch" class="">Boot Time In Seconds From Epoch</a></li>
+                                                    <li><a id="link-get-boot-time" href="#get-boot-time" class="">Get Boot Time</a></li>
+                                                    <li><a id="link-get-machine-name" href="#get-machine-name" class="">Get Machine Name</a></li>
+                                                    <li><a id="link-get-memory-stats" href="#get-memory-stats" class="">Get Memory Stats</a></li>
+                                                    <li><a id="link-get-username" href="#get-username" class="">Get Username</a></li>
+                                                    <li><a id="link-kill-process" href="#kill-process" class="">Kill Process</a></li>
+                                                    <li><a id="link-kill-process-by-pid" href="#kill-process-by-pid" class="">Kill Process By Pid</a></li>
+                                                    <li><a id="link-process-exists" href="#process-exists" class="">Process Exists</a></li>
+                                                    <li><a id="link-put-system-to-sleep" href="#put-system-to-sleep" class="">Put System To Sleep</a></li>
+                                                </ul>
                                             </div>
+
                                         </aside>
                                     </div>
                                 </div>

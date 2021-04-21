@@ -1552,21 +1552,36 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div class="ps ps--active-y"><a id="link-create-client-cert-session" href="#create-client-cert-session" class="">Create Client Cert
-                                                    Session</a><a id="link-create-custom-session" href="#link-create-custom-session" class="">Create Custom
-                                                    Session</a><a id="link-create-digest-session" href="#create-digest-session" class="">Create Digest
-                                                    Session</a><a id="link-create-ntlm-session" href="#create-ntlm-session" class="">Create Ntlm Session</a><a id="link-create-session" href="#create-session" class="">Create
-                                                    Session</a><a id="link-delete-all-sessions" href="#delete-all-sessions" class="">Delete All Sessions</a><a id="link-delete-request" href="#delete-request" class="">Delete
-                                                    Request</a><a id="link-download" href="#download" class="">Download</a><a id="link-get-current-session-alias" href="#get-current-session-alias" class="">Get Current Session
-                                                    Alias</a><a id="link-get-file-for-streaming-upload" href="#get-file-for-streaming-upload" class="">Get File For
-                                                    Streaming Upload</a><a id="link-get-request" href="#get-request" class="">Get Request</a><a id="link-head-request" href="#head-request" class="">Head Request</a><a id="link-http-get" href="#http-get" class="">Http Get</a><a id="link-options-request" href="#options-request" class="">Options Request</a><a id="link-patch-request" href="#patch-request" class="">Patch Request</a><a id="link-post-request" href="#post-request" class="">Post
-                                                    Request</a><a id="link-put-request" href="#put-request" class="">Put Request</a><a id="link-request-should-be-successful" href="#request-should-be-successful" class="">Request Should Be
-                                                    Successful</a><a id="link-session-exists" href="#session-exists" class="">Session Exists</a><a id="link-status-should-be" href="#status-should-be" class="">Status Should Be</a><a id="link-to-json" href="#to-json" class="">To Json</a><a id="link-update-session" href="#update-session" class="">Update
-                                                    Session</a>
+                                            <div class="ps ps--active-y">
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-create-client-cert-session" href="#create-client-cert-session" class="">Create Client Cert Session</a></li>
+                                                    <li><a id="link-create-custom-session" href="#link-create-custom-session" class="">Create Custom Session</a></li>
+                                                    <li><a id="link-create-digest-session" href="#create-digest-session" class="">Create Digest Session</a></li>
+                                                    <li><a id="link-create-ntlm-session" href="#create-ntlm-session" class="">Create Ntlm Session</a></li>
+                                                    <li><a id="link-create-session" href="#create-session" class="">Create Session</a></li>
+                                                    <li><a id="link-delete-all-sessions" href="#delete-all-sessions" class="">Delete All Sessions</a></li>
+                                                    <li><a id="link-delete-request" href="#delete-request" class="">Delete Request</a></li>
+                                                    <li><a id="link-download" href="#download" class="">Download</a></li>
+                                                    <li><a id="link-get-current-session-alias" href="#get-current-session-alias" class="">Get Current Session Alias</a></li>
+                                                    <li><a id="link-get-file-for-streaming-upload" href="#get-file-for-streaming-upload" class="">Get File For Streaming Upload</a></li>
+                                                    <li><a id="link-get-request" href="#get-request" class="">Get Request</a></li>
+                                                    <li><a id="link-head-request" href="#head-request" class="">Head Request</a></li>
+                                                    <li><a id="link-http-get" href="#http-get" class="">Http Get</a></li>
+                                                    <li><a id="link-options-request" href="#options-request" class="">Options Request</a></li>
+                                                    <li><a id="link-patch-request" href="#patch-request" class="">Patch Request</a></li>
+                                                    <li><a id="link-post-request" href="#post-request" class="">Post Request</a></li>
+                                                    <li><a id="link-put-request" href="#put-request" class="">Put Request</a></li>
+                                                    <li><a id="link-request-should-be-successful" href="#request-should-be-successful" class="">Request Should Be Successful</a></li>
+                                                    <li><a id="link-session-exists" href="#session-exists" class="">Session Exists</a></li>
+                                                    <li><a id="link-status-should-be" href="#status-should-be" class="">Status Should Be</a></li>
+                                                    <li><a id="link-to-json" href="#to-json" class="">To Json</a></li>
+                                                    <li><a id="link-update-session" href="#update-session" class="">Update Session</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

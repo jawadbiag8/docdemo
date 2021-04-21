@@ -1359,16 +1359,30 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-get-process-id" href="#get-process-id" class="">Get Process Id</a><a id="link-get-process-object" href="#get-process-object" class="">Get Process Object</a><a id="link-get-process-result" href="#get-process-result" class="">Get Process Result</a><a id="link-is-process-running" href="#is-process-running" class="">Is Process Running</a><a id="link-join-command-line" href="#join-command-line" class="">Join Command Line</a><a id="link-process-should-be-running" href="#process-should-be-running" class="">Process
-                                                    Should Be Running</a><a id="link-process-should-be-stopped" href="#process-should-be-stopped" class="">Process Should Be Stopped</a><a id="link-run-process" href="#run-process" class="">Run Process</a><a id="link-send-signal-to-process" href="#send-signal-to-process" class="">Send Signal To
-                                                    Process</a><a id="link-split-command-line" href="#split-command-line" class="">Split
-                                                    Command Line</a><a id="link-start-process" href="#start-process" class="">Start
-                                                    Process</a><a id="link-switch-process" href="#switch-process" class="">Switch
-                                                    Process</a><a id="link-terminate-all-processes" href="#terminate-all-processes" class="">Terminate All Processes</a><a id="link-terminate-process" href="#terminate-process" class="">Terminate Process</a><a id="link-wait-for-process" href="#wait-for-process" class="">Wait For Process</a></div>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-get-process-id" href="#get-process-id" class="">Get Process Id</a></li>
+                                                    <li><a id="link-get-process-object" href="#get-process-object" class="">Get Process Object</a></li>
+                                                    <li><a id="link-get-process-result" href="#get-process-result" class="">Get Process Result</a></li>
+                                                    <li><a id="link-is-process-running" href="#is-process-running" class="">Is Process Running</a></li>
+                                                    <li><a id="link-join-command-line" href="#join-command-line" class="">Join Command Line</a></li>
+                                                    <li><a id="link-process-should-be-running" href="#process-should-be-running" class="">Process Should Be Running</a></li>
+                                                    <li><a id="link-process-should-be-stopped" href="#process-should-be-stopped" class="">Process Should Be Stopped</a></li>
+                                                    <li><a id="link-run-process" href="#run-process" class="">Run Process</a></li>
+                                                    <li><a id="link-send-signal-to-process" href="#send-signal-to-process" class="">Send Signal To Process</a></li>
+                                                    <li><a id="link-split-command-line" href="#split-command-line" class="">Split Command Line</a></li>
+                                                    <li><a id="link-start-process" href="#start-process" class="">Start Process</a></li>
+                                                    <li><a id="link-switch-process" href="#switch-process" class="">Switch Process</a></li>
+                                                    <li><a id="link-terminate-all-processes" href="#terminate-all-processes" class="">Terminate All Processes</a></li>
+                                                    <li><a id="link-terminate-process" href="#terminate-process" class="">Terminate Process</a></li>
+                                                    <li><a id="link-wait-for-process" href="#wait-for-process" class="">Wait For Process</a></li>
+                                                </ul>
+
+                                            </div>
                                         </aside>
                                     </div>
                                 </div>

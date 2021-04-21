@@ -6651,53 +6651,119 @@ ${group2} = '43'
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-call-method" href="#call-method" class="">Call Method</a><a id="link-catenate" href="#catenate" class="">Catenate</a><a id="link-comment" href="#comment" class="">Comment</a>
-                                                <a id="link-continue-for-loop" href="#continue-for-loop" class="">Continue For Loop</a><a id="link-continue-for-loop-if" href="#continue-for-loop-if" class="">Continue For Loop If</a><a id="link-convert-to-binary" href="#convert-to-binary" class="">Convert To Binary</a>
-                                                <a id="link-convert-to-boolean" href="#convert-to-boolean" class="">Convert To Boolean</a><a id="link-convert-to-bytes" href="#convert-to-bytes" class="">Convert To Bytes</a><a id="link-convert-to-hex" href="#convert-to-hex" class="">Convert To Hex</a><a id="link-convert-to-integer" href="#convert-to-integer" class="">Convert To Integer</a><a id="link-convert-to-number" href="#convert-to-number" class="">Convert To Number</a><a id="link-convert-to-octal" href="#convert-to-octal" class="">Convert To Octal</a><a id="link-convert-to-string" href="#convert-to-string" class="">Convert To String</a>
-                                                <a id="link-create-dictionary" href="#create-dictionary" class="">Create Dictionary</a>
-                                                <a id="link-create-list" href="#create-list" class="">Create List</a><a id="link-evaluate" href="#evaluate" class="">Evaluate</a><a id="link-exit-for-loop" href="#exit-for-loop" class="">Exit For Loop</a>
-                                                <a id="link-exit-for-loop-if" href="#exit-for-loop-if" class="">Exit For Loop If</a><a id="link-fail" href="#fail" class="">Fail</a><a id="link-fatal-error" href="#fatal-error" class="">Fatal Error</a>
-                                                <a id="link-get-count" href="#get-count" class="">Get Count</a>
-                                                <a id="link-get-length" href="#get-length" class="">Get Length</a><a id="link-get-library-instance" href="#get-library-instance" class="">Get Library
-                                                    Instance</a><a id="link-get-time" href="#get-time" class="">Get Time</a><a id="link-get-variable-value" href="#get-variable-value" class="">Get Variable Value</a><a id="link-get-variables" href="#get-variables" class="">Get Variables</a><a id="link-import-library" href="#import-library" class="">Import Library</a><a id="link-import-resource" href="#import-resource" class="">Import Resource</a>
-                                                <a id="link-import-variables" href="#import-variables" class="">Import Variables</a><a id="link-keyword-should-exist" href="#keyword-should-exist" class="">Keyword Should
-                                                    Exist</a><a id="link-length-should-be" href="#length-should-be" class="">Length Should
-                                                    Be</a><a id="link-log" href="#log" class="">Log</a><a id="link-log-many" href="#log-many" class="">Log Many</a><a id="link-log-to-console" href="#log-to-console" class="">Log To Console</a><a id="link-log-variables" href="#log-variables" class="">Log Variables</a><a id="link-no-operation" href="#no-operation" class="">No Operation</a><a id="link-pass-execution" href="#pass-execution" class="">Pass Execution</a>
-                                                <a id="link-pass-execution-if" href="#pass-execution-if" class="">Pass Execution If</a><a id="link-regexp-escape" href="#regexp-escape" class="">Regexp Escape</a>
-                                                <a id="link-reload-library" href="#reload-library" class="">Reload Library</a><a id="link-remove-tags" href="#remove-tags" class="">Remove Tags</a><a id="link-repeat-keyword" href="#repeat-keyword" class="">Repeat Keyword</a><a id="link-replace-variables" href="#replace-variables" class="">Replace Variables</a><a id="link-return-from-keyword" href="#return-from-keyword" class="">Return From Keyword</a>
-                                                <a id="link-return-from-keyword-if" href="#return-from-keyword-if" class="">Return From Keyword If</a><a id="link-run-keyword" href="#run-keyword" class="">Run Keyword</a><a id="link-run-keyword-and-continue-on-failure" href="#run-keyword-and-continue-on-failure" class="">Run Keyword And Continue On Failure</a>
-                                                <a id="link-run-keyword-and-expect-error" href="#run-keyword-and-expect-error" class="">Run Keyword And Expect Error</a><a id="link-run-keyword-and-ignore-error" href="#run-keyword-and-ignore-error" class="">Run
-                                                    Keyword And Ignore Error</a><a id="link-run-keyword-and-return" href="#run-keyword-and-return" class="">Run Keyword And Return</a><a id="link-run-keyword-and-return-if" href="#run-keyword-and-return-if" class="">Run
-                                                    Keyword And Return If</a><a id="link-run-keyword-and-return-status" href="#run-keyword-and-return-status" class="">Run Keyword And Return Status</a><a id="link-run-keyword-if" href="#run-keyword-if" class="">Run Keyword If</a>
-                                                <a id="link-run-keyword-if-all-critical-tests-passed" href="#run-keyword-if-all-critical-tests-passed" class="">Run Keyword If All Critical Tests Passed</a><a id="link-run-keyword-if-all-tests-passed" href="#run-keyword-if-all-tests-passed" class="">Run Keyword If All Tests Passed</a><a id="link-run-keyword-if-any-critical-tests-failed" href="#run-keyword-if-any-critical-tests-failed" class="">Run Keyword If Any Critical
-                                                    Tests Failed</a><a id="link-run-keyword-if-any-tests-failed" href="#run-keyword-if-any-tests-failed" class="">Run Keyword If Any Tests Failed</a><a id="link-run-keyword-if-test-failed" href="#run-keyword-if-test-failed" class="">Run
-                                                    Keyword If Test Failed</a><a id="link-run-keyword-if-test-passed" href="#run-keyword-if-test-passed" class="">Run Keyword If Test Passed</a><a id="link-run-keyword-if-timeout-occurred" href="#run-keyword-if-timeout-occurred" class="">Run Keyword If Timeout Occurred</a><a id="link-run-keyword-unless" href="#run-keyword-unless" class="">Run Keyword Unless</a><a id="link-run-keywords" href="#run-keywords" class="">Run Keywords</a>
-                                                <a id="link-set-global-variable" href="#set-global-variable" class="">Set Global Variable</a><a id="link-set-library-search-order" href="#set-library-search-order" class="">Set Library
-                                                    Search Order</a><a id="link-set-local-variable" href="#set-local-variable" class="">Set
-                                                    Local Variable</a><a id="link-set-log-level" href="#set-log-level" class="">Set Log
-                                                    Level</a><a id="link-set-suite-documentation" href="#set-suite-documentation" class="">Set Suite Documentation</a><a id="link-set-suite-metadata" href="#set-suite-metadata" class="">Set Suite Metadata</a>
-                                                <a id="link-set-suite-variable" href="#set-suite-variable" class="">Set Suite Variable</a><a id="link-set-tags" href="#set-tags" class="">Set Tags</a><a id="link-set-task-variable" href="#set-task-variable" class="">Set Task Variable</a>
-                                                <a id="link-set-test-documentation" href="#set-test-documentation" class="">Set Test Documentation
-                                                </a><a id="link-set-test-message" href="#set-test-message" class="">Set Test
-                                                    Message</a><a id="link-set-test-variable" href="#set-test-variable" class="">Set Test
-                                                    Variable</a><a id="link-set-variable" href="#set-variable" class="">Set Variable</a><a id="link-set-variable-if" href="#set-variable-if" class="">Set Variable If</a><a id="link-should-be-empty" href="#should-be-empty" class="">Should Be Empty</a><a id="link-should-be-equal" href="#should-be-equal" class="">Should Be Equal</a><a id="link-should-be-equal-as-integers" href="#should-be-equal-as-integers" class="">Should
-                                                    Be Equal As Integers</a><a id="link-should-be-equal-as-numbers" href="#should-be-equal-as-numbers" class="">Should Be Equal As Numbers</a><a id="link-should-be-equal-as-strings" href="#should-be-equal-as-strings" class="">Should
-                                                    Be Equal As Strings</a><a id="link-should-be-true" href="#should-be-true" class="">Should
-                                                    Be True</a><a id="link-should-contain" href="#should-contain" class="">Should
-                                                    Contain</a><a id="link-should-contain-any" href="#should-contain-any" class="">Should
-                                                    Contain Any</a><a id="link-should-contain-x-times" href="#should-contain-x-times" class="">Should Contain X Times</a><a id="link-should-end-with" href="#should-end-with" class="">Should End With</a><a id="link-should-match" href="#should-match" class="">Should Match</a><a id="link-should-match-regexp" href="#should-match-regexp" class="">Should Match Regexp</a><a id="link-should-not-be-empty" href="#should-not-be-empty" class="">Should Not Be Empty</a><a id="link-should-not-be-equal" href="#should-not-be-equal" class="">Should Not Be
-                                                    Equal</a><a id="link-should-not-be-equal-as-integers" href="#should-not-be-equal-as-integers" class="">Should Not Be Equal As Integers</a><a id="link-should-not-be-equal-as-numbers" href="#should-not-be-equal-as-numbers" class="">Should Not Be Equal As Numbers</a><a id="link-should-not-be-equal-as-strings" href="#should-not-be-equal-as-strings" class="">Should Not Be Equal As Strings</a>
-                                                <a id="link-should-not-be-true" href="#should-not-be-true" class="">Should Not Be True</a><a id="link-should-not-contain" href="#should-not-contain" class="">Should Not Contain</a>
-                                                <a id="link-should-not-contain-any" href="#should-not-contain-any" class="">Should Not Contain Any</a><a id="link-should-not-end-with" href="#should-not-end-with" class="">Should Not End With</a>
-                                                <a id="link-should-not-match" href="#should-not-match" class="">Should Not Match</a>
-                                                <a id="link-should-not-match-regexp" href="#should-not-match-regexp" class="">Should Not Match Regexp</a><a id="link-should-not-start-with" href="#should-not-start-with" class="">Should Not Start
-                                                    With</a><a id="link-should-start-with" href="#should-start-with" class="">Should Start
-                                                    With</a><a id="link-sleep" href="#sleep" class="">Sleep</a><a id="link-variable-should-exist" href="#variable-should-exist" class="">Variable Should
-                                                    Exist</a><a id="link-variable-should-not-exist" href="#variable-should-not-exist" class="">Variable Should Not Exist</a><a id="link-wait-until-keyword-succeeds" href="#wait-until-keyword-succeeds" class="">Wait Until Keyword Succeeds</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-call-method" href="#call-method" class="">Call Method</a></li>
+                                                    <li><a id="link-catenate" href="#catenate" class="">Catenate</a></li>
+                                                    <li><a id="link-comment" href="#comment" class="">Comment</a></li>
+                                                    <li><a id="link-continue-for-loop" href="#continue-for-loop" class="">Continue For Loop</a></li>
+                                                    <li><a id="link-continue-for-loop-if" href="#continue-for-loop-if" class="">Continue For Loop If</a></li>
+                                                    <li><a id="link-convert-to-binary" href="#convert-to-binary" class="">Convert To Binary</a></li>
+                                                    <li><a id="link-convert-to-boolean" href="#convert-to-boolean" class="">Convert To Boolean</a></li>
+                                                    <li><a id="link-convert-to-bytes" href="#convert-to-bytes" class="">Convert To Bytes</a></li>
+                                                    <li><a id="link-convert-to-hex" href="#convert-to-hex" class="">Convert To Hex</a></li>
+                                                    <li><a id="link-convert-to-integer" href="#convert-to-integer" class="">Convert To Integer</a></li>
+                                                    <li><a id="link-convert-to-number" href="#convert-to-number" class="">Convert To Number</a></li>
+                                                    <li><a id="link-convert-to-octal" href="#convert-to-octal" class="">Convert To Octal</a></li>
+                                                    <li><a id="link-convert-to-string" href="#convert-to-string" class="">Convert To String</a></li>
+                                                    <li><a id="link-create-dictionary" href="#create-dictionary" class="">Create Dictionary</a></li>
+                                                    <li><a id="link-create-list" href="#create-list" class="">Create List</a></li>
+                                                    <li><a id="link-evaluate" href="#evaluate" class="">Evaluate</a></li>
+                                                    <li><a id="link-exit-for-loop" href="#exit-for-loop" class="">Exit For Loop</a></li>
+                                                    <li><a id="link-exit-for-loop-if" href="#exit-for-loop-if" class="">Exit For Loop If</a></li>
+                                                    <li><a id="link-fail" href="#fail" class="">Fail</a></li>
+                                                    <li><a id="link-fatal-error" href="#fatal-error" class="">Fatal Error</a></li>
+                                                    <li><a id="link-get-count" href="#get-count" class="">Get Count</a></li>
+                                                    <li><a id="link-get-length" href="#get-length" class="">Get Length</a></li>
+                                                    <li><a id="link-get-library-instance" href="#get-library-instance" class="">Get Library Instance</a></li>
+                                                    <li><a id="link-get-time" href="#get-time" class="">Get Time</a></li>
+                                                    <li><a id="link-get-variable-value" href="#get-variable-value" class="">Get Variable Value</a></li>
+                                                    <li><a id="link-get-variables" href="#get-variables" class="">Get Variables</a></li>
+                                                    <li><a id="link-import-library" href="#import-library" class="">Import Library</a></li>
+                                                    <li><a id="link-import-resource" href="#import-resource" class="">Import Resource</a></li>
+                                                    <li><a id="link-import-variables" href="#import-variables" class="">Import Variables</a></li>
+                                                    <li><a id="link-keyword-should-exist" href="#keyword-should-exist" class="">Keyword Should Exist</a></li>
+                                                    <li><a id="link-length-should-be" href="#length-should-be" class="">Length Should Be</a></li>
+                                                    <li><a id="link-log" href="#log" class="">Log</a></li>
+                                                    <li><a id="link-log-many" href="#log-many" class="">Log Many</a></li>
+                                                    <li><a id="link-log-to-console" href="#log-to-console" class="">Log To Console</a></li>
+                                                    <li><a id="link-log-variables" href="#log-variables" class="">Log Variables</a></li>
+                                                    <li><a id="link-no-operation" href="#no-operation" class="">No Operation</a></li>
+                                                    <li><a id="link-pass-execution" href="#pass-execution" class="">Pass Execution</a></li>
+                                                    <li><a id="link-pass-execution-if" href="#pass-execution-if" class="">Pass Execution If</a></li>
+                                                    <li><a id="link-regexp-escape" href="#regexp-escape" class="">Regexp Escape</a></li>
+                                                    <li><a id="link-reload-library" href="#reload-library" class="">Reload Library</a></li>
+                                                    <li><a id="link-remove-tags" href="#remove-tags" class="">Remove Tags</a></li>
+                                                    <li><a id="link-repeat-keyword" href="#repeat-keyword" class="">Repeat Keyword</a></li>
+                                                    <li><a id="link-replace-variables" href="#replace-variables" class="">Replace Variables</a></li>
+                                                    <li><a id="link-return-from-keyword" href="#return-from-keyword" class="">Return From Keyword</a></li>
+                                                    <li><a id="link-return-from-keyword-if" href="#return-from-keyword-if" class="">Return From Keyword If</a></li>
+                                                    <li><a id="link-run-keyword" href="#run-keyword" class="">Run Keyword</a></li>
+                                                    <li><a id="link-run-keyword-and-continue-on-failure" href="#run-keyword-and-continue-on-failure" class="">Run Keyword And Continue On Failure</a></li>
+                                                    <li><a id="link-run-keyword-and-expect-error" href="#run-keyword-and-expect-error" class="">Run Keyword And Expect Error</a></li>
+                                                    <li><a id="link-run-keyword-and-ignore-error" href="#run-keyword-and-ignore-error" class="">Run Keyword And Ignore Error</a></li>
+                                                    <li><a id="link-run-keyword-and-return" href="#run-keyword-and-return" class="">Run Keyword And Return</a></li>
+                                                    <li><a id="link-run-keyword-and-return-if" href="#run-keyword-and-return-if" class="">Run Keyword And Return If</a></li>
+                                                    <li><a id="link-run-keyword-and-return-status" href="#run-keyword-and-return-status" class="">Run Keyword And Return Status</a></li>
+                                                    <li><a id="link-run-keyword-if" href="#run-keyword-if" class="">Run Keyword If</a></li>
+                                                    <li><a id="link-run-keyword-if-all-critical-tests-passed" href="#run-keyword-if-all-critical-tests-passed" class="">Run Keyword If All Critical Tests Passed</a></li>
+                                                    <li><a id="link-run-keyword-if-all-tests-passed" href="#run-keyword-if-all-tests-passed" class="">Run Keyword If All Tests Passed</a></li>
+                                                    <li><a id="link-run-keyword-if-any-critical-tests-failed" href="#run-keyword-if-any-critical-tests-failed" class="">Run Keyword If Any Critical Tests Failed</a></li>
+                                                    <li><a id="link-run-keyword-if-any-tests-failed" href="#run-keyword-if-any-tests-failed" class="">Run Keyword If Any Tests Failed</a></li>
+                                                    <li><a id="link-run-keyword-if-test-failed" href="#run-keyword-if-test-failed" class="">Run Keyword If Test Failed</a></li>
+                                                    <li><a id="link-run-keyword-if-test-passed" href="#run-keyword-if-test-passed" class="">Run Keyword If Test Passed</a></li>
+                                                    <li><a id="link-run-keyword-if-timeout-occurred" href="#run-keyword-if-timeout-occurred" class="">Run Keyword If Timeout Occurred</a></li>
+                                                    <li><a id="link-run-keyword-unless" href="#run-keyword-unless" class="">Run Keyword Unless</a></li>
+                                                    <li><a id="link-run-keywords" href="#run-keywords" class="">Run Keywords</a></li>
+                                                    <li><a id="link-set-global-variable" href="#set-global-variable" class="">Set Global Variable</a></li>
+                                                    <li><a id="link-set-library-search-order" href="#set-library-search-order" class="">Set Library Search Order</a></li>
+                                                    <li><a id="link-set-local-variable" href="#set-local-variable" class="">Set Local Variable</a></li>
+                                                    <li><a id="link-set-log-level" href="#set-log-level" class="">Set Log Level</a></li>
+                                                    <li><a id="link-set-suite-documentation" href="#set-suite-documentation" class="">Set Suite Documentation</a></li>
+                                                    <li><a id="link-set-suite-metadata" href="#set-suite-metadata" class="">Set Suite Metadata</a></li>
+                                                    <li><a id="link-set-suite-variable" href="#set-suite-variable" class="">Set Suite Variable</a></li>
+                                                    <li><a id="link-set-tags" href="#set-tags" class="">Set Tags</a></li>
+                                                    <li><a id="link-set-task-variable" href="#set-task-variable" class="">Set Task Variable</a></li>
+                                                    <li><a id="link-set-test-documentation" href="#set-test-documentation" class="">Set Test Documentation </a></li>
+                                                    <li><a id="link-set-test-message" href="#set-test-message" class="">Set Test Message</a></li>
+                                                    <li><a id="link-set-test-variable" href="#set-test-variable" class="">Set Test Variable</a></li>
+                                                    <li><a id="link-set-variable" href="#set-variable" class="">Set Variable</a></li>
+                                                    <li><a id="link-set-variable-if" href="#set-variable-if" class="">Set Variable If</a></li>
+                                                    <li><a id="link-should-be-empty" href="#should-be-empty" class="">Should Be Empty</a></li>
+                                                    <li><a id="link-should-be-equal" href="#should-be-equal" class="">Should Be Equal</a></li>
+                                                    <li><a id="link-should-be-equal-as-integers" href="#should-be-equal-as-integers" class="">Should Be Equal As Integers</a></li>
+                                                    <li><a id="link-should-be-equal-as-numbers" href="#should-be-equal-as-numbers" class="">Should Be Equal As Numbers</a></li>
+                                                    <li><a id="link-should-be-equal-as-strings" href="#should-be-equal-as-strings" class="">Should Be Equal As Strings</a></li>
+                                                    <li><a id="link-should-be-true" href="#should-be-true" class="">Should Be True</a></li>
+                                                    <li><a id="link-should-contain" href="#should-contain" class="">Should Contain</a></li>
+                                                    <li><a id="link-should-contain-any" href="#should-contain-any" class="">Should Contain Any</a></li>
+                                                    <li><a id="link-should-contain-x-times" href="#should-contain-x-times" class="">Should Contain X Times</a></li>
+                                                    <li><a id="link-should-end-with" href="#should-end-with" class="">Should End With</a></li>
+                                                    <li><a id="link-should-match" href="#should-match" class="">Should Match</a></li>
+                                                    <li><a id="link-should-match-regexp" href="#should-match-regexp" class="">Should Match Regexp</a></li>
+                                                    <li><a id="link-should-not-be-empty" href="#should-not-be-empty" class="">Should Not Be Empty</a></li>
+                                                    <li><a id="link-should-not-be-equal" href="#should-not-be-equal" class="">Should Not Be Equal</a></li>
+                                                    <li><a id="link-should-not-be-equal-as-integers" href="#should-not-be-equal-as-integers" class="">Should Not Be Equal As Integers</a></li>
+                                                    <li><a id="link-should-not-be-equal-as-numbers" href="#should-not-be-equal-as-numbers" class="">Should Not Be Equal As Numbers</a></li>
+                                                    <li><a id="link-should-not-be-equal-as-strings" href="#should-not-be-equal-as-strings" class="">Should Not Be Equal As Strings</a></li>
+                                                    <li><a id="link-should-not-be-true" href="#should-not-be-true" class="">Should Not Be True</a></li>
+                                                    <li><a id="link-should-not-contain" href="#should-not-contain" class="">Should Not Contain</a></li>
+                                                    <li><a id="link-should-not-contain-any" href="#should-not-contain-any" class="">Should Not Contain Any</a></li>
+                                                    <li><a id="link-should-not-end-with" href="#should-not-end-with" class="">Should Not End With</a></li>
+                                                    <li><a id="link-should-not-match" href="#should-not-match" class="">Should Not Match</a></li>
+                                                    <li><a id="link-should-not-match-regexp" href="#should-not-match-regexp" class="">Should Not Match Regexp</a></li>
+                                                    <li><a id="link-should-not-start-with" href="#should-not-start-with" class="">Should Not Start With</a></li>
+                                                    <li><a id="link-should-start-with" href="#should-start-with" class="">Should Start With</a></li>
+                                                    <li><a id="link-sleep" href="#sleep" class="">Sleep</a></li>
+                                                    <li><a id="link-variable-should-exist" href="#variable-should-exist" class="">Variable Should Exist</a></li>
+                                                    <li><a id="link-variable-should-not-exist" href="#variable-should-not-exist" class="">Variable Should Not Exist</a></li>
+                                                    <li><a id="link-wait-until-keyword-succeeds" href="#wait-until-keyword-succeeds" class="">Wait Until Keyword Succeeds</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

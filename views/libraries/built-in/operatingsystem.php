@@ -48,7 +48,7 @@
                                             <p><code>OperatingSystem</code> is Autosphere's standard library that enables various operating
                                                 system related tasks to be performed in the system where Autosphere is running. It can,
                                                 among other things, execute commands (e.g. <a href="#Run" class="name">Run</a>), create and
-                                                remove files and directories (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#create-file" id="link-create-file"  class="">Create File</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a>), check whether files or
+                                                remove files and directories (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#create-file" id="link-create-file" class="">Create File</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a>), check whether files or
                                                 directories exists or contain something (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#file-should-exist" id="link-file-should-exist" class="name">File
                                                     Should Exist</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#directory-should-be-empty" id="link-directory-should-be-empty" class="name">Directory Should
                                                     Be Empty</a>) and manipulate environment variables (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#set-environment-variable" id="link-set-environment-variable" class="name">Set Environment Variable</a>).</p>
@@ -2617,33 +2617,70 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-append-to-environment-variable" href="#append-to-environment-variable" class="">Append To Environment Variable</a><a id="link-append-to-file" href="#append-to-file" class="">Append To File</a>
-                                                <a id="link-copy-directory" href="#copy-directory" class="">Copy Directory</a><a id="link-copy-file" href="#copy-file" class="">Copy File</a><a id="link-copy-files" href="#copy-files" class="">Copy Files</a><a id="link-count-directories-in-directory" href="#count-directories-in-directory" class="">Count Directories In Directory</a><a id="link-count-files-in-directory" href="#count-files-in-directory" class="">Count Files
-                                                    In Directory</a><a id="link-count-items-in-directory" href="#count-items-in-directory" class="">Count Items In Directory</a><a id="link-create-binary-file" href="#create-binary-file" class="">Create Binary File</a>
-                                                <a id="link-create-directory" href="#create-directory" class="">Create Directory</a><a id="link-create-file" href="#create-file" class="">Create File</a><a id="link-directory-should-be-empty" href="#directory-should-be-empty" class="">Directory Should Be Empty</a>
-                                                <a id="link-directory-should-exist" href="#directory-should-exist" class="">Directory Should Exist
-                                                </a><a id="link-directory-should-not-be-empty" href="#directory-should-not-be-empty" class="">Directory Should Not Be Empty</a><a id="link-directory-should-not-exist" href="#directory-should-not-exist" class="">Directory Should Not Exist</a><a id="link-empty-directory" href="#empty-directory" class="">Empty Directory</a><a id="link-environment-variable-should-be-set" href="#environment-variable-should-be-set" class="">Environment Variable Should Be Set</a><a id="link-environment-variable-should-not-be-set" href="#environment-variable-should-not-be-set" class="">Environment Variable Should Not
-                                                    Be Set</a><a id="link-file-should-be-empty" href="#file-should-be-empty" class="">File
-                                                    Should Be Empty</a><a id="link-file-should-exist" href="#file-should-exist" class="">File
-                                                    Should Exist</a><a id="link-file-should-not-be-empty" href="#file-should-not-be-empty" class="">File Should Not Be Empty</a><a id="link-file-should-not-exist" href="#file-should-not-exist" class="">File Should Not Exist</a>
-                                                <a id="link-get-binary-file" href="#get-binary-file" class="">Get Binary File</a><a id="link-get-environment-variable" href="#get-environment-variable" class="">Get
-                                                    Environment Variable</a><a id="link-get-environment-variables" href="#get-environment-variables" class="">Get Environment Variables</a><a id="link-get-file" href="#get-file" class="">Get File</a><a id="link-get-file-size" href="#get-file-size" class="">Get File Size</a><a id="link-get-modified-time" href="#get-modified-time" class="">Get Modified Time</a><a id="link-grep-file" href="#grep-file" class="">Grep File</a>
-                                                <a id="link-join-path" href="#join-path" class="">Join Path</a><a id="link-join-paths" href="#join-paths" class="">Join Paths</a><a id="link-list-directories-in-directory" href="#list-directories-in-directory" class="">List Directories In Directory</a>
-                                                <a id="link-list-directory" href="#list-directory" class="">List Directory</a><a id="link-list-files-in-directory" href="#list-files-in-directory" class="">List Files In
-                                                    Directory</a><a id="link-log-environment-variables" href="#log-environment-variables" class="">Log Environment Variables</a><a id="link-log-file" href="#log-file" class="">Log
-                                                    File</a><a id="link-move-directory" href="#move-directory" class="">Move Directory</a><a id="link-move-file" href="#move-file" class="">Move File</a><a id="link-move-files" href="#move-files" class="">Move Files</a>
-                                                <a id="link-normalize-path" href="#normalize-path" class="">Normalize Path</a><a id="link-remove-directory" href="#remove-directory" class="">Remove Directory</a>
-                                                <a id="link-remove-environment-variable" href="#remove-environment-variable" class="">Remove Environment Variable</a>
-                                                <a id="link-remove-file" href="#remove-file" class="">Remove
-                                                    File</a><a id="link-remove-files" href="#remove-files" class="">Remove Files</a><a id="link-run" href="#run" class="">Run</a><a id="link-run-and-return-rc" href="#run-and-return-rc" class="">Run And Return Rc</a>
-                                                <a id="link-run-and-return-rc-and-output" href="#run-and-return-rc-and-output" class="">Run And Return Rc And Output</a><a id="link-set-environment-variable" href="#set-environment-variable" class="">Set Environment Variable</a>
-                                                <a id="link-set-modified-time" href="#set-modified-time" class="">Set Modified Time</a><a id="link-should-exist" href="#should-exist" class="">Should Exist</a>
-                                                <a id="link-should-not-exist" href="#should-not-exist" class="">Should Not Exist</a>
-                                                <a id="link-split-extension" href="#split-extension" class="">Split Extension</a><a id="link-split-path" href="#split-path" class="">Split Path</a><a id="link-touch" href="#touch" class="">Touch</a><a id="link-wait-until-created" href="#wait-until-created" class="">Wait Until Created</a><a id="link-wait-until-removed" href="#wait-until-removed" class="">Wait Until Removed</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-append-to-environment-variable" href="#append-to-environment-variable" class="">Append To Environment Variable</a></li>
+                                                    <li><a id="link-append-to-file" href="#append-to-file" class="">Append To File</a></li>
+                                                    <li><a id="link-copy-directory" href="#copy-directory" class="">Copy Directory</a></li>
+                                                    <li><a id="link-copy-file" href="#copy-file" class="">Copy File</a></li>
+                                                    <li><a id="link-copy-files" href="#copy-files" class="">Copy Files</a></li>
+                                                    <li><a id="link-count-directories-in-directory" href="#count-directories-in-directory" class="">Count Directories In Directory</a></li>
+                                                    <li><a id="link-count-files-in-directory" href="#count-files-in-directory" class="">Count Files In Directory</a></li>
+                                                    <li><a id="link-count-items-in-directory" href="#count-items-in-directory" class="">Count Items In Directory</a></li>
+                                                    <li><a id="link-create-binary-file" href="#create-binary-file" class="">Create Binary File</a></li>
+                                                    <li><a id="link-create-directory" href="#create-directory" class="">Create Directory</a></li>
+                                                    <li><a id="link-create-file" href="#create-file" class="">Create File</a></li>
+                                                    <li><a id="link-directory-should-be-empty" href="#directory-should-be-empty" class="">Directory Should Be Empty</a></li>
+                                                    <li><a id="link-directory-should-exist" href="#directory-should-exist" class="">Directory Should Exist </a></li>
+                                                    <li><a id="link-directory-should-not-be-empty" href="#directory-should-not-be-empty" class="">Directory Should Not Be Empty</a></li>
+                                                    <li><a id="link-directory-should-not-exist" href="#directory-should-not-exist" class="">Directory Should Not Exist</a></li>
+                                                    <li><a id="link-empty-directory" href="#empty-directory" class="">Empty Directory</a></li>
+                                                    <li><a id="link-environment-variable-should-be-set" href="#environment-variable-should-be-set" class="">Environment Variable Should Be Set</a></li>
+                                                    <li><a id="link-environment-variable-should-not-be-set" href="#environment-variable-should-not-be-set" class="">Environment Variable Should Not Be Set</a></li>
+                                                    <li><a id="link-file-should-be-empty" href="#file-should-be-empty" class="">File Should Be Empty</a></li>
+                                                    <li><a id="link-file-should-exist" href="#file-should-exist" class="">File Should Exist</a></li>
+                                                    <li><a id="link-file-should-not-be-empty" href="#file-should-not-be-empty" class="">File Should Not Be Empty</a></li>
+                                                    <li><a id="link-file-should-not-exist" href="#file-should-not-exist" class="">File Should Not Exist</a></li>
+                                                    <li><a id="link-get-binary-file" href="#get-binary-file" class="">Get Binary File</a></li>
+                                                    <li><a id="link-get-environment-variable" href="#get-environment-variable" class="">Get Environment Variable</a></li>
+                                                    <li><a id="link-get-environment-variables" href="#get-environment-variables" class="">Get Environment Variables</a></li>
+                                                    <li><a id="link-get-file" href="#get-file" class="">Get File</a></li>
+                                                    <li><a id="link-get-file-size" href="#get-file-size" class="">Get File Size</a></li>
+                                                    <li><a id="link-get-modified-time" href="#get-modified-time" class="">Get Modified Time</a></li>
+                                                    <li><a id="link-grep-file" href="#grep-file" class="">Grep File</a></li>
+                                                    <li><a id="link-join-path" href="#join-path" class="">Join Path</a></li>
+                                                    <li><a id="link-join-paths" href="#join-paths" class="">Join Paths</a></li>
+                                                    <li><a id="link-list-directories-in-directory" href="#list-directories-in-directory" class="">List Directories In Directory</a></li>
+                                                    <li><a id="link-list-directory" href="#list-directory" class="">List Directory</a></li>
+                                                    <li><a id="link-list-files-in-directory" href="#list-files-in-directory" class="">List Files In Directory</a></li>
+                                                    <li><a id="link-log-environment-variables" href="#log-environment-variables" class="">Log Environment Variables</a></li>
+                                                    <li><a id="link-log-file" href="#log-file" class="">Log File</a></li>
+                                                    <li><a id="link-move-directory" href="#move-directory" class="">Move Directory</a></li>
+                                                    <li><a id="link-move-file" href="#move-file" class="">Move File</a></li>
+                                                    <li><a id="link-move-files" href="#move-files" class="">Move Files</a></li>
+                                                    <li><a id="link-normalize-path" href="#normalize-path" class="">Normalize Path</a></li>
+                                                    <li><a id="link-remove-directory" href="#remove-directory" class="">Remove Directory</a></li>
+                                                    <li><a id="link-remove-environment-variable" href="#remove-environment-variable" class="">Remove Environment Variable</a></li>
+                                                    <li><a id="link-remove-file" href="#remove-file" class="">Remove File</a></li>
+                                                    <li><a id="link-remove-files" href="#remove-files" class="">Remove Files</a></li>
+                                                    <li><a id="link-run" href="#run" class="">Run</a></li>
+                                                    <li><a id="link-run-and-return-rc" href="#run-and-return-rc" class="">Run And Return Rc</a></li>
+                                                    <li><a id="link-run-and-return-rc-and-output" href="#run-and-return-rc-and-output" class="">Run And Return Rc And Output</a></li>
+                                                    <li><a id="link-set-environment-variable" href="#set-environment-variable" class="">Set Environment Variable</a></li>
+                                                    <li><a id="link-set-modified-time" href="#set-modified-time" class="">Set Modified Time</a></li>
+                                                    <li><a id="link-should-exist" href="#should-exist" class="">Should Exist</a></li>
+                                                    <li><a id="link-should-not-exist" href="#should-not-exist" class="">Should Not Exist</a></li>
+                                                    <li><a id="link-split-extension" href="#split-extension" class="">Split Extension</a></li>
+                                                    <li><a id="link-split-path" href="#split-path" class="">Split Path</a></li>
+                                                    <li><a id="link-touch" href="#touch" class="">Touch</a></li>
+                                                    <li><a id="link-wait-until-created" href="#wait-until-created" class="">Wait Until Created</a></li>
+                                                    <li><a id="link-wait-until-removed" href="#wait-until-removed" class="">Wait Until Removed</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

@@ -579,16 +579,23 @@
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-crop-image" href="#crop-image" class="">Crop Image</a><a id="link-find-template-in-image" href="#find-template-in-image" class="">Find Template In
-                                                    Image</a><a id="link-find-template-on-screen" href="#find-template-on-screen" class="">Find Template On Screen</a><a id="link-get-pixel-color-in-image" href="#get-pixel-color-in-image" class="">Get Pixel Color In Image</a>
-                                                <a id="link-get-pixel-color-on-screen" href="#get-pixel-color-on-screen" class="">Get Pixel Color On Screen</a><a id="link-show-region-in-image" href="#show-region-in-image" class="">Show Region In Image</a>
-                                                <a id="link-show-region-on-screen" href="#show-region-on-screen" class="">Show Region On Screen</a>
-                                                <a id="link-take-screenshot" href="#take-screenshot" class="">Take Screenshot</a><a id="link-wait-template-on-screen" href="#wait-template-on-screen" class="">Wait Template
-                                                    On Screen</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-crop-image" href="#crop-image" class="">Crop Image</a></li>
+                                                    <li><a id="link-find-template-in-image" href="#find-template-in-image" class="">Find Template In Image</a></li>
+                                                    <li><a id="link-find-template-on-screen" href="#find-template-on-screen" class="">Find Template On Screen</a></li>
+                                                    <li><a id="link-get-pixel-color-in-image" href="#get-pixel-color-in-image" class="">Get Pixel Color In Image</a></li>
+                                                    <li><a id="link-get-pixel-color-on-screen" href="#get-pixel-color-on-screen" class="">Get Pixel Color On Screen</a></li>
+                                                    <li><a id="link-show-region-in-image" href="#show-region-in-image" class="">Show Region In Image</a></li>
+                                                    <li><a id="link-show-region-on-screen" href="#show-region-on-screen" class="">Show Region On Screen</a></li>
+                                                    <li><a id="link-take-screenshot" href="#take-screenshot" class="">Take Screenshot</a></li>
+                                                    <li><a id="link-wait-template-on-screen" href="#wait-template-on-screen" class="">Wait Template On Screen</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

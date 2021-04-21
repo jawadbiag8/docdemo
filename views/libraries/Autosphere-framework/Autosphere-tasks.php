@@ -619,13 +619,25 @@ ${</span><span class="nv">TARGET</span><span class="p">}     ${</span><span clas
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-jump-to-task" href="#jump-to-task" class="">Jump To Task</a><a id="link-jump-to-task-if" href="#jump-to-task-if" class="">Jump To Task If</a><a id="link-jump-to-task-if-keyword-fails" href="#jump-to-task-if-keyword-fails" class="">Jump To Task If Keyword Fails</a><a id="link-jump-to-task-if-keyword-succeeds" href="#jump-to-task-if-keyword-succeeds" class="">Jump To Task If Keyword Succeeds</a><a id="link-set-next-task" href="#set-next-task" class="">Set Next Task</a><a id="link-set-next-task-if" href="#set-next-task-if" class="">Set Next Task If</a><a id="link-set-next-task-if-keyword-fails" href="#set-next-task-if-keyword-fails" class="">Set Next Task If Keyword Fails</a><a id="link-set-next-task-if-keyword-succeeds" href="#set-next-task-if-keyword-succeeds" class="">Set Next Task If Keyword Succeeds</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-jump-to-task" href="#jump-to-task" class="">Jump To Task</a></li>
+                                                    <li><a id="link-jump-to-task-if" href="#jump-to-task-if" class="">Jump To Task If</a></li>
+                                                    <li><a id="link-jump-to-task-if-keyword-fails" href="#jump-to-task-if-keyword-fails" class="">Jump To Task If Keyword Fails</a></li>
+                                                    <li><a id="link-jump-to-task-if-keyword-succeeds" href="#jump-to-task-if-keyword-succeeds" class="">Jump To Task If Keyword Succeeds</a></li>
+                                                    <li><a id="link-set-next-task" href="#set-next-task" class="">Set Next Task</a></li>
+                                                    <li><a id="link-set-next-task-if" href="#set-next-task-if" class="">Set Next Task If</a></li>
+                                                    <li><a id="link-set-next-task-if-keyword-fails" href="#set-next-task-if-keyword-fails" class="">Set Next Task If Keyword Fails</a></li>
+                                                    <li><a id="link-set-next-task-if-keyword-succeeds" href="#set-next-task-if-keyword-succeeds" class="">Set Next Task If Keyword Succeeds</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
+
                                     </div>
                                 </div>
                             </div>

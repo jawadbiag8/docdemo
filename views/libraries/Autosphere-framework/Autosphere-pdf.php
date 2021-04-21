@@ -3283,35 +3283,97 @@ ${</span><span class="nv">PDF</span><span class="p">}         </span><span class
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-accept-page-break" href="#accept-page-break" class="">Accept Page
-                                                    Break</a><a id="link-add-font" href="#add-font" class="">Add Font</a><a id="link-add-image-to-pdf" href="#add-image-to-pdf" class="">Add Image To Pdf</a><a id="link-add-link" href="#add-link" class="">Add Link</a>
-                                                <a id="link-add-page" href="#add-page" class="">Add Page</a><a id="link-add-pages" href="#add-pages" class="">Add Pages</a><a id="link-add-pages-to-document" href="#add-pages-to-document" class="">Add Pages To Document</a><a id="link-alias-nb-pages" href="#alias-nb-pages" class="">Alias Nb Pages</a><a id="link-cell" href="#cell" class="">Cell</a><a id="link-check-page" href="#check-page" class="">Check Page</a><a id="link-close" href="#close" class="">Close</a><a id="link-close-all-pdf-documents" href="#close-all-pdf-documents" class="">Close All Pdf Documents</a><a id="link-close-pdf-document" href="#close-pdf-document" class="">Close Pdf Document</a><a id="link-code-39" href="#code-39" class="">Code 39</a><a id="link-dashed-line" href="#dashed-line" class="">Dashed Line</a>
-                                                <a id="link-dump-pdf-as-xml" href="#dump-pdf-as-xml" class="">Dump Pdf As Xml</a><a id="link-ellipse" href="#ellipse" class="">Ellipse</a><a id="link-error" href="#error" class="">Error</a>
-                                                <a id="link-extract-pages-from-pdf" href="#extract-pages-from-pdf" class="">Extract Pages From Pdf</a><a id="link-footer" href="#footer" class="">Footer</a><a id="link-get-all-figures" href="#get-all-figures" class="">Get All
-                                                    Figures</a><a id="link-get-info" href="#get-info" class="">Get Info</a><a id="link-get-input-fields" href="#get-input-fields" class="">Get Input Fields</a><a id="link-get-number-of-pages" href="#get-number-of-pages" class="">Get Number Of
-                                                    Pages</a><a id="link-get-output-directory" href="#get-output-directory" class="">Get
-                                                    Output Directory</a><a id="link-get-string-width" href="#get-string-width" class="">Get
-                                                    String Width</a><a id="link-get-text-from-pdf" href="#get-text-from-pdf" class="">Get
-                                                    Text From Pdf</a><a id="link-get-value-from-anchor" href="#get-value-from-anchor" class="">Get Value From Anchor</a><a id="link-get-x" href="#get-x" class="">Get X</a><a id="link-get-y" href="#get-y" class="">Get Y</a><a id="link-header" href="#header" class="">Header</a><a id="link-html-to-pdf" href="#html-to-pdf" class="">Html To Pdf</a><a id="link-image" href="#image" class="">Image</a>
-                                                <a id="link-interleaved-2-of-5" href="#interleaved-2-of-5" class="">Interleaved 2 Of 5</a><a id="link-is-pdf-encrypted" href="#is-pdf-encrypted" class="">Is Pdf Encrypted</a><a id="link-line" href="#line" class="">Line</a><a id="link-link" href="#link" class="">Link</a><a id="link-ln" href="#ln" class="">Ln</a><a id="link-multi-cell" href="#multi-cell" class="">Multi Cell</a><a id="link-normalize-text" href="#normalize-text" class="">Normalize Text</a><a id="link-open" href="#open" class="">Open</a><a id="link-open-pdf-document" href="#open-pdf-document" class="">Open Pdf Document</a>
-                                                <a id="link-output" href="#output" class="">Output</a><a id="link-page-no" href="#page-no" class="">Page No</a><a id="link-page-rotate" href="#page-rotate" class="">Page
-                                                    Rotate</a><a id="link-parse-pdf" href="#parse-pdf" class="">Parse Pdf</a><a id="link-pdf-decrypt" href="#pdf-decrypt" class="">Pdf Decrypt</a><a id="link-pdf-encrypt" href="#pdf-encrypt" class="">Pdf Encrypt</a>
-                                                <a id="link-rect" href="#rect" class="">Rect</a><a id="link-replace-text" href="#replace-text" class="">Replace Text</a><a id="link-rotate" href="#rotate" class="">Rotate</a>
-                                                <a id="link-save-pdf" href="#save-pdf" class="">Save Pdf</a><a id="link-set-anchor-to-element" href="#set-anchor-to-element" class="">Set Anchor To
-                                                    Element</a><a id="link-set-author" href="#set-author" class="">Set Author</a><a id="link-set-auto-page-break" href="#set-auto-page-break" class="">Set Auto Page
-                                                    Break</a><a id="link-set-compression" href="#set-compression" class="">Set
-                                                    Compression</a><a id="link-set-creator" href="#set-creator" class="">Set Creator</a><a id="link-set-display-mode" href="#set-display-mode" class="">Set Display Mode</a><a id="link-set-draw-color" href="#set-draw-color" class="">Set Draw Color</a><a id="link-set-field-value" href="#set-field-value" class="">Set Field Value</a><a id="link-set-fill-color" href="#set-fill-color" class="">Set Fill Color</a>
-                                                <a id="link-set-font" href="#set-font" class="">Set Font</a><a id="link-set-font-size" href="#set-font-size" class="">Set Font Size</a><a id="link-set-keywords" href="#set-keywords" class="">Set Keywords</a><a id="link-set-left-margin" href="#set-left-margin" class="">Set Left Margin</a><a id="link-set-line-width" href="#set-line-width" class="">Set Line Width</a>
-                                                <a id="link-set-link" href="#set-link" class="">Set Link</a><a id="link-set-margins" href="#set-margins" class="">Set Margins</a><a id="link-set-output-directory" href="#set-output-directory" class="">Set Output Directory</a>
-                                                <a id="link-set-right-margin" href="#set-right-margin" class="">Set Right Margin</a><a id="link-set-subject" href="#set-subject" class="">Set Subject</a><a id="link-set-text-color" href="#set-text-color" class="">Set Text Color</a><a id="link-set-title" href="#set-title" class="">Set Title</a><a id="link-set-top-margin" href="#set-top-margin" class="">Set Top Margin</a>
-                                                <a id="link-set-x" href="#set-x" class="">Set X</a>
-                                                <a id="link-set-xy" href="#set-xy" class="">Set Xy</a><a id="link-set-y" href="#set-y" class="">Set Y</a><a id="link-switch-to-pdf-document" href="#switch-to-pdf-document" class="">Switch To Pdf
-                                                    Document</a><a id="link-template-html-to-pdf" href="#template-html-to-pdf" class="">Template Html To Pdf</a><a id="link-text" href="#text" class="">Text</a><a id="link-update-field-values" href="#update-field-values" class="">Update Field
-                                                    Values</a><a id="link-write" href="#write" class="">Write</a><a id="link-write-html" href="#write-html" class="">Write Html</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-accept-page-break" href="#accept-page-break" class="">Accept Page Break</a></li>
+                                                    <li><a id="link-add-font" href="#add-font" class="">Add Font</a></li>
+                                                    <li><a id="link-add-image-to-pdf" href="#add-image-to-pdf" class="">Add Image To Pdf</a></li>
+                                                    <li><a id="link-add-link" href="#add-link" class="">Add Link</a></li>
+                                                    <li><a id="link-add-page" href="#add-page" class="">Add Page</a></li>
+                                                    <li><a id="link-add-pages" href="#add-pages" class="">Add Pages</a></li>
+                                                    <li><a id="link-add-pages-to-document" href="#add-pages-to-document" class="">Add Pages To Document</a></li>
+                                                    <li><a id="link-alias-nb-pages" href="#alias-nb-pages" class="">Alias Nb Pages</a></li>
+                                                    <li><a id="link-cell" href="#cell" class="">Cell</a></li>
+                                                    <li><a id="link-check-page" href="#check-page" class="">Check Page</a></li>
+                                                    <li><a id="link-close" href="#close" class="">Close</a></li>
+                                                    <li><a id="link-close-all-pdf-documents" href="#close-all-pdf-documents" class="">Close All Pdf Documents</a></li>
+                                                    <li><a id="link-close-pdf-document" href="#close-pdf-document" class="">Close Pdf Document</a></li>
+                                                    <li><a id="link-code-39" href="#code-39" class="">Code 39</a></li>
+                                                    <li><a id="link-dashed-line" href="#dashed-line" class="">Dashed Line</a></li>
+                                                    <li><a id="link-dump-pdf-as-xml" href="#dump-pdf-as-xml" class="">Dump Pdf As Xml</a></li>
+                                                    <li><a id="link-ellipse" href="#ellipse" class="">Ellipse</a></li>
+                                                    <li><a id="link-error" href="#error" class="">Error</a></li>
+                                                    <li><a id="link-extract-pages-from-pdf" href="#extract-pages-from-pdf" class="">Extract Pages From Pdf</a></li>
+                                                    <li><a id="link-footer" href="#footer" class="">Footer</a></li>
+                                                    <li><a id="link-get-all-figures" href="#get-all-figures" class="">Get All Figures</a></li>
+                                                    <li><a id="link-get-info" href="#get-info" class="">Get Info</a></li>
+                                                    <li><a id="link-get-input-fields" href="#get-input-fields" class="">Get Input Fields</a></li>
+                                                    <li><a id="link-get-number-of-pages" href="#get-number-of-pages" class="">Get Number Of Pages</a></li>
+                                                    <li><a id="link-get-output-directory" href="#get-output-directory" class="">Get Output Directory</a></li>
+                                                    <li><a id="link-get-string-width" href="#get-string-width" class="">Get String Width</a></li>
+                                                    <li><a id="link-get-text-from-pdf" href="#get-text-from-pdf" class="">Get Text From Pdf</a></li>
+                                                    <li><a id="link-get-value-from-anchor" href="#get-value-from-anchor" class="">Get Value From Anchor</a></li>
+                                                    <li><a id="link-get-x" href="#get-x" class="">Get X</a></li>
+                                                    <li><a id="link-get-y" href="#get-y" class="">Get Y</a></li>
+                                                    <li><a id="link-header" href="#header" class="">Header</a></li>
+                                                    <li><a id="link-html-to-pdf" href="#html-to-pdf" class="">Html To Pdf</a></li>
+                                                    <li><a id="link-image" href="#image" class="">Image</a></li>
+                                                    <li><a id="link-interleaved-2-of-5" href="#interleaved-2-of-5" class="">Interleaved 2 Of 5</a></li>
+                                                    <li><a id="link-is-pdf-encrypted" href="#is-pdf-encrypted" class="">Is Pdf Encrypted</a></li>
+                                                    <li><a id="link-line" href="#line" class="">Line</a></li>
+                                                    <li><a id="link-link" href="#link" class="">Link</a></li>
+                                                    <li><a id="link-ln" href="#ln" class="">Ln</a></li>
+                                                    <li><a id="link-multi-cell" href="#multi-cell" class="">Multi Cell</a></li>
+                                                    <li><a id="link-normalize-text" href="#normalize-text" class="">Normalize Text</a></li>
+                                                    <li><a id="link-open" href="#open" class="">Open</a></li>
+                                                    <li><a id="link-open-pdf-document" href="#open-pdf-document" class="">Open Pdf Document</a></li>
+                                                    <li><a id="link-output" href="#output" class="">Output</a></li>
+                                                    <li><a id="link-page-no" href="#page-no" class="">Page No</a></li>
+                                                    <li><a id="link-page-rotate" href="#page-rotate" class="">Page Rotate</a></li>
+                                                    <li><a id="link-parse-pdf" href="#parse-pdf" class="">Parse Pdf</a></li>
+                                                    <li><a id="link-pdf-decrypt" href="#pdf-decrypt" class="">Pdf Decrypt</a></li>
+                                                    <li><a id="link-pdf-encrypt" href="#pdf-encrypt" class="">Pdf Encrypt</a></li>
+                                                    <li><a id="link-rect" href="#rect" class="">Rect</a></li>
+                                                    <li><a id="link-replace-text" href="#replace-text" class="">Replace Text</a></li>
+                                                    <li><a id="link-rotate" href="#rotate" class="">Rotate</a></li>
+                                                    <li><a id="link-save-pdf" href="#save-pdf" class="">Save Pdf</a></li>
+                                                    <li><a id="link-set-anchor-to-element" href="#set-anchor-to-element" class="">Set Anchor To Element</a></li>
+                                                    <li><a id="link-set-author" href="#set-author" class="">Set Author</a></li>
+                                                    <li><a id="link-set-auto-page-break" href="#set-auto-page-break" class="">Set Auto Page Break</a></li>
+                                                    <li><a id="link-set-compression" href="#set-compression" class="">Set Compression</a></li>
+                                                    <li><a id="link-set-creator" href="#set-creator" class="">Set Creator</a></li>
+                                                    <li><a id="link-set-display-mode" href="#set-display-mode" class="">Set Display Mode</a></li>
+                                                    <li><a id="link-set-draw-color" href="#set-draw-color" class="">Set Draw Color</a></li>
+                                                    <li><a id="link-set-field-value" href="#set-field-value" class="">Set Field Value</a></li>
+                                                    <li><a id="link-set-fill-color" href="#set-fill-color" class="">Set Fill Color</a></li>
+                                                    <li><a id="link-set-font" href="#set-font" class="">Set Font</a></li>
+                                                    <li><a id="link-set-font-size" href="#set-font-size" class="">Set Font Size</a></li>
+                                                    <li><a id="link-set-keywords" href="#set-keywords" class="">Set Keywords</a></li>
+                                                    <li><a id="link-set-left-margin" href="#set-left-margin" class="">Set Left Margin</a></li>
+                                                    <li><a id="link-set-line-width" href="#set-line-width" class="">Set Line Width</a></li>
+                                                    <li><a id="link-set-link" href="#set-link" class="">Set Link</a></li>
+                                                    <li><a id="link-set-margins" href="#set-margins" class="">Set Margins</a></li>
+                                                    <li><a id="link-set-output-directory" href="#set-output-directory" class="">Set Output Directory</a></li>
+                                                    <li><a id="link-set-right-margin" href="#set-right-margin" class="">Set Right Margin</a></li>
+                                                    <li><a id="link-set-subject" href="#set-subject" class="">Set Subject</a></li>
+                                                    <li><a id="link-set-text-color" href="#set-text-color" class="">Set Text Color</a></li>
+                                                    <li><a id="link-set-title" href="#set-title" class="">Set Title</a></li>
+                                                    <li><a id="link-set-top-margin" href="#set-top-margin" class="">Set Top Margin</a></li>
+                                                    <li><a id="link-set-x" href="#set-x" class="">Set X</a></li>
+                                                    <li><a id="link-set-xy" href="#set-xy" class="">Set Xy</a></li>
+                                                    <li><a id="link-set-y" href="#set-y" class="">Set Y</a></li>
+                                                    <li><a id="link-switch-to-pdf-document" href="#switch-to-pdf-document" class="">Switch To Pdf Document</a></li>
+                                                    <li><a id="link-template-html-to-pdf" href="#template-html-to-pdf" class="">Template Html To Pdf</a></li>
+                                                    <li><a id="link-text" href="#text" class="">Text</a></li>
+                                                    <li><a id="link-update-field-values" href="#update-field-values" class="">Update Field Values</a></li>
+                                                    <li><a id="link-write" href="#write" class="">Write</a></li>
+                                                    <li><a id="link-write-html" href="#write-html" class="">Write Html</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

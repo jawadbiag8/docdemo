@@ -1838,23 +1838,45 @@ END
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-add-table-column" href="#add-table-column" class="">Add Table Column</a><a id="link-add-table-row" href="#add-table-row" class="">Add Table Row</a><a id="link-clear-table" href="#clear-table" class="">Clear Table</a><a id="link-copy-table" href="#copy-table" class="">Copy Table</a><a id="link-create-table" href="#create-table" class="">Create Table</a><a id="link-export-table" href="#export-table" class="">Export Table</a><a id="link-filter-empty-rows" href="#filter-empty-rows" class="">Filter Empty Rows</a><a id="link-filter-table-by-column" href="#filter-table-by-column" class="">Filter Table By
-                                                    Column</a><a id="link-find-table-rows" href="#find-table-rows" class="">Find Table
-                                                    Rows</a><a id="link-get-table-cell" href="#get-table-cell" class="">Get Table Cell</a><a id="link-get-table-column" href="#get-table-column" class="">Get Table Column</a><a id="link-get-table-dimensions" href="#get-table-dimensions" class="">Get Table
-                                                    Dimensions</a><a id="link-get-table-row" href="#get-table-row" class="">Get Table
-                                                    Row</a><a id="link-get-table-slice" href="#get-table-slice" class="">Get Table
-                                                    Slice</a><a id="link-group-table-by-column" href="#group-table-by-column" class="">Group
-                                                    Table By Column</a><a id="link-merge-tables" href="#merge-tables" class="">Merge
-                                                    Tables</a><a id="link-pop-table-column" href="#pop-table-column" class="">Pop Table
-                                                    Column</a><a id="link-pop-table-row" href="#pop-table-row" class="">Pop Table Row</a><a id="link-read-table-from-csv" href="#read-table-from-csv" class="">Read Table From
-                                                    Csv</a><a id="link-rename-table-columns" href="#rename-table-columns" class="">Rename
-                                                    Table Columns</a><a id="link-set-column-as-index" href="#set-column-as-index" class="">Set Column As Index</a><a id="link-set-row-as-column-names" href="#set-row-as-column-names" class="">Set Row As Column Names</a>
-                                                <a id="link-set-table-cell" href="#set-table-cell" class="">Set Table Cell</a><a id="link-set-table-column" href="#set-table-column" class="">Set Table Column</a><a id="link-set-table-row" href="#set-table-row" class="">Set Table Row</a><a id="link-sort-table-by-column" href="#sort-table-by-column" class="">Sort Table By
-                                                    Column</a><a id="link-table-head" href="#table-head" class="">Table Head</a><a id="link-table-tail" href="#table-tail" class="">Table Tail</a><a id="link-trim-column-names" href="#trim-column-names" class="">Trim Column Names</a><a id="link-trim-empty-rows" href="#trim-empty-rows" class="">Trim Empty Rows</a><a id="link-write-table-to-csv" href="#write-table-to-csv" class="">Write Table To Csv</a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-add-table-column" href="#add-table-column" class="">Add Table Column</a></li>
+                                                    <li><a id="link-add-table-row" href="#add-table-row" class="">Add Table Row</a></li>
+                                                    <li><a id="link-clear-table" href="#clear-table" class="">Clear Table</a></li>
+                                                    <li><a id="link-copy-table" href="#copy-table" class="">Copy Table</a></li>
+                                                    <li><a id="link-create-table" href="#create-table" class="">Create Table</a></li>
+                                                    <li><a id="link-export-table" href="#export-table" class="">Export Table</a></li>
+                                                    <li><a id="link-filter-empty-rows" href="#filter-empty-rows" class="">Filter Empty Rows</a></li>
+                                                    <li><a id="link-filter-table-by-column" href="#filter-table-by-column" class="">Filter Table By Column</a></li>
+                                                    <li><a id="link-find-table-rows" href="#find-table-rows" class="">Find Table Rows</a></li>
+                                                    <li><a id="link-get-table-cell" href="#get-table-cell" class="">Get Table Cell</a></li>
+                                                    <li><a id="link-get-table-column" href="#get-table-column" class="">Get Table Column</a></li>
+                                                    <li><a id="link-get-table-dimensions" href="#get-table-dimensions" class="">Get Table Dimensions</a></li>
+                                                    <li><a id="link-get-table-row" href="#get-table-row" class="">Get Table Row</a></li>
+                                                    <li><a id="link-get-table-slice" href="#get-table-slice" class="">Get Table Slice</a></li>
+                                                    <li><a id="link-group-table-by-column" href="#group-table-by-column" class="">Group Table By Column</a></li>
+                                                    <li><a id="link-merge-tables" href="#merge-tables" class="">Merge Tables</a></li>
+                                                    <li><a id="link-pop-table-column" href="#pop-table-column" class="">Pop Table Column</a></li>
+                                                    <li><a id="link-pop-table-row" href="#pop-table-row" class="">Pop Table Row</a></li>
+                                                    <li><a id="link-read-table-from-csv" href="#read-table-from-csv" class="">Read Table From Csv</a></li>
+                                                    <li><a id="link-rename-table-columns" href="#rename-table-columns" class="">Rename Table Columns</a></li>
+                                                    <li><a id="link-set-column-as-index" href="#set-column-as-index" class="">Set Column As Index</a></li>
+                                                    <li><a id="link-set-row-as-column-names" href="#set-row-as-column-names" class="">Set Row As Column Names</a></li>
+                                                    <li><a id="link-set-table-cell" href="#set-table-cell" class="">Set Table Cell</a></li>
+                                                    <li><a id="link-set-table-column" href="#set-table-column" class="">Set Table Column</a></li>
+                                                    <li><a id="link-set-table-row" href="#set-table-row" class="">Set Table Row</a></li>
+                                                    <li><a id="link-sort-table-by-column" href="#sort-table-by-column" class="">Sort Table By Column</a></li>
+                                                    <li><a id="link-table-head" href="#table-head" class="">Table Head</a></li>
+                                                    <li><a id="link-table-tail" href="#table-tail" class="">Table Tail</a></li>
+                                                    <li><a id="link-trim-column-names" href="#trim-column-names" class="">Trim Column Names</a></li>
+                                                    <li><a id="link-trim-empty-rows" href="#trim-empty-rows" class="">Trim Empty Rows</a></li>
+                                                    <li><a id="link-write-table-to-csv" href="#write-table-to-csv" class="">Write Table To Csv</a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>

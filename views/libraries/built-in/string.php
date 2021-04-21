@@ -1899,26 +1899,46 @@ ${two groups} = [('h', 'e'), ('r', 'i')]
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
                                                     </svg></fieldset>
                                             </form>
-                                            <div><a id="link-convert-to-lower-case" href="#convert-to-lower-case" class="">Convert To
-                                                    Lower Case</a><a id="link-convert-to-title-case" href="#convert-to-title-case" class="">Convert To Title Case</a><a id="link-convert-to-upper-case" href="#convert-to-upper-case" class="">Convert To Upper Case</a>
-                                                <a id="link-decode-bytes-to-string" href="#decode-bytes-to-string" class="">Decode Bytes To String
-                                                </a><a id="link-encode-string-to-bytes" href="#encode-string-to-bytes" class="">Encode String To Bytes</a><a id="link-fetch-from-left" href="#fetch-from-left" class="">Fetch From Left</a>
-                                                <a id="link-fetch-from-right" href="#fetch-from-right" class="">Fetch From Right</a><a id="link-format-string" href="#format-string" class="">Format String</a><a id="link-generate-random-string" href="#generate-random-string" class="">Generate Random String</a>
-                                                <a id="link-get-line" href="#get-line" class="">Get Line</a><a id="link-get-line-count" href="#get-line-count" class="">Get Line Count</a><a id="link-get-lines-containing-string" href="#get-lines-containing-string" class="">Get
-                                                    Lines Containing String</a><a id="link-get-lines-matching-pattern" href="#get-lines-matching-pattern" class="">Get Lines Matching Pattern</a><a id="link-get-lines-matching-regexp" href="#get-lines-matching-regexp" class="">Get Lines
-                                                    Matching Regexp</a><a id="link-get-regexp-matches" href="#get-regexp-matches" class="">Get Regexp Matches</a><a id="link-get-substring" href="#get-substring" class="">Get Substring</a><a id="link-remove-string" href="#remove-string" class="">Remove String</a><a id="link-remove-string-using-regexp" href="#remove-string-using-regexp" class="">Remove String Using Regexp</a><a id="link-replace-string" href="#replace-string" class="">Replace String</a><a id="link-replace-string-using-regexp" href="#replace-string-using-regexp" class="">Replace String Using Regexp</a><a id="link-should-be-byte-string" href="#should-be-byte-string" class="">Should Be Byte String</a><a id="link-should-be-lowercase" href="#should-be-lowercase" class="">Should Be
-                                                    Lowercase</a><a id="link-should-be-string" href="#should-be-string" class="">Should Be
-                                                    String</a><a id="link-should-be-titlecase" href="#should-be-titlecase" class="">Should Be
-                                                    Titlecase</a><a id="link-should-be-unicode-string" href="#should-be-unicode-string" class="">Should Be Unicode String</a><a id="link-should-be-uppercase" href="#should-be-uppercase" class="">Should Be Uppercase</a>
-                                                <a id="link-should-not-be-string" href="#should-not-be-string" class="">Should Not Be String
-                                                </a><a id="link-split-string" href="#split-string" class="">Split String</a><a id="link-split-string-from-right" href="#split-string-from-right" class="">Split String
-                                                    From Right</a><a id="link-split-string-to-characters" href="#split-string-to-characters" class="">Split String To Characters</a><a id="link-split-to-lines" href="#split-to-lines" class="">Split To Lines</a>
-                                                <a id="link-strip-string" href="#strip-string" class="">Strip String
-                                                </a>
+                                            <div>
+                                                <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
+                                                    <li><a id="link-convert-to-lower-case" href="#convert-to-lower-case" class="">Convert To Lower Case</a></li>
+                                                    <li><a id="link-convert-to-title-case" href="#convert-to-title-case" class="">Convert To Title Case</a></li>
+                                                    <li><a id="link-convert-to-upper-case" href="#convert-to-upper-case" class="">Convert To Upper Case</a></li>
+                                                    <li><a id="link-decode-bytes-to-string" href="#decode-bytes-to-string" class="">Decode Bytes To String </a></li>
+                                                    <li><a id="link-encode-string-to-bytes" href="#encode-string-to-bytes" class="">Encode String To Bytes</a></li>
+                                                    <li><a id="link-fetch-from-left" href="#fetch-from-left" class="">Fetch From Left</a></li>
+                                                    <li><a id="link-fetch-from-right" href="#fetch-from-right" class="">Fetch From Right</a></li>
+                                                    <li><a id="link-format-string" href="#format-string" class="">Format String</a></li>
+                                                    <li><a id="link-generate-random-string" href="#generate-random-string" class="">Generate Random String</a></li>
+                                                    <li><a id="link-get-line" href="#get-line" class="">Get Line</a></li>
+                                                    <li><a id="link-get-line-count" href="#get-line-count" class="">Get Line Count</a></li>
+                                                    <li><a id="link-get-lines-containing-string" href="#get-lines-containing-string" class="">Get Lines Containing String</a></li>
+                                                    <li><a id="link-get-lines-matching-pattern" href="#get-lines-matching-pattern" class="">Get Lines Matching Pattern</a></li>
+                                                    <li><a id="link-get-lines-matching-regexp" href="#get-lines-matching-regexp" class="">Get Lines Matching Regexp</a></li>
+                                                    <li><a id="link-get-regexp-matches" href="#get-regexp-matches" class="">Get Regexp Matches</a></li>
+                                                    <li><a id="link-get-substring" href="#get-substring" class="">Get Substring</a></li>
+                                                    <li><a id="link-remove-string" href="#remove-string" class="">Remove String</a></li>
+                                                    <li><a id="link-remove-string-using-regexp" href="#remove-string-using-regexp" class="">Remove String Using Regexp</a></li>
+                                                    <li><a id="link-replace-string" href="#replace-string" class="">Replace String</a></li>
+                                                    <li><a id="link-replace-string-using-regexp" href="#replace-string-using-regexp" class="">Replace String Using Regexp</a></li>
+                                                    <li><a id="link-should-be-byte-string" href="#should-be-byte-string" class="">Should Be Byte String</a></li>
+                                                    <li><a id="link-should-be-lowercase" href="#should-be-lowercase" class="">Should Be Lowercase</a></li>
+                                                    <li><a id="link-should-be-string" href="#should-be-string" class="">Should Be String</a></li>
+                                                    <li><a id="link-should-be-titlecase" href="#should-be-titlecase" class="">Should Be Titlecase</a></li>
+                                                    <li><a id="link-should-be-unicode-string" href="#should-be-unicode-string" class="">Should Be Unicode String</a></li>
+                                                    <li><a id="link-should-be-uppercase" href="#should-be-uppercase" class="">Should Be Uppercase</a></li>
+                                                    <li><a id="link-should-not-be-string" href="#should-not-be-string" class="">Should Not Be String </a></li>
+                                                    <li><a id="link-split-string" href="#split-string" class="">Split String</a></li>
+                                                    <li><a id="link-split-string-from-right" href="#split-string-from-right" class="">Split String From Right</a></li>
+                                                    <li><a id="link-split-string-to-characters" href="#split-string-to-characters" class="">Split String To Characters</a></li>
+                                                    <li><a id="link-split-to-lines" href="#split-to-lines" class="">Split To Lines</a></li>
+                                                    <li><a id="link-strip-string" href="#strip-string" class="">Strip String </a></li>
+                                                </ul>
+
                                             </div>
                                         </aside>
                                     </div>
