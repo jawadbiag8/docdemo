@@ -205,12 +205,9 @@
             <script src="../web/js/jquery-2.2.3.min.js"></script>
             <script src="../web/js/scroll_menu.js"></script>
             <script src="../web/js/jquery.chocolat.js "></script>
-<<<<<<< HEAD
             <link rel="stylesheet " href="../web/css/chocolat.css " type="text/css " media="screen "> 
-=======
             <script src="../web/js/keywordsearch.js"></script>
-         <link rel="stylesheet " href="../web/css/chocolat.css " type="text/css " media="screen "> 
->>>>>>> 5be42aad1f3fdde982ae82056353b1fa879341dd
+            <link rel="stylesheet " href="../web/css/chocolat.css " type="text/css " media="screen "> 
             <script src="../web/js/move-top.js"></script>
             <script>
                 jQuery(document).ready(function ($) {

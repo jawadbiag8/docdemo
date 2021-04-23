@@ -420,16 +420,13 @@
             }
         </script>
 
-<<<<<<< HEAD
         <!-- Demo Js -->
         <!--<script src="../js/demo.js"></script>-->
     </body>
-=======
     <!-- Demo Js -->
     <!--<script src="../js/demo.js"></script>-->
-   <!-- keyword search -->
-   <script src="../web/js/keywordsearch.js"></script>
+    <!-- keyword search -->
+    <script src="../web/js/keywordsearch.js"></script>
 </body>
->>>>>>> 5be42aad1f3fdde982ae82056353b1fa879341dd
 
 </html>
