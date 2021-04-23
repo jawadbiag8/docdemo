@@ -17,6 +17,12 @@ function clean_string($str, $conn) {
     return $str;
 }
 
+function logs($str, $conn) {
+    $uid = $_SESSION['data']['id'];
+    $sql = "INSERT INTO user_logs (user_id, action) VALUES ($uid, '$str');";
+    $result = mysqli_query($conn, $sql);
+}
+
 function addview($pid, $uid, $conn) {
     $sql = "SELECT * FROM views WHERE post_id= $pid AND user_id= $uid";
     $result = mysqli_query($conn, $sql);

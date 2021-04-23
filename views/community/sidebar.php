@@ -2,8 +2,8 @@
     <div class="card profile-card">
         <div class="profile-header">
             <center>
-                <button type="button" id="orderby" class="btn bg-black waves-effect waves-light">Top</button>
-                <button type="button" id="latastpost" class="btn bg-black waves-effect waves-light">Latest</button>
+                <button type="button" id="orderby" class="btn bg-black waves-effect waves-light">Top viewed</button>
+                <button type="button" id="reload" onClick="window.location.reload();" class="btn bg-black waves-effect waves-light">Main Page</button>
             </center>
         </div>
     </div>

@@ -18,8 +18,19 @@
     z-index: 12;
     width: 100%;
 }
+<<<<<<< HEAD
+.post_tumbnal img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.list{
+=======
 
 .list {
+>>>>>>> 5be42aad1f3fdde982ae82056353b1fa879341dd
     margin-bottom: 115px;
 }
 
@@ -67,6 +78,7 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     max-height: 80px;
+    min-height: 80px;
 }
 
 .demo-2 {
@@ -2602,6 +2614,11 @@ th {
 .bg-red {
     background-color: #F44336 !important;
     color: #fff;
+}
+.bg-red:hover {
+    background-color: transparent !important;
+    border: 2px solid #F44336 !important;
+    color: #F44336 !important;
 }
 
 .bg-red .content .text,
@@ -10779,7 +10796,8 @@ fieldset[disabled] .form-control {
 }
 
 .right-sidebar {
-    width: 280px;
+    /*width: 280px;*/
+    width: 100px;
     height: calc(100vh - 70px);
     position: fixed;
     right: -300px;
@@ -11542,4 +11560,8 @@ html.ie11 .bs-searchbox .form-control {
     box-shadow: 0px 0px 5px 3px rgb(82 23 175 / 68%) !important;
     margin: -7px 0 0 0;
     background-color: #fff;
+}
+.red{
+    background-color: #ffc800bf;
+    text-transform:capitalize;
 }

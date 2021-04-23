@@ -1,4 +1,4 @@
-<section class="content">
+<section id="contentpage" class="content">
   <div class="container-fluid">
     <!-- Headings -->
     <div class="row clearfix">

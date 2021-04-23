@@ -60,6 +60,14 @@ if (isset($_GET)) {
     </head>
 
     <body class="theme-red">
+        <input type="hidden" id="sessionid" value="<?php
+        if (isset($_SESSION['data']['id'])) {
+            echo $_SESSION['data']['id'];
+        } else {
+            echo -1;
+        }
+        ?>">
+
         <!-- Page Loader -->
         <div class="page-loader-wrapper">
             <div class="loader">
@@ -85,7 +93,7 @@ if (isset($_GET)) {
             <div class="search-icon">
                 <i class="material-icons">search</i>
             </div>
-            <input type="text" placeholder="START TYPING...">
+            <input id="searchtext" type="text" placeholder="START TYPING...">
             <div class="close-search">
                 <i class="material-icons">close</i>
             </div>
@@ -169,9 +177,31 @@ if (isset($_GET)) {
 
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
-                        <div class="logout">
-                            <a class="btn btn-danger" href="../../docdemo/logout.php">logout</a>
-                        </div>
+                        <?php
+                        if (isset($_SESSION['data']['id'])) {
+                            ?>
+                            <div class="logout">
+                                <a href="../../docdemo/logout.php">
+                                    <button type="button" class="btn bg-red waves-effect">
+                                        <i class="material-icons">fingerprint</i>
+                                        <span>Logout</span>
+                                    </button>
+                                </a>
+                            </div>
+                            <?php
+                        } else {
+                            ?>
+                            <div class="logout">
+                                <a  href="../../docdemo/">
+                                    <button type="button" class="btn bg-red waves-effect">
+                                        <i class="material-icons">fingerprint</i>
+                                        <span>Sign In</span>
+                                    </button>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                        ?>
                     </div>
 
                 </div>
@@ -198,6 +228,13 @@ if (isset($_GET)) {
                                         </select>
                                     </div>
                                     <div class="col-lg-3">
+                                        <input type="hidden" id="uids" value="<?php
+                                        if (isset($_SESSION['data']['id'])) {
+                                            echo $_SESSION['data']['id'];
+                                        } else {
+                                            echo '';
+                                        }
+                                        ?>">
                                         <select id="subcategories" name="subcategory" class="form-control">
                                             <option value="0">All Subcategories</option>
 
@@ -205,7 +242,12 @@ if (isset($_GET)) {
                                     </div>
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-3">
-                                        <a href="../views/addpost.php" class="btn addcomment">Add Post</a>
+                                        <?php
+                                        if (isset($_SESSION['data']['id'])) {
+                                            ?>
+                                            <a href="../views/addpost.php" class="btn m-l-10 addcomment">Add Post</a>
+                                            <a href="javascript:mypost()" class="btn addcomment">My Posts</a>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>
@@ -302,6 +344,7 @@ if (isset($_GET)) {
             }
 
             $(document).ready(function () {
+              
                 pageload();
                 updatelist();
                 $("#categories").select2({
@@ -310,6 +353,39 @@ if (isset($_GET)) {
                 $("#subcategories").select2({
                     matcher: matchCustom
                 });
+                $("#orderby").click(function () {
+                    $.ajax({
+                        type: 'POST',
+                        url: '../views/community/topics.php',
+                        data: {'cat': $("#categories").val(), "subcat": $("#subcategories").val(), "populatrity": ""},
+
+                        success: function (result) {
+//                            debugger;
+                            $(".page-loader-wrapper").css("display", "block");
+                            setTimeout(function () {
+                                $(".page-loader-wrapper").css("display", "none");
+
+                            }, 500);
+                            $("#contentpage").empty();
+                            $("#contentpage").html(result);
+                        }
+                    });
+                });
+                $("#searchtext").keyup(function () {
+                    var query = $(this).val();
+                    $.ajax({
+                        type: 'POST',
+                        url: '../backend-script/search.php',
+                        data: {'query': query},
+
+                        success: function (result) {
+//                            debugger;
+                            $("#contentpage").empty();
+                            $("#contentpage").html(result);
+                        }
+                    });
+                });
+
                 $("#categories").change(function () {
                     var categories = $(this).val();
                     name = $("#categories option:selected").text();
@@ -352,6 +428,24 @@ if (isset($_GET)) {
                 });
 
             });
+//            function pageload(cat = $("#categories").val(), subcat = $("#subcategories").val()) {
+//                $.ajax({
+//                    type: 'POST',
+//                    url: '../views/community/topics.php',
+//                    data: {'cat': cat, "subcat": subcat},
+//
+//                    success: function (result) {
+////                            debugger;
+//                        $(".page-loader-wrapper").css("display", "block");
+//                        setTimeout(function () {
+//                            $(".page-loader-wrapper").css("display", "none");
+//
+//                        }, 500);
+//                        $("#contentpage").empty();
+//                        $("#contentpage").html(result);
+//                    }
+//                });
+//            }
             function pageload(cat = $("#categories").val(), subcat = $("#subcategories").val()) {
                 $.ajax({
                     type: 'POST',
@@ -360,19 +454,48 @@ if (isset($_GET)) {
 
                     success: function (result) {
 //                            debugger;
+                        $(".page-loader-wrapper").css("display", "block");
+                        setTimeout(function () {
+                            $(".page-loader-wrapper").css("display", "none");
+
+                        }, 500);
                         $("#contentpage").empty();
                         $("#contentpage").html(result);
                     }
                 });
             }
-            function addPost() {
+            function mypost(cat = $("#categories").val(), subcat = $("#subcategories").val(), uid = $("#uids").val()) {
                 $.ajax({
                     type: 'POST',
-                    url: '../views/community/addpost.php',
-                    data: {'action': "add"},
+                    url: '../views/community/topics.php',
+                    data: {'cat': cat, "subcat": subcat, "uid": uid},
 
                     success: function (result) {
-//                    
+//                            debugger;
+                        $(".page-loader-wrapper").css("display", "block");
+                        setTimeout(function () {
+                            $(".page-loader-wrapper").css("display", "none");
+
+                        }, 500);
+                        $("#contentpage").empty();
+                        $("#contentpage").html(result);
+                    }
+                });
+            }
+            function deletepost(pid, type) {
+                uid = $("#uids").val();
+                $.ajax({
+                    type: 'POST',
+                    url: '../views/community/delete.php',
+                    data: {'pid': pid, 'uid': uid, "type": type},
+
+                    success: function (result) {
+                        $(".page-loader-wrapper").css("display", "block");
+                        setTimeout(function () {
+                            $(".page-loader-wrapper").css("display", "none");
+
+                        }, 500);
+                        pageload();
                     }
                 });
             }
@@ -384,44 +507,79 @@ if (isset($_GET)) {
 
                     success: function (result) {
 //                            debugger;
+                        $(".page-loader-wrapper").css("display", "block");
+                        setTimeout(function () {
+                            $(".page-loader-wrapper").css("display", "none");
+
+                        }, 500);
                         $("#contentpage").empty();
                         $("#contentpage").html(result);
                     }
                 });
             }
-            function addcomment(postid) {
-                var comment = $("#commentdata").val();
-                if (comment == '') {
-                    $("#formdiv").addClass("focused error");
+            function capitalizeFirstLetter(string) {
+                debugger;
+                if (string == undefined) {
                 } else {
-                    $("#formdiv").removeClass("focused error");
+                    return string.charAt(0).toUpperCase() + string.slice(1);
+                }
+            }
+            function addcomment(postid) {
+                sessionid = $("#sessionid").val();
+
+                var comment = $("#commentdata").val();
+                if (sessionid == '-1') {
+                    $(".page-loader-wrapper").css("display", "block");
+                    setTimeout(function () {
+                        $(".page-loader-wrapper").css("display", "none");
+
+                    }, 500);
+                    window.location.href = "../index.php";
+                } else {
+                    if (comment == '') {
+                        $("#formdiv").addClass("focused error");
+                    } else {
+                        $("#formdiv").removeClass("focused error");
+                        $.ajax({
+                            type: 'POST',
+                            url: '../backend-script/community.php',
+                            data: {'postid': postid, 'comment': comment, 'flag': "add_comment"},
+
+                            success: function (result) {
+//                            debugger;
+                                postload(postid);
+                            }
+                        });
+                    }
+                }
+
+            }
+            function likepost(postid, type) {
+                sessionid = $("#sessionid").val();
+
+                if (sessionid == '-1') {
+                    $(".page-loader-wrapper").css("display", "block");
+                    setTimeout(function () {
+                        $(".page-loader-wrapper").css("display", "none");
+
+                    }, 500);
+                    window.location.href = "../index.php";
+                } else {
                     $.ajax({
                         type: 'POST',
                         url: '../backend-script/community.php',
-                        data: {'postid': postid, 'comment': comment, 'flag': "add_comment"},
+                        data: {'postid': postid, 'type': type, 'flag': "likepost"},
 
                         success: function (result) {
 //                            debugger;
-                            postload(postid);
+                            if (type == 'post') {
+                                postload(postid);
+                            } else {
+                                postload($("#post_id").val());
+                            }
                         }
                     });
                 }
-            }
-            function likepost(postid, type) {
-                $.ajax({
-                    type: 'POST',
-                    url: '../backend-script/community.php',
-                    data: {'postid': postid, 'type': type, 'flag': "likepost"},
-
-                    success: function (result) {
-//                            debugger;
-                        if (type == 'post') {
-                            postload(postid);
-                        } else {
-                            postload($("#post_id").val());
-                        }
-                    }
-                });
             }
             function updatelist(catid = '') {
 //                debugger;

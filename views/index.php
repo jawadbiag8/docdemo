@@ -63,14 +63,17 @@
                         <div class="container">
                             <div class="carousel-caption">
                                 <h3>Autosphere Portal</h3>
-                                <div class="wrap">
-                                    <div class="search">
-                                        <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                                        <button type="submit" class="searchButton">
-                                            <i class="fa fa-search"></i>
-                                        </button>
+                                <form action="documantation.php">
+                                    <div class="wrap">
+                                        <div class="search">
+                                            <input type="hidden"  name="page" value="search" >
+                                            <input type="text" name="search" id="searchtext" class="searchTerm" placeholder="What are you looking for?">
+                                            <button type="submit" class="searchButton">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -92,7 +95,7 @@
                                     <i class='fas tile-icon  fa-book'></i>
                                     <h4>Guide</h4>
                                     <p>
-                                        Quickstart teaches you the basics of our products
+                                        Guide to quickly get started with Autosphere
                                     </p>
                                 </div>
                             </a>
@@ -104,7 +107,7 @@
                                     <i class='fas tile-icon  fa-certificate'></i>
                                     <h4>Trainings & Certifications</h4>
                                     <p>
-                                     You will learn how to automate processes using Autosphere tools
+                                        Become an Autosphere certified professional
                                     </p>
                                 </div>
                             </a> 
@@ -116,7 +119,7 @@
                                     <i class='fas tile-icon  fa-graduation-cap'></i>
                                     <h4>Additional Learning</h4>
                                     <p>
-                                        You wil learn the additional concepts of Autosphere
+                                        Additional concepts for Autosphere
                                     </p>
                                 </div>
                             </a>
@@ -128,7 +131,7 @@
                                     <i class='fas tile-icon  fa-robot'></i>
                                     <h4>Automation Libraries</h4>
                                     <p>
-                                    Libraries to support Autosphere workflows
+                                        Libraries to support Autosphere workflows
                                     </p>
                                 </div>
                             </a>
@@ -142,7 +145,7 @@
                                     <i class='fas tile-icon  fa-book'></i>
                                     <h4>Product Manual</h4>
                                     <p>
-                                    Product Manual will give the overview of Autosphere's security
+                                        Product Manual for all Autosphere components 
                                     </p>
                                 </div>
                             </a>
@@ -153,7 +156,7 @@
                                     <i class='far tile-icon  fa-comments'></i>
                                     <h4>Community</h4>
                                     <p>
-                                        Quickstart teaches you the basics of our products
+                                        Ask questions and find the solutions.
                                     </p>
                                 </div>
                             </a>
@@ -202,8 +205,12 @@
             <script src="../web/js/jquery-2.2.3.min.js"></script>
             <script src="../web/js/scroll_menu.js"></script>
             <script src="../web/js/jquery.chocolat.js "></script>
+<<<<<<< HEAD
+            <link rel="stylesheet " href="../web/css/chocolat.css " type="text/css " media="screen "> 
+=======
             <script src="../web/js/keywordsearch.js"></script>
          <link rel="stylesheet " href="../web/css/chocolat.css " type="text/css " media="screen "> 
+>>>>>>> 5be42aad1f3fdde982ae82056353b1fa879341dd
             <script src="../web/js/move-top.js"></script>
             <script>
                 jQuery(document).ready(function ($) {
@@ -228,6 +235,10 @@
                     $().UItoTop({
                         easingType: 'easeOutQuart'
                     });
+//                    $(".searchButton").click(function () {
+//                        var text = $("#searchtext").val();
+//                        alert(text);
+//                    });
                 });
             </script>
             <!-- //smooth-scrolling-of-move-up -->

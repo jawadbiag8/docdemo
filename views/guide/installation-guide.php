@@ -1,4 +1,4 @@
-<section class="content">
+<section id="contentpage" class="content">
     <div class="container-fluid">
         <div class="block-header">
             <h2>Installation Guideline</h2>
@@ -11,7 +11,18 @@
                         <h2>
                             Process Studio
                         </h2>
-                     
+                        <ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-left">
+                                    <li><a href="javascript:void(0);">Action</a></li>
+                                    <li><a href="javascript:void(0);">Another action</a></li>
+                                    <li><a href="javascript:void(0);">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                     <div class="body">
                         <h4 class="m-b-30">Dependencies</h4>
@@ -35,7 +46,7 @@
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">more_vert</i>
                                 </a>
-                                <ul class="dropdown-menu pull-right">
+                                <ul class="dropdown-menu pull-left">
                                     <li><a href="javascript:void(0);">Action</a></li>
                                     <li><a href="javascript:void(0);">Another action</a></li>
                                     <li><a href="javascript:void(0);">Something else here</a></li>
@@ -65,7 +76,7 @@
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">more_vert</i>
                                 </a>
-                                <ul class="dropdown-menu pull-right">
+                                <ul class="dropdown-menu pull-left">
                                     <li><a href="javascript:void(0);">Action</a></li>
                                     <li><a href="javascript:void(0);">Another action</a></li>
                                     <li><a href="javascript:void(0);">Something else here</a></li>
@@ -84,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- #END# Unordered List -->
     </div>

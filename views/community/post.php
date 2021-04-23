@@ -4,7 +4,9 @@
         include("../../config/database.php");
         if (isset($_POST['postid'])) {
             $postid = $_POST['postid'];
-            addview($postid, $_SESSION['id'], $conn);
+            if (isset($_SESSION['data']['id'])) {
+                addview($postid, $_SESSION['data']['id'], $conn);
+            }
             $sql = "SELECT p.*,c.cat_name,s.name scat_name,u.f_name,u.l_name FROM posts p JOIN categories c on c.id =p.cat_id JOIN sub_category s on s.id=p.sub_cat_id JOIN users u on u.id=p.user_id where p.id=$postid";
             $result = mysqli_query($conn, $sql);
             $res = mysqli_fetch_assoc($result);
@@ -33,33 +35,40 @@
                                         <div class="panel-body">
                                             <div class="post">
                                                 <div class="post-heading post_tumbnal">
-                                                    <?php echo $res['post_data'] ?>
+                                                    <?php echo base64_decode($res['post_data']) ?>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="panel-footer">
                                             <ul>
                                                 <?php
-                                                $sql = "SELECT * FROM likes WHERE post_id= $postid AND type='post' AND user_id= " . $_SESSION['id'];
-                                                $result = mysqli_query($conn, $sql);
-                                                if (mysqli_num_rows($result) > 0) {
-                                                    ?>
-                                                    <li>
-                                                        <a href="javascript:likepost(<?php echo $res['id']; ?>,'post')">
-                                                            <i class="material-icons" style="color: red">favorite</i>
-                                                            <span><?php echo $res['likes'] ?> Likes</span>
-                                                        </a>
-                                                    </li>
-                                                    <?php
-                                                } else {
-                                                    ?>
-                                                    <li>
-                                                        <a href="javascript:likepost(<?php echo $res['id']; ?>,'post')">
-                                                            <i class="material-icons">favorite_border</i>
-                                                            <span><?php echo $res['likes'] ?> Likes</span>
-                                                        </a>
-                                                    </li>
-                                                    <?php
+                                                if (isset($_SESSION['data']['id'])) {
+
+
+                                                    $sql = "SELECT * FROM likes WHERE post_id= $postid AND type='post' AND user_id= " . $_SESSION['id'];
+
+                                                    $result = mysqli_query($conn, $sql);
+//                                                    var_dump(mysqli_num_rows($result));
+
+                                                    if (mysqli_num_rows($result) > 0) {
+                                                        ?>
+                                                        <li>
+                                                            <a href="javascript:likepost(<?php echo $res['id']; ?>,'post')">
+                                                                <i class="material-icons" style="color: red">favorite</i>
+                                                                <span><?php echo $res['likes'] ?> Likes</span>
+                                                            </a>
+                                                        </li>
+                                                        <?php
+                                                    } else {
+                                                        ?>
+                                                        <li>
+                                                            <a href="javascript:likepost(<?php echo $res['id']; ?>,'post')">
+                                                                <i class="material-icons">favorite_border</i>
+                                                                <span><?php echo $res['likes'] ?> Likes</span>
+                                                            </a>
+                                                        </li>
+                                                        <?php
+                                                    }
                                                 }
                                                 ?>
 
@@ -117,26 +126,28 @@
                                                         <div class="panel-footer">
                                                             <ul>
                                                                 <?php
-                                                                $sql1 = "SELECT * FROM likes WHERE post_id= " . $res['id'] . " AND type='comment' AND user_id= " . $_SESSION['id'];
-                                                                $result1 = mysqli_query($conn, $sql1);
-                                                                if (mysqli_num_rows($result1) > 0) {
-                                                                    ?>
-                                                                    <li>
-                                                                        <a href="javascript:likepost(<?php echo $res['id']; ?>,'comment')">
-                                                                            <i class="material-icons" style="color: red">favorite</i>
-                                                                            <span><?php echo $res['likes'] ?> Likes</span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <?php
-                                                                } else {
-                                                                    ?>
-                                                                    <li>
-                                                                        <a href="javascript:likepost(<?php echo $res['id']; ?>,'comment')">
-                                                                            <i class="material-icons">favorite_border</i>
-                                                                            <span><?php echo $res['likes'] ?> Likes</span>
-                                                                        </a>
-                                                                    </li>
-                                                                    <?php
+                                                                if (isset($_SESSION['data']['id'])) {
+                                                                    $sql1 = "SELECT * FROM likes WHERE post_id= " . $res['id'] . " AND type='comment' AND user_id= " . $_SESSION['id'];
+                                                                    $result1 = mysqli_query($conn, $sql1);
+                                                                    if (mysqli_num_rows($result1) > 0) {
+                                                                        ?>
+                                                                        <li>
+                                                                            <a href="javascript:likepost(<?php echo $res['id']; ?>,'comment')">
+                                                                                <i class="material-icons" style="color: red">favorite</i>
+                                                                                <span><?php echo $res['likes'] ?> Likes</span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <?php
+                                                                    } else {
+                                                                        ?>
+                                                                        <li>
+                                                                            <a href="javascript:likepost(<?php echo $res['id']; ?>,'comment')">
+                                                                                <i class="material-icons">favorite_border</i>
+                                                                                <span><?php echo $res['likes'] ?> Likes</span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <?php
+                                                                    }
                                                                 }
                                                                 ?>
                                                                 <li>
@@ -154,7 +165,7 @@
                                                                                                                                     <input type="text" id="commentdata" class="form-control date" placeholder="Message">
                                                                                                                                 </div>
                                                                                                                                 <span class="input-group-addon">
-                                                                                                                                    <a href="javascript:addcomment(<?php // echo $res['id'];    ?>)"><i class="material-icons">send</i></a>
+                                                                                                                                    <a href="javascript:addcomment(<?php // echo $res['id'];                     ?>)"><i class="material-icons">send</i></a>
                                                                                                                                 </span>
                                                                                                                             </div> 
                                                                                                                         </div>-->

@@ -1,14 +1,23 @@
 <?php
 include("../config/database.php");
+if (!isset($_SESSION['data']['id'])) {
+    header('Location: ../');
+}
 if (isset($_POST['addpost'])) {
     $cat = $_POST['category'];
     $sub = $_POST['subcategory'];
-    $text = $_POST['text'];
+    $text = base64_encode($_POST['text']);
+//    $text = unpack('C*',$_POST['text']);
+    $x = json_encode($text);
     $title = clean_string($_POST['title'], $conn);
     $uid = $_SESSION['id'];
-    $sql = "INSERT INTO posts (`post_data`, `user_id`,`post_title`, cat_id,sub_cat_id) VALUES ('$text', $uid,'$title','$cat','$sub');";
+    $sql = "INSERT INTO posts (`post_data`, `user_id`,`post_title`, cat_id,sub_cat_id) VALUES ('$text', {$uid},'{$title}','{$cat}','{$sub}');";
+//    var_dump($text);
+//    print_r($sql);
     $result = mysqli_query($conn, $sql);
-//    var_dump($sql);exit();
+//    var_dump(mysqli_error($conn));
+//    exit();
+
     header('Location: ../views/community.php');
 }
 ?>
@@ -37,6 +46,7 @@ if (isset($_POST['addpost'])) {
 
         <!-- Custom Css -->
         <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/summernote-bs4.css" rel="stylesheet">
 
         <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
         <link href="../css/themes/all-themes.css" rel="stylesheet" />
@@ -47,22 +57,11 @@ if (isset($_POST['addpost'])) {
 
     <body class="theme-red">
 
-        <!--        <div class="page-loader-wrapper">
-                    <div class="loader">
-                        <div class="preloader">
-                            <div class="spinner-layer pl-red">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div>
-                                <div class="circle-clipper right">
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <p>Please wait...</p>
-                    </div>
-                </div>-->
-        <!-- #END# Page Loader -->
+        <style>
+            .error-message{
+                border-bottom: solid red;
+            }
+        </style>
         <!-- Overlay For Sidebars -->
         <div class="overlay"></div>
         <!-- #END# Overlay For Sidebars -->
@@ -95,7 +94,7 @@ if (isset($_POST['addpost'])) {
                         <!-- Tasks -->
 
                         <!-- #END# Tasks -->
-                        <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
+                        <li class="pull-left"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
                     </ul>
                 </div>
             </div>
@@ -107,9 +106,31 @@ if (isset($_POST['addpost'])) {
 
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
-                        <div class="logout">
-                            <a class="btn btn-danger" href="../../docdemo/logout.php">logout</a>
-                        </div>
+                        <?php
+                        if (isset($_SESSION['data']['id'])) {
+                            ?>
+                            <div class="logout">
+                                <a href="../../docdemo/logout.php">
+                                    <button type="button" class="btn bg-red waves-effect">
+                                        <i class="material-icons">fingerprint</i>
+                                        <span>Logout</span>
+                                    </button>
+                                </a>
+                            </div>
+                            <?php
+                        } else {
+                            ?>
+                            <div class="logout">
+                                <a  href="../../docdemo/">
+                                    <button type="button" class="btn bg-red waves-effect">
+                                        <i class="material-icons">fingerprint</i>
+                                        <span>Sign In</span>
+                                    </button>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                        ?>
                     </div>
 
                 </div>
@@ -135,33 +156,51 @@ if (isset($_POST['addpost'])) {
 
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <h5>Title</h5>
-                                            <input type="text" name="title" required="" id="title" class="form-control">
+                                            <h5><span id="titlelable">Title</span></h5>
+                                            <input type="text" name="title" required="" id="title" class="form-control postform">
                                         </div>
                                         <div class="col-lg-6">
-                                            <h5>Category</h5>
-                                            <select id="categories" name="category" class="form-control">
-                                                <option>Select Category</option>
+                                            <h5><span id="categorylable">Category</span></h5>
+                                            <select id="categories" name="category" required="" class="form-control postform">
+                                                <option value="0">Select Category</option>
                                                 <?php
                                                 $sql = "SELECT * FROM categories";
                                                 $result = mysqli_query($conn, $sql);
                                                 while ($res = mysqli_fetch_array($result)) {
-                                                    ?>
-                                                    <option value="<?php echo $res['id']; ?>" data-subtext="<?php echo $res['cat_details']; ?>"><?php echo $res['cat_name']; ?></option>
-                                                <?php } ?>
+                                                    if (isset($_SESSION['data']['id'])) {
+                                                        if ($_SESSION['data']['type'] == "admin" || $_SESSION['data']['type'] == "sadmin") {
+                                                            ?>
+                                                            <option value="<?php echo $res['id']; ?>" data-subtext="<?php echo $res['cat_details']; ?>"><?php echo $res['cat_name']; ?></option>
+                                                            <?php
+                                                        } else {
+                                                            if ($res['id'] == 2) {
+                                                                
+                                                            } else {
+                                                                ?>
+                                                                <option value="<?php echo $res['id']; ?>" data-subtext="<?php echo $res['cat_details']; ?>"><?php echo $res['cat_name']; ?></option>
+                                                                <?php
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                ?>
                                             </select>
                                         </div>
                                         <div class="col-lg-6">
-                                            <h5>Subcategory</h5>
-                                            <select id="subcategories" name="subcategory" class="form-control">
+                                            <h5><span id="subcategorylable">Subcategory</span></h5>
+                                            <select id="subcategories" name="subcategory" required="" class="form-control postform">
 
                                             </select>
                                         </div>
-                                        <div class="col-lg-12">
-                                            <h5>Post</h5>
-                                            <textarea id="tinymce" name="text">
+                                        <div class="col-lg-12">  
+                                            <h5><span id="postlable">Post</span></h5>
 
-                                            </textarea>
+                                            <textarea  id="summer_note" id="description" required="" name="text" class="form-control postform" rows="5"></textarea>
+                                        </div>
+                                        <div class="col-lg-12">
+<!--                                            <textarea id="tinymce" name="text">
+
+                                            </textarea>-->
                                         </div>
                                         <div class="col-lg-12">
                                             <button class="btn addcomment" name="addpost" id="submitpost">Save</button>
@@ -196,6 +235,7 @@ if (isset($_POST['addpost'])) {
 
         <!-- TinyMCE -->
         <script src="../plugins/tinymce/tinymce.js"></script>
+        <script src="../../docdemo/js/summernote-bs4.min.js"></script>
 
         <!-- Custom Js -->
         <script src="../js/admin.js"></script>
@@ -258,7 +298,7 @@ if (isset($_POST['addpost'])) {
                         success: function (result) {
                             var obj = JSON.parse(result);
                             $("#subcategories").empty();
-                            var res = "<option>Select Subcategory</option>";
+                            var res = "<option value=0 >Select Subcategory</option>";
                             for (i = 0; i < obj['row'].length; i++) {
                                 res += "<option value='" + obj["row"][i][0] + "'>" + obj["row"][i][1] + "</option>";
                             }
@@ -267,12 +307,49 @@ if (isset($_POST['addpost'])) {
                         }
                     });
                 });
-                $("#submitpost").click(function () {
+                $('#summer_note').summernote({
+                    height: 150,
+                    onPaste: function (e) {
+                        var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
+                        e.preventDefault();
+                        document.execCommand('insertText', false, bufferText);
+                    },
+                    codemirror: {
+                        mode: 'text/html',
+                        htmlMode: true,
+                        lineNumbers: true,
+                        theme: 'monokai'
+                    }
+                });
+                $("#submitpost").click(function (e) {
                     debugger;
+                    title = $("#title").val();
                     cat = $("#categories").val();
                     sub = $("#subcategories").val();
-                    post = $("#tinymce").val();
-//                    alert("sdsd");
+                    post = $("#summer_note").val();
+                    err = false;
+                    if (title == '') {
+                        $("#titlelable").addClass('error-message');
+                        err = true;
+                    }
+                    if (cat == 0) {
+                        $("#categorylable").addClass('error-message');
+                        err = true;
+                    }
+                    if (sub == 0||sub== null) {
+                        $("#subcategorylable").addClass('error-message');
+                        err = true;
+                    }
+                    if (post == '') {
+                        $("#postlable").addClass('error-message');
+                        err = true;
+                    }
+                    setTimeout(function () {
+                        $("h5 span").removeClass("error-message")
+                    }, 3000);
+                    if (err) {
+                        e.preventDefault();
+                    }
                 });
                 var pageURL = $(location).attr("href");
 //                alert(pageURL);

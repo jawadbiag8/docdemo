@@ -1,4 +1,4 @@
-<section class="content">
+<section id="contentpage" class="content">
   <div class="container-fluid">
     <!-- Headings -->
     <div class="row clearfix">
@@ -13,7 +13,7 @@
                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons">more_vert</i>
                 </a>
-                <ul class="dropdown-menu pull-right">
+                <ul class="dropdown-menu pull-left">
                   <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=Uploading files to git">Next</a></li>
                   <li><a href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=setting-up-a-version-control-repository">Previous</a></li>
                 </ul>
