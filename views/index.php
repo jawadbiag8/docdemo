@@ -39,14 +39,47 @@
                         </button>
                         <div class="logo">
                             <h1>
-                                <a class="navbar-brand" href="../../docdemo/views/index.php">
-                                    <img src="../web/images/logo.png"></a>
+                                <a class="navbar-brand" href="../views/index.php">
+                                    <img src="../web/images/logo.png">
+                                </a>
                             </h1>
                         </div>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse nav-right">
+                        <ul class="nav navbar-nav navbar-right cl-effect-15">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden">
+                                <a class="page-scroll" href="#page-top"></a>
+                            </li>
+                            <?php
+                            session_start();
+                            if (isset($_SESSION['data']['id'])) {
+                                if ($_SESSION['data']['type'] == "admin" || $_SESSION['data']['type'] == "sadmin") {
+                                    ?>
+                                    <li class="">
+                                        <a class="page-scroll" href="../views/admin.php">Admin Panel</a>
+                                    </li>
+                                    <?php
+                                }
+                                ?>
+                                <li class="">
+                                    <a class="page-scroll" href="../logout.php">Sign out</a>
+                                </li>
+                                <?php
+                            } else {
+                                ?>
+                                <li class="">
+                                    <a class="page-scroll" href="../index.php">Sign in</a>
+                                </li>
+                                <li class="">
+                                    <a class="page-scroll" href="../signup.php">Sign Up</a>
+                                </li>
+                            <?php } ?>
+                        </ul>
 
+                    </div>
 
                     <div class="clearfix"></div>
                 </div>

@@ -36,7 +36,7 @@ $searchdata = mysqli_query($conn, $query)or die(mysqli_error($db));
                         ?>
                         <div class="sc-iqHYGH ZQcnW <?php echo $row['type']; ?>">
                             <div class="sc-crrsfI dpELVT">
-                                <a href="../views/documantation.php?page=<?php echo $row['page']; ?>&node=<?php echo $row['node']; ?>&subnode=<?php echo $row['subnode']; ?>"><h3><?php echo ucfirst($row['name']); ?></h3></a><span class="sc-dQppl cQZIoF"><?php echo ucfirst($row['type']); ?></span>
+                                <a href="../views/<?php echo $row['path']; ?>"><h3><?php echo ucfirst($row['name']); ?></h3></a><span class="sc-dQppl cQZIoF"><?php echo ucfirst($row['type']); ?></span>
                             </div>
                             <!--<span class="sc-bqyKva cbbWnj">RPA Framework / RPA.Browser</span>-->
                             <div class="sc-kstrdz btjemE">

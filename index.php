@@ -26,46 +26,21 @@ if (isset($_POST['login'])) {
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['username'] = $row['username'];
                     $_SESSION['data'] = $row;
-
                     $successful = "done";
                     $error = "none";
                     sleep(6);
-                    if ($row['type'] == "sadmin") {
-                        header("Location: views/");
-                        exit(0);
-                    }
-                    if ($row['type'] == "admin") {
-                        header("Location: views/");
-                        exit(0);
-                    }
-                    if ($row['type'] == "user") {
-                        header("Location: views/");
-                        exit(0);
-                    }
+                    header("Location: views/");
+                    exit(0);
                 }
             }
         }
     }
 }
 if (isset($_SESSION['id'])) {
-    $username1 = $_SESSION['username'];
-    $sql = "SELECT * FROM users WHERE username = '$username1'";
-    $result = mysqli_query($conn, $sql);
-    $resultCheck = mysqli_num_rows($result);
-    $row = mysqli_fetch_assoc($result);
-    if ($row['type'] == "sadmin") {
+   
         header("Location: views/");
         exit(0);
-    }
-    if ($row['type'] == "admin") {
-        header("Location: views/");
-        exit(0);
-    } 
-    if ($row['type'] == "user") {
-        header("Location: views/docs.php");
-        exit(0);
-    }
- 
+   
 } else {
     ?>
 
@@ -173,7 +148,7 @@ if (isset($_SESSION['id'])) {
                 top: 0;
                 bottom: 0;
                 padding: 30px 68px 40px 40px;
-               
+
                 background: rgba(0, 0, 0, 0.6);
                 border-radius: 25px;
             }
@@ -276,7 +251,7 @@ if (isset($_SESSION['id'])) {
             body .login_fields__submit input:focus {
                 box-shadow: none;
                 outline: none;
-                
+
             }
 
             body .login_fields__submit input:hover {
@@ -337,12 +312,12 @@ if (isset($_SESSION['id'])) {
             <!--<link rel="stylesheet" href="css/style.css">-->
         </head>
 
-      
+
         <body>
 
 
-            <?php if ($successful == "false") {
-                ?>
+    <?php if ($successful == "false") {
+        ?>
                 <div class='login'>
                     <img src="images/autosphere_400.png" style="width: 100%" alt=""/>
                     <div class='login_title'>
@@ -365,7 +340,7 @@ if (isset($_SESSION['id'])) {
                                 </div>
                                 </input>
                             </div>
-                       
+
                             <div class='login_fields__password'>
                                 <div class='icon'>
                                     <img src='images/lock_icon_copy.png'>
@@ -391,7 +366,7 @@ if (isset($_SESSION['id'])) {
 
 
                 </div>
-            <?php } ?>
+    <?php } ?>
             <div class='authent'>
                 <img src='images/puff.svg'>
                 <p>Authenticating....</p>

@@ -1,8 +1,5 @@
 <?php
 include("../config/database.php");
-if (isset($_GET)) {
-//    echo '<script>window.history.pushState(NULL, "Your New Title", "/new-url");</script>';
-}
 ?>
 ﻿<!DOCTYPE html>
 <html>
@@ -131,31 +128,7 @@ if (isset($_GET)) {
                 <!-- #User Info -->
                 <!-- Menu -->
                 <?php
-                if (isset($_GET['page'])) {
-                    $page = $_GET['page'];
-                } else {
-                    $page = '';
-                }
-                if (isset($_GET['node'])) {
-                    $node = $_GET['node'];
-                } else {
-                    $node = '';
-                }
-                if (isset($_GET['subnode'])) {
-                    $subnode = $_GET['subnode'];
-                } else {
-                    $subnode = '';
-                }
-                if ($page == 'guide') {
-                    
-                }
-                switch ($page) {
-                    case 'guide':
-                        require 'community/sidebar.php';
-                        break;
-                    default:
-                        require 'community/sidebar.php';
-                }
+                require 'community/sidebar.php';
                 ?>
                 <br>
                 <br>
@@ -235,6 +208,14 @@ if (isset($_GET)) {
                                             echo '';
                                         }
                                         ?>">
+                                        <input type="hidden" id="status" value="<?php
+                                        if (isset($_SESSION['data']['id'])) {
+                                            if ($_SESSION['data']['status'] == 'approved')
+                                                echo $_SESSION['data']['id'] * 7;
+                                        } else {
+                                            echo '';
+                                        }
+                                        ?>">
                                         <select id="subcategories" name="subcategory" class="form-control">
                                             <option value="0">All Subcategories</option>
 
@@ -303,6 +284,9 @@ if (isset($_GET)) {
         <!--<script src="../plugins/nouislider/nouislider.js"></script>-->
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="../plugins/bootstrap-notify/bootstrap-notify.js"></script>
+
+        <script src="../js/pages/ui/notifications.js"></script>
         <!-- Custom Js -->
         <!--<script src="../js/pages/forms/advanced-form-elements.js"></script>-->
         <script>
@@ -344,7 +328,7 @@ if (isset($_GET)) {
             }
 
             $(document).ready(function () {
-              
+
                 pageload();
                 updatelist();
                 $("#categories").select2({
@@ -428,24 +412,6 @@ if (isset($_GET)) {
                 });
 
             });
-//            function pageload(cat = $("#categories").val(), subcat = $("#subcategories").val()) {
-//                $.ajax({
-//                    type: 'POST',
-//                    url: '../views/community/topics.php',
-//                    data: {'cat': cat, "subcat": subcat},
-//
-//                    success: function (result) {
-////                            debugger;
-//                        $(".page-loader-wrapper").css("display", "block");
-//                        setTimeout(function () {
-//                            $(".page-loader-wrapper").css("display", "none");
-//
-//                        }, 500);
-//                        $("#contentpage").empty();
-//                        $("#contentpage").html(result);
-//                    }
-//                });
-//            }
             function pageload(cat = $("#categories").val(), subcat = $("#subcategories").val()) {
                 $.ajax({
                     type: 'POST',
@@ -465,39 +431,49 @@ if (isset($_GET)) {
                 });
             }
             function mypost(cat = $("#categories").val(), subcat = $("#subcategories").val(), uid = $("#uids").val()) {
-                $.ajax({
-                    type: 'POST',
-                    url: '../views/community/topics.php',
-                    data: {'cat': cat, "subcat": subcat, "uid": uid},
+                stat = $("#status").val();
+                if (stat == '') {
+                    showNotification('alert-danger', "You are not Approved User", 'bottom', 'right', '', '');
+                } else if (uid == (stat / 7)) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '../views/community/topics.php',
+                        data: {'cat': cat, "subcat": subcat, "uid": uid},
 
-                    success: function (result) {
-//                            debugger;
-                        $(".page-loader-wrapper").css("display", "block");
-                        setTimeout(function () {
-                            $(".page-loader-wrapper").css("display", "none");
+                        success: function (result) {
+                            //                            debugger;
+                            $(".page-loader-wrapper").css("display", "block");
+                            setTimeout(function () {
+                                $(".page-loader-wrapper").css("display", "none");
 
-                        }, 500);
-                        $("#contentpage").empty();
-                        $("#contentpage").html(result);
-                    }
-                });
+                            }, 500);
+                            $("#contentpage").empty();
+                            $("#contentpage").html(result);
+                        }
+                    });
+            }
             }
             function deletepost(pid, type) {
                 uid = $("#uids").val();
-                $.ajax({
-                    type: 'POST',
-                    url: '../views/community/delete.php',
-                    data: {'pid': pid, 'uid': uid, "type": type},
+                stat = $("#status").val();
+                if (stat == '') {
+                    showNotification('alert-danger', "You are not Approved User", 'bottom', 'right', '', '');
+                } else if (uid == (stat / 7)) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '../views/community/delete.php',
+                        data: {'pid': pid, 'uid': uid, "type": type},
 
-                    success: function (result) {
-                        $(".page-loader-wrapper").css("display", "block");
-                        setTimeout(function () {
-                            $(".page-loader-wrapper").css("display", "none");
+                        success: function (result) {
+                            $(".page-loader-wrapper").css("display", "block");
+                            setTimeout(function () {
+                                $(".page-loader-wrapper").css("display", "none");
 
-                        }, 500);
-                        pageload();
-                    }
-                });
+                            }, 500);
+                            pageload();
+                        }
+                    });
+                }
             }
             function postload(postid) {
                 $.ajax({
@@ -525,60 +501,69 @@ if (isset($_GET)) {
                 }
             }
             function addcomment(postid) {
+
                 sessionid = $("#sessionid").val();
+                stat = $("#status").val();
+                if (stat == '') {
+                    showNotification('alert-danger', "You are not Approved User", 'bottom', 'right', '', '');
+                } else if (sessionid == (stat / 7)) {
+                    var comment = $("#commentdata").val();
+                    if (sessionid == '-1') {
+                        $(".page-loader-wrapper").css("display", "block");
+                        setTimeout(function () {
+                            $(".page-loader-wrapper").css("display", "none");
 
-                var comment = $("#commentdata").val();
-                if (sessionid == '-1') {
-                    $(".page-loader-wrapper").css("display", "block");
-                    setTimeout(function () {
-                        $(".page-loader-wrapper").css("display", "none");
-
-                    }, 500);
-                    window.location.href = "../index.php";
-                } else {
-                    if (comment == '') {
-                        $("#formdiv").addClass("focused error");
+                        }, 500);
+                        window.location.href = "../index.php";
                     } else {
-                        $("#formdiv").removeClass("focused error");
-                        $.ajax({
-                            type: 'POST',
-                            url: '../backend-script/community.php',
-                            data: {'postid': postid, 'comment': comment, 'flag': "add_comment"},
+                        if (comment == '') {
+                            $("#formdiv").addClass("focused error");
+                        } else {
+                            $("#formdiv").removeClass("focused error");
+                            $.ajax({
+                                type: 'POST',
+                                url: '../backend-script/community.php',
+                                data: {'postid': postid, 'comment': comment, 'flag': "add_comment"},
 
-                            success: function (result) {
+                                success: function (result) {
 //                            debugger;
-                                postload(postid);
-                            }
-                        });
+                                    postload(postid);
+                                }
+                            });
+                        }
                     }
-                }
 
+                }
             }
             function likepost(postid, type) {
                 sessionid = $("#sessionid").val();
+                stat = $("#status").val();
+                if (stat == '') {
+                    showNotification('alert-danger', "You are not Approved User", 'bottom', 'right', '', '');
+                } else if (sessionid == (stat / 7)) {
+                    if (sessionid == '-1') {
+                        $(".page-loader-wrapper").css("display", "block");
+                        setTimeout(function () {
+                            $(".page-loader-wrapper").css("display", "none");
 
-                if (sessionid == '-1') {
-                    $(".page-loader-wrapper").css("display", "block");
-                    setTimeout(function () {
-                        $(".page-loader-wrapper").css("display", "none");
+                        }, 500);
+                        window.location.href = "../index.php";
+                    } else {
+                        $.ajax({
+                            type: 'POST',
+                            url: '../backend-script/community.php',
+                            data: {'postid': postid, 'type': type, 'flag': "likepost"},
 
-                    }, 500);
-                    window.location.href = "../index.php";
-                } else {
-                    $.ajax({
-                        type: 'POST',
-                        url: '../backend-script/community.php',
-                        data: {'postid': postid, 'type': type, 'flag': "likepost"},
-
-                        success: function (result) {
+                            success: function (result) {
 //                            debugger;
-                            if (type == 'post') {
-                                postload(postid);
-                            } else {
-                                postload($("#post_id").val());
+                                if (type == 'post') {
+                                    postload(postid);
+                                } else {
+                                    postload($("#post_id").val());
+                                }
                             }
-                        }
-                    });
+                        });
+                    }
                 }
             }
             function updatelist(catid = '') {

@@ -153,7 +153,21 @@ if (isset($_POST['addpost'])) {
                             </div>
                             <div class="body">
                                 <form action="" method="post" enctype="multipart/form-data">
-
+                                    <input type="hidden" id="status" value="<?php
+                                    if (isset($_SESSION['data']['id'])) {
+                                        if ($_SESSION['data']['status'] == 'approved')
+                                            echo $_SESSION['data']['id'] * 7;
+                                    } else {
+                                        echo '';
+                                    }
+                                    ?>">
+                                    <input type="hidden" id="uids" value="<?php
+                                    if (isset($_SESSION['data']['id'])) {
+                                        echo $_SESSION['data']['id'];
+                                    } else {
+                                        echo '';
+                                    }
+                                    ?>">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <h5><span id="titlelable">Title</span></h5>
@@ -245,6 +259,9 @@ if (isset($_POST['addpost'])) {
         <script src="../js/demo.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="../plugins/bootstrap-notify/bootstrap-notify.js"></script>
+
+        <script src="../js/pages/ui/notifications.js"></script>
         <script>
             function ucfirst(str, force) {
                 str = force ? str.toLowerCase() : str;
@@ -303,7 +320,6 @@ if (isset($_POST['addpost'])) {
                                 res += "<option value='" + obj["row"][i][0] + "'>" + obj["row"][i][1] + "</option>";
                             }
                             $("#subcategories").append(res);
-
                         }
                     });
                 });
@@ -336,7 +352,7 @@ if (isset($_POST['addpost'])) {
                         $("#categorylable").addClass('error-message');
                         err = true;
                     }
-                    if (sub == 0||sub== null) {
+                    if (sub == 0 || sub == null) {
                         $("#subcategorylable").addClass('error-message');
                         err = true;
                     }
@@ -350,8 +366,15 @@ if (isset($_POST['addpost'])) {
                     if (err) {
                         e.preventDefault();
                     }
+                    stat = $("#status").val();
+                    uid = $("#uids").val();
+                    if (stat == '' || !(uid == (stat / 7))) {
+                        showNotification('alert-danger', "You are not Approved User", 'bottom', 'right', '', '');
+                        e.preventDefault();
+
+                    }
                 });
-                var pageURL = $(location).attr("href");
+//                var pageURL = $(location).attr("href");
 //                alert(pageURL);
             });
         </script>
