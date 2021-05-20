@@ -9,7 +9,6 @@
                         <h2>
                             <b>Built-In</b>
                         </h2>
-
                     </div>
                     <div class="body">
                         <div class="sc-kLgntA iHaOcn">
@@ -25,168 +24,171 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true">
-                                    <i class="material-icons">home</i> Readme
-                                </a>
+                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true"> <i class="material-icons">home</i> Readme </a>
                             </li>
                             <li role="presentation" class="">
-                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false">
-                                    <i class="material-icons">face</i> Keywords
-                                </a>
+                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false"> <i class="material-icons">face</i> Keywords </a>
                             </li>
-
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="home_with_icon_title">
-
                                 <div class="sc-jJEJSO laquCT">
                                     <div class="sc-hiSbYr XqbgT">
                                         <div>
                                             <p>An always available standard library with often needed keywords.</p>
-                                            <p><code>BuiltIn</code> is Autosphere's standard library that provides a set of generic keywords needed
-                                                often. It is imported automatically and thus always available. The provided keywords can be used, for
-                                                example, for verifications (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-contain" class="name">Should Contain</a>), conversions (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#convert-to-integer" class="name">Convert To Integer</a>) and for various other purposes (e.g.
-                                                <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#log" class="name">Log</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#sleep" class="name">Sleep</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#run-keyword-if" class="name">Run Keyword If</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#set-global-variable" class="name">Set Global
-                                                    Variable</a>).
+                                            <p>
+                                                <code>BuiltIn</code> is Autosphere's standard library that provides a set of generic keywords needed often. It is imported automatically and thus always available. The provided keywords can be
+                                                used, for example, for verifications (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a>,
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-contain" class="name">Should Contain</a>), conversions (e.g.
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#convert-to-integer" class="name">Convert To Integer</a>) and for various other purposes (e.g.
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#log" class="name">Log</a>,
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#sleep" class="name">Sleep</a>,
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#run-keyword-if" class="name">Run Keyword If</a>,
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#set-global-variable" class="name">Set Global Variable</a>).
                                             </p>
-                                            <h3 id="Table of contents">Table of contents</h3>
+                                            <h3 id="Table-of-contents">Table of contents</h3>
                                             <ul>
-                                                <li><a href="#HTML%20error%20messages" class="name">HTML error messages</a></li>
-                                                <li><a href="#Evaluating%20expressions" class="name">Evaluating expressions</a></li>
-                                                <li><a href="#Boolean%20arguments" class="name">Boolean arguments</a></li>
-                                                <li><a href="#Pattern%20matching" class="name">Pattern matching</a></li>
-                                                <li><a href="#Multiline%20string%20comparison" class="name">Multiline string comparison</a></li>
-                                                <li><a href="#String%20representations" class="name">String representations</a></li>
+                                                <li><a href="#HTML-error-messages" class="name">HTML error messages</a></li>
+                                                <li><a href="#Evaluating-expressions" class="name">Evaluating expressions</a></li>
+                                                <li><a href="#Boolean-arguments" class="name">Boolean arguments</a></li>
+                                                <li><a href="#Pattern-matching" class="name">Pattern matching</a></li>
+                                                <li><a href="#Multiline-string-comparison" class="name">Multiline string comparison</a></li>
+                                                <li><a href="#String-representations" class="name">String representations</a></li>
                                                 <li><a href="#Shortcuts" class="name">Shortcuts</a></li>
                                                 <li><a href="#Keywords" class="name">Keywords</a></li>
                                             </ul>
-                                            <h4 id="HTML error messages">HTML error messages</h4>
-                                            <p>Many of the keywords accept an optional error message to use if the keyword fails, and it is possible to use
-                                                HTML in these messages by prefixing them with <code>*HTML*</code>. See <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#fail" class="name">Fail</a>
-                                                keyword for a usage example. Notice that using HTML in messages is not limited to BuiltIn library but works
-                                                with any error message.</p>
-                                            <h4 id="Evaluating expressions">Evaluating expressions</h4>
-                                            <p>Many keywords, such as <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#evaluate" class="name">Evaluate</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#run-keyword-if" class="name">Run Keyword If</a> and <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-true" class="name">Should Be True</a>,
-                                                accept an expression that is evaluated in Python.</p>
-                                            <h3 id="Evaluation namespace">Evaluation namespace</h3>
-                                            <p>Expressions are evaluated using Python's <a href="http://docs.python.org/library/functions.html#eval">eval</a> function so that all Python built-ins
-                                                like <code>len()</code> and <code>int()</code> are available. In addition to that, all unrecognized
-                                                variables are considered to be modules that are automatically imported. It is possible to use all available
-                                                Python modules, including the standard modules and the installed third party modules.</p>
+                                            <h4 id="HTML-error-messages">HTML error messages</h4>
+                                            <p>
+                                                Many of the keywords accept an optional error message to use if the keyword fails, and it is possible to use HTML in these messages by prefixing them with <code>*HTML*</code>. See
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#fail" class="name">Fail</a> keyword for a usage example. Notice that using HTML in messages is not limited to BuiltIn
+                                                library but works with any error message.
+                                            </p>
+                                            <h4 id="Evaluating-expressions">Evaluating expressions</h4>
+                                            <p>
+                                                Many keywords, such as <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#evaluate" class="name">Evaluate</a>,
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#run-keyword-if" class="name">Run Keyword If</a> and
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-true" class="name">Should Be True</a>, accept an expression that is evaluated in Python.
+                                            </p>
+                                            <h3 id="Evaluation-namespace">Evaluation namespace</h3>
+                                            <p>
+                                                Expressions are evaluated using Python's <a href="http://docs.python.org/library/functions.html#eval">eval</a> function so that all Python built-ins like <code>len()</code> and
+                                                <code>int()</code> are available. In addition to that, all unrecognized variables are considered to be modules that are automatically imported. It is possible to use all available Python
+                                                modules, including the standard modules and the installed third party modules.
+                                            </p>
                                             <p>Examples:</p>
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-true" class="name">Should Be True</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-true" class="name">Should Be True</a></td>
                                                         <td>len('${result}') &gt; 3</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#run-keyword-if" class="name">Run Keyword If</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#run-keyword-if" class="name">Run Keyword If</a></td>
                                                         <td>os.sep == '/'</td>
                                                         <td>Non-Windows Keyword</td>
                                                     </tr>
                                                     <tr>
                                                         <td>${robot version} =</td>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#evaluate" class="name">Evaluate</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#evaluate" class="name">Evaluate</a></td>
                                                         <td>robot.__version__</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#evaluate" class="name">Evaluate</a> also allows configuring the execution namespace with a custom
-                                                namespace and with custom modules to be imported. The latter functionality is useful when using nested
-                                                modules like <code>rootmod.submod</code> that are implemented so that the root module does not automatically
-                                                import sub modules. Otherwise the automatic module import mechanism described earlier is enough to get the
-                                                needed modules imported.</p>
+                                            <p>
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#evaluate" class="name">Evaluate</a> also allows configuring the execution namespace with a custom namespace and with
+                                                custom modules to be imported. The latter functionality is useful when using nested modules like <code>rootmod.submod</code> that are implemented so that the root module does not automatically
+                                                import sub modules. Otherwise the automatic module import mechanism described earlier is enough to get the needed modules imported.
+                                            </p>
 
-                                            <h3 id="Using variables">Using variables</h3>
-                                            <p>When a variable is used in the expressing using the normal <code>${variable}</code> syntax, its value is
-                                                replaced before the expression is evaluated. This means that the value used in the expression will be the
-                                                string representation of the variable value, not the variable value itself. This is not a problem with
-                                                numbers and other objects that have a string representation that can be evaluated directly, but with other
-                                                objects the behavior depends on the string representation. Most importantly, strings must always be quoted,
-                                                and if they can contain newlines, they must be triple quoted.</p>
+                                            <h3 id="Using-variables">Using variables</h3>
+                                            <p>
+                                                When a variable is used in the expressing using the normal <code>${variable}</code> syntax, its value is replaced before the expression is evaluated. This means that the value used in the
+                                                expression will be the string representation of the variable value, not the variable value itself. This is not a problem with numbers and other objects that have a string representation that
+                                                can be evaluated directly, but with other objects the behavior depends on the string representation. Most importantly, strings must always be quoted, and if they can contain newlines, they
+                                                must be triple quoted.
+                                            </p>
                                             <p>Examples:</p>
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-true" class="name">Should Be True</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-true" class="name">Should Be True</a></td>
                                                         <td>${rc} &lt; 10</td>
                                                         <td>Return code greater than 10</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#run-keyword-if" class="name">Run Keyword If</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#run-keyword-if" class="name">Run Keyword If</a></td>
                                                         <td>'${status}' == 'PASS'</td>
                                                         <td>Log</td>
                                                         <td>Passed</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#run-keyword-if" class="name">Run Keyword If</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#run-keyword-if" class="name">Run Keyword If</a></td>
                                                         <td>'FAIL' in '''${output}'''</td>
                                                         <td>Log</td>
                                                         <td>Output contains FAIL</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p>Actual variables values are also available in the evaluation namespace. They can be accessed using special
-                                                variable syntax without the curly braces like <code>$variable</code>. These variables should never be
-                                                quoted.</p>
+                                            <p>
+                                                Actual variables values are also available in the evaluation namespace. They can be accessed using special variable syntax without the curly braces like <code>$variable</code>. These variables
+                                                should never be quoted.
+                                            </p>
                                             <p>Examples:</p>
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-true" class="name">Should Be True</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-true" class="name">Should Be True</a></td>
                                                         <td>$rc &lt; 10</td>
                                                         <td>Return code greater than 10</td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#run-keyword-if" class="name">Run Keyword If</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#run-keyword-if" class="name">Run Keyword If</a></td>
                                                         <td>$status == 'PASS'</td>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#log" class="name">Log</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#log" class="name">Log</a></td>
                                                         <td>Passed</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#run-keyword-if" class="name">Run Keyword If</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#run-keyword-if" class="name">Run Keyword If</a></td>
                                                         <td>'FAIL' in $output</td>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#log" class="name">Log</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#log" class="name">Log</a></td>
                                                         <td>Output contains FAIL</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-true" class="name">Should Be True</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-true" class="name">Should Be True</a></td>
                                                         <td>len($result) &gt; 1 and $result[1] == 'OK'</td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-true" class="name">Should Be True</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-true" class="name">Should Be True</a></td>
                                                         <td>$result is not None</td>
                                                         <td></td>
                                                         <td></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p>Using the <code>$variable</code> syntax slows down expression evaluation a little. This should not typically
-                                                matter, but should be taken into account if complex expressions are evaluated often and there are strict
-                                                time constrains.</p>
-                                            <p>Notice that instead of creating complicated expressions, it is often better to move the logic into a test
-                                                library. That eases maintenance and can also enhance execution speed.</p>
-                                            <h4 id="Boolean arguments">Boolean arguments</h4>
-                                            <p>Some keywords accept arguments that are handled as Boolean values true or false. If such an argument is given
-                                                as a string, it is considered false if it is an empty string or equal to <code>FALSE</code>,
-                                                <code>NONE</code>, <code>NO</code>, <code>OFF</code> or <code>0</code>, case-insensitively. Keywords
-                                                verifying something that allow dropping actual and expected values from the possible error message also
-                                                consider string <code>no values</code> to be false. Other strings are considered true unless the keyword
-                                                documentation explicitly states otherwise, and other argument types are tested using the same <a href="http://docs.python.org/library/stdtypes.html#truth">rules as in Python</a>.
+                                            <p>
+                                                Using the <code>$variable</code> syntax slows down expression evaluation a little. This should not typically matter, but should be taken into account if complex expressions are evaluated often
+                                                and there are strict time constrains.
+                                            </p>
+                                            <p>Notice that instead of creating complicated expressions, it is often better to move the logic into a test library. That eases maintenance and can also enhance execution speed.</p>
+                                            <h4 id="Boolean-arguments">Boolean arguments</h4>
+                                            <p>
+                                                Some keywords accept arguments that are handled as Boolean values true or false. If such an argument is given as a string, it is considered false if it is an empty string or equal to
+                                                <code>FALSE</code>, <code>NONE</code>, <code>NO</code>, <code>OFF</code> or <code>0</code>, case-insensitively. Keywords verifying something that allow dropping actual and expected values from
+                                                the possible error message also consider string <code>no values</code> to be false. Other strings are considered true unless the keyword documentation explicitly states otherwise, and other
+                                                argument types are tested using the same <a href="http://docs.python.org/library/stdtypes.html#truth">rules as in Python</a>.
                                             </p>
                                             <p>True examples:</p>
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -194,7 +196,7 @@
                                                         <td># Strings are generally true.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -202,7 +204,7 @@
                                                         <td># Same as the above.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -210,7 +212,7 @@
                                                         <td># Python <code>True</code> is true.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -223,7 +225,7 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -231,7 +233,7 @@
                                                         <td># String <code>false</code> is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -239,7 +241,7 @@
                                                         <td># Also string <code>no</code> is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -247,7 +249,7 @@
                                                         <td># Empty string is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -255,7 +257,7 @@
                                                         <td># Python <code>False</code> is false.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -265,10 +267,13 @@
                                                 </tbody>
                                             </table>
 
-                                            <h4 id="Pattern matching">Pattern matching</h4>
+                                            <h4 id="Pattern-matching">Pattern matching</h4>
                                             <p>Many keywords accepts arguments as either glob or regular expression patterns.</p>
                                             <h3 id="Glob patterns">Glob patterns</h3>
-                                            <p>Some keywords, for example <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-match" class="name">Should Match</a>, support so called <a href="http://en.wikipedia.org/wiki/Glob_(programming)">glob patterns</a> where:</p>
+                                            <p>
+                                                Some keywords, for example <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-match" class="name">Should Match</a>, support so called
+                                                <a href="http://en.wikipedia.org/wiki/Glob_(programming)">glob patterns</a> where:
+                                            </p>
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
@@ -297,30 +302,31 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p>Unlike with glob patterns normally, path separator characters <code>/</code> and <code>\</code> and the
-                                                newline character <code>\n</code> are matches by the above wildcards.</p>
+                                            <p>Unlike with glob patterns normally, path separator characters <code>/</code> and <code>\</code> and the newline character <code>\n</code> are matches by the above wildcards.</p>
 
-                                            <h3 id="Regular expressions">Regular expressions</h3>
-                                            <p>Some keywords, for example <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-match-regexp" class="name">Should Match Regexp</a>, support
-                                                <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> that are more powerful but
-                                                also more complicated that glob patterns. The regular expression support is implemented using Python's <a href="http://docs.python.org/library/re.html">re module</a> and its documentation should be consulted
-                                                for more information about the syntax.
+                                            <h3 id="Regular-expressions">Regular expressions</h3>
+                                            <p>
+                                                Some keywords, for example <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-match-regexp" class="name">Should Match Regexp</a>, support
+                                                <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> that are more powerful but also more complicated that glob patterns. The regular expression support is
+                                                implemented using Python's <a href="http://docs.python.org/library/re.html">re module</a> and its documentation should be consulted for more information about the syntax.
                                             </p>
-                                            <p>Because the backslash character (<code>\</code>) is an escape character in Autosphere test data,
-                                                possible backslash characters in regular expressions need to be escaped with another backslash like
-                                                <code>\\d\\w+</code>. Strings that may contain special characters but should be handled as literal strings,
-                                                can be escaped with the <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#regexp-escape" class="name">Regexp Escape</a> keyword.
+                                            <p>
+                                                Because the backslash character (<code>\</code>) is an escape character in Autosphere test data, possible backslash characters in regular expressions need to be escaped with another backslash
+                                                like <code>\\d\\w+</code>. Strings that may contain special characters but should be handled as literal strings, can be escaped with the
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#regexp-escape" class="name">Regexp Escape</a> keyword.
                                             </p>
-                                            <h4 id="Multiline string comparison">Multiline string comparison</h4>
-                                            <p><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a> and <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal-as-strings" class="name">Should Be Equal As Strings</a> report the
-                                                failures using <a href="http://en.wikipedia.org/wiki/Diff_utility#Unified_format">unified diff format</a> if
-                                                both strings have more than two lines.</p>
+                                            <h4 id="Multiline-string-comparison">Multiline string comparison</h4>
+                                            <p>
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a> and
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal-as-strings" class="name">Should Be Equal As Strings</a> report the failures using
+                                                <a href="http://en.wikipedia.org/wiki/Diff_utility#Unified_format">unified diff format</a> if both strings have more than two lines.
+                                            </p>
                                             <p>Example:</p>
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
                                                         <td>${first} =</td>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#catenate" class="name">Catenate</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#catenate" class="name">Catenate</a></td>
                                                         <td>SEPARATOR=\n</td>
                                                         <td>Not in second</td>
                                                         <td>Same</td>
@@ -329,7 +335,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td>${second} =</td>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#catenate" class="name">Catenate</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#catenate" class="name">Catenate</a></td>
                                                         <td>SEPARATOR=\n</td>
                                                         <td>Same</td>
                                                         <td>Differs2</td>
@@ -337,7 +343,7 @@
                                                         <td>Not in first</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a></td>
+                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a></td>
                                                         <td>${first}</td>
                                                         <td>${second}</td>
                                                         <td></td>
@@ -348,28 +354,31 @@
                                                 </tbody>
                                             </table>
                                             <p>Results in the following error message:</p>
-                                            <pre>Multiline strings are different:
-    --- first
-    +++ second
-    @@ -1,4 +1,4 @@
-    -Not in second
-     Same
-    -Differs
-    +Differs2
-     Same
-    +Not in first
-    </pre>
-                                            <h4 id="String representations">String representations</h4>
-                                            <p>Several keywords log values explicitly (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#log" class="name">Log</a>) or implicitly (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a> when there are failures). By default
-                                                keywords log values using "human readable" string representation, which means that strings like
-                                                <code>Hello</code> and numbers like <code>42</code> are logged as-is. Most of the time this is the desired
-                                                behavior, but there are some problems as well:
+                                            <pre>
+                                                Multiline strings are different:
+                                                    --- first
+                                                    +++ second
+                                                    @@ -1,4 +1,4 @@
+                                                    -Not in second
+                                                    Same
+                                                    -Differs
+                                                    +Differs2
+                                                    Same
+                                                    +Not in first
+                                            </pre>
+                                            <h4 id="String-representations">String representations</h4>
+                                            <p>
+                                                Several keywords log values explicitly (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#log" class="name">Log</a>) or implicitly (e.g.
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a> when there are failures). By default keywords log values using "human
+                                                readable" string representation, which means that strings like <code>Hello</code> and numbers like <code>42</code> are logged as-is. Most of the time this is the desired behavior, but there
+                                                are some problems as well:
                                             </p>
                                             <ul>
-                                                <li>It is not possible to see difference between different objects that have same string representation like
-                                                    string <code>42</code> and integer <code>42</code>. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should
-                                                        Be Equal</a> and some other keywords add the type information to the error message in these cases,
-                                                    though.</li>
+                                                <li>
+                                                    It is not possible to see difference between different objects that have same string representation like string <code>42</code> and integer <code>42</code>.
+                                                    <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a> and some other keywords add the type information to the error
+                                                    message in these cases, though.
+                                                </li>
                                             </ul>
                                             <ul>
                                                 <li>Non-printable characters such as the null byte are not visible.</li>
@@ -378,66 +387,59 @@
                                                 <li>Trailing whitespace is not visible.</li>
                                             </ul>
                                             <ul>
-                                                <li>Different newlines (<code>\r\n</code> on Windows, <code>\n</code> elsewhere) cannot be separated from
-                                                    each others.</li>
+                                                <li>Different newlines (<code>\r\n</code> on Windows, <code>\n</code> elsewhere) cannot be separated from each others.</li>
                                             </ul>
                                             <ul>
-                                                <li>There are several Unicode characters that are different but look the same. One example is the Latin
-                                                    <code>a</code> (<code>\u0061</code>) and the Cyrillic <code>а</code> (<code>\u0430</code>). Error
-                                                    messages like <code>a != а</code> are not very helpful.
+                                                <li>
+                                                    There are several Unicode characters that are different but look the same. One example is the Latin <code>a</code> (<code>\u0061</code>) and the Cyrillic
+                                                    <code>а</code> (<code>\u0430</code>). Error messages like <code>a != а</code> are not very helpful.
                                                 </li>
                                             </ul>
                                             <ul>
-                                                <li>Some Unicode characters can be represented using <a href="https://en.wikipedia.org/wiki/Unicode_equivalence">different forms</a>. For example,
-                                                    <code>ä</code> can be represented either as a single code point <code>\u00e4</code> or using two code
-                                                    points <code>\u0061</code> and <code>\u0308</code> combined together. Such forms are considered
-                                                    canonically equivalent, but strings containing them are not considered equal when compared in Python.
-                                                    Error messages like <code>ä != ä</code> are not that helpful either.
+                                                <li>
+                                                    Some Unicode characters can be represented using <a href="https://en.wikipedia.org/wiki/Unicode_equivalence">different forms</a>. For example, <code>ä</code> can be represented either as a
+                                                    single code point <code>\u00e4</code> or using two code points <code>\u0061</code> and <code>\u0308</code> combined together. Such forms are considered canonically equivalent, but strings
+                                                    containing them are not considered equal when compared in Python. Error messages like <code>ä != ä</code> are not that helpful either.
                                                 </li>
                                             </ul>
                                             <ul>
-                                                <li>Containers such as lists and dictionaries are formatted into a single line making it hard to see
-                                                    individual items they contain.</li>
+                                                <li>Containers such as lists and dictionaries are formatted into a single line making it hard to see individual items they contain.</li>
                                             </ul>
-                                            <p>To overcome the above problems, some keywords such as <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#log" class="name">Log</a> and <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/builtin/keywords#should-be-equal" class="name">Should Be Equal</a> have an optional <code>formatter</code>
-                                                argument that can be used to configure the string representation. The supported values are <code>str</code>
-                                                (default), <code>repr</code>, and <code>ascii</code> that work similarly as <a href="https://docs.python.org/library/functions.html">Python built-in functions</a> with same names.
-                                                More detailed semantics are explained below.</p>
+                                            <p>
+                                                To overcome the above problems, some keywords such as <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#log" class="name">Log</a> and
+                                                <a href="documantation.php?page=libraries&node=built-in&subnode=builtin#should-be-equal" class="name">Should Be Equal</a> have an optional <code>formatter</code> argument that can be used to
+                                                configure the string representation. The supported values are <code>str</code> (default), <code>repr</code>, and <code>ascii</code> that work similarly as
+                                                <a href="https://docs.python.org/library/functions.html">Python built-in functions</a> with same names. More detailed semantics are explained below.
+                                            </p>
 
                                             <h3 id="str">str</h3>
-                                            <p>Use the "human readable" string representation. Equivalent to using <code>str()</code> in Python 3 and
-                                                <code>unicode()</code> in Python 2. This is the default.
-                                            </p>
+                                            <p>Use the "human readable" string representation. Equivalent to using <code>str()</code> in Python 3 and <code>unicode()</code> in Python 2. This is the default.</p>
                                             <h3 id="repr">repr</h3>
-                                            <p>Use the "machine readable" string representation. Similar to using <code>repr()</code> in Python, which means
-                                                that strings like <code>Hello</code> are logged like <code>'Hello'</code>, newlines and non-printable
-                                                characters are escaped like <code>\n</code> and <code>\x00</code>, and so on. Non-ASCII characters are shown
-                                                as-is like <code>ä</code> in Python 3 and in escaped format like <code>\xe4</code> in Python 2. Use
-                                                <code>ascii</code> to always get the escaped format.
+                                            <p>
+                                                Use the "machine readable" string representation. Similar to using <code>repr()</code> in Python, which means that strings like <code>Hello</code> are logged like <code>'Hello'</code>,
+                                                newlines and non-printable characters are escaped like <code>\n</code> and <code>\x00</code>, and so on. Non-ASCII characters are shown as-is like <code>ä</code> in Python 3 and in escaped
+                                                format like <code>\xe4</code> in Python 2. Use <code>ascii</code> to always get the escaped format.
                                             </p>
                                             <p>There are also some enhancements compared to the standard <code>repr()</code>:</p>
                                             <ul>
-                                                <li>Bigger lists, dictionaries and other containers are pretty-printed so that there is one item per row.
-                                                </li>
-                                                <li>On Python 2 the <code>u</code> prefix is omitted with Unicode strings and the <code>b</code> prefix is
-                                                    added to byte strings.</li>
+                                                <li>Bigger lists, dictionaries and other containers are pretty-printed so that there is one item per row.</li>
+                                                <li>On Python 2 the <code>u</code> prefix is omitted with Unicode strings and the <code>b</code> prefix is added to byte strings.</li>
                                             </ul>
                                             <h3 id="ascii">ascii</h3>
-                                            <p>Same as using <code>ascii()</code> in Python 3 or <code>repr()</code> in Python 2 where <code>ascii()</code>
-                                                does not exist. Similar to using <code>repr</code> explained above but with the following differences:</p>
+                                            <p>
+                                                Same as using <code>ascii()</code> in Python 3 or <code>repr()</code> in Python 2 where <code>ascii()</code> does not exist. Similar to using <code>repr</code> explained above but with the
+                                                following differences:
+                                            </p>
                                             <ul>
-                                                <li>On Python 3 non-ASCII characters are escaped like <code>\xe4</code> instead of showing them as-is like
-                                                    <code>ä</code>. This makes it easier to see differences between Unicode characters that look the same
-                                                    but are not equal. This is how <code>repr()</code> works in Python 2.
+                                                <li>
+                                                    On Python 3 non-ASCII characters are escaped like <code>\xe4</code> instead of showing them as-is like <code>ä</code>. This makes it easier to see differences between Unicode characters
+                                                    that look the same but are not equal. This is how <code>repr()</code> works in Python 2.
                                                 </li>
-                                                <li>On Python 2 just uses the standard <code>repr()</code> meaning that Unicode strings get the
-                                                    <code>u</code> prefix and no <code>b</code> prefix is added to byte strings.
-                                                </li>
+                                                <li>On Python 2 just uses the standard <code>repr()</code> meaning that Unicode strings get the <code>u</code> prefix and no <code>b</code> prefix is added to byte strings.</li>
                                                 <li>Containers are not pretty-printed.</li>
                                             </ul>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="profile_with_icon_title">
@@ -593,9 +595,9 @@
                                                                 </table>
                                                                 <p>=&gt;</p>
                                                                 <pre>${str1} = 'Hello world'
-${str2} = 'Hello---world'
-${str3} = 'Helloworld'
-</code></pre>
+        ${str2} = 'Hello---world'
+        ${str3} = 'Helloworld'
+        </code></pre>
                                                             </div>
                                                         </div>
 
@@ -620,8 +622,8 @@ ${str3} = 'Helloworld'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>This keyword does nothing with the arguments it receives, but as they are visible in the log, this keyword can be used to display simple messages. Given arguments are ignored so thoroughly that they can even
-                                                                    contain non-existing variables. If you are interested about variable values, you can use the <a href="#Log" class="name">Log</a> or <a href="#Log%20Many" class="name">Log
+                                                                <p>This keyword does nothing with the arguments it receives, but as they are visible in the log, this keyword can be used to display simple messages. Given arguments are ignored so thoroughly that they can even contain non-existing variables.
+                                                                    If you are interested about variable values, you can use the <a href="#log" class="name">Log</a> or <a href="#log-many" class="name">Log
                                                                         Many</a> keywords.</p>
                                                             </div>
                                                         </div>
@@ -661,7 +663,7 @@ ${str3} = 'Helloworld'
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See <a href="#Continue%20For%20Loop%20If" class="name">Continue For Loop If</a> to conditionally continue a for loop without using <a href="#Run%20Keyword%20If" class="name">Run
+                                                                <p>See <a href="#continue-for-loop-if" class="name">Continue For Loop If</a> to conditionally continue a for loop without using <a href="#run-keyword-if" class="name">Run
                                                                         Keyword If</a> or other wrapper keywords.</p>
                                                             </div>
                                                         </div>
@@ -687,7 +689,7 @@ ${str3} = 'Helloworld'
                                                                     </tr>
                                                                 </table>
                                                                 <p>Skips the current for loop iteration if the <code>condition</code> is true.</p>
-                                                                <p>A wrapper for <a href="#continue-for-loop" class="name">Continue For Loop</a> to continue a for loop based on the given condition. The condition is evaluated using the same semantics as with <a href="#Should%20Be%20True" class="name">Should Be True</a> keyword.</p>
+                                                                <p>A wrapper for <a href="#continue-for-loop" class="name">Continue For Loop</a> to continue a for loop based on the given condition. The condition is evaluated using the same semantics as with <a href="#should-be-true" class="name">Should Be True</a> keyword.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
@@ -757,12 +759,12 @@ ${str3} = 'Helloworld'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The <code>item</code>, with an optional <code>base</code>, is first converted to an integer using <a href="#Convert%20To%20Integer" class="name">Convert To Integer</a> internally. After that it is converted
-                                                                    to a binary number (base 2) represented as a string such as
+                                                                <p>The <code>item</code>, with an optional <code>base</code>, is first converted to an integer using <a href="#convert-to-integer" class="name">Convert To Integer</a> internally. After that it is converted to a binary number (base 2)
+                                                                    represented as a string such as
                                                                     <code>1011</code>.
                                                                 </p>
-                                                                <p>The returned value can contain an optional <code>prefix</code> and can be required to be of minimum <code>length</code> (excluding the prefix and a possible minus sign). If the value is initially shorter than
-                                                                    the required length, it is padded with zeros.</p>
+                                                                <p>The returned value can contain an optional <code>prefix</code> and can be required to be of minimum <code>length</code> (excluding the prefix and a possible minus sign). If the value is initially shorter than the required length, it
+                                                                    is padded with zeros.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -790,7 +792,7 @@ ${str3} = 'Helloworld'
                                                                         <td># Result is -B0010</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See also <a href="#Convert%20To%20Integer" class="name">Convert To Integer</a>, <a href="#Convert%20To%20Octal" class="name">Convert To Octal</a> and <a href="#Convert%20To%20Hex" class="name">Convert To Hex</a>.</p>
+                                                                <p>See also <a href="#convert-to-integer" class="name">Convert To Integer</a>, <a href="#convert-to-octal" class="name">Convert To Octal</a> and <a href="#convert-to-hex" class="name">Convert To Hex</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -849,12 +851,11 @@ ${str3} = 'Helloworld'
                                                                 <p>Converts the given <code>input</code> to bytes according to the <code>input_type</code>.</p>
                                                                 <p>Valid input types are listed below:</p>
                                                                 <ul>
-                                                                    <li><code>text:</code> Converts text to bytes character by character. All characters with ordinal below 256 can be used and are converted to bytes with same values. Many characters are easiest to represent using
-                                                                        escapes like <code>\x00</code> or <code>\xff</code>. Supports both Unicode strings and bytes.</li>
+                                                                    <li><code>text:</code> Converts text to bytes character by character. All characters with ordinal below 256 can be used and are converted to bytes with same values. Many characters are easiest to represent using escapes like <code>\x00</code> or <code>\xff</code>. Supports both Unicode strings and bytes.</li>
                                                                 </ul>
                                                                 <ul>
-                                                                    <li><code>int:</code> Converts integers separated by spaces to bytes. Similarly as with <a href="#Convert%20To%20Integer" class="name">Convert To Integer</a>, it is possible to use binary, octal, or hex values
-                                                                        by prefixing the values with <code>0b</code>, <code>0o</code>, or
+                                                                    <li><code>int:</code> Converts integers separated by spaces to bytes. Similarly as with <a href="#convert-to-integer" class="name">Convert To Integer</a>, it is possible to use binary, octal, or hex values by prefixing the values with
+                                                                        <code>0b</code>, <code>0o</code>, or
                                                                         <code>0x</code>, respectively.
                                                                     </li>
                                                                 </ul>
@@ -865,8 +866,8 @@ ${str3} = 'Helloworld'
                                                                     <li><code>bin:</code> Converts binary values to bytes. Single byte is always eight characters long (e.g. <code>00001010</code>). Spaces are ignored and can be used freely as a visual separator.
                                                                     </li>
                                                                 </ul>
-                                                                <p>In addition to giving the input as a string, it is possible to use lists or other iterables containing individual characters or numbers. In that case numbers do not need to be padded to certain length and they
-                                                                    cannot contain extra spaces.</p>
+                                                                <p>In addition to giving the input as a string, it is possible to use lists or other iterables containing individual characters or numbers. In that case numbers do not need to be padded to certain length and they cannot contain extra
+                                                                    spaces.</p>
                                                                 <p>Examples (last column shows returned bytes):</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -989,14 +990,14 @@ ${str3} = 'Helloworld'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The <code>item</code>, with an optional <code>base</code>, is first converted to an integer using <a href="#Convert%20To%20Integer" class="name">Convert To Integer</a> internally. After that it is converted
-                                                                    to a hexadecimal number (base 16) represented as a string such as
+                                                                <p>The <code>item</code>, with an optional <code>base</code>, is first converted to an integer using <a href="#convert-to-integer" class="name">Convert To Integer</a> internally. After that it is converted to a hexadecimal number (base
+                                                                    16) represented as a string such as
                                                                     <code>FF0A</code>.
                                                                 </p>
-                                                                <p>The returned value can contain an optional <code>prefix</code> and can be required to be of minimum <code>length</code> (excluding the prefix and a possible minus sign). If the value is initially shorter than
-                                                                    the required length, it is padded with zeros.</p>
-                                                                <p>By default the value is returned as an upper case string, but the <code>lowercase</code> argument a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>) turns the value (but not
-                                                                    the given prefix) to lower case.</p>
+                                                                <p>The returned value can contain an optional <code>prefix</code> and can be required to be of minimum <code>length</code> (excluding the prefix and a possible minus sign). If the value is initially shorter than the required length, it
+                                                                    is padded with zeros.</p>
+                                                                <p>By default the value is returned as an upper case string, but the <code>lowercase</code> argument a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>) turns the value (but not the given prefix) to lower
+                                                                    case.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1024,7 +1025,7 @@ ${str3} = 'Helloworld'
                                                                         <td># Result is Xff</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See also <a href="#Convert%20To%20Integer" class="name">Convert To Integer</a>, <a href="#Convert%20To%20Binary" class="name">Convert To Binary</a> and <a href="#Convert%20To%20Octal" class="name">Convert To Octal</a>.</p>
+                                                                <p>See also <a href="#convert-to-integer" class="name">Convert To Integer</a>, <a href="#Convert-To-Binary" class="name">Convert To Binary</a> and <a href="#convert-to-octal" class="name">Convert To Octal</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -1061,8 +1062,7 @@ ${str3} = 'Helloworld'
                                                                 </ul>
                                                                 <ul>
                                                                     <li>Prefix the given string with the base so that <code>0b</code> means binary (base 2),
-                                                                        <code>0o</code> means octal (base 8), and <code>0x</code> means hex (base 16). The prefix is considered only when <code>base</code> argument is not given and may itself be prefixed with a plus or minus
-                                                                        sign.
+                                                                        <code>0o</code> means octal (base 8), and <code>0x</code> means hex (base 16). The prefix is considered only when <code>base</code> argument is not given and may itself be prefixed with a plus or minus sign.
                                                                     </li>
                                                                 </ul>
                                                                 <p>The syntax is case-insensitive and possible spaces are ignored.</p>
@@ -1111,8 +1111,8 @@ ${str3} = 'Helloworld'
                                                                         <td># Result is -256</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See also <a href="#Convert%20To%20Number" class="name">Convert To Number</a>, <a href="#Convert%20To%20Binary" class="name">Convert To Binary</a>, <a href="#Convert%20To%20Octal" class="name">Convert To Octal</a>,
-                                                                    <a href="#Convert%20To%20Hex" class="name">Convert To Hex</a>, and <a href="#Convert%20To%20Bytes" class="name">Convert To
+                                                                <p>See also <a href="#convert-to-number" class="name">Convert To Number</a>, <a href="#Convert-To-Binary" class="name">Convert To Binary</a>, <a href="#convert-to-octal" class="name">Convert To Octal</a>,
+                                                                    <a href="#convert-to-hex" class="name">Convert To Hex</a>, and <a href="#convert-to-bytes" class="name">Convert To
                                                                         Bytes</a>.
                                                                 </p>
                                                             </div>
@@ -1145,8 +1145,8 @@ ${str3} = 'Helloworld'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>If the optional <code>precision</code> is positive or zero, the returned number is rounded to that number of decimal digits. Negative precision means that the number is rounded to the closest multiple of 10
-                                                                    to the power of the absolute precision. If a number is equally close to a certain precision, it is always rounded away from zero.</p>
+                                                                <p>If the optional <code>precision</code> is positive or zero, the returned number is rounded to that number of decimal digits. Negative precision means that the number is rounded to the closest multiple of 10 to the power of the absolute
+                                                                    precision. If a number is equally close to a certain precision, it is always rounded away from zero.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1178,8 +1178,7 @@ ${str3} = 'Helloworld'
                                                                         <td># Result is 40.0</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Notice that machines generally cannot store floating point numbers accurately. This may cause surprises with these numbers in general and also when they are rounded. For more information see, for example, these
-                                                                    resources:
+                                                                <p>Notice that machines generally cannot store floating point numbers accurately. This may cause surprises with these numbers in general and also when they are rounded. For more information see, for example, these resources:
                                                                 </p>
                                                                 <ul>
                                                                     <li><a href="http://docs.python.org/tutorial/floatingpoint.html">http://docs.python.org/tutorial/floatingpoint.html</a>
@@ -1188,7 +1187,7 @@ ${str3} = 'Helloworld'
                                                                     </li>
                                                                 </ul>
                                                                 <p>If you want to avoid possible problems with floating point numbers, you can implement custom keywords using Python's <a href="http://docs.python.org/library/decimal.html">decimal</a> or <a href="http://docs.python.org/library/fractions.html">fractions</a> modules.</p>
-                                                                <p>If you need an integer number, use <a href="#Convert%20To%20Integer" class="name">Convert To
+                                                                <p>If you need an integer number, use <a href="#convert-to-integer" class="name">Convert To
                                                                         Integer</a> instead.</p>
                                                             </div>
                                                         </div>
@@ -1232,12 +1231,12 @@ ${str3} = 'Helloworld'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The <code>item</code>, with an optional <code>base</code>, is first converted to an integer using <a href="#Convert%20To%20Integer" class="name">Convert To Integer</a> internally. After that it is converted
-                                                                    to an octal number (base 8) represented as a string such as
+                                                                <p>The <code>item</code>, with an optional <code>base</code>, is first converted to an integer using <a href="#convert-to-integer" class="name">Convert To Integer</a> internally. After that it is converted to an octal number (base 8)
+                                                                    represented as a string such as
                                                                     <code>775</code>.
                                                                 </p>
-                                                                <p>The returned value can contain an optional <code>prefix</code> and can be required to be of minimum <code>length</code> (excluding the prefix and a possible minus sign). If the value is initially shorter than
-                                                                    the required length, it is padded with zeros.</p>
+                                                                <p>The returned value can contain an optional <code>prefix</code> and can be required to be of minimum <code>length</code> (excluding the prefix and a possible minus sign). If the value is initially shorter than the required length, it
+                                                                    is padded with zeros.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1265,7 +1264,7 @@ ${str3} = 'Helloworld'
                                                                         <td># Result is oct0020</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See also <a href="#Convert%20To%20Integer" class="name">Convert To Integer</a>, <a href="#Convert%20To%20Binary" class="name">Convert To Binary</a> and <a href="#Convert%20To%20Hex" class="name">Convert To Hex</a>.</p>
+                                                                <p>See also <a href="#convert-to-integer" class="name">Convert To Integer</a>, <a href="#Convert-To-Binary" class="name">Convert To Binary</a> and <a href="#convert-to-hex" class="name">Convert To Hex</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -1291,7 +1290,7 @@ ${str3} = 'Helloworld'
                                                                 </table>
 
                                                                 <p>Strings are also NFC normalized.</p>
-                                                                <p>Use Encode String To Bytes and Decode Bytes To String keywords in <code>String</code> library if you need to convert between Unicode and byte strings using different encodings. Use <a href="#Convert%20To%20Bytes" class="name">Convert To Bytes</a> if you just want to create byte strings.
+                                                                <p>Use Encode String To Bytes and Decode Bytes To String keywords in <code>String</code> library if you need to convert between Unicode and byte strings using different encodings. Use <a href="#convert-to-bytes" class="name">Convert To Bytes</a> if you just want to create byte strings.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1477,7 +1476,7 @@ ${str3} = 'Helloworld'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p><code>expression</code> is evaluated in Python as explained in the <a href="#Evaluating%20expressions" class="name">Evaluating expressions</a> section.</p>
+                                                                <p><code>expression</code> is evaluated in Python as explained in the <a href="#Evaluating-expressions" class="name">Evaluating expressions</a> section.</p>
                                                                 <p><code>modules</code> argument can be used to specify a comma separated list of Python modules to be imported and added to the evaluation namespace.</p>
                                                                 <p><code>namespace</code> argument can be used to pass a custom evaluation namespace as a dictionary. Possible <code>modules</code> are added to this namespace.</p>
                                                                 <p>
@@ -1485,7 +1484,7 @@ ${str3} = 'Helloworld'
                                                                     <code>rootmod.submod</code> that are implemented so that the root module does not automatically import sub modules. This is illustrated by the <code>selenium.webdriver</code> example below.
                                                                 </p>
                                                                 <p>Variables used like <code>${variable}</code> are replaced in the expression before evaluation. Variables are also available in the evaluation namespace and can be accessed using the special
-                                                                    <code>$variable</code> syntax as explained in the <a href="#Evaluating%20expressions" class="name">Evaluating expressions</a> section.
+                                                                    <code>$variable</code> syntax as explained in the <a href="#Evaluating-expressions" class="name">Evaluating expressions</a> section.
                                                                 </p>
                                                                 <p>Examples (expecting <code>${result}</code> is number 3.14):</p>
                                                                 <table border="1">
@@ -1528,10 +1527,10 @@ ${str3} = 'Helloworld'
                                                                 </table>
                                                                 <p>=&gt;</p>
                                                                 <pre>${status} = True
-${random} = &lt;random integer&gt;
-${options} = ChromeOptions instance
-${result} = 42
-</code></pre>
+    ${random} = &lt;random integer&gt;
+    ${options} = ChromeOptions instance
+    ${result} = 42
+    </code></pre>
 
                                                             </div>
                                                         </div>
@@ -1571,7 +1570,7 @@ ${result} = 42
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See <a href="#Exit%20For%20Loop%20If" class="name">Exit For Loop If</a> to conditionally exit a for loop without using <a href="#Run%20Keyword%20If" class="name">Run Keyword If</a> or other wrapper keywords.</p>
+                                                                <p>See <a href="#exit-for-loop-if" class="name">Exit For Loop If</a> to conditionally exit a for loop without using <a href="#run-keyword-if" class="name">Run Keyword If</a> or other wrapper keywords.</p>
                                                             </div>
                                                         </div>
 
@@ -1596,7 +1595,7 @@ ${result} = 42
                                                                     </tr>
                                                                 </table>
                                                                 <p>Stops executing the enclosing for loop if the <code>condition</code> is true.</p>
-                                                                <p>A wrapper for <a href="#Exit%20For%20Loop" class="name">Exit For Loop</a> to exit a for loop based on the given condition. The condition is evaluated using the same semantics as with <a href="#Should%20Be%20True" class="name">Should Be True</a> keyword.</p>
+                                                                <p>A wrapper for <a href="#exit-for-loop" class="name">Exit For Loop</a> to exit a for loop based on the given condition. The condition is evaluated using the same semantics as with <a href="#should-be-true" class="name">Should Be True</a> keyword.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
@@ -1654,10 +1653,9 @@ ${result} = 42
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The error message is specified using the <code>msg</code> argument. It is possible to use HTML in the given error message, similarly as with any other keyword accepting an error message, by prefixing the error
-                                                                    with <code>*HTML*</code>.</p>
+                                                                <p>The error message is specified using the <code>msg</code> argument. It is possible to use HTML in the given error message, similarly as with any other keyword accepting an error message, by prefixing the error with <code>*HTML*</code>.</p>
                                                                 <p>It is possible to modify tags of the current test case by passing tags after the message. Tags starting with a hyphen (e.g. <code>-regression</code>) are removed and others added. Tags are modified using
-                                                                    <a href="#Set%20Tags" class="name">Set Tags</a> and <a href="#Remove%20Tags" class="name">Remove Tags</a> internally, and the semantics setting and removing them are the same as with these keywords.
+                                                                    <a href="#set-tags" class="name">Set Tags</a> and <a href="#remove-tags" class="name">Remove Tags</a> internally, and the semantics setting and removing them are the same as with these keywords.
                                                                 </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1697,7 +1695,7 @@ ${result} = 42
                                                                         <td># Removes all tags starting with 't' except the newly added 'tag'.</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See <a href="#Fatal%20Error" class="name">Fatal Error</a> if you need to stop the whole test execution.
+                                                                <p>See <a href="#fatal-error" class="name">Fatal Error</a> if you need to stop the whole test execution.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1724,7 +1722,7 @@ ${result} = 42
                                                                 </table>
 
                                                                 <p>The test or suite where this keyword is used fails with the provided message, and subsequent tests fail with a canned message. Possible teardowns will nevertheless be executed.</p>
-                                                                <p>See <a href="#Fail" class="name">Fail</a> if you only want to stop one test case unconditionally.
+                                                                <p>See <a href="#fail" class="name">Fail</a> if you only want to stop one test case unconditionally.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1798,7 +1796,9 @@ ${result} = 42
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The item can be anything that has a length, for example, a string, a list, or a mapping. The keyword first tries to get the length with the Python function <code>len</code>, which calls the item's <code>__len__</code> method internally. If that fails, the keyword tries to call the item's possible <code>length</code> and <code>size</code> methods directly. The final attempt is trying to get the value of the item's <code>length</code> attribute. If all these attempts are unsuccessful, the keyword fails.</p>
+                                                                <p>The item can be anything that has a length, for example, a string, a list, or a mapping. The keyword first tries to get the length with the Python function <code>len</code>, which calls the item's <code>__len__</code> method internally.
+                                                                    If that fails, the keyword tries to call the item's possible <code>length</code> and <code>size</code> methods directly. The final attempt is trying to get the value of the item's <code>length</code> attribute. If all these attempts
+                                                                    are unsuccessful, the keyword fails.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1832,7 +1832,7 @@ ${result} = 42
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See also <a href="#Length%20Should%20Be" class="name">Length Should Be</a>, <a href="#Should%20Be%20Empty" class="name">Should Be Empty</a> and <a href="#Should%20Not%20Be%20Empty" class="name">Should Not Be Empty</a>.</p>
+                                                                <p>See also <a href="#length-should-be" class="name">Length Should Be</a>, <a href="#should-be-empty" class="name">Should Be Empty</a> and <a href="#should-not-be-empty" class="name">Should Not Be Empty</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -1866,15 +1866,15 @@ ${result} = 42
                                                                 <p>This keyword makes it easy for test libraries to interact with other test libraries that have state. This is illustrated by the Python example below:</p>
                                                                 <pre>from robot.libraries.BuiltIn import BuiltIn
 
-def title_should_start_with(expected):
-    seleniumlib = BuiltIn().get_library_instance('SeleniumLibrary')
-    title = seleniumlib.get_title()
-    if not title.startswith(expected):
-        raise AssertionError("Title '%s' did not start with '%s'"
-                             % (title, expected))
-</code></pre>
-                                                                <p>It is also possible to use this keyword in the test data and pass the returned library instance to another keyword. If a library is imported with a custom name, the <code>name</code> used to get the instance
-                                                                    must be that name and not the original library name.</p>
+    def title_should_start_with(expected):
+        seleniumlib = BuiltIn().get_library_instance('SeleniumLibrary')
+        title = seleniumlib.get_title()
+        if not title.startswith(expected):
+            raise AssertionError("Title '%s' did not start with '%s'"
+                                % (title, expected))
+    </code></pre>
+                                                                <p>It is also possible to use this keyword in the test data and pass the returned library instance to another keyword. If a library is imported with a custom name, the <code>name</code> used to get the instance must be that name and not
+                                                                    the original library name.</p>
                                                                 <p>If the optional argument <code>all</code> is given a true value, then a dictionary mapping all library names to instances will be returned.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -1918,8 +1918,7 @@ def title_should_start_with(expected):
                                                                 <p>How time is returned is determined based on the given <code>format</code> string as follows. Note that all checks are case-insensitive.</p>
                                                                 <p>1) If <code>format</code> contains the word <code>epoch</code>, the time is returned in seconds after the UNIX epoch (1970-01-01 00:00:00 UTC). The return value is always an integer.</p>
                                                                 <p>2) If <code>format</code> contains any of the words <code>year</code>, <code>month</code>,
-                                                                    <code>day</code>, <code>hour</code>, <code>min</code>, or <code>sec</code>, only the selected parts are returned. The order of the returned parts is always the one in the previous sentence and the order
-                                                                    of words in <code>format</code> is not significant. The parts are returned as zero-padded strings (e.g. May -&gt; <code>05</code>).
+                                                                    <code>day</code>, <code>hour</code>, <code>min</code>, or <code>sec</code>, only the selected parts are returned. The order of the returned parts is always the one in the previous sentence and the order of words in <code>format</code> is not significant. The parts are returned as zero-padded strings (e.g. May -&gt; <code>05</code>).
                                                                 </p>
                                                                 <p>3) Otherwise (and by default) the time is returned as a timestamp string in the format
                                                                     <code>2006-02-24 15:08:31</code>.
@@ -1927,8 +1926,7 @@ def title_should_start_with(expected):
                                                                 <p>By default this keyword returns the current local time, but that can be altered using
                                                                     <code>time</code> argument as explained below. Note that all checks involving strings are case-insensitive.
                                                                 </p>
-                                                                <p>1) If <code>time</code> is a number, or a string that can be converted to a number, it is interpreted as seconds since the UNIX epoch. This documentation was originally written about 1177654467 seconds after
-                                                                    the epoch.</p>
+                                                                <p>1) If <code>time</code> is a number, or a string that can be converted to a number, it is interpreted as seconds since the UNIX epoch. This documentation was originally written about 1177654467 seconds after the epoch.</p>
                                                                 <p>2) If <code>time</code> is a timestamp, that time will be used. Valid timestamp formats are
                                                                     <code>YYYY-MM-DD hh:mm:ss</code> and <code>YYYYMMDD hhmmss</code>.
                                                                 </p>
@@ -1985,13 +1983,13 @@ def title_should_start_with(expected):
                                                                 </table>
                                                                 <p>=&gt;</p>
                                                                 <pre>${time} = '2006-03-29 15:06:21'
-${secs} = 1143637581
-${year} = '2006'
-${yyyy} = '2006', ${mm} = '03', ${dd} = '29'
-@{time} = ['2006', '03', '29', '15', '06', '21']
-${y} = '2006'
-${s} = '21'
-</code></pre>
+    ${secs} = 1143637581
+    ${year} = '2006'
+    ${yyyy} = '2006', ${mm} = '03', ${dd} = '29'
+    @{time} = ['2006', '03', '29', '15', '06', '21']
+    ${y} = '2006'
+    ${s} = '21'
+    </code></pre>
                                                                 <p>Examples (expecting the current local time is 2006-03-29 15:06:21 and UTC time is 2006-03-29 12:06:21):
                                                                 </p>
                                                                 <table border="1">
@@ -2040,12 +2038,12 @@ ${s} = '21'
                                                                 </table>
                                                                 <p>=&gt;</p>
                                                                 <pre>${time} = '2007-04-27 09:14:27'
-${secs} = 27
-${year} = '2006'
-@{time} = ['16', '08', '24']
-@{utc} = ['12', '06', '21']
-${hour} = '11'
-</code></pre>
+    ${secs} = 27
+    ${year} = '2006'
+    @{time} = ['16', '08', '24']
+    @{utc} = ['12', '06', '21']
+    ${hour} = '11'
+    </code></pre>
                                                             </div>
                                                         </div>
 
@@ -2077,7 +2075,7 @@ ${hour} = '11'
                                                                 </table>
                                                                 <p>Returns variable value or <code>default</code> if the variable does not exist.</p>
                                                                 <p>The name of the variable can be given either as a normal variable name (e.g.
-                                                                    <code>${NAME}</code>) or in escaped format (e.g. <code>\${NAME}</code>). Notice that the former has some limitations explained in <a href="#Set%20Suite%20Variable" class="name">Set Suite
+                                                                    <code>${NAME}</code>) or in escaped format (e.g. <code>\${NAME}</code>). Notice that the former has some limitations explained in <a href="#set-suite-variable" class="name">Set Suite
                                                                         Variable</a>.
                                                                 </p>
                                                                 <p>Examples:</p>
@@ -2103,10 +2101,10 @@ ${hour} = '11'
                                                                 </table>
                                                                 <p>=&gt;</p>
                                                                 <pre>${x} gets value of ${a} if ${a} exists and string 'default' otherwise
-${y} gets value of ${a} if ${a} exists and value of ${b} otherwise
-${z} is set to Python None if it does not exist previously
-</code></pre>
-                                                                <p>See <a href="#Set%20Variable%20If" class="name">Set Variable If</a> for another keyword to set variables dynamically.</p>
+    ${y} gets value of ${a} if ${a} exists and value of ${b} otherwise
+    ${z} is set to Python None if it does not exist previously
+    </code></pre>
+                                                                <p>See <a href="#set-variable-if" class="name">Set Variable If</a> for another keyword to set variables dynamically.</p>
                                                             </div>
                                                         </div>
 
@@ -2131,12 +2129,11 @@ ${z} is set to Python None if it does not exist previously
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Variables are returned as a special dictionary that allows accessing variables in space, case, and underscore insensitive manner similarly as accessing variables in the test data. This dictionary supports all
-                                                                    same operations as normal Python dictionaries and, for example, Collections library can be used to access or modify it. Modifying the returned dictionary has no effect on the variables available in the current
-                                                                    scope.
+                                                                <p>Variables are returned as a special dictionary that allows accessing variables in space, case, and underscore insensitive manner similarly as accessing variables in the test data. This dictionary supports all same operations as normal
+                                                                    Python dictionaries and, for example, Collections library can be used to access or modify it. Modifying the returned dictionary has no effect on the variables available in the current scope.
                                                                 </p>
                                                                 <p>By default variables are returned with <code>${}</code>, <code>@{}</code> or
-                                                                    <code>&amp;{}</code> decoration based on variable types. Giving a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>) to the optional argument
+                                                                    <code>&amp;{}</code> decoration based on variable types. Giving a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>) to the optional argument
                                                                     <code>no_decoration</code> will return the variables without the decoration.
                                                                 </p>
                                                                 <h4>Examples</h4>
@@ -2220,11 +2217,11 @@ ${z} is set to Python None if it does not exist previously
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>This functionality allows dynamic importing of libraries while tests are running. That may be necessary, if the library itself is dynamic and not yet available when test data is processed. In a normal case,
-                                                                    libraries should be imported using the Library setting in the Setting table.
+                                                                <p>This functionality allows dynamic importing of libraries while tests are running. That may be necessary, if the library itself is dynamic and not yet available when test data is processed. In a normal case, libraries should be imported
+                                                                    using the Library setting in the Setting table.
                                                                 </p>
-                                                                <p>This keyword supports importing libraries both using library names and physical paths. When paths are used, they must be given in absolute format or found from search
-                                                                    path. Forward slashes can be used as path separators in all operating systems.</p>
+                                                                <p>This keyword supports importing libraries both using library names and physical paths. When paths are used, they must be given in absolute format or found from search path. Forward slashes can be used as path separators in all operating
+                                                                    systems.</p>
                                                                 <p>It is possible to pass arguments to the imported library and also named argument syntax works if the library supports it. <code>WITH NAME</code> syntax can be used to give a custom name to the imported library.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -2275,8 +2272,7 @@ ${z} is set to Python None if it does not exist previously
                                                                 </table>
 
                                                                 <p>Resources imported with this keyword are set into the test suite scope similarly when importing them in the Setting table using the Resource setting.</p>
-                                                                <p>The given path must be absolute or found from search
-                                                                    path. Forward slashes can be used as path separator regardless the operating system.</p>
+                                                                <p>The given path must be absolute or found from search path. Forward slashes can be used as path separator regardless the operating system.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -2322,10 +2318,9 @@ ${z} is set to Python None if it does not exist previously
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Variables imported with this keyword are set into the test suite scope similarly when importing them in the Setting table using the Variables setting. These variables override possible existing variables with
-                                                                    the same names. This functionality can thus be used to import new variables, for example, for each test in a test suite.</p>
-                                                                <p>The given path must be absolute or found from search
-                                                                    path. Forward slashes can be used as path separator regardless the operating system.</p>
+                                                                <p>Variables imported with this keyword are set into the test suite scope similarly when importing them in the Setting table using the Variables setting. These variables override possible existing variables with the same names. This functionality
+                                                                    can thus be used to import new variables, for example, for each test in a test suite.</p>
+                                                                <p>The given path must be absolute or found from search path. Forward slashes can be used as path separator regardless the operating system.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -2379,7 +2374,7 @@ ${z} is set to Python None if it does not exist previously
 
                                                                 <p>Fails also if there are more than one keywords with the same name. Works both with the short name (e.g. <code>Log</code>) and the full name (e.g. <code>BuiltIn.Log</code>).</p>
                                                                 <p>The default error message can be overridden with the <code>msg</code> argument.</p>
-                                                                <p>See also <a href="#Variable%20Should%20Exist" class="name">Variable Should Exist</a>.</p>
+                                                                <p>See also <a href="#variable-should-exist" class="name">Variable Should Exist</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -2416,7 +2411,7 @@ ${z} is set to Python None if it does not exist previously
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The length of the item is got using the <a href="#Get%20Length" class="name">Get Length</a> keyword. The default error message can be overridden with the <code>msg</code> argument.</p>
+                                                                <p>The length of the item is got using the <a href="#get-length" class="name">Get Length</a> keyword. The default error message can be overridden with the <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
 
@@ -2471,19 +2466,20 @@ ${z} is set to Python None if it does not exist previously
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Valid levels are TRACE, DEBUG, INFO (default), HTML, WARN, and ERROR. Messages below the current active log level are ignored. See <a href="#Set%20Log%20Level" class="name">Set Log
+                                                                <p>Valid levels are TRACE, DEBUG, INFO (default), HTML, WARN, and ERROR. Messages below the current active log level are ignored. See <a href="#set-log-level" class="name">Set Log
                                                                         Level</a> keyword and <code>--loglevel</code> command line option for more details about setting the level.</p>
                                                                 <p>Messages logged with the WARN or ERROR levels will be automatically visible also in the console and in the Test Execution Errors section in the log file.</p>
-                                                                <p>If the <code>html</code> argument is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the message will be considered HTML and special characters such as <code>&lt;</code> are not escaped. For example, logging
-                                                                    <code>&lt;img src="image.png"&gt;</code> creates an image when <code>html</code> is true, but otherwise the message is that exact string. An alternative to using the <code>html</code> argument is using the
-                                                                    HTML pseudo log level. It logs the message as HTML using the INFO level.
+                                                                <p>If the <code>html</code> argument is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), the message will be considered HTML and special characters such as <code>&lt;</code> are not escaped. For
+                                                                    example, logging
+                                                                    <code>&lt;img src="image.png"&gt;</code> creates an image when <code>html</code> is true, but otherwise the message is that exact string. An alternative to using the <code>html</code> argument is using the HTML pseudo log level.
+                                                                    It logs the message as HTML using the INFO level.
                                                                 </p>
-                                                                <p>If the <code>console</code> argument is true, the message will be written to the console where test execution was started from in addition to the log file. This keyword always uses the standard output stream
-                                                                    and adds a newline after the written message. Use <a href="#Log%20To%20Console" class="name">Log To Console</a> instead if either of these is undesirable,
+                                                                <p>If the <code>console</code> argument is true, the message will be written to the console where test execution was started from in addition to the log file. This keyword always uses the standard output stream and adds a newline after
+                                                                    the written message. Use <a href="#log-to-console" class="name">Log To Console</a> instead if either of these is undesirable,
                                                                 </p>
                                                                 <p>The <code>formatter</code> argument controls how to format the string representation of the message. Possible values are <code>str</code> (default), <code>repr</code> and
-                                                                    <code>ascii</code>, and they work similarly to Python built-in functions with same names. When using <code>repr</code>, bigger lists, dictionaries and other containers are also pretty-printed so that there
-                                                                    is one item per row. For more details see <a href="#String%20representations" class="name">String representations</a>.
+                                                                    <code>ascii</code>, and they work similarly to Python built-in functions with same names. When using <code>repr</code>, bigger lists, dictionaries and other containers are also pretty-printed so that there is one item per row.
+                                                                    For more details see <a href="#String-representations" class="name">String representations</a>.
                                                                 </p>
                                                                 <p>The old way to control string representation was using the <code>repr</code> argument, and
                                                                     <code>repr=True</code> is still equivalent to using <code>formatter=repr</code>. The
@@ -2542,7 +2538,7 @@ ${z} is set to Python None if it does not exist previously
                                                                         <td># Log <code>'Null is \x00'</code>.</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See <a href="#Log%20Many" class="name">Log Many</a> if you want to log multiple messages in one go, and <a href="#Log%20To%20Console" class="name">Log To Console</a> if you only want to write to the console.</p>
+                                                                <p>See <a href="#log-many" class="name">Log Many</a> if you want to log multiple messages in one go, and <a href="#log-to-console" class="name">Log To Console</a> if you only want to write to the console.</p>
                                                             </div>
                                                         </div>
 
@@ -2581,7 +2577,7 @@ ${z} is set to Python None if it does not exist previously
                                                                         <td>&amp;{dict}</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See <a href="#Log" class="name">Log</a> and <a href="#Log%20To%20Console" class="name">Log To
+                                                                <p>See <a href="#log" class="name">Log</a> and <a href="#log-to-console" class="name">Log To
                                                                         Console</a> keywords if you want to use alternative log levels, use HTML, or log to the console.
                                                                 </p>
                                                             </div>
@@ -2622,7 +2618,7 @@ ${z} is set to Python None if it does not exist previously
 
                                                                 <p>By default uses the standard output stream. Using the standard error stream is possibly by giving the <code>stream</code> argument value <code>STDERR</code> (case-insensitive).</p>
                                                                 <p>By default appends a newline to the logged message. This can be disabled by giving the
-                                                                    <code>no_newline</code> argument a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>).
+                                                                    <code>no_newline</code> argument a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>).
                                                                 </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -2647,7 +2643,7 @@ ${z} is set to Python None if it does not exist previously
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>This keyword does not log the message to the normal log file. Use <a href="#Log" class="name">Log</a> keyword, possibly with argument <code>console</code>, if that is desired.
+                                                                <p>This keyword does not log the message to the normal log file. Use <a href="#log" class="name">Log</a> keyword, possibly with argument <code>console</code>, if that is desired.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -2722,8 +2718,8 @@ ${z} is set to Python None if it does not exist previously
                                                                 <p>Possible continuable failures before this keyword is used, as well as failures in executed teardowns, will fail the execution.</p>
                                                                 <p>It is mandatory to give a message explaining why execution was passed. By default the message is considered plain text, but starting it with <code>*HTML*</code> allows using HTML formatting.
                                                                 </p>
-                                                                <p>It is also possible to modify test tags passing tags after the message similarly as with <a href="#Fail" class="name">Fail</a> keyword. Tags starting with a hyphen (e.g.
-                                                                    <code>-regression</code>) are removed and others added. Tags are modified using <a href="#Set%20Tags" class="name">Set Tags</a> and <a href="#Remove%20Tags" class="name">Remove
+                                                                <p>It is also possible to modify test tags passing tags after the message similarly as with <a href="#fail" class="name">Fail</a> keyword. Tags starting with a hyphen (e.g.
+                                                                    <code>-regression</code>) are removed and others added. Tags are modified using <a href="#set-tags" class="name">Set Tags</a> and <a href="#remove-tags" class="name">Remove
                                                                         Tags</a> internally, and the semantics setting and removing them are the same as with these keywords.
                                                                 </p>
                                                                 <p>Examples:</p>
@@ -2741,8 +2737,8 @@ ${z} is set to Python None if it does not exist previously
                                                                         <td>-regression</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>This keyword is typically wrapped to some other keyword, such as <a href="#Run%20Keyword%20If" class="name">Run Keyword If</a>, to pass based on a condition. The most common case can be handled also with
-                                                                    <a href="#Pass%20Execution%20If" class="name">Pass Execution If</a>:
+                                                                <p>This keyword is typically wrapped to some other keyword, such as <a href="#run-keyword-if" class="name">Run Keyword If</a>, to pass based on a condition. The most common case can be handled also with
+                                                                    <a href="#pass-execution-if" class="name">Pass Execution If</a>:
                                                                 </p>
                                                                 <table border="1">
                                                                     <tr>
@@ -2758,8 +2754,8 @@ ${z} is set to Python None if it does not exist previously
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Passing execution in the middle of a test, setup or teardown should be used with care. In the worst case it leads to tests that skip all the parts that could actually uncover problems in the tested application.
-                                                                    In cases where execution cannot continue do to external factors, it is often safer to fail the test case and make it non-critical.</p>
+                                                                <p>Passing execution in the middle of a test, setup or teardown should be used with care. In the worst case it leads to tests that skip all the parts that could actually uncover problems in the tested application. In cases where execution
+                                                                    cannot continue do to external factors, it is often safer to fail the test case and make it non-critical.</p>
                                                             </div>
                                                         </div>
 
@@ -2797,8 +2793,8 @@ ${z} is set to Python None if it does not exist previously
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>A wrapper for <a href="#Pass%20Execution" class="name">Pass Execution</a> to skip rest of the current test, setup or teardown based the given <code>condition</code>. The condition is evaluated similarly as with
-                                                                    <a href="#Should%20Be%20True" class="name">Should Be True</a> keyword, and <code>message</code> and <code>*tags</code> have same semantics as with <a href="#Pass%20Execution" class="name">Pass Execution</a>.
+                                                                <p>A wrapper for <a href="#pass-execution" class="name">Pass Execution</a> to skip rest of the current test, setup or teardown based the given <code>condition</code>. The condition is evaluated similarly as with
+                                                                    <a href="#should-be-true" class="name">Should Be True</a> keyword, and <code>message</code> and <code>*tags</code> have same semantics as with <a href="#pass-execution" class="name">Pass Execution</a>.
                                                                 </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -2851,7 +2847,7 @@ ${z} is set to Python None if it does not exist previously
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>This keyword can be used to escape strings to be used with <a href="#Should%20Match%20Regexp" class="name">Should Match Regexp</a> and <a href="#Should%20Not%20Match%20Regexp" class="name">Should Not Match Regexp</a> keywords.</p>
+                                                                <p>This keyword can be used to escape strings to be used with <a href="#should-match-regexp" class="name">Should Match Regexp</a> and <a href="#should-not-match-regexp" class="name">Should Not Match Regexp</a> keywords.</p>
                                                                 <p>Escaping is done with Python's <code>re.escape()</code> function.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -2918,10 +2914,10 @@ ${z} is set to Python None if it does not exist previously
                                                                 </table>
                                                                 <p>Removes given <code>tags</code> from the current test or all tests in a suite.</p>
                                                                 <p>Tags can be given exactly or using a pattern with <code>*</code>, <code>?</code> and
-                                                                    <code>[chars]</code> acting as wildcards. See the <a href="#Glob%20patterns" class="name">Glob
+                                                                    <code>[chars]</code> acting as wildcards. See the <a href="#Glob-patterns" class="name">Glob
                                                                         patterns</a> section for more information.
                                                                 </p>
-                                                                <p>This keyword can affect either one test case or all test cases in a test suite similarly as <a href="#Set%20Tags" class="name">Set Tags</a> keyword.</p>
+                                                                <p>This keyword can affect either one test case or all test cases in a test suite similarly as <a href="#set-tags" class="name">Set Tags</a> keyword.</p>
                                                                 <p>The current tags are available as a built-in variable <code>@{TEST TAGS}</code>.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -2932,7 +2928,7 @@ ${z} is set to Python None if it does not exist previously
                                                                         <td>?ython</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See <a href="#Set%20Tags" class="name">Set Tags</a> if you want to add certain tags and <a href="#Fail" class="name">Fail</a> if you want to fail the test case after setting and/or removing tags.</p>
+                                                                <p>See <a href="#set-tags" class="name">Set Tags</a> if you want to add certain tags and <a href="#fail" class="name">Fail</a> if you want to fail the test case after setting and/or removing tags.</p>
                                                             </div>
                                                         </div>
 
@@ -2970,10 +2966,10 @@ ${z} is set to Python None if it does not exist previously
                                                                 </table>
 
                                                                 <p><code>name</code> and <code>args</code> define the keyword that is executed similarly as with
-                                                                    <a href="#Run%20Keyword" class="name">Run Keyword</a>. <code>repeat</code> specifies how many times (as a count) or how long time (as a timeout) the keyword should be executed.
+                                                                    <a href="#run-keyword" class="name">Run Keyword</a>. <code>repeat</code> specifies how many times (as a count) or how long time (as a timeout) the keyword should be executed.
                                                                 </p>
-                                                                <p>If <code>repeat</code> is given as count, it specifies how many times the keyword should be executed. <code>repeat</code> can be given as an integer or as a string that can be converted to an integer. If it
-                                                                    is a string, it can have postfix <code>times</code> or <code>x</code> (case and space insensitive) to make the expression more explicit.</p>
+                                                                <p>If <code>repeat</code> is given as count, it specifies how many times the keyword should be executed. <code>repeat</code> can be given as an integer or as a string that can be converted to an integer. If it is a string, it can have
+                                                                    postfix <code>times</code> or <code>x</code> (case and space insensitive) to make the expression more explicit.</p>
                                                                 <p>If <code>repeat</code> is given as timeout, it must be in Autosphere's time format (e.g.
                                                                     <code>1 minute</code>, <code>2 min 3 s</code>). Using a number alone (e.g. <code>1</code> or
                                                                     <code>1.5</code>) does not work in this context.
@@ -3028,8 +3024,7 @@ ${z} is set to Python None if it does not exist previously
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>If the text contains undefined variables, this keyword fails. If the given <code>text</code> contains only a single variable, its value is returned as-is and it can be any object. Otherwise this keyword always
-                                                                    returns a string.</p>
+                                                                <p>If the text contains undefined variables, this keyword fails. If the given <code>text</code> contains only a single variable, its value is returned as-is and it can be any object. Otherwise this keyword always returns a string.</p>
                                                                 <h4>Examples</h4>
                                                                 <p>The file <code>template.txt</code> contains <code>Hello ${NAME}!</code> and variable
                                                                     <code>${NAME}</code> has the value <code>Robot</code>.
@@ -3075,10 +3070,9 @@ ${z} is set to Python None if it does not exist previously
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>This keyword can be used to return from a user keyword with PASS status without executing it fully. It is also possible to return values similarly as with the <code>[Return]</code> setting. For more detailed
-                                                                    information about working with the return values, see the User Guide.</p>
-                                                                <p>This keyword is typically wrapped to some other keyword, such as <a href="#Run%20Keyword%20If" class="name">Run Keyword If</a> or <a href="#Run%20Keyword%20If%20Test%20Passed" class="name">Run Keyword If Test Passed</a>,
-                                                                    to return based on a condition:</p>
+                                                                <p>This keyword can be used to return from a user keyword with PASS status without executing it fully. It is also possible to return values similarly as with the <code>[Return]</code> setting. For more detailed information about working
+                                                                    with the return values, see the User Guide.</p>
+                                                                <p>This keyword is typically wrapped to some other keyword, such as <a href="#run-keyword-if" class="name">Run Keyword If</a> or <a href="#run-keyword-if-test-passed" class="name">Run Keyword If Test Passed</a>, to return based on a condition:</p>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>Run Keyword If</td>
@@ -3091,30 +3085,30 @@ ${z} is set to Python None if it does not exist previously
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>It is possible to use this keyword to return from a keyword also inside a for loop. That, as well as returning values, is demonstrated by the Find Index keyword in the following somewhat advanced example. Notice
-                                                                    that it is often a good idea to move this kind of complicated logic into a test library.</p>
+                                                                <p>It is possible to use this keyword to return from a keyword also inside a for loop. That, as well as returning values, is demonstrated by the Find Index keyword in the following somewhat advanced example. Notice that it is often a
+                                                                    good idea to move this kind of complicated logic into a test library.</p>
                                                                 <pre><b>***</b> Variables <b>***</b>
-@{LIST} =    foo    baz
+            @{LIST} =    foo    baz
 
-<b>***</b> Test Cases <b>***</b>
-Example
-    ${index} =    Find Index    baz    @{LIST}
-    Should Be Equal    ${index}    ${1}
-    ${index} =    Find Index    non existing    @{LIST}
-    Should Be Equal    ${index}    ${-1}
+            <b>***</b> Test Cases <b>***</b>
+            Example
+                ${index} =    Find Index    baz    @{LIST}
+                Should Be Equal    ${index}    ${1}
+                ${index} =    Find Index    non existing    @{LIST}
+                Should Be Equal    ${index}    ${-1}
 
-<b>***</b> Keywords <b>***</b>
-Find Index
-   [Arguments]    ${element}    @{items}
-   ${index} =    Set Variable    ${0}
-   FOR    ${item}    IN    @{items}
-       Run Keyword If    '${item}' == '${element}'    Return From Keyword    ${index}
-       ${index} =    Set Variable    ${index + 1}
-   END
-   Return From Keyword    ${-1}    # Also [Return] would work here.
-</code></pre>
+            <b>***</b> Keywords <b>***</b>
+            Find Index
+            [Arguments]    ${element}    @{items}
+            ${index} =    Set Variable    ${0}
+            FOR    ${item}    IN    @{items}
+                Run Keyword If    '${item}' == '${element}'    Return From Keyword    ${index}
+                ${index} =    Set Variable    ${index + 1}
+            END
+            Return From Keyword    ${-1}    # Also [Return] would work here.
+            </code></pre>
                                                                 <p>The most common use case, returning based on an expression, can be accomplished directly with
-                                                                    <a href="#Return%20From%20Keyword%20If" class="name">Return From Keyword If</a>. See also <a href="#Run%20Keyword%20And%20Return" class="name">Run Keyword And Return</a> and <a href="#Run%20Keyword%20And%20Return%20If" class="name">Run Keyword And Return If</a>.
+                                                                    <a href="#return-from-keyword-if" class="name">Return From Keyword If</a>. See also <a href="#run-keyword-and-return" class="name">Run Keyword And Return</a> and <a href="#run-keyword-and-return-if" class="name">Run Keyword And Return If</a>.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -3146,20 +3140,20 @@ Find Index
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns from the enclosing user keyword if <code>condition</code> is true.</p>
-                                                                <p>A wrapper for <a href="#Return%20From%20Keyword" class="name">Return From Keyword</a> to return based on the given condition. The condition is evaluated using the same semantics as with <a href="#Should%20Be%20True" class="name">Should Be True</a> keyword.</p>
-                                                                <p>Given the same example as in <a href="#Return%20From%20Keyword" class="name">Return From
+                                                                <p>A wrapper for <a href="#return-from-keyword" class="name">Return From Keyword</a> to return based on the given condition. The condition is evaluated using the same semantics as with <a href="#should-be-true" class="name">Should Be True</a> keyword.</p>
+                                                                <p>Given the same example as in <a href="#return-from-keyword" class="name">Return From
                                                                         Keyword</a>, we can rewrite the Find Index keyword as follows:</p>
                                                                 <pre><b>***</b> Keywords <b>***</b>
-Find Index
-   [Arguments]    ${element}    @{items}
-   ${index} =    Set Variable    ${0}
-   FOR    ${item}    IN    @{items}
-       Return From Keyword If    '${item}' == '${element}'    ${index}
-       ${index} =    Set Variable    ${index + 1}
-   END
-   Return From Keyword    ${-1}    # Also [Return] would work here.
-</code></pre>
-                                                                <p>See also <a href="#Run%20Keyword%20And%20Return" class="name">Run Keyword And Return</a> and <a href="#Run%20Keyword%20And%20Return%20If" class="name">Run Keyword And Return If</a>.</p>
+            Find Index
+            [Arguments]    ${element}    @{items}
+            ${index} =    Set Variable    ${0}
+            FOR    ${item}    IN    @{items}
+                Return From Keyword If    '${item}' == '${element}'    ${index}
+                ${index} =    Set Variable    ${index + 1}
+            END
+            Return From Keyword    ${-1}    # Also [Return] would work here.
+            </code></pre>
+                                                                <p>See also <a href="#run-keyword-and-return" class="name">Run Keyword And Return</a> and <a href="#run-keyword-and-return-if" class="name">Run Keyword And Return If</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -3221,7 +3215,7 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The keyword name and arguments work as with <a href="#Run%20Keyword" class="name">Run
+                                                                <p>The keyword name and arguments work as with <a href="#run-keyword" class="name">Run
                                                                         Keyword</a>.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -3275,7 +3269,7 @@ Find Index
                                                                 </table>
 
                                                                 <p>The keyword to execute and its arguments are specified using <code>name</code> and
-                                                                    <code>*args</code> exactly like with <a href="#Run%20Keyword" class="name">Run Keyword</a>.
+                                                                    <code>*args</code> exactly like with <a href="#run-keyword" class="name">Run Keyword</a>.
                                                                 </p>
                                                                 <p>The expected error must be given in the same format as in Autosphere reports. By default it is interpreted as a glob pattern with <code>*</code>, <code>?</code> and <code>[chars]</code> as wildcards.</p>
                                                                 <table border="1">
@@ -3300,7 +3294,7 @@ Find Index
                                                                         <td>Same as the default behavior.</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See the <a href="#Pattern%20matching" class="name">Pattern matching</a> section for more information about glob patterns and regular expressions.</p>
+                                                                <p>See the <a href="#Pattern-matching" class="name">Pattern matching</a> section for more information about glob patterns and regular expressions.</p>
                                                                 <p>If the expected error occurs, the error message is returned and it can be further processed or tested if needed. If there is no error, or the error does not match the expected error, this keyword fails.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -3387,10 +3381,10 @@ Find Index
                                                                 </table>
 
                                                                 <p>This keyword returns two values, so that the first is either string <code>PASS</code> or
-                                                                    <code>FAIL</code>, depending on the status of the executed keyword. The second value is either the return value of the keyword or the received error message. See <a href="#Run%20Keyword%20And%20Return%20Status" class="name">Run Keyword And Return Status</a> If you are only interested in the execution status.
+                                                                    <code>FAIL</code>, depending on the status of the executed keyword. The second value is either the return value of the keyword or the received error message. See <a href="#run-keyword-and-return-status" class="name">Run Keyword And Return Status</a> If you are only interested in the execution status.
                                                                 </p>
-                                                                <p>The keyword name and arguments work as in <a href="#Run%20Keyword" class="name">Run
-                                                                        Keyword</a>. See <a href="#Run%20Keyword%20If" class="name">Run Keyword If</a> for a usage example.
+                                                                <p>The keyword name and arguments work as in <a href="#run-keyword" class="name">Run
+                                                                        Keyword</a>. See <a href="#run-keyword-if" class="name">Run Keyword If</a> for a usage example.
                                                                 </p>
                                                                 <p>Errors caused by invalid syntax, timeouts, or fatal exceptions are not caught by this keyword. Otherwise this keyword itself never fails.</p>
                                                             </div>
@@ -3423,12 +3417,12 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The keyword to execute is defined with <code>name</code> and <code>*args</code> exactly like with <a href="#Run%20Keyword" class="name">Run Keyword</a>. After running the keyword, returns from the enclosing
-                                                                    user keyword and passes possible return value from the executed keyword further. Returning from a keyword has exactly same semantics as with <a href="#Return%20From%20Keyword" class="name">Return From Keyword</a>.</p>
+                                                                <p>The keyword to execute is defined with <code>name</code> and <code>*args</code> exactly like with <a href="#run-keyword" class="name">Run Keyword</a>. After running the keyword, returns from the enclosing user keyword and passes possible
+                                                                    return value from the executed keyword further. Returning from a keyword has exactly same semantics as with <a href="#return-from-keyword" class="name">Return From Keyword</a>.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keyword%20And%20Return" class="name">Run Keyword And Return</a></td>
+                                                                        <td><a href="#run-keyword-and-return" class="name">Run Keyword And Return</a></td>
                                                                         <td>My Keyword</td>
                                                                         <td>arg1</td>
                                                                         <td>arg2</td>
@@ -3446,13 +3440,13 @@ Find Index
                                                                         <td>arg2</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Return%20From%20Keyword" class="name">Return From Keyword</a></td>
+                                                                        <td><a href="#return-from-keyword" class="name">Return From Keyword</a></td>
                                                                         <td>${result}</td>
                                                                         <td></td>
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Use <a href="#Run%20Keyword%20And%20Return%20If" class="name">Run Keyword And Return If</a> if you want to run keyword and return based on a condition.</p>
+                                                                <p>Use <a href="#run-keyword-and-return-if" class="name">Run Keyword And Return If</a> if you want to run keyword and return based on a condition.</p>
                                                             </div>
                                                         </div>
 
@@ -3489,13 +3483,12 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>A wrapper for <a href="#Run%20Keyword%20And%20Return" class="name">Run Keyword And Return</a> to run and return based on the given <code>condition</code>. The condition is evaluated using the same semantics
-                                                                    as with <a href="#Should%20Be%20True" class="name">Should Be True</a> keyword.
+                                                                <p>A wrapper for <a href="#run-keyword-and-return" class="name">Run Keyword And Return</a> to run and return based on the given <code>condition</code>. The condition is evaluated using the same semantics as with <a href="#should-be-true" class="name">Should Be True</a> keyword.
                                                                 </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keyword%20And%20Return%20If" class="name">Run Keyword And Return If</a>
+                                                                        <td><a href="#run-keyword-and-return-if" class="name">Run Keyword And Return If</a>
                                                                         </td>
                                                                         <td>${rc} &gt; 0</td>
                                                                         <td>My Keyword</td>
@@ -3512,15 +3505,15 @@ Find Index
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keyword%20If" class="name">Run Keyword If</a></td>
+                                                                        <td><a href="#run-keyword-if" class="name">Run Keyword If</a></td>
                                                                         <td>${rc} &gt; 0</td>
-                                                                        <td><a href="#Run%20Keyword%20And%20Return" class="name">Run Keyword And Return</a></td>
+                                                                        <td><a href="#run-keyword-and-return" class="name">Run Keyword And Return</a></td>
                                                                         <td>My Keyword </td>
                                                                         <td>arg1</td>
                                                                         <td>arg2</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Use <a href="#Return%20From%20Keyword%20If" class="name">Return From Keyword If</a> if you want to return a certain value based on a condition.</p>
+                                                                <p>Use <a href="#return-from-keyword-if" class="name">Return From Keyword If</a> if you want to return a certain value based on a condition.</p>
                                                             </div>
                                                         </div>
 
@@ -3552,23 +3545,22 @@ Find Index
                                                                 </table>
 
                                                                 <p>This keyword returns Boolean <code>True</code> if the keyword that is executed succeeds and
-                                                                    <code>False</code> if it fails. This is useful, for example, in combination with <a href="#Run%20Keyword%20If" class="name">Run Keyword If</a>. If you are interested in the error message or return value,
-                                                                    use <a href="#Run%20Keyword%20And%20Ignore%20Error" class="name">Run
+                                                                    <code>False</code> if it fails. This is useful, for example, in combination with <a href="#run-keyword-if" class="name">Run Keyword If</a>. If you are interested in the error message or return value, use <a href="#run-keyword-and-ignore-error" class="name">Run
                                                                         Keyword And Ignore Error</a> instead.
                                                                 </p>
-                                                                <p>The keyword name and arguments work as in <a href="#Run%20Keyword" class="name">Run
+                                                                <p>The keyword name and arguments work as in <a href="#run-keyword" class="name">Run
                                                                         Keyword</a>.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>${passed} =</td>
-                                                                        <td><a href="#Run%20Keyword%20And%20Return%20Status" class="name">Run Keyword And Return
+                                                                        <td><a href="#run-keyword-and-return-status" class="name">Run Keyword And Return
                                                                                 Status</a></td>
                                                                         <td>Keyword</td>
                                                                         <td>args</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keyword%20If" class="name">Run Keyword If</a></td>
+                                                                        <td><a href="#run-keyword-if" class="name">Run Keyword If</a></td>
                                                                         <td>${passed}</td>
                                                                         <td>Another keyword</td>
                                                                         <td></td>
@@ -3611,61 +3603,59 @@ Find Index
                                                                     </tr>
                                                                 </table>
                                                                 <p>Runs the given keyword with the given arguments, if <code>condition</code> is true.</p>
-                                                                <p>The given <code>condition</code> is evaluated in Python as explained in <a href="#Evaluating%20expressions" class="name">Evaluating expressions</a>, and
-                                                                    <code>name</code> and <code>*args</code> have same semantics as with <a href="#Run%20Keyword" class="name">Run Keyword</a>.
+                                                                <p>The given <code>condition</code> is evaluated in Python as explained in <a href="#Evaluating-expressions" class="name">Evaluating expressions</a>, and
+                                                                    <code>name</code> and <code>*args</code> have same semantics as with <a href="#run-keyword" class="name">Run Keyword</a>.
                                                                 </p>
                                                                 <p>Example, a simple if/else construct:</p>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>${status}</td>
                                                                         <td>${value} =</td>
-                                                                        <td><a href="#Run%20Keyword%20And%20Ignore%20Error" class="name">Run Keyword And Ignore
+                                                                        <td><a href="#run-keyword-and-ignore-error" class="name">Run Keyword And Ignore
                                                                                 Error</a></td>
                                                                         <td>My Keyword</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keyword%20If" class="name">Run Keyword If</a></td>
+                                                                        <td><a href="#run-keyword-if" class="name">Run Keyword If</a></td>
                                                                         <td>'${status}' == 'PASS'</td>
                                                                         <td>Some Action</td>
                                                                         <td>arg</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keyword%20Unless" class="name">Run Keyword Unless</a></td>
+                                                                        <td><a href="#run-keyword-unless" class="name">Run Keyword Unless</a></td>
                                                                         <td>'${status}' == 'PASS'</td>
                                                                         <td>Another Action</td>
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>In this example, only either Some Action or Another Action is executed, based on the status of My Keyword. Instead of <a href="#Run%20Keyword%20And%20Ignore%20Error" class="name">Run Keyword
-                                                                        And Ignore Error</a> you can also use <a href="#Run%20Keyword%20And%20Return%20Status" class="name">Run Keyword And Return Status</a>.</p>
-                                                                <p>Variables used like <code>${variable}</code>, as in the examples above, are replaced in the expression before evaluation. Variables are also available in the evaluation namespace and can be accessed using special
-                                                                    syntax <code>$variable</code> as explained in the <a href="#Evaluating%20expressions" class="name">Evaluating expressions</a> section.</p>
+                                                                <p>In this example, only either Some Action or Another Action is executed, based on the status of My Keyword. Instead of <a href="#run-keyword-and-ignore-error" class="name">Run Keyword
+                                                                        And Ignore Error</a> you can also use <a href="#run-keyword-and-return-status" class="name">Run Keyword And Return Status</a>.</p>
+                                                                <p>Variables used like <code>${variable}</code>, as in the examples above, are replaced in the expression before evaluation. Variables are also available in the evaluation namespace and can be accessed using special syntax <code>$variable</code> as explained in the <a href="#Evaluating-expressions" class="name">Evaluating expressions</a> section.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keyword%20If" class="name">Run Keyword If</a></td>
+                                                                        <td><a href="#run-keyword-if" class="name">Run Keyword If</a></td>
                                                                         <td>$result is None or $result == 'FAIL'</td>
                                                                         <td>Keyword</td>
                                                                     </tr>
                                                                 </table>
                                                                 <p>This keyword supports also optional ELSE and ELSE IF branches. Both of them are defined in
-                                                                    <code>*args</code> and must use exactly format <code>ELSE</code> or <code>ELSE IF</code>, respectively. ELSE branches must contain first the name of the keyword to execute and then its possible arguments.
-                                                                    ELSE IF branches must first contain a condition, like the first argument to this keyword, and then the keyword to execute and its possible arguments. It is possible to have ELSE branch after ELSE IF and
-                                                                    to have multiple ELSE IF branches. Nested <a href="#Run%20Keyword%20If" class="name">Run Keyword If</a> usage is not supported when using ELSE and/or ELSE IF branches.
+                                                                    <code>*args</code> and must use exactly format <code>ELSE</code> or <code>ELSE IF</code>, respectively. ELSE branches must contain first the name of the keyword to execute and then its possible arguments. ELSE IF branches must
+                                                                    first contain a condition, like the first argument to this keyword, and then the keyword to execute and its possible arguments. It is possible to have ELSE branch after ELSE IF and to have multiple ELSE IF branches. Nested <a href="#run-keyword-if" class="name">Run Keyword If</a> usage is not supported when using ELSE and/or ELSE IF branches.
                                                                 </p>
                                                                 <p>Given previous example, if/else construct can also be created like this:</p>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>${status}</td>
                                                                         <td>${value} =</td>
-                                                                        <td><a href="#Run%20Keyword%20And%20Ignore%20Error" class="name">Run Keyword And Ignore
+                                                                        <td><a href="#run-keyword-and-ignore-error" class="name">Run Keyword And Ignore
                                                                                 Error</a></td>
                                                                         <td>My Keyword</td>
                                                                         <td></td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keyword%20If" class="name">Run Keyword If</a></td>
+                                                                        <td><a href="#run-keyword-if" class="name">Run Keyword If</a></td>
                                                                         <td>'${status}' == 'PASS'</td>
                                                                         <td>Some Action</td>
                                                                         <td>arg</td>
@@ -3674,13 +3664,12 @@ Find Index
                                                                     </tr>
                                                                 </table>
                                                                 <p>The return value of this keyword is the return value of the actually executed keyword or Python
-                                                                    <code>None</code> if no keyword was executed (i.e. if <code>condition</code> was false). Hence, it is recommended to use ELSE and/or ELSE IF branches to conditionally assign return values from keyword to
-                                                                    variables (see <a href="#Set%20Variable%20If" class="name">Set Variable If</a> if you need to set fixed values conditionally). This is illustrated by the example below:
+                                                                    <code>None</code> if no keyword was executed (i.e. if <code>condition</code> was false). Hence, it is recommended to use ELSE and/or ELSE IF branches to conditionally assign return values from keyword to variables (see <a href="#set-variable-if" class="name">Set Variable If</a> if you need to set fixed values conditionally). This is illustrated by the example below:
                                                                 </p>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>${var1} =</td>
-                                                                        <td><a href="#Run%20Keyword%20If" class="name">Run Keyword If</a></td>
+                                                                        <td><a href="#run-keyword-if" class="name">Run Keyword If</a></td>
                                                                         <td>${rc} == 0</td>
                                                                         <td>Some keyword returning a value</td>
                                                                         <td></td>
@@ -3712,7 +3701,7 @@ Find Index
                                                                     </tr>
                                                                     <tr>
                                                                         <td>${var2} =</td>
-                                                                        <td><a href="#Run%20Keyword%20If" class="name">Run Keyword If</a></td>
+                                                                        <td><a href="#run-keyword-if" class="name">Run Keyword If</a></td>
                                                                         <td>${condition}</td>
                                                                         <td>Some keyword</td>
                                                                         <td></td>
@@ -3724,12 +3713,12 @@ Find Index
                                                                     <code>ELSE IF</code> strings as arguments, you can escape them with a backslash like
                                                                     <code>\ELSE</code> and <code>\ELSE IF</code>.
                                                                 </p>
-                                                                <p>Python's <a href="http://docs.python.org/library/os.html">os</a> and <a href="http://docs.python.org/library/sys.html">sys</a> modules are automatically imported when evaluating the <code>condition</code>. Attributes
-                                                                    they contain can thus be used in the condition:
+                                                                <p>Python's <a href="http://docs.python.org/library/os.html">os</a> and <a href="http://docs.python.org/library/sys.html">sys</a> modules are automatically imported when evaluating the <code>condition</code>. Attributes they contain can
+                                                                    thus be used in the condition:
                                                                 </p>
                                                                 <table border="1">
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keyword%20If" class="name">Run Keyword If</a></td>
+                                                                        <td><a href="#run-keyword-if" class="name">Run Keyword If</a></td>
                                                                         <td>os.sep == '/'</td>
                                                                         <td>Unix Keyword</td>
                                                                         <td></td>
@@ -3780,7 +3769,7 @@ Find Index
                                                                 </table>
 
                                                                 <p>This keyword can only be used in suite teardown. Trying to use it in any other place will result in an error.</p>
-                                                                <p>Otherwise, this keyword works exactly like <a href="#Run%20Keyword" class="name">Run
+                                                                <p>Otherwise, this keyword works exactly like <a href="#run-keyword" class="name">Run
                                                                         Keyword</a>, see its documentation for more details.</p>
                                                             </div>
                                                         </div>
@@ -3814,7 +3803,7 @@ Find Index
 
                                                                 <p>This keyword can only be used in a suite teardown. Trying to use it anywhere else results in an error.
                                                                 </p>
-                                                                <p>Otherwise, this keyword works exactly like <a href="#Run%20Keyword" class="name">Run
+                                                                <p>Otherwise, this keyword works exactly like <a href="#run-keyword" class="name">Run
                                                                         Keyword</a>, see its documentation for more details.</p>
                                                             </div>
                                                         </div>
@@ -3850,7 +3839,7 @@ Find Index
 
                                                                 <p>This keyword can only be used in a suite teardown. Trying to use it anywhere else results in an error.
                                                                 </p>
-                                                                <p>Otherwise, this keyword works exactly like <a href="#Run%20Keyword" class="name">Run
+                                                                <p>Otherwise, this keyword works exactly like <a href="#run-keyword" class="name">Run
                                                                         Keyword</a>, see its documentation for more details.</p>
                                                             </div>
                                                         </div>
@@ -3885,7 +3874,7 @@ Find Index
 
                                                                 <p>This keyword can only be used in a suite teardown. Trying to use it anywhere else results in an error.
                                                                 </p>
-                                                                <p>Otherwise, this keyword works exactly like <a href="#Run%20Keyword" class="name">Run
+                                                                <p>Otherwise, this keyword works exactly like <a href="#run-keyword" class="name">Run
                                                                         Keyword</a>, see its documentation for more details.</p>
                                                             </div>
                                                         </div>
@@ -3919,7 +3908,7 @@ Find Index
 
                                                                 <p>This keyword can only be used in a test teardown. Trying to use it anywhere else results in an error.
                                                                 </p>
-                                                                <p>Otherwise, this keyword works exactly like <a href="#Run%20Keyword" class="name">Run
+                                                                <p>Otherwise, this keyword works exactly like <a href="#run-keyword" class="name">Run
                                                                         Keyword</a>, see its documentation for more details.</p>
                                                             </div>
                                                         </div>
@@ -3953,7 +3942,7 @@ Find Index
 
                                                                 <p>This keyword can only be used in a test teardown. Trying to use it anywhere else results in an error.
                                                                 </p>
-                                                                <p>Otherwise, this keyword works exactly like <a href="#Run%20Keyword" class="name">Run
+                                                                <p>Otherwise, this keyword works exactly like <a href="#run-keyword" class="name">Run
                                                                         Keyword</a>, see its documentation for more details.</p>
                                                             </div>
                                                         </div>
@@ -3987,7 +3976,7 @@ Find Index
 
                                                                 <p>This keyword can only be used in a test teardown. Trying to use it anywhere else results in an error.
                                                                 </p>
-                                                                <p>Otherwise, this keyword works exactly like <a href="#Run%20Keyword" class="name">Run
+                                                                <p>Otherwise, this keyword works exactly like <a href="#run-keyword" class="name">Run
                                                                         Keyword</a>, see its documentation for more details.</p>
                                                             </div>
                                                         </div>
@@ -4025,7 +4014,7 @@ Find Index
                                                                     </tr>
                                                                 </table>
                                                                 <p>Runs the given keyword with the given arguments if <code>condition</code> is false.</p>
-                                                                <p>See <a href="#Run%20Keyword%20If" class="name">Run Keyword If</a> for more information and an example. Notice that this keyword does not support <code>ELSE</code> or <code>ELSE IF</code> branches like <a href="#Run%20Keyword%20If" class="name">Run Keyword If</a> does, though.</p>
+                                                                <p>See <a href="#run-keyword-if" class="name">Run Keyword If</a> for more information and an example. Notice that this keyword does not support <code>ELSE</code> or <code>ELSE IF</code> branches like <a href="#run-keyword-if" class="name">Run Keyword If</a> does, though.</p>
                                                             </div>
                                                         </div>
 
@@ -4055,32 +4044,31 @@ Find Index
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keywords" class="name">Run Keywords</a></td>
+                                                                        <td><a href="#run-keywords" class="name">Run Keywords</a></td>
                                                                         <td>Initialize database</td>
                                                                         <td>Start servers</td>
                                                                         <td>Clear logs</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keywords" class="name">Run Keywords</a></td>
+                                                                        <td><a href="#run-keywords" class="name">Run Keywords</a></td>
                                                                         <td>${KW 1}</td>
                                                                         <td>${KW 2}</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keywords" class="name">Run Keywords</a></td>
+                                                                        <td><a href="#run-keywords" class="name">Run Keywords</a></td>
                                                                         <td>@{KEYWORDS}</td>
                                                                         <td></td>
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Keywords can also be run with arguments using upper case <code>AND</code> as a separator between keywords. The keywords are executed so that the first argument is the first keyword and proceeding arguments until
-                                                                    the first <code>AND</code> are arguments to it. First argument after the first <code>AND</code> is the second keyword and proceeding arguments until the next
+                                                                <p>Keywords can also be run with arguments using upper case <code>AND</code> as a separator between keywords. The keywords are executed so that the first argument is the first keyword and proceeding arguments until the first <code>AND</code> are arguments to it. First argument after the first <code>AND</code> is the second keyword and proceeding arguments until the next
                                                                     <code>AND</code> are its arguments. And so on.
                                                                 </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keywords" class="name">Run Keywords</a></td>
+                                                                        <td><a href="#run-keywords" class="name">Run Keywords</a></td>
                                                                         <td>Initialize database</td>
                                                                         <td>db1</td>
                                                                         <td>AND</td>
@@ -4090,7 +4078,7 @@ Find Index
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keywords" class="name">Run Keywords</a></td>
+                                                                        <td><a href="#run-keywords" class="name">Run Keywords</a></td>
                                                                         <td>Initialize database</td>
                                                                         <td>${DB NAME}</td>
                                                                         <td>AND</td>
@@ -4100,7 +4088,7 @@ Find Index
                                                                         <td>Clear logs</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Run%20Keywords" class="name">Run Keywords</a></td>
+                                                                        <td><a href="#run-keywords" class="name">Run Keywords</a></td>
                                                                         <td>${KW}</td>
                                                                         <td>AND</td>
                                                                         <td>@{KW WITH ARGS}</td>
@@ -4110,8 +4098,8 @@ Find Index
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Notice that the <code>AND</code> control argument must be used explicitly and cannot itself come from a variable. If you need to use literal <code>AND</code> string as argument, you can either use variables
-                                                                    or escape it with a backslash like <code>\AND</code>.</p>
+                                                                <p>Notice that the <code>AND</code> control argument must be used explicitly and cannot itself come from a variable. If you need to use literal <code>AND</code> string as argument, you can either use variables or escape it with a backslash
+                                                                    like <code>\AND</code>.</p>
                                                             </div>
                                                         </div>
 
@@ -4142,12 +4130,13 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Variables set with this keyword are globally available in all subsequent test suites, test cases and user keywords. Also variables in variable tables are overridden. Variables assigned locally based on keyword
-                                                                    return values or by using <a href="#Set%20Test%20Variable" class="name">Set Test Variable</a> and <a href="#Set%20Suite%20Variable" class="name">Set
-                                                                        Suite Variable</a> override these variables in that scope, but the global value is not changed in those cases.</p>
-                                                                <p>In practice setting variables with this keyword has the same effect as using command line options <code>--variable</code> and <code>--variablefile</code>. Because this keyword can change variables everywhere,
-                                                                    it should be used with care.</p>
-                                                                <p>See <a href="#Set%20Suite%20Variable" class="name">Set Suite Variable</a> for more information and examples.</p>
+                                                                <p>Variables set with this keyword are globally available in all subsequent test suites, test cases and user keywords. Also variables in variable tables are overridden. Variables assigned locally based on keyword return values or by using
+                                                                    <a href="#set-test-variable" class="name">Set Test Variable</a> and <a href="#set-suite-variable" class="name">Set
+                                                                        Suite Variable</a> override these variables in that scope, but the global value is not changed in those cases.
+                                                                </p>
+                                                                <p>In practice setting variables with this keyword has the same effect as using command line options <code>--variable</code> and <code>--variablefile</code>. Because this keyword can change variables everywhere, it should be used with
+                                                                    care.</p>
+                                                                <p>See <a href="#set-suite-variable" class="name">Set Suite Variable</a> for more information and examples.</p>
                                                             </div>
                                                         </div>
 
@@ -4172,8 +4161,8 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The library search order is used to resolve conflicts when a keyword name in the test data matches multiple keywords. The first library (or resource, see below) containing the keyword is selected and that keyword
-                                                                    implementation used. If the keyword is not found from any library (or resource), test executing fails the same way as when the search order is not set.</p>
+                                                                <p>The library search order is used to resolve conflicts when a keyword name in the test data matches multiple keywords. The first library (or resource, see below) containing the keyword is selected and that keyword implementation used.
+                                                                    If the keyword is not found from any library (or resource), test executing fails the same way as when the search order is not set.</p>
                                                                 <p>When this keyword is used, there is no need to use the long
                                                                     <code>LibraryName.Keyword Name</code> notation. For example, instead of having
                                                                 </p>
@@ -4255,8 +4244,8 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Variables set with this keyword are available within the local scope of the currently executed test case or in the local scope of the keyword in which they are defined. For example, if you set a variable in
-                                                                    a user keyword, it is available only in that keyword. Other test cases or keywords will not see variables set with this keyword.</p>
+                                                                <p>Variables set with this keyword are available within the local scope of the currently executed test case or in the local scope of the keyword in which they are defined. For example, if you set a variable in a user keyword, it is available
+                                                                    only in that keyword. Other test cases or keywords will not see variables set with this keyword.</p>
                                                                 <p>This keyword is equivalent to a normal variable assignment based on a keyword return value.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -4278,8 +4267,8 @@ Find Index
                                                                         <td>item3</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>This keyword will provide the option of setting local variables inside keywords like <a href="#Run%20Keyword%20If" class="name">Run Keyword If</a>, <a href="#Run%20Keyword%20And%20Return%20If" class="name">Run Keyword And Return If</a>,
-                                                                    <a href="#Run%20Keyword%20Unless" class="name">Run Keyword Unless</a> which until now was not possible by using <a href="#Set%20Variable" class="name">Set Variable</a>.
+                                                                <p>This keyword will provide the option of setting local variables inside keywords like <a href="#run-keyword-if" class="name">Run Keyword If</a>, <a href="#run-keyword-and-return-if" class="name">Run Keyword And Return If</a>,
+                                                                    <a href="#run-keyword-unless" class="name">Run Keyword Unless</a> which until now was not possible by using <a href="#Set-Variable" class="name">Set Variable</a>.
                                                                 </p>
                                                                 <p>It will also be possible to use this keyword from external libraries that want to set local variables.
                                                                 </p>
@@ -4346,9 +4335,9 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>By default the possible existing documentation is overwritten, but this can be changed using the optional <code>append</code> argument similarly as with <a href="#Set%20Test%20Message" class="name">Set Test Message</a> keyword.</p>
+                                                                <p>By default the possible existing documentation is overwritten, but this can be changed using the optional <code>append</code> argument similarly as with <a href="#set-test-message" class="name">Set Test Message</a> keyword.</p>
                                                                 <p>This keyword sets the documentation of the current suite by default. If the optional
-                                                                    <code>top</code> argument is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the documentation of the top level suite is altered instead.
+                                                                    <code>top</code> argument is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), the documentation of the top level suite is altered instead.
                                                                 </p>
                                                                 <p>The documentation of the current suite is available as a built-in variable
                                                                     <code>${SUITE DOCUMENTATION}</code>.
@@ -4395,9 +4384,9 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>By default possible existing metadata values are overwritten, but this can be changed using the optional <code>append</code> argument similarly as with <a href="#Set%20Test%20Message" class="name">Set Test Message</a> keyword.</p>
+                                                                <p>By default possible existing metadata values are overwritten, but this can be changed using the optional <code>append</code> argument similarly as with <a href="#set-test-message" class="name">Set Test Message</a> keyword.</p>
                                                                 <p>This keyword sets the metadata of the current suite by default. If the optional
-                                                                    <code>top</code> argument is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the metadata of the top level suite is altered instead.
+                                                                    <code>top</code> argument is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), the metadata of the top level suite is altered instead.
                                                                 </p>
                                                                 <p>The metadata of the current suite is available as a built-in variable
                                                                     <code>${SUITE METADATA}</code> in a Python dictionary. Notice that modifying this variable directly has no effect on the actual metadata the suite has.
@@ -4433,16 +4422,16 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Variables set with this keyword are available everywhere within the scope of the currently executed test suite. Setting variables with this keyword thus has the same effect as creating them using the Variable
-                                                                    table in the test data file or importing them from variable files.</p>
-                                                                <p>Possible child test suites do not see variables set with this keyword by default, but that can be controlled by using <code>children=&lt;option&gt;</code> as the last argument. If the specified <code>&lt;option&gt;</code> given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the variable is set also to the child suites. Parent and sibling suites will never see variables set with this
-                                                                    keyword.
+                                                                <p>Variables set with this keyword are available everywhere within the scope of the currently executed test suite. Setting variables with this keyword thus has the same effect as creating them using the Variable table in the test data
+                                                                    file or importing them from variable files.</p>
+                                                                <p>Possible child test suites do not see variables set with this keyword by default, but that can be controlled by using <code>children=&lt;option&gt;</code> as the last argument. If the specified <code>&lt;option&gt;</code> given a true
+                                                                    value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), the variable is set also to the child suites. Parent and sibling suites will never see variables set with this keyword.
                                                                 </p>
                                                                 <p>The name of the variable can be given either as a normal variable name (e.g.
                                                                     <code>${NAME}</code>) or in escaped format as <code>\${NAME}</code> or <code>$NAME</code>. Variable value can be given using the same syntax as when variables are created in the Variable table.
                                                                 </p>
-                                                                <p>If a variable already exists within the new scope, its value will be overwritten. Otherwise a new variable is created. If a variable already exists within the current scope, the value can be left empty and the
-                                                                    variable within the new scope gets the value within the current scope.</p>
+                                                                <p>If a variable already exists within the new scope, its value will be overwritten. Otherwise a new variable is created. If a variable already exists within the current scope, the value can be left empty and the variable within the new
+                                                                    scope gets the value within the current scope.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -4524,8 +4513,8 @@ Find Index
                                                                         <td># Sets variable ${NAME}</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>This limitation applies also to <a href="#Set%20Test%20Variable" class="name">Set Test
-                                                                        Variable</a>, <a href="#Set%20Global%20Variable" class="name">Set Global Variable</a>, <a href="#Variable%20Should%20Exist" class="name">Variable Should Exist</a>, <a href="#Variable%20Should%20Not%20Exist" class="name">Variable Should Not Exist</a> and <a href="#Get%20Variable%20Value" class="name">Get Variable Value</a> keywords.</p>
+                                                                <p>This limitation applies also to <a href="#set-test-variable" class="name">Set Test
+                                                                        Variable</a>, <a href="#set-global-variable" class="name">Set Global Variable</a>, <a href="#variable-should-exist" class="name">Variable Should Exist</a>, <a href="#variable-should-not-exist" class="name">Variable Should Not Exist</a> and <a href="#get-variable-value" class="name">Get Variable Value</a> keywords.</p>
                                                             </div>
                                                         </div>
 
@@ -4553,7 +4542,7 @@ Find Index
                                                                 <p>When this keyword is used inside a test case, that test gets the specified tags and other tests are not affected.</p>
                                                                 <p>If this keyword is used in a suite setup, all test cases in that suite, recursively, gets the given tags. It is a failure to use this keyword in a suite teardown.</p>
                                                                 <p>The current tags are available as a built-in variable <code>@{TEST TAGS}</code>.</p>
-                                                                <p>See <a href="#Remove%20Tags" class="name">Remove Tags</a> if you want to remove certain tags and <a href="#Fail" class="name">Fail</a> if you want to fail the test case after setting and/or removing tags.</p>
+                                                                <p>See <a href="#remove-tags" class="name">Remove Tags</a> if you want to remove certain tags and <a href="#fail" class="name">Fail</a> if you want to fail the test case after setting and/or removing tags.</p>
                                                             </div>
                                                         </div>
 
@@ -4585,7 +4574,7 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>This is an alias for <a href="#Set%20Test%20Variable" class="name">Set Test Variable</a> that is more applicable when creating tasks, not tests. New in RF 3.1.</p>
+                                                                <p>This is an alias for <a href="#set-test-variable" class="name">Set Test Variable</a> that is more applicable when creating tasks, not tests. New in RF 3.1.</p>
                                                             </div>
                                                         </div>
 
@@ -4616,7 +4605,7 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>By default the possible existing documentation is overwritten, but this can be changed using the optional <code>append</code> argument similarly as with <a href="#Set%20Test%20Message" class="name">Set Test Message</a> keyword.</p>
+                                                                <p>By default the possible existing documentation is overwritten, but this can be changed using the optional <code>append</code> argument similarly as with <a href="#set-test-message" class="name">Set Test Message</a> keyword.</p>
                                                                 <p>The current test documentation is available as a built-in variable
                                                                     <code>${TEST DOCUMENTATION}</code>. This keyword can not be used in suite setup or suite teardown.
                                                                 </p>
@@ -4650,7 +4639,7 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>If the optional <code>append</code> argument is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the given
+                                                                <p>If the optional <code>append</code> argument is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), the given
                                                                     <code>message</code> is added after the possible earlier message by joining the messages with a space.
                                                                 </p>
                                                                 <p>In test teardown this keyword can alter the possible failure message, but otherwise failures override messages set by this keyword. Notice that in teardown the message is available as a built-in variable <code>${TEST MESSAGE}</code>.</p>
@@ -4712,9 +4701,9 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Variables set with this keyword are available everywhere within the scope of the currently executed test case. For example, if you set a variable in a user keyword, it is available both in the test case level
-                                                                    and also in all other user keywords used in the current test. Other test cases will not see variables set with this keyword.</p>
-                                                                <p>See <a href="#Set%20Suite%20Variable" class="name">Set Suite Variable</a> for more information and examples.</p>
+                                                                <p>Variables set with this keyword are available everywhere within the scope of the currently executed test case. For example, if you set a variable in a user keyword, it is available both in the test case level and also in all other
+                                                                    user keywords used in the current test. Other test cases will not see variables set with this keyword.</p>
+                                                                <p>See <a href="#set-suite-variable" class="name">Set Suite Variable</a> for more information and examples.</p>
                                                             </div>
                                                         </div>
 
@@ -4739,8 +4728,7 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>This keyword is mainly used for setting scalar variables. Additionally it can be used for converting a scalar variable containing a list to a list variable or to multiple scalar variables. It is recommended
-                                                                    to use <a href="#Create%20List" class="name">Create List</a> when creating new lists.</p>
+                                                                <p>This keyword is mainly used for setting scalar variables. Additionally it can be used for converting a scalar variable containing a list to a list variable or to multiple scalar variables. It is recommended to use <a href="#Create-List" class="name">Create List</a> when creating new lists.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -4780,7 +4768,8 @@ Find Index
                                                                     </tr>
                                                                 </table>
                                                                 <p>Variables created with this keyword are available only in the scope where they are created. See
-                                                                    <a href="#Set%20Global%20Variable" class="name">Set Global Variable</a>, <a href="#Set%20Test%20Variable" class="name">Set Test Variable</a> and <a href="#Set%20Suite%20Variable" class="name">Set Suite Variable</a> for information on how to set variables so that they are available also in a larger scope.
+                                                                    <a href="#set-global-variable" class="name">Set Global Variable</a>, <a href="#set-test-variable" class="name">Set Test Variable</a> and <a href="#set-suite-variable" class="name">Set Suite Variable</a> for information on how to
+                                                                    set variables so that they are available also in a larger scope.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -4812,9 +4801,9 @@ Find Index
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The basic usage is giving a condition and two values. The given condition is first evaluated the same way as with the <a href="#Should%20Be%20True" class="name">Should Be True</a> keyword. If the condition is
-                                                                    true, then the first value is returned, and otherwise the second value is returned. The second value can also be omitted, in which case it has a default value None. This usage is illustrated in the examples
-                                                                    below, where <code>${rc}</code> is assumed to be zero.</p>
+                                                                <p>The basic usage is giving a condition and two values. The given condition is first evaluated the same way as with the <a href="#should-be-true" class="name">Should Be True</a> keyword. If the condition is true, then the first value
+                                                                    is returned, and otherwise the second value is returned. The second value can also be omitted, in which case it has a default value None. This usage is illustrated in the examples below, where <code>${rc}</code> is assumed to be
+                                                                    zero.</p>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>${var1} =</td>
@@ -4840,11 +4829,11 @@ Find Index
                                                                 </table>
                                                                 <p>=&gt;</p>
                                                                 <pre>${var1} = 'zero'
-${var2} = 'value2'
-${var3} = None
-</code></pre>
-                                                                <p>It is also possible to have 'else if' support by replacing the second value with another condition, and having two new values after it. If the first condition is not true, the second is evaluated and one of
-                                                                    the values after it is returned based on its truth value. This can be continued by adding more conditions without a limit.</p>
+        ${var2} = 'value2'
+        ${var3} = None
+        </code></pre>
+                                                                <p>It is also possible to have 'else if' support by replacing the second value with another condition, and having two new values after it. If the first condition is not true, the second is evaluated and one of the values after it is returned
+                                                                    based on its truth value. This can be continued by adding more conditions without a limit.</p>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>${var} =</td>
@@ -4901,7 +4890,7 @@ ${var3} = None
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Use <a href="#Get%20Variable%20Value" class="name">Get Variable Value</a> if you need to set variables dynamically based on whether a variable exist or not.</p>
+                                                                <p>Use <a href="#get-variable-value" class="name">Get Variable Value</a> if you need to set variables dynamically based on whether a variable exist or not.</p>
                                                             </div>
                                                         </div>
 
@@ -4932,7 +4921,7 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The length of the item is got using the <a href="#Get%20Length" class="name">Get Length</a> keyword. The default error message can be overridden with the <code>msg</code> argument.</p>
+                                                                <p>The length of the item is got using the <a href="#get-length" class="name">Get Length</a> keyword. The default error message can be overridden with the <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
 
@@ -4993,15 +4982,16 @@ ${var3} = None
                                                                         <code>&lt;first&gt; != &lt;second&gt;</code>.
                                                                     </li>
                                                                     <li>If <code>msg</code> is given and <code>values</code> gets a true value (default), the error message is <code>&lt;msg&gt;: &lt;first&gt; != &lt;second&gt;</code>.</li>
-                                                                    <li>If <code>msg</code> is given and <code>values</code> gets a false value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the error message is simply
+                                                                    <li>If <code>msg</code> is given and <code>values</code> gets a false value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), the error message is simply
                                                                         <code>&lt;msg&gt;</code>.
                                                                     </li>
                                                                     <li><code>formatter</code> controls how to format the values. Possible values are
-                                                                        <code>str</code> (default), <code>repr</code> and <code>ascii</code>, and they work similarly as Python built-in functions with same names. See <a href="#String%20representations" class="name">String representations</a> for more details.
+                                                                        <code>str</code> (default), <code>repr</code> and <code>ascii</code>, and they work similarly as Python built-in functions with same names. See <a href="#String-representations" class="name">String representations</a> for more
+                                                                        details.
                                                                     </li>
                                                                 </ul>
-                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>) and both arguments are strings, comparison is done case-insensitively. If both arguments
-                                                                    are multiline strings, this keyword uses <a href="#Multiline%20string%20comparison" class="name">multiline string comparison</a>.</p>
+                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>) and both arguments are strings, comparison is done case-insensitively. If both arguments are multiline strings,
+                                                                    this keyword uses <a href="#Multiline-string-comparison" class="name">multiline string comparison</a>.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -5082,10 +5072,10 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>See <a href="#Convert%20To%20Integer" class="name">Convert To Integer</a> for information how to convert integers from other bases than 10 using <code>base</code> argument or
+                                                                <p>See <a href="#convert-to-integer" class="name">Convert To Integer</a> for information how to convert integers from other bases than 10 using <code>base</code> argument or
                                                                     <code>0b/0o/0x</code> prefixes.
                                                                 </p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -5155,7 +5145,7 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The conversion is done with <a href="#Convert%20To%20Number" class="name">Convert To Number</a> keyword using the given <code>precision</code>.</p>
+                                                                <p>The conversion is done with <a href="#convert-to-number" class="name">Convert To Number</a> keyword using the given <code>precision</code>.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -5187,14 +5177,14 @@ ${var3} = None
                                                                         <td># Passes</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>As discussed in the documentation of <a href="#Convert%20To%20Number" class="name">Convert To
-                                                                        Number</a>, machines generally cannot store floating point numbers accurately. Because of this limitation, comparing floats for equality is problematic and a correct approach to use depends on the context. This keyword uses a
-                                                                    very naive approach of rounding the numbers before comparing them, which is both prone to rounding errors and does not work very well if numbers are really big or small. For more information about comparing
-                                                                    floats, and ideas on how to implement your own context specific comparison algorithm, see <a href="http://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/">http://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/</a>.
+                                                                <p>As discussed in the documentation of <a href="#convert-to-number" class="name">Convert To
+                                                                        Number</a>, machines generally cannot store floating point numbers accurately. Because of this limitation, comparing floats for equality is problematic and a correct approach to use depends on the context. This keyword uses
+                                                                    a very naive approach of rounding the numbers before comparing them, which is both prone to rounding errors and does not work very well if numbers are really big or small. For more information about comparing floats, and ideas
+                                                                    on how to implement your own context specific comparison algorithm, see <a href="http://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/">http://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/</a>.
                                                                 </p>
                                                                 <p>If you want to avoid possible problems with floating point numbers, you can implement custom keywords using Python's <a href="http://docs.python.org/library/decimal.html">decimal</a> or <a href="http://docs.python.org/library/fractions.html">fractions</a> modules.</p>
-                                                                <p>See <a href="#Should%20Not%20Be%20Equal%20As%20Numbers" class="name">Should Not Be Equal As
-                                                                        Numbers</a> for a negative version of this keyword and <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
+                                                                <p>See <a href="#should-not-be-equal-as-numbers" class="name">Should Not Be Equal As
+                                                                        Numbers</a> for a negative version of this keyword and <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
                                                             </div>
                                                         </div>
 
@@ -5249,11 +5239,10 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code>, <code>values</code> and
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code>, <code>values</code> and
                                                                     <code>formatter</code>.
                                                                 </p>
-                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), comparison is done case-insensitively. If both arguments are multiline strings, this
-                                                                    keyword uses <a href="#Multiline%20string%20comparison" class="name">multiline string comparison</a>.</p>
+                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), comparison is done case-insensitively. If both arguments are multiline strings, this keyword uses <a href="#Multiline-string-comparison" class="name">multiline string comparison</a>.</p>
                                                                 <p>Strings are always NFC normalized.</p>
 
                                                             </div>
@@ -5286,7 +5275,7 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>If <code>condition</code> is a string (e.g. <code>${rc} &lt; 10</code>), it is evaluated as a Python expression as explained in <a href="#Evaluating%20expressions" class="name">Evaluating
+                                                                <p>If <code>condition</code> is a string (e.g. <code>${rc} &lt; 10</code>), it is evaluated as a Python expression as explained in <a href="#Evaluating-expressions" class="name">Evaluating
                                                                         expressions</a> and the keyword status is decided based on the result. If a non-string item is given, the status is got directly from its <a href="http://docs.python.org/library/stdtypes.html#truth">truth value</a>.</p>
                                                                 <p>The default error message (<code>&lt;condition&gt; should be true</code>) is not very informative, but it can be overridden with the <code>msg</code> argument.</p>
                                                                 <p>Examples:</p>
@@ -5313,7 +5302,7 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
                                                                 <p>Variables used like <code>${variable}</code>, as in the examples above, are replaced in the expression before evaluation. Variables are also available in the evaluation namespace, and can be accessed using special
-                                                                    <code>$variable</code> syntax as explained in the <a href="#Evaluating%20expressions" class="name">Evaluating expressions</a> section.
+                                                                    <code>$variable</code> syntax as explained in the <a href="#Evaluating-expressions" class="name">Evaluating expressions</a> section.
                                                                 </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -5328,7 +5317,8 @@ ${var3} = None
                                                                         <td># Expected string must be quoted</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p><a href="#Should%20Be%20True" class="name">Should Be True</a> automatically imports Python's <a href="http://docs.python.org/library/os.html">os</a> and <a href="http://docs.python.org/library/sys.html">sys</a> modules that contain several useful attributes:
+                                                                <p><a href="#should-be-true" class="name">Should Be True</a> automatically imports Python's <a href="http://docs.python.org/library/os.html">os</a> and <a href="http://docs.python.org/library/sys.html">sys</a> modules that contain several
+                                                                    useful attributes:
                                                                 </p>
                                                                 <table border="1">
                                                                     <tr>
@@ -5401,10 +5391,9 @@ ${var3} = None
                                                                 </table>
                                                                 <p>Fails if <code>container</code> does not contain <code>item</code> one or more times.</p>
                                                                 <p>Works with strings, lists, and anything that supports Python's <code>in</code> operator.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with arguments <code>msg</code> and <code>values</code>.
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with arguments <code>msg</code> and <code>values</code>.
                                                                 </p>
-                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>) and compared items are strings, it indicates that comparison should be case-insensitive.
-                                                                    If the <code>container</code> is a list-like object, string items in it are compared case-insensitively. </p>
+                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>) and compared items are strings, it indicates that comparison should be case-insensitive. If the <code>container</code> is a list-like object, string items in it are compared case-insensitively. </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -5467,7 +5456,7 @@ ${var3} = None
                                                                 <p>Fails if <code>container</code> does not contain any of the <code>*items</code>.</p>
                                                                 <p>Works with strings, lists, and anything that supports Python's <code>in</code> operator.</p>
                                                                 <p>Supports additional configuration parameters <code>msg</code>, <code>values</code> and
-                                                                    <code>ignore_case</code>, which have exactly the same semantics as arguments with same names have with <a href="#Should%20Contain" class="name">Should Contain</a>. These arguments must always be given using
+                                                                    <code>ignore_case</code>, which have exactly the same semantics as arguments with same names have with <a href="#should-contain" class="name">Should Contain</a>. These arguments must always be given using
                                                                     <code>name=value</code> syntax after all <code>items</code>.
                                                                 </p>
                                                                 <p>Note that possible equal signs in <code>items</code> must be escaped with a backslash (e.g.
@@ -5558,10 +5547,9 @@ ${var3} = None
                                                                 </table>
                                                                 <p>Fails if <code>container</code> does not contain <code>item</code> <code>count</code> times.
                                                                 </p>
-                                                                <p>Works with strings, lists and all objects that <a href="#Get%20Count" class="name">Get
+                                                                <p>Works with strings, lists and all objects that <a href="#get-count" class="name">Get
                                                                         Count</a> works with. The default error message can be overridden with <code>msg</code> and the actual count is always logged.</p>
-                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>) and compared items are strings, it indicates that comparison should be case-insensitive.
-                                                                    If the <code>container</code> is a list-like object, string items in it are compared case-insensitively.</p>
+                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>) and compared items are strings, it indicates that comparison should be case-insensitive. If the <code>container</code> is a list-like object, string items in it are compared case-insensitively.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -5627,8 +5615,7 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the string <code>str1</code> does not end with the string <code>str2</code>.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of
-                                                                    the <code>ignore_case</code> option.</p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of the <code>ignore_case</code> option.</p>
                                                             </div>
                                                         </div>
 
@@ -5677,10 +5664,8 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the given <code>string</code> does not match the given <code>pattern</code>.</p>
-                                                                <p>Pattern matching is similar as matching files in a shell with <code>*</code>, <code>?</code> and <code>[chars]</code> acting as wildcards. See the <a href="#Glob%20patterns" class="name">Glob patterns</a> section
-                                                                    for more information.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of
-                                                                    the <code>ignore_case</code> option.</p>
+                                                                <p>Pattern matching is similar as matching files in a shell with <code>*</code>, <code>?</code> and <code>[chars]</code> acting as wildcards. See the <a href="#Glob-patterns" class="name">Glob patterns</a> section for more information.</p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of the <code>ignore_case</code> option.</p>
                                                             </div>
                                                         </div>
 
@@ -5723,7 +5708,7 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if <code>string</code> does not match <code>pattern</code> as a regular expression.</p>
-                                                                <p>See the <a href="#Regular%20expressions" class="name">Regular expressions</a> section for more information about regular expressions and how to use then in Autosphere test data.</p>
+                                                                <p>See the <a href="#Regular-expressions" class="name">Regular expressions</a> section for more information about regular expressions and how to use then in Autosphere test data.</p>
                                                                 <p>Notice that the given pattern does not need to match the whole string. For example, the pattern
                                                                     <code>ello</code> matches the string <code>Hello world!</code>. If a full match is needed, the
                                                                     <code>^</code> and <code>$</code> characters can be used to denote the beginning and end of the string, respectively. For example, <code>^ello$</code> only matches the exact string
@@ -5734,7 +5719,7 @@ ${var3} = None
                                                                     <code>s</code> (dotall mode) and <code>x</code> (verbose).
                                                                 </p>
                                                                 <p>If this keyword passes, it returns the portion of the string that matched the pattern. Additionally, the possible captured groups are returned.</p>
-                                                                <p>See the <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> keyword for an explanation on how to override the default error message with the <code>msg</code> and
+                                                                <p>See the <a href="#should-be-equal" class="name">Should Be Equal</a> keyword for an explanation on how to override the default error message with the <code>msg</code> and
                                                                     <code>values</code> arguments.
                                                                 </p>
                                                                 <p>Examples:</p>
@@ -5771,11 +5756,11 @@ ${var3} = None
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre>${ret} = 'Foo: 42'
-${match} = 'Bar: 43'
-${group1} = 'Bar'
-${group2} = '43'
-</code></pre>
+                                                                <pre><code>${ret} = 'Foo: 42'
+                        ${match} = 'Bar: 43'
+                        ${group1} = 'Bar'
+                        ${group2} = '43'
+                        </code></pre>
                                                             </div>
                                                         </div>
 
@@ -5806,7 +5791,7 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The length of the item is got using the <a href="#Get%20Length" class="name">Get Length</a> keyword. The default error message can be overridden with the <code>msg</code> argument.</p>
+                                                                <p>The length of the item is got using the <a href="#get-length" class="name">Get Length</a> keyword. The default error message can be overridden with the <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
 
@@ -5855,8 +5840,8 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
-                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>) and both arguments are strings, comparison is done case-insensitively. </p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
+                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>) and both arguments are strings, comparison is done case-insensitively. </p>
                                                             </div>
                                                         </div>
 
@@ -5905,11 +5890,11 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>See <a href="#Convert%20To%20Integer" class="name">Convert To Integer</a> for information how to convert integers from other bases than 10 using <code>base</code> argument or
+                                                                <p>See <a href="#convert-to-integer" class="name">Convert To Integer</a> for information how to convert integers from other bases than 10 using <code>base</code> argument or
                                                                     <code>0b/0o/0x</code> prefixes.
                                                                 </p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal%20As%20Integers" class="name">Should Be Equal As Integers</a> for some usage examples.</p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
+                                                                <p>See <a href="#should-be-equal-as-integers" class="name">Should Be Equal As Integers</a> for some usage examples.</p>
                                                             </div>
                                                         </div>
 
@@ -5958,8 +5943,8 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The conversion is done with <a href="#Convert%20To%20Number" class="name">Convert To Number</a> keyword using the given <code>precision</code>.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal%20As%20Numbers" class="name">Should Be Equal As Numbers</a> for examples on how to use <code>precision</code> and why it does not always work as expected. See also <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
+                                                                <p>The conversion is done with <a href="#convert-to-number" class="name">Convert To Number</a> keyword using the given <code>precision</code>.</p>
+                                                                <p>See <a href="#should-be-equal-as-numbers" class="name">Should Be Equal As Numbers</a> for examples on how to use <code>precision</code> and why it does not always work as expected. See also <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
                                                             </div>
                                                         </div>
 
@@ -6008,8 +5993,8 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
-                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), comparison is done case-insensitively.</p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>.</p>
+                                                                <p>If <code>ignore_case</code> is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), comparison is done case-insensitively.</p>
                                                                 <p>Strings are always NFC normalized.</p>
 
                                                             </div>
@@ -6042,7 +6027,7 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>See <a href="#Should%20Be%20True" class="name">Should Be True</a> for details about how
+                                                                <p>See <a href="#should-be-true" class="name">Should Be True</a> for details about how
                                                                     <code>condition</code> is evaluated and how <code>msg</code> can be used to override the default error message.
                                                                 </p>
                                                             </div>
@@ -6094,8 +6079,8 @@ ${group2} = '43'
                                                                 </table>
                                                                 <p>Fails if <code>container</code> contains <code>item</code> one or more times.</p>
                                                                 <p>Works with strings, lists, and anything that supports Python's <code>in</code> operator.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with arguments <code>msg</code> and <code>values</code>.
-                                                                    <code>ignore_case</code> has exactly the same semantics as with <a href="#Should%20Contain" class="name">Should Contain</a>.
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with arguments <code>msg</code> and <code>values</code>.
+                                                                    <code>ignore_case</code> has exactly the same semantics as with <a href="#should-contain" class="name">Should Contain</a>.
                                                                 </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -6150,7 +6135,7 @@ ${group2} = '43'
                                                                 <p>Fails if <code>container</code> contains one or more of the <code>*items</code>.</p>
                                                                 <p>Works with strings, lists, and anything that supports Python's <code>in</code> operator.</p>
                                                                 <p>Supports additional configuration parameters <code>msg</code>, <code>values</code> and
-                                                                    <code>ignore_case</code>, which have exactly the same semantics as arguments with same names have with <a href="#Should%20Contain" class="name">Should Contain</a>. These arguments must always be given using
+                                                                    <code>ignore_case</code>, which have exactly the same semantics as arguments with same names have with <a href="#should-contain" class="name">Should Contain</a>. These arguments must always be given using
                                                                     <code>name=value</code> syntax after all <code>items</code>.
                                                                 </p>
                                                                 <p>Note that possible equal signs in <code>items</code> must be escaped with a backslash (e.g.
@@ -6240,8 +6225,7 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the string <code>str1</code> ends with the string <code>str2</code>.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of
-                                                                    the <code>ignore_case</code> option.</p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of the <code>ignore_case</code> option.</p>
                                                             </div>
                                                         </div>
 
@@ -6290,10 +6274,8 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the given <code>string</code> matches the given <code>pattern</code>.</p>
-                                                                <p>Pattern matching is similar as matching files in a shell with <code>*</code>, <code>?</code> and <code>[chars]</code> acting as wildcards. See the <a href="#Glob%20patterns" class="name">Glob patterns</a> section
-                                                                    for more information.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of
-                                                                    the <code>ignore_case</code> option.</p>
+                                                                <p>Pattern matching is similar as matching files in a shell with <code>*</code>, <code>?</code> and <code>[chars]</code> acting as wildcards. See the <a href="#Glob-patterns" class="name">Glob patterns</a> section for more information.</p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of the <code>ignore_case</code> option.</p>
                                                             </div>
                                                         </div>
 
@@ -6336,7 +6318,7 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if <code>string</code> matches <code>pattern</code> as a regular expression.</p>
-                                                                <p>See <a href="#Should%20Match%20Regexp" class="name">Should Match Regexp</a> for more information about arguments.</p>
+                                                                <p>See <a href="#should-match-regexp" class="name">Should Match Regexp</a> for more information about arguments.</p>
                                                             </div>
                                                         </div>
 
@@ -6385,8 +6367,7 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the string <code>str1</code> starts with the string <code>str2</code>.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of
-                                                                    the <code>ignore_case</code> option.</p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of the <code>ignore_case</code> option.</p>
                                                             </div>
                                                         </div>
 
@@ -6435,8 +6416,7 @@ ${group2} = '43'
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the string <code>str1</code> does not start with the string <code>str2</code>.</p>
-                                                                <p>See <a href="#Should%20Be%20Equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of
-                                                                    the <code>ignore_case</code> option.</p>
+                                                                <p>See <a href="#should-be-equal" class="name">Should Be Equal</a> for an explanation on how to override the default error message with <code>msg</code> and <code>values</code>, as well as for semantics of the <code>ignore_case</code> option.</p>
                                                             </div>
                                                         </div>
 
@@ -6468,8 +6448,8 @@ ${group2} = '43'
                                                                 </table>
 
                                                                 <p><code>time</code> may be either a number or a time string. Time strings are in a format such as
-                                                                    <code>1 day 2 hours 3 minutes 4 seconds 5milliseconds</code> or <code>1d 2h 3m 4s 5ms</code>, and they are fully explained in an appendix of Autosphere User Guide. Optional reason can be used to explain
-                                                                    why sleeping is necessary. Both the time slept and the reason are logged.
+                                                                    <code>1 day 2 hours 3 minutes 4 seconds 5milliseconds</code> or <code>1d 2h 3m 4s 5ms</code>, and they are fully explained in an appendix of Autosphere User Guide. Optional reason can be used to explain why sleeping is necessary.
+                                                                    Both the time slept and the reason are logged.
                                                                 </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -6525,11 +6505,11 @@ ${group2} = '43'
                                                                 </table>
 
                                                                 <p>The name of the variable can be given either as a normal variable name (e.g.
-                                                                    <code>${NAME}</code>) or in escaped format (e.g. <code>\${NAME}</code>). Notice that the former has some limitations explained in <a href="#Set%20Suite%20Variable" class="name">Set Suite
+                                                                    <code>${NAME}</code>) or in escaped format (e.g. <code>\${NAME}</code>). Notice that the former has some limitations explained in <a href="#set-suite-variable" class="name">Set Suite
                                                                         Variable</a>.
                                                                 </p>
                                                                 <p>The default error message can be overridden with the <code>msg</code> argument.</p>
-                                                                <p>See also <a href="#Variable%20Should%20Not%20Exist" class="name">Variable Should Not Exist</a> and <a href="#Keyword%20Should%20Exist" class="name">Keyword Should Exist</a>.</p>
+                                                                <p>See also <a href="#variable-should-not-exist" class="name">Variable Should Not Exist</a> and <a href="#Keyword-Should-Exist" class="name">Keyword Should Exist</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -6561,11 +6541,11 @@ ${group2} = '43'
                                                                 </table>
 
                                                                 <p>The name of the variable can be given either as a normal variable name (e.g.
-                                                                    <code>${NAME}</code>) or in escaped format (e.g. <code>\${NAME}</code>). Notice that the former has some limitations explained in <a href="#Set%20Suite%20Variable" class="name">Set Suite
+                                                                    <code>${NAME}</code>) or in escaped format (e.g. <code>\${NAME}</code>). Notice that the former has some limitations explained in <a href="#set-suite-variable" class="name">Set Suite
                                                                         Variable</a>.
                                                                 </p>
                                                                 <p>The default error message can be overridden with the <code>msg</code> argument.</p>
-                                                                <p>See also <a href="#Variable%20Should%20Exist" class="name">Variable Should Exist</a> and <a href="#Keyword%20Should%20Exist" class="name">Keyword Should Exist</a>.</p>
+                                                                <p>See also <a href="#variable-should-exist" class="name">Variable Should Exist</a> and <a href="#Keyword-Should-Exist" class="name">Keyword Should Exist</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -6609,11 +6589,12 @@ ${group2} = '43'
                                                                 </table>
 
                                                                 <p><code>name</code> and <code>args</code> define the keyword that is executed similarly as with
-                                                                    <a href="#Run%20Keyword" class="name">Run Keyword</a>. How long to retry running the keyword is defined using <code>retry</code> argument either as timeout or count.
+                                                                    <a href="#run-keyword" class="name">Run Keyword</a>. How long to retry running the keyword is defined using <code>retry</code> argument either as timeout or count.
                                                                     <code>retry_interval</code> is the time to wait before trying to run the keyword again after the previous run has failed.
                                                                 </p>
                                                                 <p>If <code>retry</code> is given as timeout, it must be in Autosphere's time format (e.g.
-                                                                    <code>1 minute</code>, <code>2 min 3 s</code>, <code>4.5</code>) that is explained in an appendix of Autosphere User Guide. If it is given as count, it must have <code>times</code> or <code>x</code> postfix (e.g. <code>5 times</code>, <code>10 x</code>).
+                                                                    <code>1 minute</code>, <code>2 min 3 s</code>, <code>4.5</code>) that is explained in an appendix of Autosphere User Guide. If it is given as count, it must have <code>times</code> or <code>x</code> postfix (e.g. <code>5 times</code>,
+                                                                    <code>10 x</code>).
                                                                     <code>retry_interval</code> must always be given in Autosphere's time format.
                                                                 </p>
                                                                 <p>If the keyword does not succeed regardless of retries, this keyword fails. If the executed keyword passes, its return value is returned.</p>
@@ -6634,9 +6615,8 @@ ${group2} = '43'
                                                                         <td>My keyword</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>All normal failures are caught by this keyword. Errors caused by invalid syntax, test or keyword timeouts, or fatal exceptions (caused e.g. by <a href="#Fatal%20Error" class="name">Fatal Error</a>) are not caught.</p>
-                                                                <p>Running the same keyword multiple times inside this keyword can create lots of output and considerably increase the size of the generated output files. It is possible to remove unnecessary keywords from the
-                                                                    outputs using <code>--RemoveKeywords WUKS</code> command line option.
+                                                                <p>All normal failures are caught by this keyword. Errors caused by invalid syntax, test or keyword timeouts, or fatal exceptions (caused e.g. by <a href="#fatal-error" class="name">Fatal Error</a>) are not caught.</p>
+                                                                <p>Running the same keyword multiple times inside this keyword can create lots of output and considerably increase the size of the generated output files. It is possible to remove unnecessary keywords from the outputs using <code>--RemoveKeywords WUKS</code> command line option.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -6644,16 +6624,18 @@ ${group2} = '43'
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu">
+                                                    <input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" />
+                                                    <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
-                                                    </svg></fieldset>
+                                                    </svg>
+                                                </fieldset>
                                             </form>
                                             <div>
                                                 <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
@@ -6763,20 +6745,16 @@ ${group2} = '43'
                                                     <li><a id="link-variable-should-not-exist" href="#variable-should-not-exist" class="">Variable Should Not Exist</a></li>
                                                     <li><a id="link-wait-until-keyword-succeeds" href="#wait-until-keyword-succeeds" class="">Wait Until Keyword Succeeds</a></li>
                                                 </ul>
-
                                             </div>
                                         </aside>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
         <!-- #END# Headings -->
-
     </div>
 </section>

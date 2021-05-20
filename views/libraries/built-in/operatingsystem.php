@@ -48,21 +48,21 @@
                                             <p><code>OperatingSystem</code> is Autosphere's standard library that enables various operating
                                                 system related tasks to be performed in the system where Autosphere is running. It can,
                                                 among other things, execute commands (e.g. <a href="#Run" class="name">Run</a>), create and
-                                                remove files and directories (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#create-file" id="link-create-file" class="">Create File</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a>), check whether files or
-                                                directories exists or contain something (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#file-should-exist" id="link-file-should-exist" class="name">File
-                                                    Should Exist</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#directory-should-be-empty" id="link-directory-should-be-empty" class="name">Directory Should
-                                                    Be Empty</a>) and manipulate environment variables (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#set-environment-variable" id="link-set-environment-variable" class="name">Set Environment Variable</a>).</p>
+                                                remove files and directories (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#create-file" id="link-create-file" class="pagelinks">Create File</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#remove-directory" id="link-remove-directory" class="name">Remove Directory</a>), check whether files or
+                                                directories exists or contain something (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#file-should-exist" id="link-file-should-exist" class="pagelinks">File
+                                                    Should Exist</a>, <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#directory-should-be-empty" id="link-directory-should-be-empty" class="pagelinks">Directory Should
+                                                    Be Empty</a>) and manipulate environment variables (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=operatingsystem#set-environment-variable" id="link-set-environment-variable" class="pagelinks">Set Environment Variable</a>).</p>
                                             <h4 id="Table of contents">Table of contents</h4>
                                             <ul>
-                                                <li><a href="#Path%20separators" class="name">Path separators</a></li>
-                                                <li><a href="#Pattern%20matching" class="name">Pattern matching</a></li>
-                                                <li><a href="#Tilde%20expansion" class="name">Tilde expansion</a></li>
-                                                <li><a href="#Boolean%20arguments" class="name">Boolean arguments</a></li>
+                                                <li><a href="#Path-separators" class="name">Path separators</a></li>
+                                                <li><a href="#Pattern-matching" class="name">Pattern matching</a></li>
+                                                <li><a href="#Tilde-expansion" class="name">Tilde expansion</a></li>
+                                                <li><a href="#Boolean-arguments" class="name">Boolean arguments</a></li>
                                                 <li><a href="#Example" class="name">Example</a></li>
                                                 <li><a href="#Shortcuts" class="name">Shortcuts</a></li>
                                                 <li><a href="#Keywords" class="name">Keywords</a></li>
                                             </ul>
-                                            <h4 id="Path separators">Path separators</h4>
+                                            <h4 id="Path-separators">Path separators</h4>
                                             <p>Because Autosphere uses the backslash (<code>\</code>) as an escape character in the test
                                                 data, using a literal backslash requires duplicating it like in <code>c:\\path\\file.txt</code>.
                                                 That can be inconvenient especially with longer Windows paths, and thus all keywords expecting
@@ -73,7 +73,7 @@
                                                     Process</span> keywords. In these cases the built-in variable <code>${/}</code> that
                                                 contains <code>\</code> or <code>/</code>, depending on the operating system, can be used
                                                 instead.</p>
-                                            <h4 id="Pattern matching">Pattern matching</h4>
+                                            <h4 id="Pattern-matching">Pattern matching</h4>
                                             <p>Some keywords allow their arguments to be specified as <a href="http://en.wikipedia.org/wiki/Glob_(programming)">glob patterns</a> where:</p>
                                             <table border="1">
                                                 <tbody>
@@ -105,13 +105,13 @@
                                             </table>
                                             <p>Unless otherwise noted, matching is case-insensitive on case-insensitive operating systems such
                                                 as Windows.</p>
-                                            <h4 id="Tilde expansion">Tilde expansion</h4>
+                                            <h4 id="Tilde-expansion">Tilde expansion</h4>
                                             <p>Paths beginning with <code>~</code> or <code>~username</code> are expanded to the current or
                                                 specified user's home directory, respectively. The resulting path is operating system dependent,
                                                 but typically e.g. <code>~/robot</code> is expanded to <code>C:\Users\&lt;user&gt;\robot</code>
                                                 on Windows and <code>/home/&lt;user&gt;/robot</code> on Unixes.</p>
                                             <p>The <code>~username</code> form does not work on Jython.</p>
-                                            <h4 id="Boolean arguments">Boolean arguments</h4>
+                                            <h4 id="Boolean-arguments">Boolean arguments</h4>
                                             <p>Some keywords accept arguments that are handled as Boolean values true or false. If such an
                                                 argument is given as a string, it is considered false if it is an empty string or equal to
                                                 <code>FALSE</code>, <code>NONE</code>, <code>NO</code>, <code>OFF</code> or <code>0</code>,
@@ -374,7 +374,7 @@
 
                                                                 <p>If the file exists, the given text is written to its end. If the file does not exist, it is created.
                                                                 </p>
-                                                                <p>Other than not overwriting possible existing files, this keyword works exactly like <a href="#Create%20File" class="name">Create File</a>. See its documentation for more details about the usage.</p>
+                                                                <p>Other than not overwriting possible existing files, this keyword works exactly like <a href="#create-file" class="">Create File</a>. See its documentation for more details about the usage.</p>
 
                                                             </div>
                                                         </div>
@@ -437,8 +437,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Source must be a path to an existing file or a glob pattern (see <a href="#Pattern%20matching" class="name">Pattern matching</a>) that matches exactly one file. How the destination is interpreted is explained
-                                                                    below.
+                                                                <p>Source must be a path to an existing file or a glob pattern (see <a href="#Pattern-matching" class="">Pattern matching</a>) that matches exactly one file. How the destination is interpreted is explained below.
                                                                 </p>
                                                                 <p>1) If the destination is an existing file, the source file is copied over it.</p>
                                                                 <p>2) If the destination is an existing directory, the source file is copied into it. A possible file with the same name as the source is overwritten.</p>
@@ -447,7 +446,7 @@
                                                                 </p>
                                                                 <p>4) If the destination does not exist and it does not end with a path separator, it is considered a file. If the path to the file does not exist, it is created.</p>
 
-                                                                <p>See also <a href="#Copy%20Files" class="name">Copy Files</a>, <a href="#Move%20File" class="name">Move File</a>, and <a href="#Move%20Files" class="name">Move Files</a>.</p>
+                                                                <p>See also <a href="#copy-files" class="">Copy Files</a>, <a href="#move-file" class="">Move File</a>, and <a href="#move-files" class="">Move Files</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -472,8 +471,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Source files can be given as exact paths and as glob patterns (see <a href="#Pattern%20matching" class="name">Pattern matching</a>). At least one source must be given, but it is not an error if it is a pattern
-                                                                    that does not match anything.</p>
+                                                                <p>Source files can be given as exact paths and as glob patterns (see <a href="#Pattern-matching" class="">Pattern matching</a>). At least one source must be given, but it is not an error if it is a pattern that does not match anything.</p>
                                                                 <p>Last argument must be the destination directory. If the destination does not exist, it will be created.
                                                                 </p>
                                                                 <p>Examples:</p>
@@ -491,7 +489,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See also <a href="#Copy%20File" class="name">Copy File</a>, <a href="#Move%20File" class="name">Move File</a>, and <a href="#Move%20Files" class="name">Move Files</a>.</p>
+                                                                <p>See also <a href="#copy-file" class="">Copy File</a>, <a href="#move-file" class="">Move File</a>, and <a href="#move-files" class="">Move Files</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -521,7 +519,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Wrapper for <a href="#Count%20Items%20In%20Directory" class="name">Count Items In Directory</a> returning only directory count.</p>
+                                                                <p>Wrapper for <a href="#count-items-in-directory" class="">Count Items In Directory</a> returning only directory count.</p>
                                                             </div>
                                                         </div>
 
@@ -551,7 +549,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Wrapper for <a href="#Count%20Items%20In%20Directory" class="name">Count Items In Directory</a> returning only file count.</p>
+                                                                <p>Wrapper for <a href="#count-items-in-directory" class="">Count Items In Directory</a> returning only file count.</p>
                                                             </div>
                                                         </div>
 
@@ -582,8 +580,8 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The argument <code>pattern</code> has the same semantics as with <a href="#List%20Directory" class="name">List Directory</a> keyword. The count is returned as an integer, so it must be checked e.g. with the
-                                                                    built-in keyword Should Be Equal As Integers.</p>
+                                                                <p>The argument <code>pattern</code> has the same semantics as with <a href="#list-directory" class="">List Directory</a> keyword. The count is returned as an integer, so it must be checked e.g. with the built-in keyword Should Be Equal
+                                                                    As Integers.</p>
                                                             </div>
                                                         </div>
 
@@ -614,8 +612,8 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>If content is given as a Unicode string, it is first converted to bytes character by character. All characters with ordinal below 256 can be used and are converted to bytes with same values. Using characters
-                                                                    with higher ordinal is an error.</p>
+                                                                <p>If content is given as a Unicode string, it is first converted to bytes character by character. All characters with ordinal below 256 can be used and are converted to bytes with same values. Using characters with higher ordinal is
+                                                                    an error.</p>
                                                                 <p>Byte strings, and possible other types, are written to the file as is.</p>
                                                                 <p>If the directory for the file does not exist, it is created, along with missing intermediate directories.
                                                                 </p>
@@ -632,7 +630,7 @@
                                                                         <td>\x01\x00\xe4\x00</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Use <a href="#Create%20File" class="name">Create File</a> if you want to create a text file using a certain encoding. <a href="#File%20Should%20Not%20Exist" class="name">File Should Not
+                                                                <p>Use <a href="#create-file" class="">Create File</a> if you want to create a text file using a certain encoding. <a href="#file-should-not-exist" class="">File Should Not
                                                                         Exist</a> can be used to avoid overwriting existing files.</p>
                                                             </div>
                                                         </div>
@@ -697,7 +695,7 @@
 
                                                                 <p>If the directory where the file is created does not exist, it is automatically created along with possible missing intermediate directories. Possible existing file is overwritten.</p>
                                                                 <p>On Windows newline characters (<code>\n</code>) in content are automatically converted to Windows native newline sequence (<code>\r\n</code>).</p>
-                                                                <p>See <a href="#Get%20File" class="name">Get File</a> for more information about possible
+                                                                <p>See <a href="#get-file" class="">Get File</a> for more information about possible
                                                                     <code>encoding</code> values, including special values <code>SYSTEM</code> and
                                                                     <code>CONSOLE</code>.
                                                                 </p>
@@ -722,8 +720,7 @@
                                                                         <td>SYSTEM</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Use <a href="#Append%20To%20File" class="name">Append To File</a> if you want to append to an existing file and <a href="#Create%20Binary%20File" class="name">Create Binary File</a> if you need to write bytes
-                                                                    without encoding. <a href="#File%20Should%20Not%20Exist" class="name">File
+                                                                <p>Use <a href="#append-to-file" class="">Append To File</a> if you want to append to an existing file and <a href="#create-binary-file" class="">Create Binary File</a> if you need to write bytes without encoding. <a href="#file-should-not-exist" class="">File
                                                                         Should Not Exist</a> can be used to avoid overwriting existing files.</p>
 
                                                             </div>
@@ -787,8 +784,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>. The default error message can be overridden with
-                                                                    the <code>msg</code> argument.</p>
+                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in introduction. The default error message can be overridden with the <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
 
@@ -850,8 +846,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>. The default error message can be overridden with
-                                                                    the <code>msg</code> argument.</p>
+                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in introduction. The default error message can be overridden with the <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
 
@@ -877,7 +872,7 @@
                                                                 </table>
 
                                                                 <p>Deletes both files and sub-directories, but the specified directory itself if not removed. Use
-                                                                    <a href="#Remove%20Directory" class="name">Remove Directory</a> if you want to remove the whole directory.
+                                                                    <a href="#remove-directory" class="">Remove Directory</a> if you want to remove the whole directory.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1003,8 +998,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails unless the given <code>path</code> points to an existing file.</p>
-                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>. The default error message can be overridden with
-                                                                    the <code>msg</code> argument.</p>
+                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in introduction. The default error message can be overridden with the <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
 
@@ -1066,8 +1060,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>. The default error message can be overridden with
-                                                                    the <code>msg</code> argument.</p>
+                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in introduction. The default error message can be overridden with the <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
 
@@ -1092,7 +1085,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>This keyword reads the specified file and returns the contents as is. See also <a href="#Get%20File" class="name">Get File</a>.</p>
+                                                                <p>This keyword reads the specified file and returns the contents as is. See also <a href="#get-file" class="">Get File</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -1175,11 +1168,10 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>This keyword reads the specified file and returns the contents. Line breaks in content are converted to platform independent form. See also <a href="#Get%20Binary%20File" class="name">Get
+                                                                <p>This keyword reads the specified file and returns the contents. Line breaks in content are converted to platform independent form. See also <a href="#get-binary-file" class="">Get
                                                                         Binary File</a>.</p>
                                                                 <p><code>encoding</code> defines the encoding of the file. The default value is
-                                                                    <code>UTF-8</code>, which means that UTF-8 and ASCII encoded files are read correctly. In addition to the encodings supported by the underlying Python implementation, the following special encoding values
-                                                                    can be used:
+                                                                    <code>UTF-8</code>, which means that UTF-8 and ASCII encoded files are read correctly. In addition to the encodings supported by the underlying Python implementation, the following special encoding values can be used:
                                                                 </p>
                                                                 <ul>
                                                                     <li><code>SYSTEM</code>: Use the default system encoding.</li>
@@ -1251,8 +1243,7 @@
                                                                 <p>How time is returned is determined based on the given <code>format</code> string as follows. Note that all checks are case-insensitive. Returned time is also automatically logged.</p>
                                                                 <p>1) If <code>format</code> contains the word <code>epoch</code>, the time is returned in seconds after the UNIX epoch. The return value is always an integer.</p>
                                                                 <p>2) If <code>format</code> contains any of the words <code>year</code>, <code>month</code>,
-                                                                    <code>day</code>, <code>hour</code>, <code>min</code> or <code>sec</code>, only the selected parts are returned. The order of the returned parts is always the one in the previous sentence and the order of
-                                                                    the words in <code>format</code> is not significant. The parts are returned as zero-padded strings (e.g. May -&gt; <code>05</code>).
+                                                                    <code>day</code>, <code>hour</code>, <code>min</code> or <code>sec</code>, only the selected parts are returned. The order of the returned parts is always the one in the previous sentence and the order of the words in <code>format</code> is not significant. The parts are returned as zero-padded strings (e.g. May -&gt; <code>05</code>).
                                                                 </p>
                                                                 <p>3) Otherwise, and by default, the time is returned as a timestamp string in the format
                                                                     <code>2006-02-24 15:08:31</code>.
@@ -1346,12 +1337,11 @@
                                                                 </table>
                                                                 <p>Returns the lines of the specified file that match the <code>pattern</code>.</p>
                                                                 <p>This keyword reads a file from the file system using the defined <code>path</code>,
-                                                                    <code>encoding</code> and <code>encoding_errors</code> similarly as <a href="#Get%20File" class="name">Get File</a>. A difference is that only the lines that match the given
-                                                                    <code>pattern</code> are returned. Lines are returned as a single string catenated back together with newlines and the number of matched lines is automatically logged. Possible trailing newline is never
-                                                                    returned.
+                                                                    <code>encoding</code> and <code>encoding_errors</code> similarly as <a href="#get-file" class="">Get File</a>. A difference is that only the lines that match the given
+                                                                    <code>pattern</code> are returned. Lines are returned as a single string catenated back together with newlines and the number of matched lines is automatically logged. Possible trailing newline is never returned.
                                                                 </p>
                                                                 <p>A line matches if it contains the <code>pattern</code> anywhere in it and it <b>does not need
-                                                                        to match the pattern fully</b>. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>, and in this case matching is case-sensitive.
+                                                                        to match the pattern fully</b>. The pattern matching syntax is explained in introduction, and in this case matching is case-sensitive.
                                                                 </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1368,7 +1358,7 @@
                                                                         <td>[Ww]ildc??d ex*ple</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>If more complex pattern matching is needed, it is possible to use <a href="#Get%20File" class="name">Get File</a> in combination with String library keywords like Get Lines Matching Regexp.
+                                                                <p>If more complex pattern matching is needed, it is possible to use <a href="#get-file" class="">Get File</a> in combination with String library keywords like Get Lines Matching Regexp.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1482,7 +1472,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>See <a href="#Join%20Path" class="name">Join Path</a> for more information.</p>
+                                                                <p>See <a href="#join-path" class="">Join Path</a> for more information.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1551,7 +1541,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Wrapper for <a href="#List%20Directory" class="name">List Directory</a> that returns only directories.
+                                                                <p>Wrapper for <a href="#list-directory" class="">List Directory</a> that returns only directories.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1595,11 +1585,10 @@
                                                                     <code>.</code> and <code>..</code> are not returned. The returned items are automatically logged.
                                                                 </p>
                                                                 <p>File and directory names are returned relative to the given path (e.g. <code>'file.txt'</code>) by default. If you want them be returned in absolute format (e.g.
-                                                                    <code>'/home/robot/file.txt'</code>), give the <code>absolute</code> argument a true value (see
-                                                                    <a href="#Boolean%20arguments" class="name">Boolean arguments</a>).
+                                                                    <code>'/home/robot/file.txt'</code>), give the <code>absolute</code> argument a true value (see Boolean arguments).
                                                                 </p>
-                                                                <p>If <code>pattern</code> is given, only items matching it are returned. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>, and in this case matching is case-sensitive.</p>
-                                                                <p>Examples (using also other <a href="#List%20Directory" class="name">List Directory</a> variants):
+                                                                <p>If <code>pattern</code> is given, only items matching it are returned. The pattern matching syntax is explained in introduction, and in this case matching is case-sensitive.</p>
+                                                                <p>Examples (using also other <a href="#list-directory" class="">List Directory</a> variants):
                                                                 </p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1659,7 +1648,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Wrapper for <a href="#List%20Directory" class="name">List Directory</a> that returns only files.
+                                                                <p>Wrapper for <a href="#list-directory" class="">List Directory</a> that returns only files.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1685,7 +1674,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Environment variables are also returned the same way as with <a href="#Get%20Environment%20Variables" class="name">Get Environment Variables</a> keyword.</p>
+                                                                <p>Environment variables are also returned the same way as with <a href="#get-environment-variables" class="">Get Environment Variables</a> keyword.</p>
                                                             </div>
                                                         </div>
 
@@ -1721,11 +1710,11 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Wrapper for <a href="#Get%20File" class="name">Get File</a> that also logs the returned file.
+                                                                <p>Wrapper for <a href="#get-file" class="">Get File</a> that also logs the returned file.
                                                                 </p>
-                                                                <p>The file is logged with the INFO level. If you want something else, just use <a href="#Get%20File" class="name">Get File</a> and the built-in keyword Log with the desired level.
+                                                                <p>The file is logged with the INFO level. If you want something else, just use <a href="#get-file" class="">Get File</a> and the built-in keyword Log with the desired level.
                                                                 </p>
-                                                                <p>See <a href="#Get%20File" class="name">Get File</a> for more information about
+                                                                <p>See <a href="#get-file" class="">Get File</a> for more information about
                                                                     <code>encoding</code> and <code>encoding_errors</code> arguments.
                                                                 </p>
                                                             </div>
@@ -1758,7 +1747,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Uses <a href="#Copy%20Directory" class="name">Copy Directory</a> keyword internally, and
+                                                                <p>Uses <a href="#copy-directory" class="">Copy Directory</a> keyword internally, and
                                                                     <code>source</code> and <code>destination</code> arguments have exactly same semantics as with that keyword.
                                                                 </p>
                                                             </div>
@@ -1791,9 +1780,9 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Arguments have exactly same semantics as with <a href="#Copy%20File" class="name">Copy File</a> keyword.</p>
+                                                                <p>Arguments have exactly same semantics as with <a href="#copy-file" class="">Copy File</a> keyword.</p>
                                                                 <p>If the source and destination are on the same filesystem, rename operation is used. Otherwise file is copied to the destination filesystem and then removed from the original filesystem.</p>
-                                                                <p>See also <a href="#Move%20Files" class="name">Move Files</a>, <a href="#Copy%20File" class="name">Copy File</a>, and <a href="#Copy%20Files" class="name">Copy Files</a>.</p>
+                                                                <p>See also <a href="#move-files" class="">Move Files</a>, <a href="#copy-file" class="">Copy File</a>, and <a href="#copy-files" class="">Copy Files</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -1818,9 +1807,9 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Arguments have exactly same semantics as with <a href="#Copy%20Files" class="name">Copy
+                                                                <p>Arguments have exactly same semantics as with <a href="#copy-files" class="">Copy
                                                                         Files</a> keyword.</p>
-                                                                <p>See also <a href="#Move%20File" class="name">Move File</a>, <a href="#Copy%20File" class="name">Copy File</a>, and <a href="#Copy%20Files" class="name">Copy Files</a>.</p>
+                                                                <p>See also <a href="#move-file" class="">Move File</a>, <a href="#copy-file" class="">Copy File</a>, and <a href="#copy-files" class="">Copy Files</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -1855,7 +1844,7 @@
                                                                     <li>Collapses redundant separators and up-level references.</li>
                                                                     <li>Converts <code>/</code> to <code>\</code> on Windows.</li>
                                                                     <li>Replaces initial <code>~</code> or <code>~user</code> by that user's home directory. The latter is not supported on Jython.</li>
-                                                                    <li>If <code>case_normalize</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>) on Windows, converts the path to all lowercase.</li>
+                                                                    <li>If <code>case_normalize</code> is given a true value (see Boolean arguments) on Windows, converts the path to all lowercase.</li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1918,8 +1907,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Removes the directory pointed to by the given <code>path</code>.</p>
-                                                                <p>If the second argument <code>recursive</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the directory is removed recursively. Otherwise removing fails if
-                                                                    the directory is not empty.</p>
+                                                                <p>If the second argument <code>recursive</code> is given a true value (see Boolean arguments), the directory is removed recursively. Otherwise removing fails if the directory is not empty.</p>
                                                                 <p>If the directory pointed to by the <code>path</code> does not exist, the keyword passes, but it fails, if the <code>path</code> points to a file.</p>
                                                             </div>
                                                         </div>
@@ -1973,8 +1961,7 @@
                                                                 </table>
 
                                                                 <p>Passes if the file does not exist, but fails if the path does not point to a regular file (e.g. it points to a directory).</p>
-                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>. If the path is a pattern, all files matching it
-                                                                    are removed.</p>
+                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in introduction. If the path is a pattern, all files matching it are removed.</p>
                                                             </div>
                                                         </div>
 
@@ -1998,7 +1985,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Uses <a href="#Remove%20File" class="name">Remove File</a> to remove multiple files one-by-one.
+                                                                <p>Uses <a href="#Remove-file" class="">Remove File</a> to remove multiple files one-by-one.
                                                                 </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -2033,10 +2020,10 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The execution status of the command <b>is not checked</b> by this keyword, and it must be done separately based on the returned output. If the execution return code is needed, either <a href="#Run%20And%20Return%20Rc" class="name">Run And Return RC</a> or <a href="#Run%20And%20Return%20Rc%20And%20Output" class="name">Run And Return RC And Output</a> can be used.</p>
+                                                                <p>The execution status of the command <b>is not checked</b> by this keyword, and it must be done separately based on the returned output. If the execution return code is needed, either <a href="#run-and-return-rc" class="">Run And Return RC</a> or <a href="#run-and-return-rc-and-output" class="">Run And Return RC And Output</a> can be used.</p>
                                                                 <p>The standard error stream is automatically redirected to the standard output stream by adding
-                                                                    <code>2&gt;&amp;1</code> after the executed command. This automatic redirection is done only when the executed command does not contain additional output redirections. You can thus freely forward the standard
-                                                                    error somewhere else, for example, like
+                                                                    <code>2&gt;&amp;1</code> after the executed command. This automatic redirection is done only when the executed command does not contain additional output redirections. You can thus freely forward the standard error somewhere else,
+                                                                    for example, like
                                                                     <code>my_command 2&gt;stderr.txt</code>.
                                                                 </p>
                                                                 <p>The returned output contains everything written into the standard output or error streams by the command (unless either of them is redirected explicitly). Many commands add an extra newline (
@@ -2080,8 +2067,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p><b>TIP:</b> Run Process keyword provided by the Process
-                                                                    library supports better process configuration and is generally recommended as a replacement for this keyword.</p>
+                                                                <p><b>TIP:</b> Run Process keyword provided by the Process library supports better process configuration and is generally recommended as a replacement for this keyword.</p>
                                                             </div>
                                                         </div>
 
@@ -2106,8 +2092,8 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The return code (RC) is returned as a positive integer in range from 0 to 255 as returned by the executed command. On some operating systems (notable Windows) original return codes can be something else, but
-                                                                    this keyword always maps them to the 0-255 range. Since the RC is an integer, it must be checked e.g. with the keyword Should Be Equal As Integers instead of Should Be Equal (both are built-in keywords).</p>
+                                                                <p>The return code (RC) is returned as a positive integer in range from 0 to 255 as returned by the executed command. On some operating systems (notable Windows) original return codes can be something else, but this keyword always maps
+                                                                    them to the 0-255 range. Since the RC is an integer, it must be checked e.g. with the keyword Should Be Equal As Integers instead of Should Be Equal (both are built-in keywords).</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -2131,10 +2117,9 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>See <a href="#Run" class="name">Run</a> and <a href="#Run%20And%20Return%20Rc%20And%20Output" class="name">Run And Return RC And Output</a> if you need to get the output of the executed command.
+                                                                <p>See <a href="#Run" class="">Run</a> and <a href="#run-and-return-rc-and-output" class="">Run And Return RC And Output</a> if you need to get the output of the executed command.
                                                                 </p>
-                                                                <p><b>TIP:</b> Run Process keyword provided by the Process
-                                                                    library supports better process configuration and is generally recommended as a replacement for this keyword.</p>
+                                                                <p><b>TIP:</b> Run Process keyword provided by the Process library supports better process configuration and is generally recommended as a replacement for this keyword.</p>
                                                             </div>
                                                         </div>
 
@@ -2159,7 +2144,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The return code (RC) is returned similarly as with <a href="#Run%20And%20Return%20Rc" class="name">Run And Return RC</a> and the output similarly as with <a href="#Run" class="name">Run</a>.</p>
+                                                                <p>The return code (RC) is returned similarly as with <a href="#run-and-return-rc" class="">Run And Return RC</a> and the output similarly as with <a href="#Run" class="">Run</a>.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -2205,8 +2190,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p><b>TIP:</b> Run Process keyword provided by the Process
-                                                                    library supports better process configuration and is generally recommended as a replacement for this keyword.</p>
+                                                                <p><b>TIP:</b> Run Process keyword provided by the Process library supports better process configuration and is generally recommended as a replacement for this keyword.</p>
                                                             </div>
                                                         </div>
 
@@ -2271,8 +2255,8 @@
                                                                 <p>Changes the modification and access times of the given file to the value determined by
                                                                     <code>mtime</code>. The time can be given in different formats described below. Note that all checks involving strings are case-insensitive. Modified time can only be set to regular files.
                                                                 </p>
-                                                                <p>1) If <code>mtime</code> is a number, or a string that can be converted to a number, it is interpreted as seconds since the UNIX epoch (1970-01-01 00:00:00 UTC). This documentation was originally written about
-                                                                    1177654467 seconds after the epoch.</p>
+                                                                <p>1) If <code>mtime</code> is a number, or a string that can be converted to a number, it is interpreted as seconds since the UNIX epoch (1970-01-01 00:00:00 UTC). This documentation was originally written about 1177654467 seconds after
+                                                                    the epoch.</p>
                                                                 <p>2) If <code>mtime</code> is a timestamp, that time will be used. Valid timestamp formats are
                                                                     <code>YYYY-MM-DD hh:mm:ss</code> and <code>YYYYMMDD hhmmss</code>.
                                                                 </p>
@@ -2344,8 +2328,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>. The default error message can be overridden with
-                                                                    the <code>msg</code> argument.</p>
+                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in introduction. The default error message can be overridden with the <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
 
@@ -2376,8 +2359,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>. The default error message can be overridden with
-                                                                    the <code>msg</code> argument.</p>
+                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in introduction. The default error message can be overridden with the <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
 
@@ -2402,9 +2384,8 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The given path is first normalized (e.g. possible trailing path separators removed, special directories <code>..</code> and <code>.</code> removed). The base path and extension are returned as separate components
-                                                                    so that the dot used as an extension separator is removed. If the path contains no extension, an empty string is returned for it. Possible leading and trailing dots in the file name are never considered
-                                                                    to be extension separators.</p>
+                                                                <p>The given path is first normalized (e.g. possible trailing path separators removed, special directories <code>..</code> and <code>.</code> removed). The base path and extension are returned as separate components so that the dot used
+                                                                    as an extension separator is removed. If the path contains no extension, an empty string is returned for it. Possible leading and trailing dots in the file name are never considered to be extension separators.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -2562,8 +2543,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>. If the path is a pattern, the keyword returns when
-                                                                    an item matching it is created.</p>
+                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in introduction. If the path is a pattern, the keyword returns when an item matching it is created.</p>
                                                                 <p>The optional <code>timeout</code> can be used to control the maximum time of waiting. The timeout is given as a timeout string, e.g. in a format <code>15 seconds</code>,
                                                                     <code>1min 10s</code> or just <code>10</code>. The time string format is described in an appendix of Autosphere User Guide.
                                                                 </p>
@@ -2598,8 +2578,8 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in <a href="#Introduction" class="name">introduction</a>. If the path is a pattern, the keyword waits until
-                                                                    all matching items are removed.</p>
+                                                                <p>The path can be given as an exact path or as a glob pattern. The pattern matching syntax is explained in introduction. If the path is a pattern, the keyword waits until all matching items are removed.
+                                                                </p>
                                                                 <p>The optional <code>timeout</code> can be used to control the maximum time of waiting. The timeout is given as a timeout string, e.g. in a format <code>15 seconds</code>,
                                                                     <code>1min 10s</code> or just <code>10</code>. The time string format is described in an appendix of Autosphere User Guide.
                                                                 </p>
@@ -2610,7 +2590,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
