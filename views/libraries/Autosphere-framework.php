@@ -91,7 +91,26 @@
                                         </span>
                                     </a>
                                 </div> 
-                            </div>                          
+                            </div>  
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-browser-selenium">
+                                        <span>
+                                            <h6>Autosphere.Browser.Selenium</h6>
+                                            <p>Browser is a web testing library for Autosphere, based on the popular SeleniumLibrary.</p>
+                                        </span>
+                                    </a>
+                                </div>   
+                                <div class="col-lg-6">
+
+                                    <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-browser-playwright">
+                                        <span>
+                                            <h6>Autosphere.Browser.Playwright</h6>
+                                            <p>Browser library is a browser automation library for Autosphere.</p>
+                                        </span>
+                                    </a>
+                                </div> 
+                            </div>                         
                             <div class="row">
 
                                 <div class="col-lg-6">
