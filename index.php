@@ -306,7 +306,7 @@ if (isset($_SESSION['id'])) {
         <head>
             <meta charset="UTF-8">
             <title>Autosphere login</title>
-            <link data-react-helmet="true" rel="icon" href="./images/fev.png" />
+            <link data-react-helmet="true" rel="icon" href="web/images/fev.png" />
             <link rel='stylesheet prefetch'
                   href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
             <!--<link rel="stylesheet" href="css/style.css">-->

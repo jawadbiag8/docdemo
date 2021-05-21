@@ -356,6 +356,36 @@
                                     </a>
 
                                 </div>
+                                <div class="col-lg-6">
+
+                                    <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-robot-log-listener">
+                                        <span>
+                                            <h6>Authsphere.Robot.Log.Listener</h6>
+                                            <p>RobotLogListener is a library for controlling logging during a Robot Framework execution using the listener API.</p>
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="col-lg-6">
+
+                                    <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-json">
+                                        <span>
+                                            <h6>Autosphere.Json</h6>
+                                            <p>JSON is a library for manipulating JSON files and strings.</p>
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="col-lg-6">
+
+                                    <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-crypto">
+                                        <span>
+                                            <h6>Autosphere.Crypto</h6>
+                                            <p>Library for common encryption and hashing operations.</p>
+                                        </span>
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
 

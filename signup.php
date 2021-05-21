@@ -268,7 +268,7 @@ if (isset($_SESSION['id'])) {
         <head>
             <meta charset="UTF-8">
             <title>Autosphere login</title>
-            <link data-react-helmet="true" rel="icon" href="./images/fev.png" />
+            <link data-react-helmet="true" rel="icon" href="web/images/fev.png" />
             <link rel='stylesheet prefetch'
                   href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
             <!--<link rel="stylesheet" href="css/style.css">-->
@@ -400,7 +400,6 @@ if (isset($_SESSION['id'])) {
                         }
                     });
                     $("#usersform").submit(function (e) {
-                        debugger;
                         email = '';
                         username = '';
                         var flag = 0;
@@ -457,6 +456,8 @@ if (isset($_SESSION['id'])) {
                             $("#type").parent().removeClass('focused  error');
                         }
                         if (email !== '' || username !== '') {
+                            debugger;
+
                             $.ajax({
                                 type: 'POST',
                                 url: 'backend-script/admin.php',
@@ -465,18 +466,23 @@ if (isset($_SESSION['id'])) {
                                     "username": $("#username").val(),
                                     "checkdata": true},
                                 success: function (result) {
+                                    debugger;
+
                                     var obj = JSON.parse(result);
                                     if (obj['email']) {
                                         flag = 1;
                                         showNotification('alert-danger', "This email is not availabe", 'bottom', 'right', '', '');
                                         $("#email").next().animate({'opacity': '0', 'right': '20'}, 200);
+                                        $("#email").val('');
                                     }
                                     if (obj['username']) {
                                         flag = 1;
                                         showNotification('alert-danger', "This username is not availabe", 'bottom', 'right', '', '');
                                         $("#username").next().animate({'opacity': '0', 'right': '20'}, 200);
+                                        $("#username").val('');
+
                                     }
-                                }
+                                }, async: false
                             });
                         }
                         if (flag == 1) {

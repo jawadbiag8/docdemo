@@ -171,7 +171,9 @@
             } else {
                 $("#type").parent().removeClass('focused  error');
             }
-            if (email !== '' || username !== '') {
+            if (email !== '' && username !== '' || flag == 0) {
+                debugger;
+
                 $.ajax({
                     type: 'POST',
                     url: '../backend-script/admin.php',
@@ -180,20 +182,48 @@
                         "username": $("#username").val(),
                         "checkdata": true},
                     success: function (result) {
+                        debugger;
+
                         var obj = JSON.parse(result);
                         if (obj['email']) {
                             flag = 1;
                             showNotification('alert-danger', "This email is not availabe", 'bottom', 'right', '', '');
-
+                            $("#email").next().animate({'opacity': '0', 'right': '20'}, 200);
+                            $("#email").val('');
                         }
                         if (obj['username']) {
                             flag = 1;
                             showNotification('alert-danger', "This username is not availabe", 'bottom', 'right', '', '');
+                            $("#username").next().animate({'opacity': '0', 'right': '20'}, 200);
+                            $("#username").val('');
 
                         }
-                    }
+                    }, async: false
                 });
             }
+//            if (email !== '' || username !== '') {
+//                $.ajax({
+//                    type: 'POST',
+//                    url: '../backend-script/admin.php',
+//                    data: {
+//                        "email": $("#email").val(),
+//                        "username": $("#username").val(),
+//                        "checkdata": true},
+//                    success: function (result) {
+//                        var obj = JSON.parse(result);
+//                        if (obj['email']) {
+//                            flag = 1;
+//                            showNotification('alert-danger', "This email is not availabe", 'bottom', 'right', '', '');
+//
+//                        }
+//                        if (obj['username']) {
+//                            flag = 1;
+//                            showNotification('alert-danger', "This username is not availabe", 'bottom', 'right', '', '');
+//
+//                        }
+//                    }
+//                });
+//            }
             if (flag == 1) {
                 showNotification('alert-danger', "Plese Fill all the fields", 'bottom', 'right', '', '');
                 e.preventDefault();

@@ -51,7 +51,8 @@
         </div>
         <!-- #END# Headings -->
         <aside class="cdpwWb">
-            <div class="float-right m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=marias-task">Next chapter <i class="material-icons">navigate_next</i></a></div>
+            <div class="float-right m-b-50">
+                <a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=marias-task">Next chapter</a></div>
         </aside>
     </div>
 </section>

@@ -14,7 +14,7 @@
                         <div class="sc-kLgntA iHaOcn">
                             <nav class="sc-bYEvPH khGBIg">
                                 <ol class="breadcrumb breadcrumb-col-cyan">
-                                    <li><a href="../..//docdemo/views/index.php">Home</a></li>
+                                    <li><a href="../views/index.php">Home</a></li>
                                     <li><a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=intro">Keyword libraries</a></li>
                                     <li><a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=intro">Autosphere Package</a></li>
                                     <li class="active">Autosphere.Browser</li>
@@ -257,11 +257,17 @@
                                                     <td></td>
                                                 </tr>
                                             </table>
+<<<<<<< HEAD
                                             <h3 id="Custom locators">Custom locators</h3>
                                             <p>
                                                 If more complex lookups are required than what is provided through the default locators, custom lookup strategies can be created. Using custom locators is a two part process. First, create a
                                                 keyword that returns a WebElement that should be acted on:
                                             </p>
+=======
+                                            <div id="Custom-locators"><h4>Custom locators</h4></div>
+                                            <p>If more complex lookups are required than what is provided through the default locators, custom lookup strategies can be created. Using custom locators is a two part process. First, create a keyword that returns a WebElement
+                                                that should be acted on:</p>
+>>>>>>> e7665475c2a22de7477828aef89b281eb85fb6e2
                                             <table border="1">
                                                 <tr>
                                                     <td>Custom Locator Strategy</td>
@@ -382,28 +388,44 @@
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
+<<<<<<< HEAD
                                                                         <td><a id="link-add-cookie" href="#add-cookie" class="pagelinks">Add Cookie</a></td>
+=======
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
+>>>>>>> e7665475c2a22de7477828aef89b281eb85fb6e2
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                         <td></td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
+<<<<<<< HEAD
                                                                         <td><a id="link-add-cookie" href="#add-cookie" class="pagelinks">Add Cookie</a></td>
+=======
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
+>>>>>>> e7665475c2a22de7477828aef89b281eb85fb6e2
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                         <td>domain=example.com</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
+<<<<<<< HEAD
                                                                         <td><a id="link-add-cookie" href="#add-cookie" class="pagelinks">Add Cookie</a></td>
+=======
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
+>>>>>>> e7665475c2a22de7477828aef89b281eb85fb6e2
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                         <td>expiry=2027-09-28 16:21:35</td>
                                                                         <td># Expiry as timestamp.</td>
                                                                     </tr>
                                                                     <tr>
+<<<<<<< HEAD
                                                                         <td><a id="link-add-cookie" href="#add-cookie" class="pagelinks">Add Cookie</a></td>
+=======
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
+>>>>>>> e7665475c2a22de7477828aef89b281eb85fb6e2
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                         <td>expiry=1822137695</td>
@@ -446,6 +468,7 @@
                                                                     </tr>
                                                                 </table>
 
+<<<<<<< HEAD
                                                                 <p>
                                                                     See <a href="documantation.php?page=additional-learning&node=development-howtos&subnode=web-scraper-robot" class="name">Custom locators</a> for information on how to create
                                                                     and use custom strategies. <a id="link-remove-location-strategy" href="#remove-location-strategy" class="pagelinks">Remove Location Strategy</a> can be used to remove a
@@ -455,6 +478,12 @@
                                                                     Location strategies are automatically removed after leaving the current scope by default. Setting <code>persist</code> to a true value (see
                                                                     <a href="#Boolean-arguments" class="name">Boolean arguments</a>) will cause the location strategy to stay registered throughout the life of the test.
                                                                 </p>
+=======
+                                                                <p>See <a href="#Custom-locators" class="name ptab" >Custom locators</a> for information on how to create and use custom strategies. <a href="#Remove%20Location%20Strategy" class="name">Remove
+                                                                        Location Strategy</a> can be used to remove a registered strategy.</p>
+                                                                <p>Location strategies are automatically removed after leaving the current scope by default. Setting <code>persist</code> to a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>)
+                                                                    will cause the location strategy to stay registered throughout the life of the test.</p>
+>>>>>>> e7665475c2a22de7477828aef89b281eb85fb6e2
                                                             </div>
                                                         </div>
 
@@ -3293,7 +3322,11 @@
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
+<<<<<<< HEAD
                                                                         <td><a id="link-add-cookie" href="#add-cookie" class="pagelinks">Add Cookie</a></td>
+=======
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
+>>>>>>> e7665475c2a22de7477828aef89b281eb85fb6e2
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                     </tr>
@@ -7201,10 +7234,14 @@
                                                                     </tr>
                                                                 </table>
 
+<<<<<<< HEAD
                                                                 <p>
                                                                     See <a href="documantation.php?page=additional-learning&node=development-howtos&subnode=web-scraper-robot" class="name">Custom locators</a> for information on how to create
                                                                     and use custom strategies.
                                                                 </p>
+=======
+                                                                <p>See <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-browser#Custom-locators" class="name">Custom locators</a> for information on how to create and use custom strategies.</p>
+>>>>>>> e7665475c2a22de7477828aef89b281eb85fb6e2
                                                             </div>
                                                         </div>
 
@@ -9458,6 +9495,7 @@ Screenshot | locator=//img[@alt="Google"] | filename=${CURDIR}/subdir/loc.png  #
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
+<<<<<<< HEAD
                                                 <fieldset class="sc-eCssSg eeeqEu">
                                                     <input type="text" id="myInput" onkeyup="myFunction()" aria-label="Filter keywords" placeholder="Filter keywords" value="" />
                                                     <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -9467,6 +9505,11 @@ Screenshot | locator=//img[@alt="Google"] | filename=${CURDIR}/subdir/loc.png  #
                                                         ></path>
                                                     </svg>
                                                 </fieldset>
+=======
+                                                <fieldset class="sc-eCssSg eeeqEu"><input type="text" id="myInput" onkeyup="myFunction()" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
+                                                    </svg></fieldset>
+>>>>>>> e7665475c2a22de7477828aef89b281eb85fb6e2
                                             </form>
                                             <div>
                                                 <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">

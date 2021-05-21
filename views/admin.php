@@ -9,8 +9,9 @@ if (isset($_SESSION['data']['id'])) {
             <head>
                 <meta charset="UTF-8">
                 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-                <link rel="icon" href="../web/images/fev.png" type="image/x-icon">
+
                 <title>Autosphere Portal</title>
+                <link rel="shortcut icon" href="../web/images/fev.png" type="image/x-icon">
                 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
                 <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -51,7 +52,7 @@ if (isset($_SESSION['data']['id'])) {
                         <div class="navbar-header">
                             <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                             <a href="javascript:void(0);" class="bars"></a>
-                            <a class="navbar-brand" href="../../docdemo/views/index.php">
+                            <a class="navbar-brand" href="../views/index.php">
                                 <img src="../web/images/logo.png" alt="" />
                             </a>
                         </div>
@@ -73,6 +74,8 @@ if (isset($_SESSION['data']['id'])) {
                             </div>
                             <div class="version">
                                 <b>Version: </b> 1.0.5
+                                <input type="hidden"id="paghist"value=''>
+
                             </div>
                         </div>
                     </aside>
@@ -84,7 +87,7 @@ if (isset($_SESSION['data']['id'])) {
                                 if (isset($_SESSION['data']['id'])) {
                                     ?>
                                     <div class="logout">
-                                        <a href="../../docdemo/logout.php">
+                                        <a href="../logout.php">
                                             <button type="button" class="btn bg-red waves-effect">
                                                 <i class="material-icons">fingerprint</i>
                                                 <span>Logout</span>
@@ -95,7 +98,7 @@ if (isset($_SESSION['data']['id'])) {
                                 } else {
                                     ?>
                                     <div class="logout">
-                                        <a  href="../../docdemo/">
+                                        <a  href="../index.php">
                                             <button type="button" class="btn bg-red waves-effect">
                                                 <i class="material-icons">fingerprint</i>
                                                 <span>Sign In</span>
@@ -132,6 +135,50 @@ if (isset($_SESSION['data']['id'])) {
                 <script>
                     $(document).ready(function () {
                         postload();
+                        $("#searchtext").keyup(function () {
+                            var query = $(this).val();
+                            
+                            if (query == '') {
+                                phis = $("#paghist").val();
+
+                                switch (phis) {
+                                    case 'postload':
+                                        postload();
+                                        break;
+                                    case 'listkeyword':
+                                        listkeyword();
+                                        break;
+                                    case 'listcategory':
+                                        listcategory();
+                                        break;
+                                    case 'listsubcategory':
+                                        listsubcategory();
+                                        break;
+                                    case 'adduser':
+                                        adduser();
+                                        break;
+                                    case 'addcategory':
+                                        addcategory();
+                                        break;
+                                    case 'addsubcategory':
+                                        addsubcategory();
+                                        break;
+                                    default:
+                                    // code block
+                                }
+                            } else {
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '../backend-script/search.php',
+                                    data: {'query': query},
+
+                                    success: function (result) {
+                                        $("#contentpage").empty();
+                                        $("#contentpage").html(result);
+                                    }
+                                });
+                            }
+                        });
                     });
                     function postload() {
                         $.ajax({
@@ -147,6 +194,7 @@ if (isset($_SESSION['data']['id'])) {
 
                                 $("#contentpage").empty();
                                 $("#contentpage").html(result);
+                                $("#paghist").val('postload');
                                 addactive();
                             }
                         });
@@ -166,6 +214,8 @@ if (isset($_SESSION['data']['id'])) {
 
                                 $("#contentpage").empty();
                                 $("#contentpage").html(result);
+                                $("#paghist").val('listkeyword');
+
                                 addactive();
                             }
                         });
@@ -185,6 +235,7 @@ if (isset($_SESSION['data']['id'])) {
 
                                 $("#contentpage").empty();
                                 $("#contentpage").html(result);
+                                $("#paghist").val('listcategory');
                                 addactive();
                             }
                         });
@@ -204,6 +255,8 @@ if (isset($_SESSION['data']['id'])) {
 
                                 $("#contentpage").empty();
                                 $("#contentpage").html(result);
+                                $("#paghist").val('listsubcategory');
+
                                 addactive();
                             }
                         });
@@ -321,6 +374,8 @@ if (isset($_SESSION['data']['id'])) {
 
                                 $("#contentpage").empty();
                                 $("#contentpage").html(result);
+                                $("#paghist").val('adduser');
+
                                 addactive();
                             }
                         });
@@ -339,6 +394,8 @@ if (isset($_SESSION['data']['id'])) {
 
                                 $("#contentpage").empty();
                                 $("#contentpage").html(result);
+                                $("#paghist").val('addkeyword');
+
                                 addactive();
                             }
                         });
@@ -357,6 +414,7 @@ if (isset($_SESSION['data']['id'])) {
 
                                 $("#contentpage").empty();
                                 $("#contentpage").html(result);
+                                $("#paghist").val('addcategory');
                                 addactive();
                             }
                         });
@@ -375,6 +433,7 @@ if (isset($_SESSION['data']['id'])) {
 
                                 $("#contentpage").empty();
                                 $("#contentpage").html(result);
+                                $("#paghist").val('addsubcategory');
                                 addactive();
                             }
                         });

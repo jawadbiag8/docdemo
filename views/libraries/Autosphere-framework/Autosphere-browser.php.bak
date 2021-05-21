@@ -15,7 +15,7 @@
                         <div class="sc-kLgntA iHaOcn">
                             <nav class="sc-bYEvPH khGBIg">
                                 <ol class="breadcrumb breadcrumb-col-cyan">
-                                    <li><a href="../..//docdemo/views/index.php">Home</a></li>
+                                    <li><a href="../views/index.php">Home</a></li>
                                     <li><a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=intro">Keyword libraries</a></li>
                                     <li><a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=intro">Autosphere Package</a></li>
                                     <li class="active">Autosphere.Browser</li>
@@ -370,28 +370,28 @@
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
-                                                                        <td><a href="#Add%20Cookie" class="name">Add Cookie</a></td>
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                         <td></td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Add%20Cookie" class="name">Add Cookie</a></td>
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                         <td>domain=example.com</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Add%20Cookie" class="name">Add Cookie</a></td>
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                         <td>expiry=2027-09-28 16:21:35</td>
                                                                         <td># Expiry as timestamp.</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><a href="#Add%20Cookie" class="name">Add Cookie</a></td>
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                         <td>expiry=1822137695</td>
@@ -435,7 +435,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>See <a href="#Custom%20locators" class="name">Custom locators</a> for information on how to create and use custom strategies. <a href="#Remove%20Location%20Strategy" class="name">Remove
+                                                                <p>See <a href="#Custom-locators" class="name">Custom locators</a> for information on how to create and use custom strategies. <a href="#Remove%20Location%20Strategy" class="name">Remove
                                                                         Location Strategy</a> can be used to remove a registered strategy.</p>
                                                                 <p>Location strategies are automatically removed after leaving the current scope by default. Setting <code>persist</code> to a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>)
                                                                     will cause the location strategy to stay registered throughout the life of the test.</p>
@@ -3234,7 +3234,7 @@
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
-                                                                        <td><a href="#Add%20Cookie" class="name">Add Cookie</a></td>
+                                                                        <td><a href="#add-cookie" class="name">Add Cookie</a></td>
                                                                         <td>foo</td>
                                                                         <td>bar</td>
                                                                     </tr>
@@ -7037,7 +7037,7 @@ return options
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>See <a href="#Custom%20locators" class="name">Custom locators</a> for information on how to create and use custom strategies.</p>
+                                                                <p>See <a href="#Custom-locators" class="name">Custom locators</a> for information on how to create and use custom strategies.</p>
                                                             </div>
                                                         </div>
 

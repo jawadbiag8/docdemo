@@ -29,7 +29,7 @@ if (isset($_POST['addpost'])) {
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <title>Editors | Bootstrap Based Admin Template - Material Design</title>
         <!-- Favicon-->
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../web/images/fev.png" type="image/x-icon">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -82,7 +82,7 @@ if (isset($_POST['addpost'])) {
                 <div class="navbar-header">
                     <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                     <a href="javascript:void(0);" class="bars"></a>
-                    <a class="navbar-brand" href="../../docdemo/views/index.php"> 
+                    <a class="navbar-brand" href="../views/index.php"> 
                         <img src="../web/images/logo.png" alt=""/>
                     </a>
                 </div>
@@ -110,7 +110,7 @@ if (isset($_POST['addpost'])) {
                         if (isset($_SESSION['data']['id'])) {
                             ?>
                             <div class="logout">
-                                <a href="../../docdemo/logout.php">
+                                <a href="../logout.php">
                                     <button type="button" class="btn bg-red waves-effect">
                                         <i class="material-icons">fingerprint</i>
                                         <span>Logout</span>
@@ -121,7 +121,7 @@ if (isset($_POST['addpost'])) {
                         } else {
                             ?>
                             <div class="logout">
-                                <a  href="../../docdemo/">
+                                <a  href="../index.php">
                                     <button type="button" class="btn bg-red waves-effect">
                                         <i class="material-icons">fingerprint</i>
                                         <span>Sign In</span>
@@ -249,7 +249,7 @@ if (isset($_POST['addpost'])) {
 
         <!-- TinyMCE -->
         <script src="../plugins/tinymce/tinymce.js"></script>
-        <script src="../../docdemo/js/summernote-bs4.min.js"></script>
+        <script src="../js/summernote-bs4.min.js"></script>
 
         <!-- Custom Js -->
         <script src="../js/admin.js"></script>

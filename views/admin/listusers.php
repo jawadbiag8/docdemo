@@ -24,6 +24,8 @@
                         <thead>
                             <tr style="text-align: center;">
                                 <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
                                 <th>User Name</th>
                                 <!--<th>Password</th>-->
                                 <th>Type</th>
@@ -36,6 +38,8 @@
                             echo '  
                                <tr>
                                     <td>' . $row["id"] . '</td>  
+                                    <td>' . ucfirst($row["f_name"]). ' ' .ucfirst($row["l_name"]).'</td>  
+                                    <td>' . $row["email"] . '</td>  
                                     <td>' . $row["username"] . '</td>  
                                     <td>' . $row["type"] . '</td>  
                                     <td>' . $row["status"] . '</td>  
