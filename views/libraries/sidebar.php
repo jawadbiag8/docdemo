@@ -39,6 +39,24 @@
                     </a>
                 </li>
                 <li class="<?php
+                if ($subnode == "Autosphere-browser-Selenium") {
+                    echo 'active';
+                }
+                ?>">
+                    <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-browser-Selenium">
+                        <span>Autosphere.Browser.Selenium</span>
+                    </a>
+                </li>
+                <li class="<?php
+                if ($subnode == "Autosphere-browser-playwright") {
+                    echo 'active';
+                }
+                ?>">
+                    <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-browser-playwright">
+                        <span>Autosphere.Browser.Playwright</span>
+                    </a>
+                </li>
+                <li class="<?php
                 if ($subnode == "Autosphere-crypto") {
                     echo 'active';
                 }
