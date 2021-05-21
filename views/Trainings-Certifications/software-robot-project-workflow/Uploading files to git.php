@@ -119,7 +119,7 @@ Insert the sales data for the week and export it as a PDF
     </div>
     <!-- #END# Headings -->
     <aside class="cdpwWb">
-    <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=Git-using-Autosphere-studio"><i class="material-icons">navigate_before</i> Previous chapter </a></div>
+    <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-project-workflow&subnode=Git-using-Autosphere-studio">previous chapter </a></div>
     </aside>
   </div>
 </section>

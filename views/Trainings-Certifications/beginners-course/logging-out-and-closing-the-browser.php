@@ -187,7 +187,7 @@ Insert the sales data for the week and export it as a PDF
         <!-- #END# Headings -->
         <aside class="cdpwWb">
             
-            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=creating-pdf"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=beginners-course&subnode=creating-pdf">previous chapter</a></div>
         </aside>
     </div>
 </section>

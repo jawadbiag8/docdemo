@@ -15,7 +15,7 @@
                         <div class="sc-kLgntA iHaOcn">
                             <nav class="sc-bYEvPH khGBIg">
                                 <ol class="breadcrumb breadcrumb-col-cyan">
-                                    <li><a href="../..//docdemo/views/index.php">Home</a></li>
+                                    <li><a href="../views/index.php">Home</a></li>
                                     <li><a href="documantation.php?page=libraries&node=built-in&subnode=intro">Keyword libraries</a></li>
                                     <li><a href="documantation.php?page=libraries&node=built-in&subnode=intro">Built-in</a></li>
                                     <li class="active">DateTime</li>
@@ -52,10 +52,10 @@
                                             <h4 id="Table of contents">Table of contents</h4>
                                             <ul>
                                                 <li><a href="#Terminology" class="name">Terminology</a></li>
-                                                <li><a href="#Date-formats" class="name">Date formats</a></li>
-                                                <li><a href="#Time-formats" class="name">Time formats</a></li>
-                                                <li><a href="#Millisecond-handling" class="name">Millisecond handling</a></li>
-                                                <li><a href="#Programmatic-usage" class="name">Programmatic usage</a></li>
+                                                <li><a href="#Date%20formats" class="name">Date formats</a></li>
+                                                <li><a href="#Time%20formats" class="name">Time formats</a></li>
+                                                <li><a href="#Millisecond%20handling" class="name">Millisecond handling</a></li>
+                                                <li><a href="#Programmatic%20usage" class="name">Programmatic usage</a></li>
                                                 <li><a href="#Shortcuts" class="name">Shortcuts</a></li>
                                                 <li><a href="#Keywords" class="name">Keywords</a></li>
                                             </ul>
@@ -72,8 +72,8 @@
                                             <p>This terminology differs from what Python's standard <a href="http://docs.python.org/library/datetime.html">datetime</a> module uses. Basically its <a href="http://docs.python.org/library/datetime.html#datetime-objects">datetime</a> and <a href="http://docs.python.org/library/datetime.html#timedelta-objects">timedelta</a> objects match
                                                 <code>date</code> and <code>time</code> as defined by this library.
                                             </p>
-                                            <h4 id="Date-formats">Date formats</h4>
-                                            <p>Dates can given to and received from keywords in <a href="#Timestamp" class="name">timestamp</a>, <a href="#Custom-timestamp" class="name">custom timestamp</a>, <a href="#Python-datetime" class="name">Python datetime</a> and <a href="#Epoch-time" class="name">epoch time</a> formats. These
+                                            <h4 id="Date formats">Date formats</h4>
+                                            <p>Dates can given to and received from keywords in <a href="#Timestamp" class="name">timestamp</a>, <a href="#Custom%20timestamp" class="name">custom timestamp</a>, <a href="#Python%20datetime" class="name">Python datetime</a> and <a href="#Epoch%20time" class="name">epoch time</a> formats. These
                                                 formats are discussed thoroughly in subsequent sections.</p>
                                             <p>Input format is determined automatically based on the given date except when using custom timestamps, in
                                                 which case it needs to be given using <code>date_format</code> argument. Default result format is timestamp,
@@ -88,7 +88,7 @@
                                             <p>Dates can also be returned in the same <code>YYYY-MM-DD hh:mm:ss.mil</code> format by using
                                                 <code>timestamp</code> value with <code>result_format</code> argument. This is also the default format that
                                                 keywords returning dates use. Milliseconds can be excluded using <code>exclude_millis</code> as explained in
-                                                <a href="#Millisecond-handling" class="name">Millisecond handling</a> section.
+                                                <a href="#Millisecond%20handling" class="name">Millisecond handling</a> section.
                                             </p>
                                             <p>Examples:</p>
                                             <table border="1">
@@ -125,7 +125,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Custom-timestamp">Custom timestamp</h4>
+                                            <h4 id="Custom timestamp">Custom timestamp</h4>
                                             <p>It is possible to use custom timestamps in both input and output. The custom format is same as accepted by
                                                 Python's <a href="http://docs.python.org/library/datetime.html#strftime-strptime-behavior">datatime.strptime</a>
                                                 function. For example, the default timestamp discussed in the previous section would match
@@ -165,7 +165,7 @@
                                             </table>
                                             <p>Notice that locale aware directives like <code>%b</code> do not work correctly with Jython on non-English
                                                 locales: <a href="http://bugs.jython.org/issue2285">http://bugs.jython.org/issue2285</a></p>
-                                            <h4 id="Python-datetime">Python datetime</h4>
+                                            <h4 id="Python datetime">Python datetime</h4>
                                             <p>Python's standard <a href="http://docs.python.org/library/datetime.html#datetime-objects">datetime</a>
                                                 objects can be used both in input and output. In input they are recognized automatically, and in output it
                                                 is possible to get them by giving <code>datetime</code> value to <code>result_format</code> argument.</p>
@@ -224,7 +224,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Epoch-time">Epoch time</h4>
+                                            <h4 id="Epoch time">Epoch time</h4>
                                             <p>Epoch time is the time in seconds since the <a href="http://en.wikipedia.org/wiki/Unix_time">UNIX epoch</a>
                                                 i.e. 00:00:00.000 (UTC) 1 January 1970. To give a date in epoch time, it must be given as a number (integer
                                                 or float), not as a string. To return a date in epoch time, it is possible to use <code>epoch</code> value
@@ -261,7 +261,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Earliest-supported-date">Earliest supported date</h4>
+                                            <h4 id="Earliest supported date">Earliest supported date</h4>
                                             <p>The earliest date that is supported depends on the date format and to some extend on the platform:</p>
                                             <ul>
                                                 <li>Timestamps support year 1900 and above.</li>
@@ -270,10 +270,10 @@
                                                 <li>On other platforms epoch time supports 1900 and above or even earlier.</li>
                                             </ul>
 
-                                            <h4 id="Time-formats">Time formats</h4>
+                                            <h4 id="Time formats">Time formats</h4>
                                             <p>Similarly as dates, times can be given to and received from keywords in various different formats. Supported
-                                                formats are <a href="#Number" class="name">number</a>, <a href="#Time-string" class="name">time string</a>
-                                                (verbose and compact), <a href="#Timer-string" class="name">timer string</a> and <a href="#Python-timedelta" class="name">Python timedelta</a>.</p>
+                                                formats are <a href="#Number" class="name">number</a>, <a href="#Time%20string" class="name">time string</a>
+                                                (verbose and compact), <a href="#Timer%20string" class="name">timer string</a> and <a href="#Python%20timedelta" class="name">Python timedelta</a>.</p>
                                             <p>Input format for time is always determined automatically based on the input. Result format is number by
                                                 default, but it can be customised using <code>result_format</code> argument.</p>
                                             <h4 id="Number">Number</h4>
@@ -310,7 +310,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Time-string">Time string</h4>
+                                            <h4 id="Time string">Time string</h4>
                                             <p>Time strings are strings in format like <code>1 minute 42 seconds</code> or <code>1min 42s</code>. The basic
                                                 idea of this format is having first a number and then a text specifying what time that number represents.
                                                 Numbers can be either integers or floating point numbers, the whole format is case and space insensitive,
@@ -370,13 +370,13 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Timer-string">Timer string</h4>
+                                            <h4 id="Timer string">Timer string</h4>
                                             <p>Timer string is a string given in timer like format <code>hh:mm:ss.mil</code>. In this format both hour and
                                                 millisecond parts are optional, leading and trailing zeros can be left out when they are not meaningful, and
                                                 negative times can be represented by adding a minus prefix.</p>
                                             <p>To return a time as timer string, <code>result_format</code> argument must be given value <code>timer</code>.
                                                 Timer strings are by default returned in full <code>hh:mm:ss.mil</code> format, but milliseconds can be
-                                                excluded using <code>exclude_millis</code> as explained in <a href="#Millisecond-handling" class="name">Millisecond handling</a> section.</p>
+                                                excluded using <code>exclude_millis</code> as explained in <a href="#Millisecond%20handling" class="name">Millisecond handling</a> section.</p>
                                             <p>Examples:</p>
                                             <table border="1">
                                                 <tbody>
@@ -438,7 +438,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Python-timedelta">Python timedelta</h4>
+                                            <h4 id="Python timedelta">Python timedelta</h4>
                                             <p>Python's standard <a href="http://docs.python.org/library/datetime.html#datetime.timedelta">timedelta</a>
                                                 objects are also supported both in input and in output. In input they are recognized automatically, and in
                                                 output it is possible to receive them by giving <code>timedelta</code> value to <code>result_format</code>
@@ -460,9 +460,9 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Millisecond-handling">Millisecond handling</h4>
-                                            <p>This library handles dates and times internally using the precision of the given input. With <a href="#Timestamp" class="name">timestamp</a>, <a href="#Time-string" class="name">time string</a>, and
-                                                <a href="#Timer-string" class="name">timer string</a> result formats seconds are, however, rounded to
+                                            <h4 id="Millisecond handling">Millisecond handling</h4>
+                                            <p>This library handles dates and times internally using the precision of the given input. With <a href="#Timestamp" class="name">timestamp</a>, <a href="#Time%20string" class="name">time string</a>, and
+                                                <a href="#Timer%20string" class="name">timer string</a> result formats seconds are, however, rounded to
                                                 millisecond accuracy. Milliseconds may also be included even if there would be none.
                                             </p>
                                             <p>All keywords returning dates or times have an option to leave milliseconds out by giving a true value to
@@ -472,7 +472,7 @@
                                                     in Python</a>.
                                             </p>
                                             <p>When milliseconds are excluded, seconds in returned dates and times are rounded to the nearest full second.
-                                                With <a href="#Timestamp" class="name">timestamp</a> and <a href="#Timer-string" class="name">timer
+                                                With <a href="#Timestamp" class="name">timestamp</a> and <a href="#Timer%20string" class="name">timer
                                                     string</a> result formats, milliseconds will also be removed from the returned string altogether.</p>
                                             <p>Examples:</p>
                                             <table border="1">
@@ -556,7 +556,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Programmatic-usage">Programmatic usage</h4>
+                                            <h4 id="Programmatic usage">Programmatic usage</h4>
                                             <p>In addition to be used as normal library, this library is intended to provide a stable API for other
                                                 libraries to use if they want to support same date and time formats as this library. All the provided
                                                 keywords are available as functions that can be easily imported:</p>
@@ -633,11 +633,12 @@
 
                                                                 <p>Arguments:</p>
                                                                 <ul>
-                                                                    <li><code>date:</code> Date to add time to in one of the supported date formats.</li>
-                                                                    <li><code>time:</code> Time that is added in one of the supported time formats.</li>
+                                                                    <li><code>date:</code> Date to add time to in one of the supported <a href="#Date%20formats" class="name">date formats</a>.</li>
+                                                                    <li><code>time:</code> Time that is added in one of the supported <a href="#Time%20formats" class="name">time formats</a>.</li>
                                                                     <li><code>result_format:</code> Format of the returned date.</li>
-                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in millisecond handling.</li>
-                                                                    <li><code>date_format:</code> Possible custom timestamp format of <code>date</code>.</li>
+                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in <a href="#Millisecond%20handling" class="name">millisecond handling</a>.</li>
+                                                                    <li><code>date_format:</code> Possible <a href="#Custom%20timestamp" class="name">custom
+                                                                            timestamp</a> format of <code>date</code>.</li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -710,10 +711,10 @@
 
                                                                 <p>Arguments:</p>
                                                                 <ul>
-                                                                    <li><code>time1:</code> First time in one of the supported time formats.</li>
-                                                                    <li><code>time2:</code> Second time in one of the supported time formats.</li>
+                                                                    <li><code>time1:</code> First time in one of the supported <a href="#Time%20formats" class="name">time formats</a>.</li>
+                                                                    <li><code>time2:</code> Second time in one of the supported <a href="#Time%20formats" class="name">time formats</a>.</li>
                                                                     <li><code>result_format:</code> Format of the returned time.</li>
-                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in millisecond handling.</li>
+                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in <a href="#Millisecond%20handling" class="name">millisecond handling</a>.</li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -791,14 +792,14 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Converts between supported <a href="#Date-formats" class="name">date formats</a>.</p>
+                                                                <p>Converts between supported <a href="#Date%20formats" class="name">date formats</a>.</p>
                                                                 <p>Arguments:</p>
                                                                 <ul>
-                                                                    <li><code>date:</code> Date in one of the supported <a href="#Date-formats" class="name">date
+                                                                    <li><code>date:</code> Date in one of the supported <a href="#Date%20formats" class="name">date
                                                                             formats</a>.</li>
                                                                     <li><code>result_format:</code> Format of the returned date.</li>
-                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in millisecond handling.</li>
-                                                                    <li><code>date_format:</code> Specifies possible <a href="#Custom-timestamp" class="name">custom timestamp</a> format.</li>
+                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in <a href="#Millisecond%20handling" class="name">millisecond handling</a>.</li>
+                                                                    <li><code>date_format:</code> Specifies possible <a href="#Custom%20timestamp" class="name">custom timestamp</a> format.</li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -880,13 +881,13 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Converts between supported <a href="#Time-formats" class="name">time formats</a>.</p>
+                                                                <p>Converts between supported <a href="#Time%20formats" class="name">time formats</a>.</p>
                                                                 <p>Arguments:</p>
                                                                 <ul>
-                                                                    <li><code>time:</code> Time in one of the supported <a href="#Time-formats" class="name">time
+                                                                    <li><code>time:</code> Time in one of the supported <a href="#Time%20formats" class="name">time
                                                                             formats</a>.</li>
                                                                     <li><code>result_format:</code> Format of the returned time.</li>
-                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in millisecond handling.</li>
+                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in <a href="#Millisecond%20handling" class="name">millisecond handling</a>.</li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -980,9 +981,9 @@
                                                                     <li><code>time_zone:</code> Get the current time on this time zone. Currently only
                                                                         <code>local</code> (default) and <code>UTC</code> are supported.
                                                                     </li>
-                                                                    <li><code>increment:</code> Optional time increment to add to the returned date in one of the supported <a href="#Time-formats" class="name">time formats</a>. Can be negative.</li>
-                                                                    <li><code>result_format:</code> Format of the returned date (see date formats).</li>
-                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in millisecond handling.</li>
+                                                                    <li><code>increment:</code> Optional time increment to add to the returned date in one of the supported <a href="#Time%20formats" class="name">time formats</a>. Can be negative.</li>
+                                                                    <li><code>result_format:</code> Format of the returned date (see <a href="#Date%20formats" class="name">date formats</a>).</li>
+                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in <a href="#Millisecond%20handling" class="name">millisecond handling</a>.</li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1109,12 +1110,14 @@
 
                                                                 <p>Arguments:</p>
                                                                 <ul>
-                                                                    <li><code>date1:</code> Date to subtract another date from in one of the supported <a href="#Date-formats" class="name">date formats</a>.</li>
-                                                                    <li><code>date2:</code> Date that is subtracted in one of the supported <a href="#Date-formats" class="name">date formats</a>.</li>
-                                                                    <li><code>result_format:</code> Format of the returned time (see time formats).</li>
-                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in millisecond handling.</li>
-                                                                    <li><code>date1_format:</code> Possible custom timestamp format of <code>date1</code>.</li>
-                                                                    <li><code>date2_format:</code> Possible custom timestamp format of <code>date2</code>.</li>
+                                                                    <li><code>date1:</code> Date to subtract another date from in one of the supported <a href="#Date%20formats" class="name">date formats</a>.</li>
+                                                                    <li><code>date2:</code> Date that is subtracted in one of the supported <a href="#Date%20formats" class="name">date formats</a>.</li>
+                                                                    <li><code>result_format:</code> Format of the returned time (see <a href="#Time%20formats" class="name">time formats</a>).</li>
+                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in <a href="#Millisecond%20handling" class="name">millisecond handling</a>.</li>
+                                                                    <li><code>date1_format:</code> Possible <a href="#Custom%20timestamp" class="name">custom
+                                                                            timestamp</a> format of <code>date1</code>.</li>
+                                                                    <li><code>date2_format:</code> Possible <a href="#Custom%20timestamp" class="name">custom
+                                                                            timestamp</a> format of <code>date2</code>.</li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1197,11 +1200,12 @@
 
                                                                 <p>Arguments:</p>
                                                                 <ul>
-                                                                    <li><code>date:</code> Date to subtract time from in one of the supported <a href="#Date-formats" class="name">date formats</a>.</li>
-                                                                    <li><code>time:</code> Time that is subtracted in one of the supported time formats.</li>
+                                                                    <li><code>date:</code> Date to subtract time from in one of the supported <a href="#Date%20formats" class="name">date formats</a>.</li>
+                                                                    <li><code>time:</code> Time that is subtracted in one of the supported <a href="#Time%20formats" class="name">time formats</a>.</li>
                                                                     <li><code>result_format:</code> Format of the returned date.</li>
-                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in millisecond handling.</li>
-                                                                    <li><code>date_format:</code> Possible custom timestamp format of <code>date</code>.</li>
+                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in <a href="#Millisecond%20handling" class="name">millisecond handling</a>.</li>
+                                                                    <li><code>date_format:</code> Possible <a href="#Custom%20timestamp" class="name">custom
+                                                                            timestamp</a> format of <code>date</code>.</li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1274,10 +1278,10 @@
 
                                                                 <p>Arguments:</p>
                                                                 <ul>
-                                                                    <li><code>time1:</code> Time to subtract another time from in one of the supported <a href="#Time-formats" class="name">time formats</a>.</li>
-                                                                    <li><code>time2:</code> Time to subtract in one of the supported time formats.</li>
+                                                                    <li><code>time1:</code> Time to subtract another time from in one of the supported <a href="#Time%20formats" class="name">time formats</a>.</li>
+                                                                    <li><code>time2:</code> Time to subtract in one of the supported <a href="#Time%20formats" class="name">time formats</a>.</li>
                                                                     <li><code>result_format:</code> Format of the returned time.</li>
-                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in millisecond handling.</li>
+                                                                    <li><code>exclude_millis:</code> When set to any true value, rounds and drops milliseconds as explained in <a href="#Millisecond%20handling" class="name">millisecond handling</a>.</li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1316,6 +1320,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">

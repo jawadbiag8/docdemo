@@ -26,7 +26,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-archive">
-                        <span>Autosphere.Archive</span>
+                        <span>Autosphere Archive</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -35,25 +35,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-browser">
-                        <span>Autosphere.Browser</span>
-                    </a>
-                </li>
-                <li class="<?php
-                if ($subnode == "Autosphere-browser-Selenium") {
-                    echo 'active';
-                }
-                ?>">
-                    <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-browser-Selenium">
-                        <span>Autosphere.Browser.Selenium</span>
-                    </a>
-                </li>
-                <li class="<?php
-                if ($subnode == "Autosphere-browser-playwright") {
-                    echo 'active';
-                }
-                ?>">
-                    <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-browser-playwright">
-                        <span>Autosphere.Browser.Playwright</span>
+                        <span>Autosphere Browser</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -62,7 +44,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-crypto">
-                        <span>Autospere.Crypto</span>
+                        <span>Autospere Crypto</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -71,7 +53,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-database">
-                        <span>Autospere.Database</span>
+                        <span>Autospere Database</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -80,7 +62,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-desktop">
-                        <span>Autospere.Desktop</span>
+                        <span>Autospere Desktop</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -89,7 +71,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-desktop-clipboard">
-                        <span>Autosphere.Desktop.Clipboard</span>
+                        <span>Autosphere Desktop Clipboard</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -98,7 +80,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-desktop-operatingsystem">
-                        <span>Autosphere.Desktop.Operatingsystem</span>
+                        <span>Autosphere Desktop Operatingsystem</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -107,7 +89,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-desktop-windows">
-                        <span>Autosphere.Desktop.Windows</span>
+                        <span>Autosphere Desktop Windows</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -116,7 +98,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-dialogs">
-                        <span>Autosphere-Dialogs</span>
+                        <span>Autosphere Dialogs</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -125,7 +107,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-email-exchange">
-                        <span>Autosphere.Email.Exchange</span>
+                        <span>Autosphere Email Exchange</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -134,7 +116,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-email-imapsmtp">
-                        <span>Autosphere.Email.ImapSmtp</span>
+                        <span>Autosphere Email ImapSmtp</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -143,7 +125,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-excel-application">
-                        <span>Autosphere.Excel.Application</span>
+                        <span>Autosphere Excel Application</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -152,7 +134,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-excel-files">
-                        <span>Autosphere.Excel.Files</span>
+                        <span>Autosphere Excel Files</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -161,7 +143,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-filesystem">
-                        <span>Autosphere.Filesystem</span>
+                        <span>Autosphere Filesystem</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -170,7 +152,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-ftp">
-                        <span>Autosphere.FTP</span>
+                        <span>Autosphere FTP</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -179,7 +161,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-http">
-                        <span>Autosphere.HTTP</span>
+                        <span>Autosphere HTTP</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -188,7 +170,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-images">
-                        <span>Autosphere.Images</span>
+                        <span>Autosphere Images</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -197,7 +179,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-json">
-                        <span>Autosphere.Json</span>
+                        <span>Autosphere Json</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -206,7 +188,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-netsuite">
-                        <span>Autosphere.Netsuite</span>
+                        <span>Autosphere Netsuite</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -215,7 +197,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-notifier">
-                        <span>Autosphere.Notifier</span>
+                        <span>Autosphere Notifier</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -224,7 +206,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-outlook-application">
-                        <span>Autosphere.Outlook.Application</span>
+                        <span>Autosphere Outlook Application</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -233,7 +215,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-pdf">
-                        <span>Autosphere.PDF</span>
+                        <span>Autosphere PDF</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -242,7 +224,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-robot-log-listener">
-                        <span>Autosphere.Robot.Log.Listener</span>
+                        <span>Autosphere Robot Log Listener</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -251,7 +233,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-salesforce">
-                        <span>Autosphere.Salesforce</span>
+                        <span>Autosphere Salesforce</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -260,7 +242,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-sap">
-                        <span>Autosphere.SAP</span>
+                        <span>Autosphere SAP</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -269,7 +251,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-slack">
-                        <span>Autosphere.Slack</span>
+                        <span>Autosphere Slack</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -278,7 +260,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-tables">
-                        <span>Autosphere.Tables</span>
+                        <span>Autosphere Tables</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -287,7 +269,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-tasks">
-                        <span>Autosphere.Tasks</span>
+                        <span>Autosphere Tasks</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -296,7 +278,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-twitter">
-                        <span>Autosphere.Twitter</span>
+                        <span>Autosphere Twitter</span>
                     </a>
                 </li>
                 <li class="<?php
@@ -305,7 +287,7 @@
                 }
                 ?>">
                     <a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=Autosphere-word-application">
-                        <span>Autosphere.Word.Application</span>
+                        <span>Autosphere Word Application</span>
                     </a>
                 </li>
             </ul>

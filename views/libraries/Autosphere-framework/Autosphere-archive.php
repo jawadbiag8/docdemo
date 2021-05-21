@@ -9,12 +9,13 @@
                         <h2>
                             <b>Autosphere.Archive</b>
                         </h2>
+
                     </div>
                     <div class="body">
                         <div class="sc-kLgntA iHaOcn">
                             <nav class="sc-bYEvPH khGBIg">
                                 <ol class="breadcrumb breadcrumb-col-cyan">
-                                    <li><a href="../..//docdemo/views/index.php">Home</a></li>
+                                    <li><a href="../views/index.php">Home</a></li>
                                     <li><a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=intro">Keyword libraries</a></li>
                                     <li><a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=intro">Autosphere Package</a></li>
                                     <li class="active">Autosphere.Archive</li>
@@ -24,16 +25,22 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true"> <i class="material-icons">home</i> Readme </a>
+                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true">
+                                    <i class="material-icons">home</i> Readme
+                                </a>
                             </li>
                             <li role="presentation" class="">
-                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false"> <i class="material-icons">face</i> Keywords </a>
+                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false">
+                                    <i class="material-icons">face</i> Keywords
+                                </a>
                             </li>
+
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="home_with_icon_title">
+
                                 <div class="sc-jJEJSO laquCT">
                                     <div class="sc-hiSbYr XqbgT">
                                         <div>
@@ -62,6 +69,7 @@
                                             </pre>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="profile_with_icon_title">
@@ -70,6 +78,7 @@
                                         <div class="sc-jJEJSO laquCT">
                                             <div class="sc-hiSbYr XqbgT">
                                                 <div class="sc-gWHgXt bHAbbC keyword-content">
+
                                                     <div>
                                                         <div class="keyword" id="add-to-archive">
                                                             <h2><a href="#add-to-archive">Add To Archive</a></h2>
@@ -86,23 +95,24 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>files</td>
-                                                                        <td>typing.Any</td>
+                                                                        <td> typing.Any</td>
                                                                         <td></td>
                                                                         <td>name of the file, or list of files, to add</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>archive_name</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>filename of the archive</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>folder</td>
-                                                                        <td>str</td>
-                                                                        <td>None</td>
+                                                                        <td> str </td>
+                                                                        <td> None</td>
                                                                         <td>name of the folder for added file, relative path in the archive</td>
                                                                     </tr>
                                                                 </table>
+
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -114,6 +124,7 @@
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param archive_name:</th>
+
 
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
@@ -152,35 +163,36 @@ Add To Archive   @{List}   C:/folder/subfolder/file.rar
                                                                     </tr>
                                                                     <tr>
                                                                         <td>folder</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>name of the folder to archive</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>archive_name</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>filename of the archive</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>recursive</td>
-                                                                        <td>bool</td>
-                                                                        <td>False</td>
+                                                                        <td> bool </td>
+                                                                        <td> False</td>
                                                                         <td>should sub directories be included, defaults is False</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>include</td>
-                                                                        <td>str</td>
-                                                                        <td>None</td>
+                                                                        <td> str </td>
+                                                                        <td> None</td>
                                                                         <td>define file pattern to include in the package, by default all files are included</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>exclude</td>
-                                                                        <td>str</td>
-                                                                        <td>None</td>
+                                                                        <td> str </td>
+                                                                        <td> None</td>
                                                                         <td>define file pattern to exclude from the package</td>
                                                                     </tr>
                                                                 </table>
+
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -198,6 +210,7 @@ Add To Archive   @{List}   C:/folder/subfolder/file.rar
                                                                         <tr class="field">
                                                                             <th class="field-name">param recursive:</th>
 
+
                                                                             <td class="field-body">should sub directories be included, defaults is False</td>
                                                                         </tr>
                                                                         <tr class="field">
@@ -210,13 +223,10 @@ Add To Archive   @{List}   C:/folder/subfolder/file.rar
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-                                                                <p>
-                                                                    This keyword creates an TAR or TAR.GZ archive of a local folder. Type of archive is determined by the file extension. By default subdirectories are not included, but they
-                                                                    can included using <cite>recursive</cite> argument.
+                                                                <p>This keyword creates an TAR or TAR.GZ archive of a local folder. Type of archive is determined by the file extension. By default subdirectories are not included, but they can included using
+                                                                    <cite>recursive</cite> argument.
                                                                 </p>
-                                                                <p>
-                                                                    To include only certain files, like TXT files, the argument <cite>include</cite> can be used. Similarly to exclude certain file, like dotfiles, the argument
-                                                                    <cite>exclude</cite> can be used.
+                                                                <p>To include only certain files, like TXT files, the argument <cite>include</cite> can be used. Similarly to exclude certain file, like dotfiles, the argument <cite>exclude</cite> can be used.
                                                                 </p>
                                                                 <h4>Examples</h4>
                                                                 <pre><code class="line-numbers language-robot">*** Tasks ***
@@ -247,41 +257,42 @@ Archive Folder With Tar   C:/folder/subfolder    Name.tar    recursive=True
                                                                     </tr>
                                                                     <tr>
                                                                         <td>folder</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>name of the folder to archive</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>archive_name</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>filename of the archive</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>recursive</td>
-                                                                        <td>bool</td>
-                                                                        <td>False</td>
+                                                                        <td> bool </td>
+                                                                        <td> False</td>
                                                                         <td>should sub directories be included, defaults is False</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>include</td>
-                                                                        <td>str</td>
-                                                                        <td>None</td>
+                                                                        <td> str </td>
+                                                                        <td> None</td>
                                                                         <td>define file pattern to include in the package, defaults to None (means all files)</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>exclude</td>
-                                                                        <td>str</td>
-                                                                        <td>None</td>
+                                                                        <td> str </td>
+                                                                        <td> None</td>
                                                                         <td>define file pattern to exclude from the package, defaults is None</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>compression</td>
-                                                                        <td>str</td>
-                                                                        <td>stored</td>
+                                                                        <td> str </td>
+                                                                        <td> stored</td>
                                                                         <td>type of package compression method, defaults to "stored"</td>
                                                                     </tr>
                                                                 </table>
+
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -294,10 +305,12 @@ Archive Folder With Tar   C:/folder/subfolder    Name.tar    recursive=True
                                                                         <tr class="field">
                                                                             <th class="field-name">param archive_name:</th>
 
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param recursive:</th>
+
 
                                                                             <td class="field-body">should sub directories be included, defaults is False</td>
                                                                         </tr>
@@ -307,20 +320,21 @@ Archive Folder With Tar   C:/folder/subfolder    Name.tar    recursive=True
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param exclude:</th>
-                                                                            <td class="field-body">define file pattern to exclude from the package, defaults is None</td>
+                                                                            <td class="field-body">define file pattern to exclude from the package, defaults is None
+                                                                            </td>
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param compression:</th>
                                                                         </tr>
                                                                         <tr class="field">
-                                                                            <td class="field-body">type of package compression method, defaults to &quot;stored&quot;</td>
+
+                                                                            <td class="field-body">type of package compression method, defaults to &quot;stored&quot;
+                                                                            </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
                                                                 <p>This keyword creates an ZIP archive of a local folder. By default subdirectories are not included, but they can included using <cite>recursive</cite> argument.</p>
-                                                                <p>
-                                                                    To include only certain files, like TXT files, the argument <cite>include</cite> can be used. Similarly to exclude certain file, like dotfiles, the argument
-                                                                    <cite>exclude</cite> can be used.
+                                                                <p>To include only certain files, like TXT files, the argument <cite>include</cite> can be used. Similarly to exclude certain file, like dotfiles, the argument <cite>exclude</cite> can be used.
                                                                 </p>
                                                                 <p>Compression methods:</p>
                                                                 <ul class="simple">
@@ -360,23 +374,24 @@ Archive Folder With Zip    D:/folder/subfolder    Name.zip    compression=deflat
                                                                     </tr>
                                                                     <tr>
                                                                         <td>archive_name</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>filename of the archive</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>path</td>
-                                                                        <td>str</td>
-                                                                        <td>None</td>
+                                                                        <td> str </td>
+                                                                        <td> None</td>
                                                                         <td>filepath to extract file into, default is current working directory</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>members</td>
-                                                                        <td>typing.Any</td>
-                                                                        <td>None</td>
+                                                                        <td> typing.Any </td>
+                                                                        <td> None</td>
                                                                         <td>list of files to extract from, by default all files in archive are extracted</td>
                                                                     </tr>
                                                                 </table>
+
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -385,15 +400,18 @@ Archive Folder With Zip    D:/folder/subfolder    Name.zip    compression=deflat
                                                                         <tr class="field">
                                                                             <th class="field-name">param archive_name:</th>
 
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param path:</th>
-                                                                            <td class="field-body">filepath to extract file into, default is current working directory</td>
+                                                                            <td class="field-body">filepath to extract file into, default is current working directory
+                                                                            </td>
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param members:</th>
-                                                                            <td class="field-body">list of files to extract from, by default all files in archive are extracted</td>
+                                                                            <td class="field-body">list of files to extract from, by default all files in archive are extracted
+                                                                            </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -421,23 +439,24 @@ Extract Archive    C:/folder/subfolder/filename.ext    C:/folder/subfolder
                                                                     </tr>
                                                                     <tr>
                                                                         <td>filename</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>name of the file to extract</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>archive_name</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>filename of the archive</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>path</td>
-                                                                        <td>str</td>
-                                                                        <td>None</td>
+                                                                        <td> str </td>
+                                                                        <td> None</td>
                                                                         <td>filepath to extract file into, default is current working directory</td>
                                                                     </tr>
                                                                 </table>
+
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -450,11 +469,13 @@ Extract Archive    C:/folder/subfolder/filename.ext    C:/folder/subfolder
                                                                         <tr class="field">
                                                                             <th class="field-name">param archive_name:</th>
 
+
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
                                                                         <tr class="field">
                                                                             <th class="field-name">param path:</th>
-                                                                            <td class="field-body">filepath to extract file into, default is current working directory</td>
+                                                                            <td class="field-body">filepath to extract file into, default is current working directory
+                                                                            </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -482,11 +503,12 @@ Extract File From Archive   file.ext   C:/folder/subfolder/filename.ext   C:/fol
                                                                     </tr>
                                                                     <tr>
                                                                         <td>archive_name</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>filename of the archive</td>
                                                                     </tr>
                                                                 </table>
+
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -494,6 +516,7 @@ Extract File From Archive   file.ext   C:/folder/subfolder/filename.ext   C:/fol
                                                                     <tbody valign="top">
                                                                         <tr class="field">
                                                                             <th class="field-name">param archive_name:</th>
+
 
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
@@ -531,11 +554,12 @@ log to console   ${a}
                                                                     </tr>
                                                                     <tr>
                                                                         <td>archive_name</td>
-                                                                        <td>str</td>
+                                                                        <td> str</td>
                                                                         <td></td>
                                                                         <td>filename of the archive</td>
                                                                     </tr>
                                                                 </table>
+
 
                                                                 <table class="docutils field-list" frame="void" rules="none">
                                                                     <col class="field-name" />
@@ -543,6 +567,7 @@ log to console   ${a}
                                                                     <tbody valign="top">
                                                                         <tr class="field">
                                                                             <th class="field-name">param archive_name:</th>
+
 
                                                                             <td class="field-body">filename of the archive</td>
                                                                         </tr>
@@ -566,9 +591,11 @@ END
 </code></pre>
                                                             </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -592,11 +619,14 @@ END
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
         <!-- #END# Headings -->
+
     </div>
 </section>

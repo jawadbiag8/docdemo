@@ -66,7 +66,7 @@
                 <div class="navbar-header">
                     <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                     <a href="javascript:void(0);" class="bars"></a>
-                    <a class="navbar-brand" href="../../docdemo/views/index.php">
+                    <a class="navbar-brand" href="../views/index.php">
                         <img src="../web/images/logo.png" alt="" />
                     </a>
                 </div>
@@ -156,7 +156,7 @@
                         if (isset($_SESSION['data']['id'])) {
                             ?>
                             <div class="logout">
-                                <a href="../../docdemo/logout.php">
+                                <a href="../logout.php">
                                     <button type="button" class="btn bg-red waves-effect">
                                         <i class="material-icons">fingerprint</i>
                                         <span>Logout</span>
@@ -167,7 +167,7 @@
                         } else {
                             ?>
                             <div class="logout">
-                                <a  href="../../docdemo/">
+                                <a  href="../index.php">
                                     <button type="button" class="btn bg-red waves-effect">
                                         <i class="material-icons">fingerprint</i>
                                         <span>Sign In</span>
@@ -379,8 +379,11 @@
 //                    $('.jaFBcT').removeClass("scrolldiv");
 //                }
 //            });
-
             $(document).ready(function () {
+                $(".ptab").click(function () {
+                      window.scrollBy(0, 1000);
+                    location.reload();
+                });
                 var ser = $('#searchdata').val();
                 if (ser == '' || ser == undefined) {
                 } else {
@@ -400,16 +403,20 @@
 
                 $("#searchtext").keyup(function () {
                     var query = $(this).val();
-                    $.ajax({
-                        type: 'POST',
-                        url: '../backend-script/search.php',
-                        data: {'query': query},
+                    if (query == '') {
+                        location.reload(true);
+                    } else {
+                        $.ajax({
+                            type: 'POST',
+                            url: '../backend-script/search.php',
+                            data: {'query': query},
 
-                        success: function (result) {
-                            $("#contentpage").empty();
-                            $("#contentpage").html(result);
-                        }
-                    });
+                            success: function (result) {
+                                $("#contentpage").empty();
+                                $("#contentpage").html(result);
+                            }
+                        });
+                    }
                 });
             });
             function capitalizeFirstLetter(string) {

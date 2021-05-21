@@ -37,7 +37,7 @@
             </div>
             <!-- #END# Headings -->
             <aside class="cdpwWb">
-            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-delivery-process&subnode=documenting-the-process"><i class="material-icons">navigate_before</i> Previous chapter</a></div>
+            <div class="m-b-50"><a class="next-btn" href="documantation.php?page=Trainings-Certifications&node=software-robot-delivery-process&subnode=documenting-the-process">previous chapter</a></div>
             </aside>
         </div>
 </section>

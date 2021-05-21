@@ -4,4 +4,4 @@
  
  */
 
-header("Location: ../docdemo");
+header("Location: ../../");

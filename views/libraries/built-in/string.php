@@ -9,12 +9,13 @@
                         <h2>
                             <b>Built-In</b>
                         </h2>
+
                     </div>
                     <div class="body">
                         <div class="sc-kLgntA iHaOcn">
                             <nav class="sc-bYEvPH khGBIg">
                                 <ol class="breadcrumb breadcrumb-col-cyan">
-                                    <li><a href="../..//docdemo/views/index.php">Home</a></li>
+                                    <li><a href="../views/index.php">Home</a></li>
                                     <li><a href="documantation.php?page=libraries&node=built-in&subnode=intro">Keyword libraries</a></li>
                                     <li><a href="documantation.php?page=libraries&node=built-in&subnode=intro">Built-in</a></li>
                                     <li class="active">String</li>
@@ -24,26 +25,27 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true"> <i class="material-icons">home</i> Readme </a>
+                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true">
+                                    <i class="material-icons">home</i> Readme
+                                </a>
                             </li>
                             <li role="presentation" class="">
-                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false"> <i class="material-icons">face</i> Keywords </a>
+                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false">
+                                    <i class="material-icons">face</i> Keywords
+                                </a>
                             </li>
+
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="home_with_icon_title">
+
                                 <div class="sc-jJEJSO laquCT">
                                     <div class="sc-hiSbYr XqbgT">
                                         <div>
                                             <p>A test library for string manipulation and verification.</p>
-                                            <p>
-                                                <code>String</code> is Autosphere's standard library for manipulating strings (e.g.
-                                                <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/string/keywords#replace-string-using-regexp" class="name">Replace String Using Regexp</a>,
-                                                <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/string/keywords#split-to-lines" class="name">Split To Lines</a>) and verifying their contents (e.g.
-                                                <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/string/keywords#should-be-string" class="name">Should Be String</a>).
-                                            </p>
+                                            <p><code>String</code> is Autosphere's standard library for manipulating strings (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/string/keywords#replace-string-using-regexp" class="name">Replace String Using Regexp</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/string/keywords#split-to-lines" class="name">Split To Lines</a>) and verifying their contents (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/string/keywords#should-be-string" class="name">Should Be String</a>).</p>
                                             <p>Following keywords from <code>BuiltIn</code> library can also be used with strings:</p>
                                             <ul>
                                                 <li><span class="name">Catenate</span></li>
@@ -60,6 +62,7 @@
                                             </ul>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="profile_with_icon_title">
@@ -147,16 +150,15 @@
                                                                 <p>Uses the following algorithm:</p>
                                                                 <ul>
                                                                     <li>Split the string to words from whitespace characters (spaces, newlines, etc.).</li>
-                                                                    <li>Exclude words that are not all lower case. This preserves, for example, "OK" and "iPhone".</li>
+                                                                    <li>Exclude words that are not all lower case. This preserves, for example, "OK" and "iPhone".
+                                                                    </li>
                                                                     <li>Exclude also words listed in the optional <code>exclude</code> argument.</li>
                                                                     <li>Title case the first alphabetical character of each word that has not been excluded.</li>
                                                                     <li>Join all words together so that original whitespace is preserved.</li>
                                                                 </ul>
-                                                                <p>
-                                                                    Explicitly excluded words can be given as a list or as a string with words separated by a comma and an optional space. Excluded words are actually considered to be regular
-                                                                    expression patterns, so it is possible to use something like "example[.!?]?" to match the word "example" on it own and also if followed by ".", "!" or "?". See
-                                                                    BuiltIn.Should Match Regexp for more information about Python regular expression syntax in general and how to use it in Autosphere test data in particular.
-                                                                </p>
+                                                                <p>Explicitly excluded words can be given as a list or as a string with words separated by a comma and an optional space. Excluded words are actually considered to be regular expression patterns, so it is possible
+                                                                    to use something like "example[.!?]?" to match the word "example" on it own and also if followed by ".", "!" or "?". See BuiltIn.Should Match Regexp for more information about Python regular expression syntax
+                                                                    in general and how to use it in Autosphere test data in particular.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -196,11 +198,10 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>
-                                                                    The reason this keyword does not use Python's standard <a href="https://docs.python.org/library/stdtypes.html#str.title">title()</a> method is that it can yield undesired
-                                                                    results, for example, if strings contain upper case letters or special characters like apostrophes. It would, for example, convert "it's an OK iPhone" to "It'S An Ok
-                                                                    Iphone".
+                                                                <p>The reason this keyword does not use Python's standard <a href="https://docs.python.org/library/stdtypes.html#str.title">title()</a> method is that it can yield undesired results, for example, if strings contain
+                                                                    upper case letters or special characters like apostrophes. It would, for example, convert "it's an OK iPhone" to "It'S An Ok Iphone".
                                                                 </p>
+
                                                             </div>
                                                         </div>
 
@@ -256,7 +257,8 @@
                                                             <h2><a href="#decode-bytes-to-string">Decode Bytes To String</a></h2>
 
                                                             <div>
-                                                                <p class="shortdoc">Decodes the given ``bytes`` to a Unicode string using the given ``encoding``.</p>
+                                                                <p class="shortdoc">Decodes the given ``bytes`` to a Unicode string using the given ``encoding``.
+                                                                </p>
                                                                 <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
@@ -284,15 +286,14 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Decodes the given <code>bytes</code> to a Unicode string using the given <code>encoding</code>.</p>
-                                                                <p>
-                                                                    <code>errors</code> argument controls what to do if decoding some bytes fails. All values accepted by <code>decode</code> method in Python are valid, but in practice the
-                                                                    following values are most useful:
+                                                                <p>Decodes the given <code>bytes</code> to a Unicode string using the given <code>encoding</code>.
                                                                 </p>
+                                                                <p><code>errors</code> argument controls what to do if decoding some bytes fails. All values accepted by <code>decode</code> method in Python are valid, but in practice the following values are most useful:</p>
                                                                 <ul>
                                                                     <li><code>strict</code>: fail if characters cannot be decoded (default)</li>
                                                                     <li><code>ignore</code>: ignore characters that cannot be decoded</li>
-                                                                    <li><code>replace</code>: replace characters that cannot be decoded with a replacement character</li>
+                                                                    <li><code>replace</code>: replace characters that cannot be decoded with a replacement character
+                                                                    </li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -311,10 +312,8 @@
                                                                         <td>errors=ignore</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>
-                                                                    Use <a href="#encode-string-to-bytes" class="name">Encode String To Bytes</a> if you need to convert Unicode strings to byte strings, and Convert To String in
-                                                                    <code>BuiltIn</code> if you need to convert arbitrary objects to Unicode strings.
-                                                                </p>
+                                                                <p>Use <a href="#Encode%20String%20To%20Bytes" class="name">Encode String To Bytes</a> if you need to convert Unicode strings to byte strings, and Convert To String in <code>BuiltIn</code> if you need to convert
+                                                                    arbitrary objects to Unicode strings.</p>
                                                             </div>
                                                         </div>
 
@@ -322,7 +321,8 @@
                                                             <h2><a href="#encode-string-to-bytes">Encode String To Bytes</a></h2>
 
                                                             <div>
-                                                                <p class="shortdoc">Encodes the given Unicode ``string`` to bytes using the given ``encoding``.</p>
+                                                                <p class="shortdoc">Encodes the given Unicode ``string`` to bytes using the given ``encoding``.
+                                                                </p>
                                                                 <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
@@ -350,15 +350,14 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Encodes the given Unicode <code>string</code> to bytes using the given <code>encoding</code>.</p>
-                                                                <p>
-                                                                    <code>errors</code> argument controls what to do if encoding some characters fails. All values accepted by <code>encode</code> method in Python are valid, but in practice
-                                                                    the following values are most useful:
+                                                                <p>Encodes the given Unicode <code>string</code> to bytes using the given <code>encoding</code>.
                                                                 </p>
+                                                                <p><code>errors</code> argument controls what to do if encoding some characters fails. All values accepted by <code>encode</code> method in Python are valid, but in practice the following values are most useful:</p>
                                                                 <ul>
                                                                     <li><code>strict</code>: fail if characters cannot be encoded (default)</li>
                                                                     <li><code>ignore</code>: ignore characters that cannot be encoded</li>
-                                                                    <li><code>replace</code>: replace characters that cannot be encoded with a replacement character</li>
+                                                                    <li><code>replace</code>: replace characters that cannot be encoded with a replacement character
+                                                                    </li>
                                                                 </ul>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -377,9 +376,8 @@
                                                                         <td>errors=ignore</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>
-                                                                    Use Convert To Bytes in <code>BuiltIn</code> if you want to create bytes based on character or integer sequences. Use
-                                                                    <a href="#decode-bytes-to-string" class="name">Decode Bytes To String</a> if you need to convert byte strings to Unicode strings and Convert To String in
+                                                                <p>Use Convert To Bytes in <code>BuiltIn</code> if you want to create bytes based on character or integer sequences. Use <a href="#Decode%20Bytes%20To%20String" class="name">Decode Bytes To
+                                                                        String</a> if you need to convert byte strings to Unicode strings and Convert To String in
                                                                     <code>BuiltIn</code> if you need to convert arbitrary objects to Unicode.
                                                                 </p>
                                                             </div>
@@ -389,7 +387,8 @@
                                                             <h2><a href="#fetch-from-left">Fetch From Left</a></h2>
 
                                                             <div>
-                                                                <p class="shortdoc">Returns contents of the ``string`` before the first occurrence of ``marker``.</p>
+                                                                <p class="shortdoc">Returns contents of the ``string`` before the first occurrence of ``marker``.
+                                                                </p>
                                                                 <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
@@ -411,12 +410,10 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Returns contents of the <code>string</code> before the first occurrence of <code>marker</code>.</p>
-                                                                <p>If the <code>marker</code> is not found, whole string is returned.</p>
-                                                                <p>
-                                                                    See also <a href="#fetch-from-right" class="name">Fetch From Right</a>, <a href="#split-string" class="name">Split String</a> and
-                                                                    <a href="#split-string-from-right" class="name">Split String From Right</a>.
+                                                                <p>Returns contents of the <code>string</code> before the first occurrence of <code>marker</code>.
                                                                 </p>
+                                                                <p>If the <code>marker</code> is not found, whole string is returned.</p>
+                                                                <p>See also <a href="#Fetch%20From%20Right" class="name">Fetch From Right</a>, <a href="#Split%20String" class="name">Split String</a> and <a href="#Split%20String%20From%20Right" class="name">Split String From Right</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -424,7 +421,8 @@
                                                             <h2><a href="#fetch-from-right">Fetch From Right</a></h2>
 
                                                             <div>
-                                                                <p class="shortdoc">Returns contents of the ``string`` after the last occurrence of ``marker``.</p>
+                                                                <p class="shortdoc">Returns contents of the ``string`` after the last occurrence of ``marker``.
+                                                                </p>
                                                                 <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
@@ -446,12 +444,10 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Returns contents of the <code>string</code> after the last occurrence of <code>marker</code>.</p>
-                                                                <p>If the <code>marker</code> is not found, whole string is returned.</p>
-                                                                <p>
-                                                                    See also <a href="#fetch-from-left" class="name">Fetch From Left</a>, <a href="#split-string" class="name">Split String</a> and
-                                                                    <a href="#split-string-from-right" class="name">Split String From Right</a>.
+                                                                <p>Returns contents of the <code>string</code> after the last occurrence of <code>marker</code>.
                                                                 </p>
+                                                                <p>If the <code>marker</code> is not found, whole string is returned.</p>
+                                                                <p>See also <a href="#Fetch%20From%20Left" class="name">Fetch From Left</a>, <a href="#Split%20String" class="name">Split String</a> and <a href="#Split%20String%20From%20Right" class="name">Split String From Right</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -459,7 +455,8 @@
                                                             <h2><a href="#format-string">Format String</a></h2>
 
                                                             <div>
-                                                                <p class="shortdoc">Formats a ``template`` using the given ``positional`` and ``named`` arguments.</p>
+                                                                <p class="shortdoc">Formats a ``template`` using the given ``positional`` and ``named`` arguments.
+                                                                </p>
                                                                 <h4>Arguments</h4>
                                                                 <table class="arguments">
                                                                     <tr>
@@ -487,15 +484,12 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Formats a <code>template</code> using the given <code>positional</code> and <code>named</code> arguments.</p>
-                                                                <p>
-                                                                    The template can be either be a string or an absolute path to an existing file. In the latter case the file is read and its contents are used as the template. If the
-                                                                    template file contains non-ASCII characters, it must be encoded using UTF-8.
+                                                                <p>Formats a <code>template</code> using the given <code>positional</code> and <code>named</code> arguments.
                                                                 </p>
-                                                                <p>
-                                                                    The template is formatted using Python's <a href="https://docs.python.org/library/string.html#format-string-syntax">format string syntax</a>. Placeholders are marked using
-                                                                    <code>{}</code> with possible field name and format specification inside. Literal curly braces can be inserted by doubling them like {{ and }}.
-                                                                </p>
+                                                                <p>The template can be either be a string or an absolute path to an existing file. In the latter case the file is read and its contents are used as the template. If the template file contains non-ASCII characters,
+                                                                    it must be encoded using UTF-8.</p>
+                                                                <p>The template is formatted using Python's <a href="https://docs.python.org/library/string.html#format-string-syntax">format string
+                                                                        syntax</a>. Placeholders are marked using <code>{}</code> with possible field name and format specification inside. Literal curly braces can be inserted by doubling them like {{ and }}.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -547,6 +541,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
+
                                                             </div>
                                                         </div>
 
@@ -577,10 +572,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Generates a string with a desired <code>length</code> from the given <code>chars</code>.</p>
-                                                                <p>
-                                                                    The population sequence <code>chars</code> contains the characters to use when generating the random string. It can contain any characters, and it is possible to use
-                                                                    special markers explained in the table below:
-                                                                </p>
+                                                                <p>The population sequence <code>chars</code> contains the characters to use when generating the random string. It can contain any characters, and it is possible to use special markers explained in the table below:</p>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <th>Marker</th>
@@ -676,7 +668,7 @@
                                                                         <td>-2</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Use <a href="#split-to-lines" class="name">Split To Lines</a> if all lines are needed.</p>
+                                                                <p>Use <a href="#Split%20To%20Lines" class="name">Split To Lines</a> if all lines are needed.</p>
                                                             </div>
                                                         </div>
 
@@ -700,6 +692,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
+
                                                             </div>
                                                         </div>
 
@@ -737,14 +730,10 @@
                                                                 </table>
                                                                 <p>Returns lines of the given <code>string</code> that contain the <code>pattern</code>.</p>
                                                                 <p>The <code>pattern</code> is always considered to be a normal string, not a glob or regexp pattern. A line matches if the <code>pattern</code> is found anywhere on it.</p>
-                                                                <p>
-                                                                    The match is case-sensitive by default, but giving <code>case_insensitive</code> a true value makes it case-insensitive. The value is considered true if it is a non-empty
-                                                                    string that is not equal to <code>false</code>, <code>none</code> or <code>no</code>. If the value is not a string, its truth value is got directly in Python. Considering
-                                                                    <code>none</code> false is new in RF 3.0.3.
+                                                                <p>The match is case-sensitive by default, but giving <code>case_insensitive</code> a true value makes it case-insensitive. The value is considered true if it is a non-empty string that is not equal to <code>false</code>,
+                                                                    <code>none</code> or <code>no</code>. If the value is not a string, its truth value is got directly in Python. Considering <code>none</code> false is new in RF 3.0.3.
                                                                 </p>
-                                                                <p>
-                                                                    Lines are returned as one string catenated back together with newlines. Possible trailing newline is never returned. The number of matching lines is automatically logged.
-                                                                </p>
+                                                                <p>Lines are returned as one string catenated back together with newlines. Possible trailing newline is never returned. The number of matching lines is automatically logged.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -762,9 +751,8 @@
                                                                         <td>case-insensitive</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>
-                                                                    See <a href="#get-lines-matching-pattern" class="name">Get Lines Matching Pattern</a> and
-                                                                    <a href="#get-lines-matching-regexp" class="name">Get Lines Matching Regexp</a> if you need more complex pattern matching.
+                                                                <p>See <a href="#Get%20Lines%20Matching%20Pattern" class="name">Get Lines Matching Pattern</a> and
+                                                                    <a href="#Get%20Lines%20Matching%20Regexp" class="name">Get Lines Matching Regexp</a> if you need more complex pattern matching.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -814,7 +802,9 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td><code>[chars]</code></td>
-                                                                        <td>matches any character inside square brackets (e.g. <code>[abc]</code> matches either <code>a</code>, <code>b</code> or <code>c</code>)</td>
+                                                                        <td>matches any character inside square brackets (e.g. <code>[abc]</code> matches either
+                                                                            <code>a</code>, <code>b</code> or <code>c</code>)
+                                                                        </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td><code>[!chars]</code></td>
@@ -822,14 +812,10 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>A line matches only if it matches the <code>pattern</code> fully.</p>
-                                                                <p>
-                                                                    The match is case-sensitive by default, but giving <code>case_insensitive</code> a true value makes it case-insensitive. The value is considered true if it is a non-empty
-                                                                    string that is not equal to <code>false</code>, <code>none</code> or <code>no</code>. If the value is not a string, its truth value is got directly in Python. Considering
-                                                                    <code>none</code> false is new in RF 3.0.3.
+                                                                <p>The match is case-sensitive by default, but giving <code>case_insensitive</code> a true value makes it case-insensitive. The value is considered true if it is a non-empty string that is not equal to <code>false</code>,
+                                                                    <code>none</code> or <code>no</code>. If the value is not a string, its truth value is got directly in Python. Considering <code>none</code> false is new in RF 3.0.3.
                                                                 </p>
-                                                                <p>
-                                                                    Lines are returned as one string catenated back together with newlines. Possible trailing newline is never returned. The number of matching lines is automatically logged.
-                                                                </p>
+                                                                <p>Lines are returned as one string catenated back together with newlines. Possible trailing newline is never returned. The number of matching lines is automatically logged.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -847,10 +833,8 @@
                                                                         <td>case_insensitive=true</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>
-                                                                    See <a href="#get-lines-matching-regexp" class="name">Get Lines Matching Regexp</a> if you need more complex patterns and
-                                                                    <a href="#get-lines-Containing-String" class="name">Get Lines Containing String</a> if searching literal strings is enough.
-                                                                </p>
+                                                                <p>See <a href="#Get%20Lines%20Matching%20Regexp" class="name">Get Lines Matching Regexp</a> if you need more complex patterns and <a href="#Get%20Lines%20Containing%20String" class="name">Get
+                                                                        Lines Containing String</a> if searching literal strings is enough.</p>
                                                             </div>
                                                         </div>
 
@@ -888,17 +872,13 @@
                                                                 </table>
                                                                 <p>Returns lines of the given <code>string</code> that match the regexp <code>pattern</code>.</p>
                                                                 <p>See BuiltIn.Should Match Regexp for more information about Python regular expression syntax in general and how to use it in Autosphere test data in particular.</p>
-                                                                <p>
-                                                                    By default lines match only if they match the pattern fully, but partial matching can be enabled by giving the <code>partial_match</code> argument a true value. The value
-                                                                    is considered true if it is a non-empty string that is not equal to <code>false</code>, <code>none</code> or <code>no</code>. If the value is not a string, its truth value
-                                                                    is got directly in Python. Considering <code>none</code> false is new in RF 3.0.3.
+                                                                <p>By default lines match only if they match the pattern fully, but partial matching can be enabled by giving the <code>partial_match</code> argument a true value. The value is considered true if it is a non-empty
+                                                                    string that is not equal to <code>false</code>, <code>none</code> or
+                                                                    <code>no</code>. If the value is not a string, its truth value is got directly in Python. Considering <code>none</code> false is new in RF 3.0.3.
                                                                 </p>
                                                                 <p>If the pattern is empty, it matches only empty lines by default. When partial matching is enabled, empty pattern matches all lines.</p>
                                                                 <p>Notice that to make the match case-insensitive, you need to prefix the pattern with case-insensitive flag <code>(?i)</code>.</p>
-                                                                <p>
-                                                                    Lines are returned as one string concatenated back together with newlines. Possible trailing newline is never returned. The number of matching lines is automatically
-                                                                    logged.
-                                                                </p>
+                                                                <p>Lines are returned as one string concatenated back together with newlines. Possible trailing newline is never returned. The number of matching lines is automatically logged.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -923,9 +903,8 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>
-                                                                    See <a href="#get-lines-matching-pattern" class="name">Get Lines Matching Pattern</a> and
-                                                                    <a href="#get-lines-Containing-String" class="name">Get Lines Containing String</a> if you do not need full regular expression powers (and complexity).
+                                                                <p>See <a href="#Get%20Lines%20Matching%20Pattern" class="name">Get Lines Matching Pattern</a> and
+                                                                    <a href="#Get%20Lines%20Containing%20String" class="name">Get Lines Containing String</a> if you do not need full regular expression powers (and complexity).
                                                                 </p>
                                                                 <p><code>partial_match</code>. In earlier versions exact match was always required.</p>
                                                             </div>
@@ -964,14 +943,10 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>
-                                                                    <code>string</code> is the string to find matches from and <code>pattern</code> is the regular expression. See BuiltIn.Should Match Regexp for more information about Python
-                                                                    regular expression syntax in general and how to use it in Autosphere test data in particular.
-                                                                </p>
-                                                                <p>
-                                                                    If no groups are used, the returned list contains full matches. If one group is used, the list contains only contents of that group. If multiple groups are used, the list
-                                                                    contains tuples that contain individual group contents. All groups can be given as indexes (starting from 1) and named groups also as names.
-                                                                </p>
+                                                                <p><code>string</code> is the string to find matches from and <code>pattern</code> is the regular expression. See BuiltIn.Should Match Regexp for more information about Python regular expression syntax in general
+                                                                    and how to use it in Autosphere test data in particular.</p>
+                                                                <p>If no groups are used, the returned list contains full matches. If one group is used, the list contains only contents of that group. If multiple groups are used, the list contains tuples that contain individual
+                                                                    group contents. All groups can be given as indexes (starting from 1) and named groups also as names.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1016,12 +991,13 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${no match} = []
-                        ${matches} = ['the', 'tri']
-                        ${one group} = ['he', 'ri']
-                        ${named group} = ['he', 'ri']
-                        ${two groups} = [('h', 'e'), ('r', 'i')]
-                        </code></pre>
+                                                                <pre>${no match} = []
+${matches} = ['the', 'tri']
+${one group} = ['he', 'ri']
+${named group} = ['he', 'ri']
+${two groups} = [('h', 'e'), ('r', 'i')]
+</code></pre>
+
                                                             </div>
                                                         </div>
 
@@ -1058,10 +1034,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns a substring from <code>start</code> index to <code>end</code> index.</p>
-                                                                <p>
-                                                                    The <code>start</code> index is inclusive and <code>end</code> is exclusive. Indexing starts from 0, and it is possible to use negative indices to refer to characters from
-                                                                    the end.
-                                                                </p>
+                                                                <p>The <code>start</code> index is inclusive and <code>end</code> is exclusive. Indexing starts from 0, and it is possible to use negative indices to refer to characters from the end.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1130,14 +1103,10 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Removes all <code>removables</code> from the given <code>string</code>.</p>
-                                                                <p>
-                                                                    <code>removables</code> are used as literal strings. Each removable will be matched to a temporary string from which preceding removables have been already removed. See
-                                                                    second example below.
+                                                                <p><code>removables</code> are used as literal strings. Each removable will be matched to a temporary string from which preceding removables have been already removed. See second example below.
                                                                 </p>
-                                                                <p>
-                                                                    Use <a href="#remove-string-using-regexp" class="name">Remove String Using Regexp</a> if more powerful pattern matching is needed. If only a certain number of matches
-                                                                    should be removed, <a href="#replace-string" class="name">Replace String</a> or
-                                                                    <a href="#replace-string-using-regexp" class="name">Replace String Using Regexp</a> can be used.
+                                                                <p>Use <a href="#Remove%20String%20Using%20Regexp" class="name">Remove String Using Regexp</a> if more powerful pattern matching is needed. If only a certain number of matches should be removed,
+                                                                    <a href="#Replace%20String" class="name">Replace String</a> or <a href="#Replace%20String%20Using%20Regexp" class="name">Replace String Using Regexp</a> can be used.
                                                                 </p>
                                                                 <p>A modified version of the string is returned and the original string is not altered.</p>
                                                                 <p>Examples:</p>
@@ -1201,11 +1170,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Removes <code>patterns</code> from the given <code>string</code>.</p>
-                                                                <p>
-                                                                    This keyword is otherwise identical to <a href="#remove-string" class="name">Remove String</a>, but the <code>patterns</code> to search for are considered to be a regular
-                                                                    expression. See <a href="#replace-string-using-regexp" class="name">Replace String Using Regexp</a> for more information about the regular expression syntax. That
-                                                                    keyword can also be used if there is a need to remove only a certain number of occurrences.
-                                                                </p>
+                                                                <p>This keyword is otherwise identical to <a href="#Remove%20String" class="name">Remove
+                                                                        String</a>, but the <code>patterns</code> to search for are considered to be a regular expression. See <a href="#Replace%20String%20Using%20Regexp" class="name">Replace String Using
+                                                                        Regexp</a> for more information about the regular expression syntax. That keyword can also be used if there is a need to remove only a certain number of occurrences.</p>
                                                             </div>
                                                         </div>
 
@@ -1247,15 +1214,13 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Replaces <code>search_for</code> in the given <code>string</code> with <code>replace_with</code>.</p>
-                                                                <p>
-                                                                    <code>search_for</code> is used as a literal string. See <a href="#replace-string-using-regexp" class="name">Replace String Using Regexp</a> if more powerful pattern
-                                                                    matching is needed. If you need to just remove a string see <a href="#remove-string" class="name">Remove String</a>.
+                                                                <p>Replaces <code>search_for</code> in the given <code>string</code> with
+                                                                    <code>replace_with</code>.
                                                                 </p>
-                                                                <p>
-                                                                    If the optional argument <code>count</code> is given, only that many occurrences from left are replaced. Negative <code>count</code> means that all occurrences are replaced
-                                                                    (default behaviour) and zero means that nothing is done.
-                                                                </p>
+                                                                <p><code>search_for</code> is used as a literal string. See <a href="#Replace%20String%20Using%20Regexp" class="name">Replace String Using Regexp</a> if more powerful pattern matching is needed. If you need to
+                                                                    just remove a string see <a href="#Remove%20String" class="name">Remove String</a>.</p>
+                                                                <p>If the optional argument <code>count</code> is given, only that many occurrences from left are replaced. Negative <code>count</code> means that all occurrences are replaced (default behaviour) and zero means
+                                                                    that nothing is done.</p>
                                                                 <p>A modified version of the string is returned and the original string is not altered.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1333,12 +1298,11 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Replaces <code>pattern</code> in the given <code>string</code> with <code>replace_with</code>.</p>
-                                                                <p>
-                                                                    This keyword is otherwise identical to <a href="#replace-string" class="name">Replace String</a>, but the <code>pattern</code> to search for is considered to be a regular
-                                                                    expression. See BuiltIn.Should Match Regexp for more information about Python regular expression syntax in general and how to use it in Autosphere test data in particular.
+                                                                <p>Replaces <code>pattern</code> in the given <code>string</code> with <code>replace_with</code>.
                                                                 </p>
-                                                                <p>If you need to just remove a string see <a href="#remove-string-using-regexp" class="name">Remove String Using Regexp</a>.</p>
+                                                                <p>This keyword is otherwise identical to <a href="#Replace%20String" class="name">Replace
+                                                                        String</a>, but the <code>pattern</code> to search for is considered to be a regular expression. See BuiltIn.Should Match Regexp for more information about Python regular expression syntax in general and how to use it in Autosphere test data in particular.</p>
+                                                                <p>If you need to just remove a string see <a href="#Remove%20String%20Using%20Regexp" class="name">Remove String Using Regexp</a>.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1388,11 +1352,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the given <code>item</code> is not a byte string.</p>
-                                                                <p>
-                                                                    Use <a href="#should-be-unicode-string" class="name">Should Be Unicode String</a> if you want to verify the <code>item</code> is a Unicode string, or
-                                                                    <a href="#should-be-string" class="name">Should Be String</a> if both Unicode and byte strings are fine. See
-                                                                    <a href="#should-be-string" class="name">Should Be String</a> for more details about Unicode strings and byte strings.
-                                                                </p>
+                                                                <p>Use <a href="#Should%20Be%20Unicode%20String" class="name">Should Be Unicode String</a> if you want to verify the <code>item</code> is a Unicode string, or <a href="#Should%20Be%20String" class="name">Should Be String</a> if both Unicode and byte strings are fine. See <a href="#Should%20Be%20String" class="name">Should Be String</a> for more details about Unicode strings and byte strings.</p>
                                                                 <p>The default error message can be overridden with the optional <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
@@ -1424,9 +1384,11 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the given <code>string</code> is not in lowercase.</p>
-                                                                <p>For example, <code>'string'</code> and <code>'with specials!'</code> would pass, and <code>'String'</code>, <code>''</code> and <code>' '</code> would fail.</p>
+                                                                <p>For example, <code>'string'</code> and <code>'with specials!'</code> would pass, and
+                                                                    <code>'String'</code>, <code>''</code> and <code>' '</code> would fail.
+                                                                </p>
                                                                 <p>The default error message can be overridden with the optional <code>msg</code> argument.</p>
-                                                                <p>See also <a href="#should-be-uppercase" class="name">Should Be Uppercase</a> and <a href="#should-be-titlecase" class="name">Should Be Titlecase</a>.</p>
+                                                                <p>See also <a href="#Should%20Be%20Uppercase" class="name">Should Be Uppercase</a> and <a href="#Should%20Be%20Titlecase" class="name">Should Be Titlecase</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -1457,15 +1419,12 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the given <code>item</code> is not a string.</p>
-                                                                <p>
-                                                                    With Python 2, except with IronPython, this keyword passes regardless is the <code>item</code> a Unicode string or a byte string. Use
-                                                                    <a href="#should-be-unicode-string" class="name">Should Be Unicode String</a> or <a href="#should-be-byte-string" class="name">Should Be Byte String</a> if you
-                                                                    want to restrict the string type. Notice that with Python 2, except with IronPython, <code>'string'</code> creates a byte string and <code>u'unicode'</code> must be used to
-                                                                    create a Unicode string.
+                                                                <p>With Python 2, except with IronPython, this keyword passes regardless is the <code>item</code> a Unicode string or a byte string. Use <a href="#Should%20Be%20Unicode%20String" class="name">Should Be Unicode String</a> or <a href="#Should%20Be%20Byte%20String" class="name">Should Be Byte String</a> if you want to restrict the string type. Notice that with Python 2, except with IronPython, <code>'string'</code> creates
+                                                                    a byte string and
+                                                                    <code>u'unicode'</code> must be used to create a Unicode string.
                                                                 </p>
-                                                                <p>
-                                                                    With Python 3 and IronPython, this keyword passes if the string is a Unicode string but fails if it is bytes. Notice that with both Python 3 and IronPython,
-                                                                    <code>'string'</code> creates a Unicode string, and <code>b'bytes'</code> must be used to create a byte string.
+                                                                <p>With Python 3 and IronPython, this keyword passes if the string is a Unicode string but fails if it is bytes. Notice that with both Python 3 and IronPython, <code>'string'</code> creates a Unicode string, and
+                                                                    <code>b'bytes'</code> must be used to create a byte string.
                                                                 </p>
                                                                 <p>The default error message can be overridden with the optional <code>msg</code> argument.</p>
                                                             </div>
@@ -1498,13 +1457,12 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if given <code>string</code> is not title.</p>
-                                                                <p>
-                                                                    <code>string</code> is a titlecased string if there is at least one character in it, uppercase characters only follow uncased characters and lowercase characters only cased
-                                                                    ones.
+                                                                <p><code>string</code> is a titlecased string if there is at least one character in it, uppercase characters only follow uncased characters and lowercase characters only cased ones.</p>
+                                                                <p>For example, <code>'This Is Title'</code> would pass, and <code>'Word In UPPER'</code>,
+                                                                    <code>'Word In lower'</code>, <code>''</code> and <code>' '</code> would fail.
                                                                 </p>
-                                                                <p>For example, <code>'This Is Title'</code> would pass, and <code>'Word In UPPER'</code>, <code>'Word In lower'</code>, <code>''</code> and <code>' '</code> would fail.</p>
                                                                 <p>The default error message can be overridden with the optional <code>msg</code> argument.</p>
-                                                                <p>See also <a href="#should-be-uppercase" class="name">Should Be Uppercase</a> and <a href="#should-be-lowercase" class="name">Should Be Lowercase</a>.</p>
+                                                                <p>See also <a href="#Should%20Be%20Uppercase" class="name">Should Be Uppercase</a> and <a href="#Should%20Be%20Lowercase" class="name">Should Be Lowercase</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -1535,11 +1493,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the given <code>item</code> is not a Unicode string.</p>
-                                                                <p>
-                                                                    Use <a href="#should-be-byte-string" class="name">Should Be Byte String</a> if you want to verify the <code>item</code> is a byte string, or
-                                                                    <a href="#should-be-string" class="name">Should Be String</a> if both Unicode and byte strings are fine. See
-                                                                    <a href="#should-be-string" class="name">Should Be String</a> for more details about Unicode strings and byte strings.
-                                                                </p>
+                                                                <p>Use <a href="#Should%20Be%20Byte%20String" class="name">Should Be Byte String</a> if you want to verify the <code>item</code> is a byte string, or <a href="#Should%20Be%20String" class="name">Should Be String</a> if both Unicode and byte strings are fine. See <a href="#Should%20Be%20String" class="name">Should Be String</a> for more details about Unicode strings and byte strings.</p>
                                                                 <p>The default error message can be overridden with the optional <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
@@ -1571,9 +1525,11 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the given <code>string</code> is not in uppercase.</p>
-                                                                <p>For example, <code>'STRING'</code> and <code>'WITH SPECIALS!'</code> would pass, and <code>'String'</code>, <code>''</code> and <code>' '</code> would fail.</p>
+                                                                <p>For example, <code>'STRING'</code> and <code>'WITH SPECIALS!'</code> would pass, and
+                                                                    <code>'String'</code>, <code>''</code> and <code>' '</code> would fail.
+                                                                </p>
                                                                 <p>The default error message can be overridden with the optional <code>msg</code> argument.</p>
-                                                                <p>See also <a href="#should-be-titlecase" class="name">Should Be Titlecase</a> and <a href="#should-be-lowercase" class="name">Should Be Lowercase</a>.</p>
+                                                                <p>See also <a href="#Should%20Be%20Titlecase" class="name">Should Be Titlecase</a> and <a href="#Should%20Be%20Lowercase" class="name">Should Be Lowercase</a>.</p>
                                                             </div>
                                                         </div>
 
@@ -1604,7 +1560,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if the given <code>item</code> is a string.</p>
-                                                                <p>See <a href="#should-be-string" class="name">Should Be String</a> for more details about Unicode strings and byte strings.</p>
+                                                                <p>See <a href="#Should%20Be%20String" class="name">Should Be String</a> for more details about Unicode strings and byte strings.</p>
                                                                 <p>The default error message can be overridden with the optional <code>msg</code> argument.</p>
                                                             </div>
                                                         </div>
@@ -1642,12 +1598,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Splits the <code>string</code> using <code>separator</code> as a delimiter string.</p>
-                                                                <p>
-                                                                    If a <code>separator</code> is not given, any whitespace string is a separator. In that case also possible consecutive whitespace as well as leading and trailing whitespace
-                                                                    is ignored.
-                                                                </p>
-                                                                <p>
-                                                                    Split words are returned as a list. If the optional <code>max_split</code> is given, at most <code>max_split</code> splits are done, and the returned list will have maximum
+                                                                <p>If a <code>separator</code> is not given, any whitespace string is a separator. In that case also possible consecutive whitespace as well as leading and trailing whitespace is ignored.</p>
+                                                                <p>Split words are returned as a list. If the optional <code>max_split</code> is given, at most
+                                                                    <code>max_split</code> splits are done, and the returned list will have maximum
                                                                     <code>max_split + 1</code> elements.
                                                                 </p>
                                                                 <p>Examples:</p>
@@ -1677,11 +1630,8 @@
                                                                         <td>1</td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>
-                                                                    See <a href="#split-string-from-right" class="name">Split String From Right</a> if you want to start splitting from right, and
-                                                                    <a href="#fetch-from-left" class="name">Fetch From Left</a> and <a href="#fetch-from-right" class="name">Fetch From Right</a> if you only want to get first/last
-                                                                    part of the string.
-                                                                </p>
+                                                                <p>See <a href="#Split%20String%20From%20Right" class="name">Split String From Right</a> if you want to start splitting from right, and <a href="#Fetch%20From%20Left" class="name">Fetch From
+                                                                        Left</a> and <a href="#Fetch%20From%20Right" class="name">Fetch From Right</a> if you only want to get first/last part of the string.</p>
                                                             </div>
                                                         </div>
 
@@ -1718,7 +1668,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Splits the <code>string</code> using <code>separator</code> starting from right.</p>
-                                                                <p>Same as <a href="#split-string" class="name">Split String</a>, but splitting is started from right. This has an effect only when <code>max_split</code> is given.</p>
+                                                                <p>Same as <a href="#Split%20String" class="name">Split String</a>, but splitting is started from right. This has an effect only when <code>max_split</code> is given.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1806,11 +1756,10 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>
-                                                                    It is possible to get only a selection of lines from <code>start</code> to <code>end</code> so that <code>start</code> index is inclusive and <code>end</code> is exclusive.
-                                                                    Line numbering starts from 0, and it is possible to use negative indices to refer to lines from the end.
+                                                                <p>It is possible to get only a selection of lines from <code>start</code> to <code>end</code> so that <code>start</code> index is inclusive and <code>end</code> is exclusive. Line numbering starts from 0, and
+                                                                    it is possible to use negative indices to refer to lines from the end.</p>
+                                                                <p>Lines are returned without the newlines. The number of returned lines is automatically logged.
                                                                 </p>
-                                                                <p>Lines are returned without the newlines. The number of returned lines is automatically logged.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1856,7 +1805,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Use <a href="#get-line" class="name">Get Line</a> if you only need to get a single line.</p>
+                                                                <p>Use <a href="#Get%20Line" class="name">Get Line</a> if you only need to get a single line.</p>
                                                             </div>
                                                         </div>
 
@@ -1893,14 +1842,10 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>
-                                                                    <code>mode</code> is either <code>left</code> to remove leading characters, <code>right</code> to remove trailing characters, <code>both</code> (default) to remove the
-                                                                    characters from both sides of the string or <code>none</code> to return the unmodified string.
-                                                                </p>
-                                                                <p>
-                                                                    If the optional <code>characters</code> is given, it must be a string and the characters in the string will be stripped in the string. Please note, that this is not a
-                                                                    substring to be removed but a list of characters, see the example below.
-                                                                </p>
+                                                                <p><code>mode</code> is either <code>left</code> to remove leading characters, <code>right</code> to remove trailing characters, <code>both</code> (default) to remove the characters from both sides of the string
+                                                                    or <code>none</code> to return the unmodified string.</p>
+                                                                <p>If the optional <code>characters</code> is given, it must be a string and the characters in the string will be stripped in the string. Please note, that this is not a substring to be removed but a list of characters,
+                                                                    see the example below.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1940,23 +1885,23 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
+
                                                             </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu">
-                                                    <input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" />
-                                                    <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
-                                                    </svg>
-                                                </fieldset>
+                                                    </svg></fieldset>
                                             </form>
                                             <div>
                                                 <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
@@ -1993,16 +1938,20 @@
                                                     <li><a id="link-split-to-lines" href="#split-to-lines" class="">Split To Lines</a></li>
                                                     <li><a id="link-strip-string" href="#strip-string" class="">Strip String </a></li>
                                                 </ul>
+
                                             </div>
                                         </aside>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
         <!-- #END# Headings -->
+
     </div>
 </section>

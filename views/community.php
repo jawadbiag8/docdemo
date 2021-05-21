@@ -10,7 +10,7 @@ include("../config/database.php");
         <title>Community</title>
 
         <!-- Favicon-->
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../web/images/fev.png" type="image/x-icon">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -102,7 +102,7 @@ include("../config/database.php");
                 <div class="navbar-header">
                     <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                     <a href="javascript:void(0);" class="bars"></a>
-                    <a class="navbar-brand" href="../../docdemo/views/index.php"> 
+                    <a class="navbar-brand" href="../views/index.php"> 
                         <img src="../web/images/logo.png" alt=""/>
                     </a>
                 </div>
@@ -154,7 +154,7 @@ include("../config/database.php");
                         if (isset($_SESSION['data']['id'])) {
                             ?>
                             <div class="logout">
-                                <a href="../../docdemo/logout.php">
+                                <a href="../logout.php">
                                     <button type="button" class="btn bg-red waves-effect">
                                         <i class="material-icons">fingerprint</i>
                                         <span>Logout</span>
@@ -165,7 +165,7 @@ include("../config/database.php");
                         } else {
                             ?>
                             <div class="logout">
-                                <a  href="../../docdemo/">
+                                <a  href="../index.php">
                                     <button type="button" class="btn bg-red waves-effect">
                                         <i class="material-icons">fingerprint</i>
                                         <span>Sign In</span>
@@ -357,17 +357,21 @@ include("../config/database.php");
                 });
                 $("#searchtext").keyup(function () {
                     var query = $(this).val();
-                    $.ajax({
-                        type: 'POST',
-                        url: '../backend-script/search.php',
-                        data: {'query': query},
+                    if (query == '') {
+                        location.reload(true);
+                    } else {
+                        $.ajax({
+                            type: 'POST',
+                            url: '../backend-script/search.php',
+                            data: {'query': query},
 
-                        success: function (result) {
+                            success: function (result) {
 //                            debugger;
-                            $("#contentpage").empty();
-                            $("#contentpage").html(result);
-                        }
-                    });
+                                $("#contentpage").empty();
+                                $("#contentpage").html(result);
+                            }
+                        });
+                    }
                 });
 
                 $("#categories").change(function () {

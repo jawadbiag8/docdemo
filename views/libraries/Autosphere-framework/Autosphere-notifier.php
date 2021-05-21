@@ -15,7 +15,7 @@
                         <div class="sc-kLgntA iHaOcn">
                             <nav class="sc-bYEvPH khGBIg">
                                 <ol class="breadcrumb breadcrumb-col-cyan">
-                                    <li><a href="../..//docdemo/views/index.php">Home</a></li>
+                                    <li><a href="../views/index.php">Home</a></li>
                                     <li><a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=intro">Keyword libraries</a></li>
                                     <li><a href="documantation.php?page=libraries&node=Autosphere-framework&subnode=intro">Autosphere Package</a></li>
                                     <li class="active">Autosphere.Notifier</li>
@@ -572,7 +572,7 @@ ${</span><span class="nv">CHANNEL</span><span class="p">}         </span><span c
                                             </form>
                                             <div>
                                                 <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
-                                                    <li><a id="link-notify-email" href=" #notify-email" class="">Notify Email</a></li>
+                                                    <li><a id="link-notify-email" href="#notify-email" class="">Notify Email</a></li>
                                                     <li><a id="link-notify-gmail" href="#notify-gmail" class="">Notify Gmail</a></li>
                                                     <li><a id="link-notify-pushover" href="#notify-pushover" class="">Notify Pushover</a></li>
                                                     <li><a id="link-notify-slack" href="#notify-slack" class="">Notify Slack</a></li>

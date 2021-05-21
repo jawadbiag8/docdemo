@@ -9,12 +9,13 @@
                         <h2>
                             <b>Built-In</b>
                         </h2>
+
                     </div>
                     <div class="body">
                         <div class="sc-kLgntA iHaOcn">
                             <nav class="sc-bYEvPH khGBIg">
                                 <ol class="breadcrumb breadcrumb-col-cyan">
-                                    <li><a href="../..//docdemo/views/index.php">Home</a></li>
+                                    <li><a href="../views/index.php">Home</a></li>
                                     <li><a href="documantation.php?page=libraries&node=built-in&subnode=intro">Keyword libraries</a></li>
                                     <li><a href="documantation.php?page=libraries&node=built-in&subnode=intro">Built-in</a></li>
                                     <li class="active">Collections</li>
@@ -24,37 +25,41 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true"> <i class="material-icons">home</i> Readme </a>
+                                <a href="#home_with_icon_title" data-toggle="tab" aria-expanded="true">
+                                    <i class="material-icons">home</i> Readme
+                                </a>
                             </li>
                             <li role="presentation" class="">
-                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false"> <i class="material-icons">face</i> Keywords </a>
+                                <a href="#profile_with_icon_title" data-toggle="tab" aria-expanded="false">
+                                    <i class="material-icons">face</i> Keywords
+                                </a>
                             </li>
+
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="home_with_icon_title">
+
                                 <div class="sc-jJEJSO laquCT">
                                     <div class="sc-hiSbYr XqbgT">
                                         <div>
                                             <p>A test library providing keywords for handling lists and dictionaries.</p>
-                                            <p>
-                                                <code>Collections</code> is Autosphere's standard library that provides a set of keywords for handling Python lists and dictionaries. This library has keywords, for example, for modifying and
-                                                getting values from lists and dictionaries (e.g. <a href="documantation.php?page=libraries&node=built-in&subnode=collections#append-to-list" class="name">Append To List</a>,
-                                                <a href="documantation.php?page=libraries&node=built-in&subnode=collections#get-from-dictionary" class="name">Get From Dictionary</a>) and for verifying their contents (e.g.
-                                                <a href="documantation.php?page=libraries&node=built-in&subnode=collections#lists-should-be-equal" class="name">Lists Should Be Equal</a>,
-                                                <a href="documantation.php?page=libraries&node=built-in&subnode=collections#dictionary-should-contain-value" class="name">Dictionary Should Contain Value</a>).
-                                            </p>
+                                            <p><code>Collections</code> is Autosphere's standard library that provides a set of keywords for handling
+                                                Python lists and dictionaries. This library has keywords, for example, for modifying and getting values from
+                                                lists and dictionaries (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#append-to-list" class="name">Append To List</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#get-from-dictionary" class="name">Get From Dictionary</a>) and for verifying their contents
+                                                (e.g. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#lists-should-be-equal" class="name">Lists Should Be Equal</a>, <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#dictionary-should-contain-value" class="name">Dictionary Should Contain Value</a>).</p>
                                             <h4 id="Table of contents">Table of contents</h4>
                                             <ul>
-                                                <li><a href="#Related-keywords-in-BuiltIn" class="name">Related keywords in BuiltIn</a></li>
-                                                <li><a href="#Using-with-list-like-and-dictionary-like-objects" class="name">Using with list-like and dictionary-like objects</a></li>
-                                                <li><a href="#Boolean-arguments" class="name">Boolean arguments</a></li>
-                                                <li><a href="#Data-in-examples" class="name">Data in examples</a></li>
+                                                <li><a href="#Related%20keywords%20in%20BuiltIn" class="name">Related keywords in BuiltIn</a></li>
+                                                <li><a href="#Using%20with%20list-like%20and%20dictionary-like%20objects" class="name">Using with list-like
+                                                        and dictionary-like objects</a></li>
+                                                <li><a href="#Boolean%20arguments" class="name">Boolean arguments</a></li>
+                                                <li><a href="#Data%20in%20examples" class="name">Data in examples</a></li>
                                                 <li><a href="#Shortcuts" class="name">Shortcuts</a></li>
                                                 <li><a href="#Keywords" class="name">Keywords</a></li>
                                             </ul>
-                                            <h4 id="Related-keywords-in-BuiltIn">Related keywords in BuiltIn</h4>
+                                            <h4 id="Related keywords in BuiltIn">Related keywords in BuiltIn</h4>
                                             <p>Following keywords in the BuiltIn library can also be used with lists and dictionaries:</p>
                                             <table border="1">
                                                 <tbody>
@@ -120,50 +125,47 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Using-with-list-like-and-dictionary-like-objects">Using with list-like and dictionary-like objects</h4>
-                                            <p>
-                                                List keywords that do not alter the given list can also be used with tuples, and to some extend also with other iterables.
-                                                <a href="documantation.php?page=libraries&node=built-in&subnode=collections#convert-to-list" class="name">Convert To List</a> can be used to convert tuples and other iterables
-                                                to Python <code>list</code> objects.
-                                            </p>
-                                            <p>
-                                                Similarly dictionary keywords can, for most parts, be used with other mappings.
-                                                <a href="documantation.php?page=libraries&node=built-in&subnode=collections#convert-to-dictionary" class="name">Convert To Dictionary</a> can be used if real Python
+                                            <h4 id="Using with list-like and dictionary-like objects">Using with list-like and dictionary-like objects</h4>
+                                            <p>List keywords that do not alter the given list can also be used with tuples, and to some extend also with
+                                                other iterables. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#convert-to-list" class="name">Convert To List</a> can be used to convert
+                                                tuples and other iterables to Python <code>list</code> objects.</p>
+                                            <p>Similarly dictionary keywords can, for most parts, be used with other mappings. <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#convert-to-dictionary" class="name">Convert To Dictionary</a> can be used if real Python
                                                 <code>dict</code> objects are needed.
                                             </p>
-                                            <h4 id="Boolean-arguments">Boolean arguments</h4>
-                                            <p>
-                                                Some keywords accept arguments that are handled as Boolean values true or false. If such an argument is given as a string, it is considered false if it is an empty string or equal to
-                                                <code>FALSE</code>, <code>NONE</code>, <code>NO</code>, <code>OFF</code> or <code>0</code>, case-insensitively. Keywords verifying something that allow dropping actual and expected values from
-                                                the possible error message also consider string <code>no values</code> to be false. Other strings are considered true regardless their value, and other argument types are tested using the same
-                                                <a href="http://docs.python.org/library/stdtypes.html#truth">rules as in Python</a>.
+                                            <h4 id="Boolean arguments">Boolean arguments</h4>
+                                            <p>Some keywords accept arguments that are handled as Boolean values true or false. If such an argument is given
+                                                as a string, it is considered false if it is an empty string or equal to <code>FALSE</code>,
+                                                <code>NONE</code>, <code>NO</code>, <code>OFF</code> or <code>0</code>, case-insensitively. Keywords
+                                                verifying something that allow dropping actual and expected values from the possible error message also
+                                                consider string <code>no values</code> to be false. Other strings are considered true regardless their
+                                                value, and other argument types are tested using the same <a href="http://docs.python.org/library/stdtypes.html#truth">rules as in Python</a>.
                                             </p>
                                             <p>True examples:</p>
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=collections#should-contain-match" class="name">Should Contain Match</a></td>
+                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#should-contain-match" class="name">Should Contain Match</a></td>
                                                         <td>${list}</td>
                                                         <td>${pattern}</td>
                                                         <td>case_insensitive=True</td>
                                                         <td># Strings are generally true.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=collections#should-contain-match" class="name">Should Contain Match</a></td>
+                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#should-contain-match" class="name">Should Contain Match</a></td>
                                                         <td>${list}</td>
                                                         <td>${pattern}</td>
                                                         <td>case_insensitive=yes</td>
                                                         <td># Same as the above.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=collections#should-contain-match" class="name">Should Contain Match</a></td>
+                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#should-contain-match" class="name">Should Contain Match</a></td>
                                                         <td>${list}</td>
                                                         <td>${pattern}</td>
                                                         <td>case_insensitive=${TRUE}</td>
                                                         <td># Python <code>True</code> is true.</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=collections#should-contain-match" class="name">Should Contain Match</a></td>
+                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#should-contain-match" class="name">Should Contain Match</a></td>
                                                         <td>${list}</td>
                                                         <td>${pattern}</td>
                                                         <td>case_insensitive=${42}</td>
@@ -175,7 +177,7 @@
                                             <table border="1">
                                                 <tbody>
                                                     <tr>
-                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=collections#should-contain-match" class="name">Should Contain Match</a></td>
+                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#should-contain-match" class="name">Should Contain Match</a></td>
                                                         <td>${list}</td>
                                                         <td>${pattern}</td>
                                                         <td>case_insensitive=False</td>
@@ -183,7 +185,7 @@
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=collections#should-contain-match" class="name">Should Contain Match</a></td>
+                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#should-contain-match" class="name">Should Contain Match</a></td>
                                                         <td>${list}</td>
                                                         <td>${pattern}</td>
                                                         <td>case_insensitive=no</td>
@@ -191,7 +193,7 @@
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=collections#should-contain-match" class="name">Should Contain Match</a></td>
+                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#should-contain-match" class="name">Should Contain Match</a></td>
                                                         <td>${list}</td>
                                                         <td>${pattern}</td>
                                                         <td>case_insensitive=${EMPTY}</td>
@@ -199,7 +201,7 @@
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=collections#should-contain-match" class="name">Should Contain Match</a></td>
+                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#should-contain-match" class="name">Should Contain Match</a></td>
                                                         <td>${list}</td>
                                                         <td>${pattern}</td>
                                                         <td>case_insensitive=${FALSE}</td>
@@ -207,7 +209,7 @@
                                                         <td></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="documantation.php?page=libraries&node=built-in&subnode=collections#lists-should-be-equal" class="name">Lists Should Be Equal</a></td>
+                                                        <td><a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/collections/keywords#lists-should-be-equal" class="name">Lists Should Be Equal</a></td>
                                                         <td>${x}</td>
                                                         <td>${y}</td>
                                                         <td>Custom error</td>
@@ -216,14 +218,18 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <h4 id="Data-in-examples">Data in examples</h4>
-                                            <p>
-                                                List related keywords use variables in format <code>${Lx}</code> in their examples. They mean lists with as many alphabetic characters as specified by <code>x</code>. For example,
-                                                <code>${L1}</code> means <code>['a']</code> and <code>${L3}</code> means <code>['a', 'b', 'c']</code>.
+                                            <h4 id="Data in examples">Data in examples</h4>
+                                            <p>List related keywords use variables in format <code>${Lx}</code> in their examples. They mean lists with as
+                                                many alphabetic characters as specified by <code>x</code>. For example, <code>${L1}</code> means
+                                                <code>['a']</code> and <code>${L3}</code> means <code>['a', 'b', 'c']</code>.
                                             </p>
-                                            <p>Dictionary keywords use similar <code>${Dx}</code> variables. For example, <code>${D1}</code> means <code>{'a': 1}</code> and <code>${D3}</code> means <code>{'a': 1, 'b': 2, 'c': 3}</code>.</p>
+                                            <p>Dictionary keywords use similar <code>${Dx}</code> variables. For example, <code>${D1}</code> means
+                                                <code>{'a': 1}</code> and <code>${D3}</code> means <code>{'a': 1, 'b': 2, 'c': 3}</code>.
+                                            </p>
                                         </div>
+
                                     </div>
+
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="profile_with_icon_title">
@@ -278,9 +284,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${L1} = ['a', 'xxx']
-    ${L2} = ['a', 'b', 'x', 'y', 'z']
-    </code></pre>
+                                                                <pre>${L1} = ['a', 'xxx']
+${L2} = ['a', 'b', 'x', 'y', 'z']
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -324,10 +330,10 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${x} = ['a', 'a', 'b']
-    ${y} = ['a', 'a', 'b', 'a']
-    ${L1} and ${L2} are not changed.
-    </code></pre>
+                                                                <pre>${x} = ['a', 'a', 'b']
+${y} = ['a', 'a', 'b', 'a']
+${L1} and ${L2} are not changed.
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -352,11 +358,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Converts the given <code>item</code> to a Python <code>dict</code> type.</p>
-                                                                <p>
-                                                                    Mainly useful for converting other mappings to normal dictionaries. This includes converting Autosphere's own <code>DotDict</code> instances that it uses if variables are
-                                                                    created using the <code>&amp;{var}</code> syntax.
-                                                                </p>
+                                                                <p>Mainly useful for converting other mappings to normal dictionaries. This includes converting Autosphere's own <code>DotDict</code> instances that it uses if variables are created using the <code>&amp;{var}</code> syntax.</p>
                                                                 <p>Use Create Dictionary from the BuiltIn library for constructing new dictionaries.</p>
+
                                                             </div>
                                                         </div>
 
@@ -412,11 +416,9 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>
-                                                                    The <code>deepcopy</code> argument controls should the returned dictionary be a <a href="https://docs.python.org/library/copy.html">shallow or deep copy</a>. By default
-                                                                    returns a shallow copy, but that can be changed by giving <code>deepcopy</code> a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>).
-                                                                    Earlier versions always returned shallow copies.
-                                                                </p>
+                                                                <p>The <code>deepcopy</code> argument controls should the returned dictionary be a <a href="https://docs.python.org/library/copy.html">shallow or deep copy</a>. By default returns a shallow copy, but that can be
+                                                                    changed by giving <code>deepcopy</code> a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>). Earlier versions always returned
+                                                                    shallow copies.</p>
                                                                 <p>The given dictionary is never altered by this keyword.</p>
                                                             </div>
                                                         </div>
@@ -447,6 +449,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
+
 
                                                                 <p>The given list is never altered by this keyword.</p>
                                                             </div>
@@ -491,9 +494,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns the number of occurrences of the given <code>value</code> in <code>list</code>.</p>
-                                                                <p>
-                                                                    The search can be narrowed to the selected sublist by the <code>start</code> and <code>end</code> indexes having the same semantics as with
-                                                                    <a href="#get-slice-from-list" class="name">Get Slice From List</a> keyword. The given list is never altered by this keyword.
+                                                                <p>The search can be narrowed to the selected sublist by the <code>start</code> and
+                                                                    <code>end</code> indexes having the same semantics as with <a href="#Get%20Slice%20From%20List" class="name">Get Slice From List</a> keyword. The given list is never altered by this keyword.
                                                                 </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -505,9 +507,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${x} = 1
-            ${L3} is not changed
-            </code></pre>
+                                                                <pre>${x} = 1
+${L3} is not changed
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -550,13 +552,9 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>
-                                                                    First the equality of dictionaries' keys is checked and after that all the key value pairs. If there are differences between the values, those are listed in the error
-                                                                    message. The types of the dictionaries do not need to be same.
-                                                                </p>
-                                                                <p>
-                                                                    See <a href="#lists-should-be-equal" class="name">Lists Should Be Equal</a> for more information about configuring the error message with <code>msg</code> and
-                                                                    <code>values</code> arguments.
+                                                                <p>First the equality of dictionaries' keys is checked and after that all the key value pairs. If there are differences between the values, those are listed in the error message. The types of the dictionaries do
+                                                                    not need to be same.</p>
+                                                                <p>See <a href="#Lists%20Should%20Be%20Equal" class="name">Lists Should Be Equal</a> for more information about configuring the error message with <code>msg</code> and <code>values</code> arguments.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -599,7 +597,8 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>An item of <code>key</code> / <code>value</code> must be found in a <code>dictionary</code>.</p>
+                                                                <p>An item of <code>key</code> / <code>value</code> must be found in a <code>dictionary</code>.
+                                                                </p>
                                                                 <p>Value is converted to unicode for comparison.</p>
                                                                 <p>Use the <code>msg</code> argument to override the default error message.</p>
                                                             </div>
@@ -643,7 +642,8 @@
                                                         </div>
 
                                                         <div class="keyword" id="dictionary-should-contain-sub-dictionary">
-                                                            <h2><a href="#dictionary-should-contain-sub-dictionary">Dictionary Should Contain Sub Dictionary</a></h2>
+                                                            <h2><a href="#dictionary-should-contain-sub-dictionary">Dictionary Should Contain Sub Dictionary</a>
+                                                            </h2>
 
                                                             <div>
                                                                 <p class="shortdoc">Fails unless all items in ``dict2`` are found from ``dict1``.</p>
@@ -681,9 +681,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails unless all items in <code>dict2</code> are found from <code>dict1</code>.</p>
-                                                                <p>
-                                                                    See <a href="#lists-should-be-equal" class="name">Lists Should Be Equal</a> for more information about configuring the error message with <code>msg</code> and
-                                                                    <code>values</code> arguments.
+                                                                <p>See <a href="#Lists%20Should%20Be%20Equal" class="name">Lists Should Be Equal</a> for more information about configuring the error message with <code>msg</code> and <code>values</code> arguments.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -826,11 +824,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns items of the given <code>dictionary</code> as a list.</p>
-                                                                <p>
-                                                                    Uses <a href="#get-dictionary-keys" class="name">Get Dictionary Keys</a> to get keys and then returns corresponding items. By default keys are sorted and items returned
-                                                                    in that order, but this can be changed by giving <code>sort_keys</code> a false value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>). Notice that
-                                                                    with Python 3.5 and earlier dictionary order is undefined unless using ordered dictionaries.
-                                                                </p>
+                                                                <p>Uses <a href="#Get%20Dictionary%20Keys" class="name">Get Dictionary Keys</a> to get keys and then returns corresponding items. By default keys are sorted and items returned in that order, but this can be changed
+                                                                    by giving <code>sort_keys</code> a false value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>). Notice that with Python 3.5 and earlier dictionary order is undefined unless using
+                                                                    ordered dictionaries.</p>
                                                                 <p>Items are returned as a flat list so that first item is a key, second item is a corresponding value, third item is the second key, and so on.</p>
                                                                 <p>The given <code>dictionary</code> is never altered by this keyword.</p>
                                                                 <h4>Examples</h4>
@@ -849,9 +845,10 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${sorted} = ['a', 1, 'b', 2, 'c', 3]
-        ${unsorted} = ['b', 2, 'a', 1, 'c', 3]    # Order depends on Python version.
-        </code></pre>
+                                                                <pre>${sorted} = ['a', 1, 'b', 2, 'c', 3]
+${unsorted} = ['b', 2, 'a', 1, 'c', 3]    # Order depends on Python version.
+</code></pre>
+
                                                             </div>
                                                         </div>
 
@@ -882,11 +879,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns keys of the given <code>dictionary</code> as a list.</p>
-                                                                <p>
-                                                                    By default keys are returned in sorted order (assuming they are sortable), but they can be returned in the original order by giving <code>sort_keys</code> a false value
-                                                                    (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>). Notice that with Python 3.5 and earlier dictionary order is undefined unless using ordered
-                                                                    dictionaries.
-                                                                </p>
+                                                                <p>By default keys are returned in sorted order (assuming they are sortable), but they can be returned in the original order by giving <code>sort_keys</code> a false value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>).
+                                                                    Notice that with Python 3.5 and earlier dictionary order is undefined unless using ordered dictionaries.</p>
                                                                 <p>The given <code>dictionary</code> is never altered by this keyword.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -904,9 +898,10 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${sorted} = ['a', 'b', 'c']
-                ${unsorted} = ['b', 'a', 'c']   # Order depends on Python version.
-                </code></pre>
+                                                                <pre>${sorted} = ['a', 'b', 'c']
+${unsorted} = ['b', 'a', 'c']   # Order depends on Python version.
+</code></pre>
+
                                                             </div>
                                                         </div>
 
@@ -937,11 +932,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns values of the given <code>dictionary</code> as a list.</p>
-                                                                <p>
-                                                                    Uses <a href="#get-dictionary-keys" class="name">Get Dictionary Keys</a> to get keys and then returns corresponding values. By default keys are sorted and values
-                                                                    returned in that order, but this can be changed by giving <code>sort_keys</code> a false value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>).
-                                                                    Notice that with Python 3.5 and earlier dictionary order is undefined unless using ordered dictionaries.
-                                                                </p>
+                                                                <p>Uses <a href="#Get%20Dictionary%20Keys" class="name">Get Dictionary Keys</a> to get keys and then returns corresponding values. By default keys are sorted and values returned in that order, but this can be changed
+                                                                    by giving <code>sort_keys</code> a false value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>). Notice that with Python 3.5 and earlier dictionary order is undefined unless using
+                                                                    ordered dictionaries.</p>
                                                                 <p>The given <code>dictionary</code> is never altered by this keyword.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -959,9 +952,10 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${sorted} = [1, 2, 3]
-        ${unsorted} = [2, 1, 3]    # Order depends on Python version.
-        </code></pre>
+                                                                <pre>${sorted} = [1, 2, 3]
+${unsorted} = [2, 1, 3]    # Order depends on Python version.
+</code></pre>
+
                                                             </div>
                                                         </div>
 
@@ -992,7 +986,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns a value from the given <code>dictionary</code> based on the given <code>key</code>.</p>
-                                                                <p>If the given <code>key</code> cannot be found from the <code>dictionary</code>, this keyword fails.</p>
+                                                                <p>If the given <code>key</code> cannot be found from the <code>dictionary</code>, this keyword fails.
+                                                                </p>
                                                                 <p>The given dictionary is never altered by this keyword.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -1004,8 +999,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${value} = 2
-    </code></pre>
+                                                                <pre>${value} = 2
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -1037,9 +1032,9 @@
                                                                 </table>
                                                                 <p>Returns the value specified with an <code>index</code> from <code>list</code>.</p>
                                                                 <p>The given list is never altered by this keyword.</p>
-                                                                <p>
-                                                                    Index <code>0</code> means the first position, <code>1</code> the second, and so on. Similarly, <code>-1</code> is the last position, <code>-2</code> the second last, and
-                                                                    so on. Using an index that does not exist on the list causes an error. The index can be either an integer or a string that can be converted to an integer.
+                                                                <p>Index <code>0</code> means the first position, <code>1</code> the second, and so on. Similarly,
+                                                                    <code>-1</code> is the last position, <code>-2</code> the second last, and so on. Using an index that does not exist on the list causes an error. The index can be either an integer or a string that can be
+                                                                    converted to an integer.
                                                                 </p>
                                                                 <p>Examples (including Python equivalents in comments):</p>
                                                                 <table border="1">
@@ -1059,10 +1054,10 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${x} = 'a'
-    ${y} = 'd'
-    ${L5} is not changed
-    </code></pre>
+                                                                <pre>${x} = 'a'
+${y} = 'd'
+${L5} is not changed
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -1105,10 +1100,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns the index of the first occurrence of the <code>value</code> on the list.</p>
-                                                                <p>
-                                                                    The search can be narrowed to the selected sublist by the <code>start</code> and <code>end</code> indexes having the same semantics as with
-                                                                    <a href="#get-slice-from-list" class="name">Get Slice From List</a> keyword. In case the value is not found, -1 is returned. The given list is never altered by this
-                                                                    keyword.
+                                                                <p>The search can be narrowed to the selected sublist by the <code>start</code> and
+                                                                    <code>end</code> indexes having the same semantics as with <a href="#Get%20Slice%20From%20List" class="name">Get Slice From List</a> keyword. In case the value is not found, -1 is returned. The given list
+                                                                    is never altered by this keyword.
                                                                 </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -1120,9 +1114,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${x} = 3
-        ${L5} is not changed
-        </code></pre>
+                                                                <pre>${x} = 3
+${L5} is not changed
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -1165,9 +1159,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns the count of matches to <code>pattern</code> in <code>list</code>.</p>
-                                                                <p>
-                                                                    For more information on <code>pattern</code>, <code>case_insensitive</code>, and <code>whitespace_insensitive</code>, see
-                                                                    <a href="#should-contain-match" class="name">Should Contain Match</a>.
+                                                                <p>For more information on <code>pattern</code>, <code>case_insensitive</code>, and
+                                                                    <code>whitespace_insensitive</code>, see <a href="#Should%20Contain%20Match" class="name">Should
+                                                                        Contain Match</a>.
                                                                 </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1238,9 +1232,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns a list of matches to <code>pattern</code> in <code>list</code>.</p>
-                                                                <p>
-                                                                    For more information on <code>pattern</code>, <code>case_insensitive</code>, and <code>whitespace_insensitive</code>, see
-                                                                    <a href="#should-contain-match" class="name">Should Contain Match</a>.
+                                                                <p>For more information on <code>pattern</code>, <code>case_insensitive</code>, and
+                                                                    <code>whitespace_insensitive</code>, see <a href="#Should%20Contain%20Match" class="name">Should
+                                                                        Contain Match</a>.
                                                                 </p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
@@ -1306,10 +1300,9 @@
                                                                 </table>
                                                                 <p>Returns a slice of the given list between <code>start</code> and <code>end</code> indexes.</p>
                                                                 <p>The given list is never altered by this keyword.</p>
-                                                                <p>
-                                                                    If both <code>start</code> and <code>end</code> are given, a sublist containing values from <code>start</code> to <code>end</code> is returned. This is the same as
-                                                                    <code>list[start:end]</code> in Python. To get all items from the beginning, use 0 as the start value, and to get all items until and including the end, use
-                                                                    <code>None</code> (default) as the end value.
+                                                                <p>If both <code>start</code> and <code>end</code> are given, a sublist containing values from
+                                                                    <code>start</code> to <code>end</code> is returned. This is the same as
+                                                                    <code>list[start:end]</code> in Python. To get all items from the beginning, use 0 as the start value, and to get all items until and including the end, use <code>None</code> (default) as the end value.
                                                                 </p>
                                                                 <p>Using <code>start</code> or <code>end</code> not found on the list is the same as using the largest (or smallest) available index.</p>
                                                                 <p>Examples (incl. Python equivalents in comments):</p>
@@ -1340,11 +1333,11 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${x} = ['c', 'd']
-    ${y} = ['b', 'c', 'd', 'e']
-    ${z} = ['a', 'b', 'c']
-    ${L5} is not changed
-    </code></pre>
+                                                                <pre>${x} = ['c', 'd']
+${y} = ['b', 'c', 'd', 'e']
+${z} = ['a', 'b', 'c']
+${L5} is not changed
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -1380,16 +1373,12 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Inserts <code>value</code> into <code>list</code> to the position specified with <code>index</code>.</p>
-                                                                <p>
-                                                                    Index <code>0</code> adds the value into the first position, <code>1</code> to the second, and so on. Inserting from right works with negative indices so that
-                                                                    <code>-1</code> is the second last position, <code>-2</code> third last, and so on. Use <a href="#append-to-list" class="name">Append To List</a> to add items to the
-                                                                    end of the list.
+                                                                <p>Inserts <code>value</code> into <code>list</code> to the position specified with
+                                                                    <code>index</code>.
                                                                 </p>
-                                                                <p>
-                                                                    If the absolute value of the index is greater than the length of the list, the value is added at the end (positive index) or the beginning (negative index). An index can be
-                                                                    given either as an integer or a string that can be converted to an integer.
-                                                                </p>
+                                                                <p>Index <code>0</code> adds the value into the first position, <code>1</code> to the second, and so on. Inserting from right works with negative indices so that <code>-1</code> is the second last position, <code>-2</code> third last, and so on. Use <a href="#Append%20To%20List" class="name">Append To List</a> to add items to the end of the list.</p>
+                                                                <p>If the absolute value of the index is greater than the length of the list, the value is added at the end (positive index) or the beginning (negative index). An index can be given either as an integer or a string
+                                                                    that can be converted to an integer.</p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
@@ -1406,9 +1395,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${L1} = ['xxx', 'a']
-    ${L2} = ['a', 'xxx', 'b']
-    </code></pre>
+                                                                <pre>${L1} = ['xxx', 'a']
+${L2} = ['a', 'xxx', 'b']
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -1439,7 +1428,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Keeps the given <code>keys</code> in the <code>dictionary</code> and removes all other.</p>
-                                                                <p>If the given <code>key</code> cannot be found from the <code>dictionary</code>, it is ignored.</p>
+                                                                <p>If the given <code>key</code> cannot be found from the <code>dictionary</code>, it is ignored.
+                                                                </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
@@ -1451,8 +1441,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${D5} = {'b': 2, 'd': 4}
-    </code></pre>
+                                                                <pre>${D5} = {'b': 2, 'd': 4}
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -1496,9 +1486,7 @@
                                                                 </table>
                                                                 <p>Fails if not all of the elements in <code>list2</code> are found in <code>list1</code>.</p>
                                                                 <p>The order of values and the number of values are not taken into account.</p>
-                                                                <p>
-                                                                    See <a href="#lists-should-be-equal" class="name">Lists Should Be Equal</a> for more information about configuring the error message with <code>msg</code> and
-                                                                    <code>values</code> arguments.
+                                                                <p>See <a href="#Lists%20Should%20Be%20Equal" class="name">Lists Should Be Equal</a> for more information about configuring the error message with <code>msg</code> and <code>values</code> arguments.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1567,10 +1555,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if any element in the <code>list</code> is found from it more than once.</p>
-                                                                <p>
-                                                                    The default error message lists all the elements that were found from the <code>list</code> multiple times, but it can be overridden by giving a custom <code>msg</code>.
-                                                                    All multiple times found items and their counts are also logged.
-                                                                </p>
+                                                                <p>The default error message lists all the elements that were found from the <code>list</code> multiple times, but it can be overridden by giving a custom <code>msg</code>. All multiple times found items and their
+                                                                    counts are also logged.</p>
                                                                 <p>This keyword works with all iterables that can be converted to a list. The original iterable is never altered.</p>
                                                             </div>
                                                         </div>
@@ -1663,25 +1649,17 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>
-                                                                    The keyword first verifies that the lists have equal lengths, and then it checks are all their values equal. Possible differences between the values are listed in the
-                                                                    default error message like <code>Index 4: ABC != Abc</code>. The types of the lists do not need to be the same. For example, Python tuple and list with same content are
-                                                                    considered equal.
+                                                                <p>The keyword first verifies that the lists have equal lengths, and then it checks are all their values equal. Possible differences between the values are listed in the default error message like <code>Index 4: ABC != Abc</code>.
+                                                                    The types of the lists do not need to be the same. For example, Python tuple and list with same content are considered equal.</p>
+                                                                <p>The error message can be configured using <code>msg</code> and <code>values</code> arguments:
                                                                 </p>
-                                                                <p>The error message can be configured using <code>msg</code> and <code>values</code> arguments:</p>
                                                                 <ul>
                                                                     <li>If <code>msg</code> is not given, the default error message is used.</li>
-                                                                    <li>
-                                                                        If <code>msg</code> is given and <code>values</code> gets a value considered true (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), the error
-                                                                        message starts with the given <code>msg</code> followed by a newline and the default message.
-                                                                    </li>
+                                                                    <li>If <code>msg</code> is given and <code>values</code> gets a value considered true (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the error message starts with the given <code>msg</code> followed by a newline and the default message.</li>
                                                                     <li>If <code>msg</code> is given and <code>values</code> is not given a true value, the error message is just the given <code>msg</code>.</li>
                                                                 </ul>
-                                                                <p>
-                                                                    The optional <code>names</code> argument can be used for naming the indices shown in the default error message. It can either be a list of names matching the indices in the
-                                                                    lists or a dictionary where keys are indices that need to be named. It is not necessary to name all of the indices. When using a dictionary, keys can be either integers or
-                                                                    strings that can be converted to integers.
-                                                                </p>
+                                                                <p>The optional <code>names</code> argument can be used for naming the indices shown in the default error message. It can either be a list of names matching the indices in the lists or a dictionary where keys are
+                                                                    indices that need to be named. It is not necessary to name all of the indices. When using a dictionary, keys can be either integers or strings that can be converted to integers.</p>
                                                                 <p>Examples:</p>
                                                                 <table border="1">
                                                                     <tr>
@@ -1713,8 +1691,7 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>
-                                                                    If the items in index 2 would differ in the above examples, the error message would contain a row like
+                                                                <p>If the items in index 2 would differ in the above examples, the error message would contain a row like
                                                                     <code>Index 2 (email): [email&#160;protected] != [email&#160;protected]</code>.
                                                                 </p>
 
@@ -1842,9 +1819,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Pops the given <code>key</code> from the <code>dictionary</code> and returns its value.</p>
-                                                                <p>
-                                                                    By default the keyword fails if the given <code>key</code> cannot be found from the <code>dictionary</code>. If optional <code>default</code> value is given, it will be
-                                                                    returned instead of failing.
+                                                                <p>By default the keyword fails if the given <code>key</code> cannot be found from the
+                                                                    <code>dictionary</code>. If optional <code>default</code> value is given, it will be returned instead of failing.
                                                                 </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -1856,9 +1832,10 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${val} = 2
-    ${D3} = {'a': 1, 'c': 3}
-    </code></pre>
+                                                                <pre>${val} = 2
+${D3} = {'a': 1, 'c': 3}
+</code></pre>
+
                                                             </div>
                                                         </div>
 
@@ -1883,10 +1860,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Returns a list without duplicates based on the given <code>list</code>.</p>
-                                                                <p>
-                                                                    Creates and returns a new list that contains all items in the given list so that one item can appear only once. Order of the items in the new list is the same as in the
-                                                                    original except for missing duplicates. Number of the removed duplicates is logged.
-                                                                </p>
+                                                                <p>Creates and returns a new list that contains all items in the given list so that one item can appear only once. Order of the items in the new list is the same as in the original except for missing duplicates.
+                                                                    Number of the removed duplicates is logged.</p>
                                                             </div>
                                                         </div>
 
@@ -1917,7 +1892,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Removes the given <code>keys</code> from the <code>dictionary</code>.</p>
-                                                                <p>If the given <code>key</code> cannot be found from the <code>dictionary</code>, it is ignored.</p>
+                                                                <p>If the given <code>key</code> cannot be found from the <code>dictionary</code>, it is ignored.
+                                                                </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
                                                                     <tr>
@@ -1929,8 +1905,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${D3} = {'a': 1, 'c': 3}
-        </code></pre>
+                                                                <pre>${D3} = {'a': 1, 'c': 3}
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -1961,9 +1937,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Removes and returns the value specified with an <code>index</code> from <code>list</code>.</p>
-                                                                <p>
-                                                                    Index <code>0</code> means the first position, <code>1</code> the second and so on. Similarly, <code>-1</code> is the last position, <code>-2</code> the second last, and so
-                                                                    on. Using an index that does not exist on the list causes an error. The index can be either an integer or a string that can be converted to an integer.
+                                                                <p>Index <code>0</code> means the first position, <code>1</code> the second and so on. Similarly,
+                                                                    <code>-1</code> is the last position, <code>-2</code> the second last, and so on. Using an index that does not exist on the list causes an error. The index can be either an integer or a string that can be
+                                                                    converted to an integer.
                                                                 </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -1975,9 +1951,9 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${x} = 'a'
-    ${L2} = ['b']
-    </code></pre>
+                                                                <pre>${x} = 'a'
+${L2} = ['b']
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -2021,8 +1997,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${L4} = ['b', 'd']
-    </code></pre>
+                                                                <pre>${L4} = ['b', 'd']
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -2047,7 +2023,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>Note that the given list is changed and nothing is returned. Use <a href="#copy-list" class="name">Copy List</a> first, if you need to keep also the original order.</p>
+                                                                <p>Note that the given list is changed and nothing is returned. Use <a href="#Copy%20List" class="name">Copy List</a> first, if you need to keep also the original order.</p>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>Reverse List</td>
@@ -2055,8 +2031,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${L3} = ['c', 'b', 'a']
-        </code></pre>
+                                                                <pre>${L3} = ['c', 'b', 'a']
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -2092,10 +2068,12 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Sets the value of <code>list</code> specified by <code>index</code> to the given <code>value</code>.</p>
-                                                                <p>
-                                                                    Index <code>0</code> means the first position, <code>1</code> the second and so on. Similarly, <code>-1</code> is the last position, <code>-2</code> second last, and so on.
-                                                                    Using an index that does not exist on the list causes an error. The index can be either an integer or a string that can be converted to an integer.
+                                                                <p>Sets the value of <code>list</code> specified by <code>index</code> to the given
+                                                                    <code>value</code>.
+                                                                </p>
+                                                                <p>Index <code>0</code> means the first position, <code>1</code> the second and so on. Similarly,
+                                                                    <code>-1</code> is the last position, <code>-2</code> second last, and so on. Using an index that does not exist on the list causes an error. The index can be either an integer or a string that can be converted
+                                                                    to an integer.
                                                                 </p>
                                                                 <h4>Examples</h4>
                                                                 <table border="1">
@@ -2113,8 +2091,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${L3} = ['a', 'xxx', 'yyy']
-        </code></pre>
+                                                                <pre>${L3} = ['a', 'xxx', 'yyy']
+</code></pre>
                                                             </div>
                                                         </div>
 
@@ -2150,8 +2128,11 @@
                                                                         <td></td>
                                                                     </tr>
                                                                 </table>
-                                                                <p>Adds the given <code>key_value_pairs</code> and <code>items</code> to the <code>dictionary</code>.</p>
-                                                                <p>Giving items as <code>key_value_pairs</code> means giving keys and values as separate arguments:</p>
+                                                                <p>Adds the given <code>key_value_pairs</code> and <code>items</code> to the
+                                                                    <code>dictionary</code>.
+                                                                </p>
+                                                                <p>Giving items as <code>key_value_pairs</code> means giving keys and values as separate arguments:
+                                                                </p>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>Set To Dictionary</td>
@@ -2163,8 +2144,8 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>=&gt;</p>
-                                                                <pre><code>${D1} = {'a': 1, 'key': 'value', 'second': 2}
-    </code></pre>
+                                                                <pre>${D1} = {'a': 1, 'key': 'value', 'second': 2}
+</code></pre>
                                                                 <table border="1">
                                                                     <tr>
                                                                         <td>Set To Dictionary</td>
@@ -2223,20 +2204,13 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if <code>pattern</code> is not found in <code>list</code>.</p>
-                                                                <p>
-                                                                    By default, pattern matching is similar to matching files in a shell and is case-sensitive and whitespace-sensitive. In the pattern syntax, <code>*</code> matches to
-                                                                    anything and <code>?</code> matches to any single character. You can also prepend <code>glob=</code> to your pattern to explicitly use this pattern matching behavior.
+                                                                <p>By default, pattern matching is similar to matching files in a shell and is case-sensitive and whitespace-sensitive. In the pattern syntax, <code>*</code> matches to anything and
+                                                                    <code>?</code> matches to any single character. You can also prepend <code>glob=</code> to your pattern to explicitly use this pattern matching behavior.
                                                                 </p>
-                                                                <p>
-                                                                    If you prepend <code>regexp=</code> to your pattern, your pattern will be used according to the Python
-                                                                    <a href="http://docs.python.org/library/re.html">re module</a> regular expression syntax. Important note: Backslashes are an escape character, and must be escaped with
-                                                                    another backslash (e.g. <code>regexp=\\d{6}</code> to search for <code>\d{6}</code>). See BuiltIn.Should Match Regexp for more details.
-                                                                </p>
-                                                                <p>If <code>case_insensitive</code> is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), the pattern matching will ignore case.</p>
-                                                                <p>
-                                                                    If <code>whitespace_insensitive</code> is given a true value (see <a href="#Boolean-arguments" class="name">Boolean arguments</a>), the pattern matching will ignore
-                                                                    whitespace.
-                                                                </p>
+                                                                <p>If you prepend <code>regexp=</code> to your pattern, your pattern will be used according to the Python <a href="http://docs.python.org/library/re.html">re module</a> regular expression syntax. Important note:
+                                                                    Backslashes are an escape character, and must be escaped with another backslash (e.g. <code>regexp=\\d{6}</code> to search for <code>\d{6}</code>). See BuiltIn.Should Match Regexp for more details.</p>
+                                                                <p>If <code>case_insensitive</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the pattern matching will ignore case.</p>
+                                                                <p>If <code>whitespace_insensitive</code> is given a true value (see <a href="#Boolean%20arguments" class="name">Boolean arguments</a>), the pattern matching will ignore whitespace.</p>
                                                                 <p>Non-string values in lists are ignored when matching patterns.</p>
                                                                 <p>Use the <code>msg</code> argument to override the default error message.</p>
                                                                 <p>See also <code>Should Not Contain Match</code>.</p>
@@ -2339,9 +2313,7 @@
                                                                     </tr>
                                                                 </table>
                                                                 <p>Fails if <code>pattern</code> is found in <code>list</code>.</p>
-                                                                <p>
-                                                                    Exact opposite of <a href="#should-contain-match" class="name">Should Contain Match</a> keyword. See that keyword for information about arguments and usage in general.
-                                                                </p>
+                                                                <p>Exact opposite of <a href="#Should%20Contain%20Match" class="name">Should Contain Match</a> keyword. See that keyword for information about arguments and usage in general.</p>
                                                             </div>
                                                         </div>
 
@@ -2366,28 +2338,25 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>
-                                                                    Sorting fails if items in the list are not comparable with each others. On Python 2 most objects are comparable, but on Python 3 comparing, for example, strings with
-                                                                    numbers is not possible.
+                                                                <p>Sorting fails if items in the list are not comparable with each others. On Python 2 most objects are comparable, but on Python 3 comparing, for example, strings with numbers is not possible.
                                                                 </p>
-                                                                <p>Note that the given list is changed and nothing is returned. Use <a href="#copy-list" class="name">Copy List</a> first, if you need to keep also the original order.</p>
+                                                                <p>Note that the given list is changed and nothing is returned. Use <a href="#Copy%20List" class="name">Copy List</a> first, if you need to keep also the original order.</p>
                                                             </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <aside class="sc-iJuUWI jaFBcT">
                                             <form>
                                                 <h5>Keywords</h5>
-                                                <fieldset class="sc-eCssSg eeeqEu">
-                                                    <input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" />
-                                                    <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <fieldset class="sc-eCssSg eeeqEu"><input id="myInput" onkeyup="myFunction()" type="text" aria-label="Filter keywords" placeholder="Filter keywords" value="" /><svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M12.327 11.376L8.846 7.9A4.824 4.824 0 107.483 9.26l3.479 3.48s.661.703 1.365 0c.703-.703 0-1.365 0-1.365zM6.87 7.284a2.897 2.897 0 01-4.093 0 2.897 2.897 0 010-4.093 2.897 2.897 0 014.093 0 2.897 2.897 0 010 4.093z" fill="#fff"></path>
-                                                    </svg>
-                                                </fieldset>
+                                                    </svg></fieldset>
                                             </form>
                                             <div>
                                                 <ul id="myUL" style="list-style-type: none; padding: 0; margin: 0;">
@@ -2435,16 +2404,20 @@
                                                     <li><a id="link-should-not-contain-match" href="#should-not-contain-match" class="">Should Not Contain Match</a></li>
                                                     <li><a id="link-sort-list" href="#sort-list" class="">Sort List</a></li>
                                                 </ul>
+
                                             </div>
                                         </aside>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
         <!-- #END# Headings -->
+
     </div>
 </section>

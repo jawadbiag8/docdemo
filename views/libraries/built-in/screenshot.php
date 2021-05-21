@@ -15,7 +15,7 @@
                         <div class="sc-kLgntA iHaOcn">
                             <nav class="sc-bYEvPH khGBIg">
                                 <ol class="breadcrumb breadcrumb-col-cyan">
-                                    <li><a href="../..//docdemo/views/index.php">Home</a></li>
+                                    <li><a href="../views/index.php">Home</a></li>
                                     <li><a href="documantation.php?page=libraries&node=built-in&subnode=intro">Keyword libraries</a></li>
                                     <li><a href="documantation.php?page=libraries&node=built-in&subnode=intro">Built-in</a></li>
                                     <li class="active">Screenshot</li>
@@ -48,21 +48,23 @@
                                             <p>Notice that successfully taking screenshots requires tests to be run with a physical or virtual display.</p>
                                             <h4 id="Table of contents">Table of contents</h4>
                                             <ul>
-                                                <li><a href="#Using-with-Python" class="name">Using with Python</a></li>
-                                                <li><a href="#Using-with-Jython-and-IronPython" class="name">Using with Jython and IronPython</a>
+                                                <li><a href="#Using%20with%20Python" class="name">Using with Python</a></li>
+                                                <li><a href="#Using%20with%20Jython%20and%20IronPython" class="name">Using with Jython and IronPython</a>
                                                 </li>
-                                                <li><a href="#Where-screenshots-are-saved" class="name">Where screenshots are saved</a></li>
+                                                <li><a href="#Where%20screenshots%20are%20saved" class="name">Where screenshots are saved</a></li>
                                                 <li><a href="#ScreenCapLibrary" class="name">ScreenCapLibrary</a></li>
-                                              
+                                                <li><a href="#Importing" class="name">Importing</a></li>
+                                                <li><a href="#Shortcuts" class="name">Shortcuts</a></li>
+                                                <li><a href="#Keywords" class="name">Keywords</a></li>
                                             </ul>
-                                            <h4 id="Using-with-Python">Using with Python</h4>
+                                            <h4 id="Using with Python">Using with Python</h4>
                                             <p>How screenshots are taken when using Python depends on the operating system. On OSX screenshots are taken using the built-in <code>screencapture</code> utility. On other operating systems you need to have one of the following tools or Python modules
                                                 installed. You can specify the tool/module to use when <a href="#Importing" class="name">importing</a> the library. If no tool or module is specified, the first one found will be used.</p>
 
 
-                                            <h4 id="Using-with-Jython-and-IronPython">Using with Jython and IronPython</h4>
+                                            <h4 id="Using with Jython and IronPython">Using with Jython and IronPython</h4>
                                             <p>With Jython and IronPython this library uses APIs provided by JVM and .NET platforms, respectively. These APIs are always available and thus no external modules are needed.</p>
-                                            <h4 id="Where-screenshots-are-saved">Where screenshots are saved</h4>
+                                            <h4 id="Where screenshots are saved">Where screenshots are saved</h4>
                                             <p>By default screenshots are saved into the same directory where the Autosphere log file is written. If no log is created, screenshots are saved into the directory where the XML output file is written.</p>
                                             <p>It is possible to specify a custom location for screenshots using <code>screenshot_directory</code> argument when <a href="#Importing" class="name">importing</a> the library and using <a href="<?php echo $baseusrl; ?>views/docs.php?page=libraries/built-in/screenshot/keywords#set-screenshot-directory" class="name">Set Screenshot Directory</a> keyword during execution. It is also possible to save screenshots using an absolute path.</p>
                                             <h4 id="ScreenCapLibrary">ScreenCapLibrary</h4>
@@ -201,7 +203,7 @@
                                                                     </tr>
                                                                 </table>
 
-                                                                <p>This keyword is otherwise identical to <a href="#take-screenshot" class="name">Take
+                                                                <p>This keyword is otherwise identical to <a href="#Take%20Screenshot" class="name">Take
                                                                         Screenshot</a> but the saved screenshot is not embedded into the log file. The screenshot is linked so it is nevertheless easily available.</p>
                                                             </div>
                                                         </div>

@@ -265,10 +265,12 @@
                     $().UItoTop({
                         easingType: 'easeOutQuart'
                     });
-//                    $(".searchButton").click(function () {
-//                        var text = $("#searchtext").val();
-//                        alert(text);
-//                    });
+                    $(".searchButton").click(function (e) {
+                        var text = $("#searchtext").val();
+                        if (text == '') {
+                            e.preventDefault();
+                        }
+                    });
                 });
             </script>
             <!-- //smooth-scrolling-of-move-up -->
